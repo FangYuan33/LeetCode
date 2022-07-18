@@ -14,3 +14,5 @@
 10. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 11. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 12. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
+13. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
+14. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
