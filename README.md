@@ -16,3 +16,10 @@
 12. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 13. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
 14. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
+15. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+16. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+
+### 2. 二分查找/排序
+
+1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
+2. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
