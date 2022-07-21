@@ -24,3 +24,4 @@
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
 2. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 3. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
