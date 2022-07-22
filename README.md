@@ -19,9 +19,15 @@
 15. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 16. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 
-### 2. 二分查找/排序
+### 2. 二分查找
 
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
 2. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 3. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
+5. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
+
+### 3. 字符串
+
+1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)
+2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
