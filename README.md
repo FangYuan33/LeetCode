@@ -31,3 +31,8 @@
 
 1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)
 2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
+3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
+
+### 4. 双指针
+
+1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
