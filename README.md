@@ -38,3 +38,5 @@
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
 2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
+4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
