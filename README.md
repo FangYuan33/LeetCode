@@ -40,3 +40,9 @@
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
 5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
+
+### 5. 堆/栈/队列
+
+1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
+2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
+3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
