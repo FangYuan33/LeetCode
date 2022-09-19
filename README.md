@@ -51,3 +51,8 @@
 6. [剑指 Offer II 076. 数组中的第 k 大的数字 中等](https://leetcode.cn/problems/xx4gT2/)
 7. [剑指 Offer II 059. 数据流的第 K 大数值 简单](https://leetcode.cn/problems/jBjn9C/)
 8. [手写快排 wait learn...]()
+
+### 6. 哈希
+
+1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
+2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
