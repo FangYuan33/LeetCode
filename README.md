@@ -56,3 +56,4 @@
 
 1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
+3. [剑指 Offer II 004. 只出现一次的数字 中等](https://leetcode.cn/problems/WGki4K/): 哈希和空间复杂度为O(1)的解法
