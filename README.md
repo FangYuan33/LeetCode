@@ -40,6 +40,7 @@
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
 5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
+6. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 
 ### 5. 堆/栈/队列
 
