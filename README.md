@@ -71,3 +71,6 @@
 8. [剑指 Offer 36. 二叉搜索树与双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 9. [剑指 Offer 28. 对称的二叉树 简单](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/)
 10. [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)
+11. [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
+12. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
+13. [236. 二叉树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
