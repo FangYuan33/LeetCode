@@ -79,4 +79,7 @@
 16. [剑指 Offer 07. 重建二叉树 中等](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/)
 
 ### 8. 动态规划
-1. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
+1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
+2. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
+3. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
+4. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
