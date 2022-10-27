@@ -81,5 +81,6 @@
 ### 8. 动态规划
 1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
 2. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
-3. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
-4. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
+3. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
+4. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
+5. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
