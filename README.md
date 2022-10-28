@@ -84,3 +84,4 @@
 3. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
 4. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
 5. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
+6. [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)
