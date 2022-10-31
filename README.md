@@ -85,3 +85,4 @@
 4. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
 5. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
 6. [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)
+7. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
