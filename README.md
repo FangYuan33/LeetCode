@@ -86,3 +86,5 @@
 5. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
 6. [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)
 7. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
+8. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
+9. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
