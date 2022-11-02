@@ -88,3 +88,8 @@
 7. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 8. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 9. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
+
+### 9. 贪心算法
+1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
+
