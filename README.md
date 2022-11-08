@@ -95,7 +95,11 @@
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
 
-### 10. 递归/回溯
-1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/description/)
-2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/description/)
+### 10. 回溯
+1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/)
+2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
+
+### 11. 递归
+1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
+2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 
