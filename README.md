@@ -102,4 +102,5 @@
 ### 11. 递归
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
+3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 
