@@ -91,6 +91,7 @@
 7. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 8. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 9. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
+10. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
 
 ### 9. 贪心算法
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
@@ -106,4 +107,5 @@
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
+4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
