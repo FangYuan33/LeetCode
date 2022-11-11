@@ -109,3 +109,5 @@
 3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
+### 12. 位运算
+1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
