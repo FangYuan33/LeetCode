@@ -19,6 +19,7 @@
 15. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
 16. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 17. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+18. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
 
 ### 2. 二分查找
 
