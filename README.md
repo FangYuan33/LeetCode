@@ -20,6 +20,7 @@
 16. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 17. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 18. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
+19. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/description/?favorite=xb9nqhhg)
 
 ### 2. 二分查找
 
@@ -44,6 +45,7 @@
 4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
 5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
 6. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 
 ### 5. 堆/栈/队列
 
@@ -81,6 +83,7 @@
 14. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 15. [236. 二叉树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
 16. [剑指 Offer 07. 重建二叉树 中等](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/)
+17. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 
 ### 8. 动态规划
 1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
