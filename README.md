@@ -66,6 +66,7 @@
 3. [剑指 Offer II 004. 只出现一次的数字 中等](https://leetcode.cn/problems/WGki4K/): 哈希和空间复杂度为O(1)的解法
 4. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/submissions/)
 5. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
+6. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/?favorite=xb9nqhhg)
 
 ### 7. 二叉树
 1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
