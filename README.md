@@ -57,7 +57,8 @@
 6. [剑指 Offer II 076. 数组中的第 k 大的数字 中等](https://leetcode.cn/problems/xx4gT2/)
 7. [剑指 Offer II 059. 数据流的第 K 大数值 简单](https://leetcode.cn/problems/jBjn9C/)
 8. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/description/)
-9. [手写快排 wait learn...]()
+9. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/description/)
+10. [手写快排 wait learn...]()
 
 ### 6. 哈希
 
@@ -102,6 +103,7 @@
 8. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 9. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
 10. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
+11. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 
 ### 9. 贪心算法
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
