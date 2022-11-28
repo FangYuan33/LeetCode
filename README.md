@@ -46,6 +46,7 @@
 5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
 6. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+8. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
 ### 5. 堆/栈/队列
 
