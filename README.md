@@ -59,7 +59,7 @@
 7. [剑指 Offer II 059. 数据流的第 K 大数值 简单](https://leetcode.cn/problems/jBjn9C/)
 8. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/description/)
 9. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/description/)
-10. [手写快排 wait learn...]()
+10. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 
 ### 6. 哈希
 
