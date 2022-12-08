@@ -37,6 +37,7 @@
 2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
 3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
 4. [剑指 Offer 05. 替换空格 简单](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
+5. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
 
 ### 4. 双指针
 > 有序: 递增or递减序列
@@ -66,6 +67,7 @@
 7. [剑指 Offer II 059. 数据流的第 K 大数值 简单](https://leetcode.cn/problems/jBjn9C/)
 8. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/description/)
 9. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/description/)
+10. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
 
 ### 6. 哈希
 
@@ -132,6 +134,7 @@
 ### 10. 回溯
 1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/)
 2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
+3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
 ### 11. 递归
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
@@ -145,3 +148,7 @@
 
 ### 13. 排序算法
 1. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
+
+### 14. 其他
+1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
+2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
