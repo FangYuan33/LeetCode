@@ -46,7 +46,12 @@
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 
-#### 4.2 待归类
+#### 4.2 滑动窗口（无序）
+> **Tips**: 连续子数组
+1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+
+#### 4.3 待归类
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
 2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
