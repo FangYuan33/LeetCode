@@ -154,6 +154,9 @@
 ### 13. 排序算法
 1. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 
-### 14. 其他
+### 14. 前缀和
+1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
+
+### 15. 其他
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
