@@ -155,7 +155,9 @@
 1. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 
 ### 14. 前缀和
+> **Tips**: 连续子数组
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
+2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
 
 ### 15. 其他
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
