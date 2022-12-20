@@ -153,6 +153,7 @@
 
 ### 13. 排序算法
 1. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
+2. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
 
 ### 14. 前缀和
 > **Tips**: 连续子数组
