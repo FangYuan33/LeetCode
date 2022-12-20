@@ -1,14 +1,14 @@
 package sort;
 
+import java.util.Arrays;
+
 public class BubbleSort {
 
     public static void main(String[] args) {
         int[] nums = new int[] {1, 9, 2, 5, 8, 3};
         bubbleSort(nums);
 
-        for (int num : nums) {
-            System.out.println(num);
-        }
+        System.out.println(Arrays.toString(nums));
     }
 
     private static void bubbleSort(int[] nums) {
