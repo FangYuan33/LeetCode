@@ -152,8 +152,9 @@
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 
 ### 13. 排序算法
-1. [手写快排](https://www.hello-algo.com/chapter_sorting/quick_sort/)
-2. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
+1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
+2. [插入排序](https://www.hello-algo.com/chapter_sorting/insertion_sort/)
+3. [快速排序](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 
 ### 14. 前缀和
 > **Tips**: 连续子数组
