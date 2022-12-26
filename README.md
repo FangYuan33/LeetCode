@@ -50,6 +50,7 @@
 > **Tips**: 连续子数组
 1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
 
 #### 4.3 待归类
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
