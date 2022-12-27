@@ -30,6 +30,7 @@
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 5. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 6. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+7. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 ### 3. 字符串
 
@@ -38,6 +39,7 @@
 3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
 4. [剑指 Offer 05. 替换空格 简单](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
 5. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
+6. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
 
 ### 4. 双指针
 > 有序: 递增or递减序列
@@ -167,3 +169,4 @@
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
 3. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
+4. [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)
