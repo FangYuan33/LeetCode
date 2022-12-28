@@ -76,6 +76,7 @@
 8. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/description/)
 9. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/description/)
 10. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
+11. [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)
 
 ### 6. 哈希
 
@@ -132,6 +133,7 @@
 12. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/?favorite=xb9nqhhg)
 13. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
 14. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
+15. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
 
 ### 9. 贪心算法
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
