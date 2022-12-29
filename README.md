@@ -146,6 +146,7 @@
 2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
 3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 4. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
+5. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
 
 ### 11. 递归
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
