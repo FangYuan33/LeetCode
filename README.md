@@ -157,6 +157,7 @@
 ### 12. 位运算
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
+3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
 
 ### 13. 排序算法
 1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
