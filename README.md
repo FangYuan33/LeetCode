@@ -5,8 +5,13 @@
 1. [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)
 2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 
-#### 1.2 待分类
-2. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+#### 1.2 递归从尾到头操作
+1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+
+#### 1.3 双指针
+1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
+
+#### 1.4 待分类
 4. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 5. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
 6. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/)
@@ -22,7 +27,6 @@
 16. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 17. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 18. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
-19. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/description/?favorite=xb9nqhhg)
 
 ### 2. 二分查找
 
