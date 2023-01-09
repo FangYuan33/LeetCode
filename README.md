@@ -6,8 +6,10 @@
 2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 3. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 
-#### 1.2 递归从尾到头操作
+#### 1.2 递归
 1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+2. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
+3. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想
 
 #### 1.3 双指针 or 快慢指针
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
@@ -18,8 +20,6 @@
 1. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)
 
 #### 1.4 待分类
-5. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
-6. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/)
 11. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 12. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 13. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
