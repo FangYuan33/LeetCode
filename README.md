@@ -15,13 +15,13 @@
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
 3. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
+4. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
 #### 1.4 合并链表
 1. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)
 
-#### 1.4 待分类
-11. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
-12. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+#### 1.5 其他
+1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 13. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 14. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
 15. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
