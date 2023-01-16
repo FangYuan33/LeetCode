@@ -32,7 +32,7 @@ public class RadixSort {
                 buckets[bucketIndex].offer(num);
             }
 
-            // 3.2 遍历桶，重新向数组中赋值
+            // 3.2 出桶，重新向数组中赋值
             int index = 0;
             for (Queue<Integer> bucket : buckets) {
                 while (!bucket.isEmpty())
