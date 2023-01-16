@@ -6,6 +6,7 @@
 2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 3. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 4. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
+5. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
 
 #### 1.2 递归
 1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
@@ -24,13 +25,13 @@
 #### 1.5 辅助栈
 1. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 
+#### 1.6 删除链表
+1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
+2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+
 #### 1.6 其他
 1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
-   
-15. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
-16. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
-17. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
-18. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
 
 ### 2. 二分查找
 
