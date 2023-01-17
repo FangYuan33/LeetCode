@@ -26,7 +26,7 @@
 1. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 
 #### 1.6 删除链表
-1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/description/?favorite=xb9nqhhg)
+1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
 2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 
@@ -34,14 +34,19 @@
 1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
 ### 2. 二分查找
-
+### 2.1 数组有序
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
-2. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
-3. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 5. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 6. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 7. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+
+### 2.2 二维数组
+1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
+
+### 2.3 无序
+1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
 
 ### 3. 字符串
 
