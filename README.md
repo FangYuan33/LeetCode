@@ -46,7 +46,10 @@
 1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
 ### 2.3 无序
+> 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
+
 1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+2. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 
 ### 3. 字符串
 
