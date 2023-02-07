@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Solution213 {
     public static int rob(int[] nums) {

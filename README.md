@@ -1,40 +1,40 @@
 ## LeetCode刷题记录
 
 ### 1. 链表
-#### 1.1 改变链表节点顺序
+#### 改变链表节点顺序
 1. [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)
 2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 3. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 4. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
 5. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
 
-#### 1.2 递归
+#### 递归
 1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 2. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
 3. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想
 
-#### 1.3 双指针 or 快慢指针
+#### 双指针 or 快慢指针
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
 3. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
 4. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
-#### 1.4 合并链表
+#### 合并链表
 1. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)
 
-#### 1.5 辅助栈
+#### 辅助栈
 1. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 
-#### 1.6 删除链表
+#### 删除链表节点
 1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
 2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 
-#### 1.6 其他
+#### 其他
 1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
 ### 2. 二分查找
-### 2.1 数组有序
+### 数组有序
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
 
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
@@ -42,10 +42,10 @@
 6. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 7. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 
-### 2.2 二维数组
+### 二维数组
 1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
-### 2.3 无序
+### 无序
 > 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
 
 1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
@@ -63,17 +63,17 @@
 ### 4. 双指针
 > 有序: 递增or递减序列
 
-#### 4.1 有序
+#### 有序
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 
-#### 4.2 滑动窗口（无序）
+#### 滑动窗口（无序）
 > **Tips**: 连续子数组
 1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
 3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
 
-#### 4.3 待归类
+#### 待归类
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
 2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
@@ -108,16 +108,16 @@
 7. [剑指 Offer 56 - II. 数组中数字出现的次数 II 中等](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
 
 ### 7. 二叉树
-#### 7.1 前序遍历
+#### 前序遍历
 1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
-#### 7.2 中序遍历
+#### 中序遍历
 1. [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
 2. [剑指 Offer 54. 二叉搜索树的第k大节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
-#### 7.3 后续遍历
+#### 后续遍历
 1. [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
-#### 7.4 层序遍历
+#### 层序遍历
 1. [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
-#### 7.5 其他
+#### 其他
 1. [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)
 2. [剑指 Offer 32 - I. 从上到下打印二叉树 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 3. [剑指 Offer 32 - III. 从上到下打印二叉树 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
