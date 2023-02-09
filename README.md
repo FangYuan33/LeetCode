@@ -35,11 +35,14 @@
 
 ### 2. 二分查找
 ### 数组有序
+
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
 2. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 
-4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
-7. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+### 旋转有序数组
+
+1. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
+2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 ### 二维数组
 1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
@@ -48,7 +51,6 @@
 > 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
 
 1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
-2. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 
 ### 3. 字符串
 
@@ -181,6 +183,7 @@
 1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
 2. [插入排序](https://www.hello-algo.com/chapter_sorting/insertion_sort/)
 3. [快速排序](https://www.hello-algo.com/chapter_sorting/quick_sort/)
+4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 
 ### 14. 前缀和
 > **Tips**: 连续子数组
