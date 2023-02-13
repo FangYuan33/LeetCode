@@ -100,19 +100,30 @@
 7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 8. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
-### 5. 堆/栈/队列
+### 5. 栈/队列/堆
+
+#### 栈
+
+- 判断括号是否有效
 
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
 3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
-4. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
-5. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)
-6. [剑指 Offer II 076. 数组中的第 k 大的数字 中等](https://leetcode.cn/problems/xx4gT2/)
-7. [剑指 Offer II 059. 数据流的第 K 大数值 简单](https://leetcode.cn/problems/jBjn9C/)
-8. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/description/)
-9. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/description/)
-10. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
-11. [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)
+4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+   
+#### 队列/双向队列
+
+1. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
+
+#### 堆
+
+- Top K问题、求中位数或中位数变体(99值问题)
+
+1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
+2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
+3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
+4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
 
 ### 6. 哈希
 
