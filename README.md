@@ -1,7 +1,9 @@
 ## LeetCode刷题记录
 
 ### 1. 链表
+
 #### 改变链表节点顺序
+
 1. [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)
 2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 3. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
@@ -9,31 +11,38 @@
 5. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
 
 #### 递归
+
 1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 2. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
 3. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想
 
 #### 双指针 or 快慢指针
+
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
 3. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
 4. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
 #### 合并链表
+
 1. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)
 
 #### 辅助栈
+
 1. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
 
 #### 删除链表节点
+
 1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
 2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 
 #### 其他
+
 1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
 ### 2. 二分查找
+
 ### 数组有序
 
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
@@ -45,9 +54,11 @@
 2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 ### 二维数组
+
 1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
 ### 无序
+
 > 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
 
 1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
@@ -62,19 +73,24 @@
 6. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
 
 ### 4. 双指针
+
 > 有序: 递增or递减序列
 
 #### 有序
+
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 
 #### 滑动窗口（无序）
+
 > **Tips**: 连续子数组
+
 1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
 3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
 
 #### 待归类
+
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
 2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
@@ -109,16 +125,26 @@
 7. [剑指 Offer 56 - II. 数组中数字出现的次数 II 中等](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
 
 ### 7. 二叉树
+
 #### 前序遍历
+
 1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
+
 #### 中序遍历
+
 1. [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
 2. [剑指 Offer 54. 二叉搜索树的第k大节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
-#### 后续遍历
+
+#### 后序遍历
+
 1. [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+
 #### 层序遍历
+
 1. [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
+
 #### 其他
+
 1. [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)
 2. [剑指 Offer 32 - I. 从上到下打印二叉树 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 3. [剑指 Offer 32 - III. 从上到下打印二叉树 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
@@ -139,6 +165,7 @@
 18. [剑指 Offer 55 - II. 平衡二叉树 简单](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/)
 
 ### 8. 动态规划
+
 1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
 2. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 3. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
@@ -156,12 +183,14 @@
 15. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
 
 ### 9. 贪心算法
+
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
 
 ### 10. 回溯
+
 1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/)
 2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
 3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
@@ -169,28 +198,34 @@
 5. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
 
 ### 11. 递归
+
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
 ### 12. 位运算
+
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
 
 ### 13. 排序算法
+
 1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
 2. [插入排序](https://www.hello-algo.com/chapter_sorting/insertion_sort/)
 3. [快速排序](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 
 ### 14. 前缀和
+
 > **Tips**: 连续子数组
+
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
 
 ### 15. 其他
+
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
 3. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
