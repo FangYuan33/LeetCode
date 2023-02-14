@@ -123,17 +123,15 @@
 1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
 2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
 3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
-4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
+4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
 
 ### 6. 哈希
 
 1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
-3. [剑指 Offer II 004. 只出现一次的数字 中等](https://leetcode.cn/problems/WGki4K/): 哈希和空间复杂度为O(1)的解法
-4. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/submissions/)
-5. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
-6. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/?favorite=xb9nqhhg)
-7. [剑指 Offer 56 - II. 数组中数字出现的次数 II 中等](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
+3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/submissions/): 自建hash函数
+4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
+5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 
 ### 7. 二叉树
 
@@ -220,6 +218,7 @@
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
+4. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
 
 ### 13. 排序算法
 
