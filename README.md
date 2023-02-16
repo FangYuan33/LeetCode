@@ -135,6 +135,19 @@
 
 ### 7. 二叉树
 
+- 前、中、后序遍历模板
+
+```java
+    void traverse(TreeNode root) {
+        // 前序遍历
+        traverse(root);
+        // 中序遍历
+        traverse(root);
+        // 后续遍历
+        traverse(root);
+    }
+```
+
 #### 前序遍历
 
 1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
@@ -191,6 +204,8 @@
 15. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
 
 ### 9. 贪心算法
+
+- 分糖果、最短服务时间和区间覆盖问题
 
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
