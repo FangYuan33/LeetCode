@@ -185,6 +185,22 @@
 
 ### 8. 动态规划
 
+动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
+
+1. 这个问题的 base case 是什么？
+2. 它的子问题是什么？再想想它的状态呢？
+3. 它的状态转移方程是怎样的？
+4. 如何定义dp来表现状态或采用回溯法时如何用方法来表示它的状态？
+
+```java
+// 解题模板
+dp[0][0][...] = base case;
+for 状态1 in 状态1中的所有值
+    for 状态2 in 状态2中的所有值
+        for ...
+            dp[状态1][状态2][...] = 状态转移方程 = 最值;
+```
+
 1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
 2. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 3. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
