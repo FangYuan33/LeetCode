@@ -148,6 +148,8 @@
 
 #### 前序遍历
 
+前序遍历在进入某个节点前执行
+
 1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
 2. [剑指 Offer 34. 二叉树中和为某一值的路径 中等](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
 3. [剑指 Offer 27. 二叉树的镜像 简单](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/)
@@ -160,6 +162,8 @@
 4. [剑指 Offer 36. 二叉搜索树与双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 
 #### 后序遍历
+
+后序遍历在离开某个节点后执行
 
 1. [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 2. [剑指 Offer 55 - I. 二叉树的深度 简单](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/)
@@ -227,6 +231,26 @@ for 状态1 in 状态1中的所有值
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
 
 ### 10. 回溯
+
+回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
+而走过的 **"路径"** 当满足结束条件时即为答案之一，它的解题模板如下
+
+```xml
+result = [];
+def backtrack(路径, 选择列表):
+    if 满足结束条件
+        result.add(路径)
+        return
+    
+    for 选择 in 选择列表: 
+        // 做选择
+        路径.add(选择)
+        backtrack(路径, 选择列表)
+        // 撤销选择
+        路径.remove(选择)
+```
+
+- 求全排列
 
 1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/)
 2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
