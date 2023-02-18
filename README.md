@@ -41,6 +41,32 @@
 
 ### 2. 二分查找
 
+**思路很简单，细节是魔鬼**。双闭区间模板如下，不过注意其中的细节可能改变
+
+```java
+    int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+
+        // 这里变？
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] < target) {
+                // 这里变？
+                left = mid + 1;
+            } else if (nums[mid] > target) {
+                // 这里变？
+                right = mid - 1;
+            } else {
+                // 还是这里变？
+                return mid;
+            }
+        }
+
+        return -1;
+    }
+```
+
 #### 数组有序
 
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
