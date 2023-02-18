@@ -107,7 +107,7 @@
 
 #### 滑动窗口（无序）
 
-> **Tips**: 连续子数组
+- 子数组、子字符串问题
 
 1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
@@ -263,6 +263,8 @@ inf bfs(Node node, Node target) {
 3. 它的状态转移方程是怎样的？
 4. 如何定义dp来表现状态或采用回溯法时如何用方法来表示它的状态？
 
+- 最值问题
+
 ```java
 // 解题模板
 dp[0][0][...] = base case;
@@ -270,6 +272,39 @@ for 状态1 in 状态1中的所有值
     for 状态2 in 状态2中的所有值
         for ...
             dp[状态1][状态2][...] = 状态转移方程 = 最值;
+```
+
+- 子序列问题
+
+涉及子序列，一般情况下时间复杂度为 $O(n^2)$，那么就跑不了双层的for循环
+
+```java
+// 解题模板，针对数组的最长递增子序列问题，一维数组
+int n = array.length;
+int[] dp = new int[n];
+
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < i; j++) {
+        dp[i] = 最值;    
+    }
+}
+```
+
+```java
+// 解题模板，针对两个数组或字符串的子序列问题
+int n1 = array1.length;
+int n2 = array2.length;
+int[][] dp = new int[n1][n2];
+
+for (int i = 0; i < n1; i++) {
+    for (int j = 0; j < n2; j++) {
+        if (n1[i] == n2[j]) {
+            dp[i][j] = 
+        } else {
+            dp[i][j] = 
+        }    
+    }    
+}
 ```
 
 1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
@@ -287,6 +322,8 @@ for 状态1 in 状态1中的所有值
 13. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
 14. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 15. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
+16. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/)
+17. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
 
 ### 9. 贪心算法
 
