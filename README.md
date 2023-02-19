@@ -98,12 +98,13 @@
 
 ### 4. 双指针
 
-> 有序: 递增or递减序列
+- 判断数组是否有序，指针移动的条件是什么？
 
 #### 有序
 
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+3. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 
 #### 滑动窗口（无序）
 
@@ -120,7 +121,6 @@
 3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
 5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
-6. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 8. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
