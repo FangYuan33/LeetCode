@@ -39,125 +39,7 @@
 
 1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
-### 2. 二分查找
-
-**思路很简单，细节是魔鬼**。双闭区间模板如下，不过注意其中的细节可能改变
-
-```java
-    int binarySearch(int[] nums, int target) {
-        int left = 0, right = nums.length - 1;
-
-        // 这里变？
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] < target) {
-                // 这里变？
-                left = mid + 1;
-            } else if (nums[mid] > target) {
-                // 这里变？
-                right = mid - 1;
-            } else {
-                // 还是这里变？
-                return mid;
-            }
-        }
-
-        return -1;
-    }
-```
-
-#### 数组有序
-
-1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
-2. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
-
-#### 旋转有序数组
-
-1. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
-2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
-
-#### 二维数组
-
-1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
-
-#### 无序
-
-> 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
-
-1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
-
-### 3. 字符串
-
-1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)
-2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
-3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
-4. [剑指 Offer 05. 替换空格 简单](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
-5. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
-6. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
-
-### 4. 双指针
-
-- 判断数组是否有序，指针移动的条件是什么？
-
-#### 有序
-
-1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
-2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
-3. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
-
-#### 滑动窗口（无序）
-
-- 子数组、子字符串问题
-
-1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
-2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
-3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
-
-#### 待归类
-
-1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
-2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
-3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
-4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
-7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-8. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
-
-### 5. 栈/队列/堆
-
-#### 栈
-
-- 判断括号是否有效
-
-1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
-2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
-3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
-4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
-   
-#### 队列/双向队列
-
-1. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
-2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
-
-#### 堆
-
-- Top K问题、求中位数或中位数变体(99值问题)
-
-1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
-2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
-3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
-4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
-
-### 6. 哈希
-
-1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
-2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
-3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/submissions/): 自建hash函数
-4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
-5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
-
-### 7. 二叉树
+### 2. 二叉树
 
 - 前、中、后序遍历模板
 
@@ -254,7 +136,7 @@ inf bfs(Node node, Node target) {
 5. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 6. [剑指 Offer 07. 重建二叉树 中等](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/)
 
-### 8. 动态规划
+### 3. 动态规划
 
 动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
 
@@ -327,16 +209,7 @@ for (int i = 0; i < n1; i++) {
 18. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 19. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
 
-### 9. 贪心算法
-
-- 分糖果、最短服务时间和区间覆盖问题
-
-1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
-2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
-3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
-4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
-
-### 10. 回溯
+### 4. 回溯
 
 回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
 而走过的 **"路径"** 当满足结束条件时即为答案之一，它的解题模板如下
@@ -364,33 +237,161 @@ def backtrack(路径, 选择列表):
 4. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
 5. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
 
-### 11. 递归
+### 5. 递归
 
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
-### 12. 位运算
+### 6. 贪心算法
+
+- 分糖果、最短服务时间和区间覆盖问题
+
+1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
+3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
+4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
+
+### 7. 二分查找
+
+**思路很简单，细节是魔鬼**。双闭区间模板如下，不过注意其中的细节可能改变
+
+```java
+    int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+
+        // 这里变？
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] < target) {
+                // 这里变？
+                left = mid + 1;
+            } else if (nums[mid] > target) {
+                // 这里变？
+                right = mid - 1;
+            } else {
+                // 还是这里变？
+                return mid;
+            }
+        }
+
+        return -1;
+    }
+```
+
+#### 数组有序
+
+1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
+2. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+
+#### 旋转有序数组
+
+1. [剑指 Offer 11. 旋转数组的最小数字 简单](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
+2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+
+#### 二维数组
+
+1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
+
+#### 无序
+
+> 对于无序数组，那么结束条件和搜索区间的变化就不能盲目的遵循 双闭区间 或 左闭右开区间
+
+1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+
+### 8. 双指针
+
+- 判断数组是否有序，指针移动的条件是什么？
+
+#### 有序
+
+1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+3. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+
+#### 滑动窗口（无序）
+
+- 子数组、子字符串问题
+
+1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
+
+#### 待归类
+
+1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
+2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
+3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
+4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
+7. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+8. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+
+
+### 9. 前缀和
+
+- 连续子数组
+
+1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
+2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
+
+### 10. 哈希
+
+1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
+2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
+3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/submissions/): 自建hash函数
+4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
+5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
+
+### 11. 栈/队列/堆
+
+#### 栈
+
+- 判断括号是否有效
+
+1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
+2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
+3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
+4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+   
+#### 队列/双向队列
+
+1. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
+
+#### 堆
+
+- Top K问题、求中位数或中位数变体(99值问题)
+
+1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
+2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
+3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
+4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
+
+### 12. 字符串
+
+1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)
+2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
+3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
+4. [剑指 Offer 05. 替换空格 简单](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
+5. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
+6. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
+
+### 13. 位运算
 
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
 4. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
 
-### 13. 排序算法
+### 14. 排序算法
 
 1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
 2. [插入排序](https://www.hello-algo.com/chapter_sorting/insertion_sort/)
 3. [快速排序](https://www.hello-algo.com/chapter_sorting/quick_sort/)
 4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
-
-### 14. 前缀和
-
-> **Tips**: 连续子数组
-
-1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
-2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
 
 ### 15. 其他
 
