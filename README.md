@@ -145,7 +145,7 @@ inf bfs(Node node, Node target) {
 3. 它的状态转移方程是怎样的？
 4. 如何定义dp来表现状态或采用回溯法时如何用方法来表示它的状态？
 
-- 最值问题
+#### 最值问题
 
 ```java
 // 解题模板
@@ -156,7 +156,21 @@ for 状态1 in 状态1中的所有值
             dp[状态1][状态2][...] = 状态转移方程 = 最值;
 ```
 
-- 子序列问题
+1. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
+2. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
+3. [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)
+4. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
+5. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
+6. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
+7. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
+8. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
+9. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
+10. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
+11. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
+12. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
+13. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
+
+#### 子序列问题
 
 涉及子序列，一般情况下时间复杂度为 $O(n^2)$，那么就跑不了双层的for循环
 
@@ -189,25 +203,15 @@ for (int i = 0; i < n1; i++) {
 }
 ```
 
-1. [剑指 Offer 10- I. 斐波那契数列 简单](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)
-2. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
-3. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
-4. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
-5. [剑指 Offer II 099. 最小路径之和 中等](https://leetcode.cn/problems/0i0mDW/)
-6. [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)
-7. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
-8. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
-9. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
-10. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
-11. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
-12. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
-13. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/?favorite=xb9nqhhg)
-14. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
-15. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
-16. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
-17. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/)
-18. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
-19. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
+
+1. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
+2. [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)
+3. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/): 回文串系列都是反向遍历
+4. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+
+#### 其他问题
+
+1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
 ### 4. 回溯
 
