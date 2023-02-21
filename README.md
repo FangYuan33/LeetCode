@@ -162,13 +162,12 @@ for 状态1 in 状态1中的所有值
 4. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 5. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 6. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
-7. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
-8. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
-9. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
-10. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
-11. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
-12. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
-13. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
+7. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
+8. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
+9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
+10. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
+11. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
+12. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
 
 #### 子序列问题
 
@@ -216,7 +215,7 @@ for (int i = 0; i < n1; i++) {
 ### 4. 回溯
 
 回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
-而走过的 **"路径"** 当满足结束条件时即为答案之一，它的解题模板如下
+而走过的 **"路径"** 当满足结束条件时即为答案之一。回溯算法用于解决**全排列、八皇后、正则表达式匹配和某些做选择的动态规划**问题，它的解题模板如下
 
 ```xml
 result = [];
@@ -233,13 +232,12 @@ def backtrack(路径, 选择列表):
         路径.remove(选择)
 ```
 
-- 求全排列
-
-1. [剑指 Offer II 083. 没有重复元素集合的全排列 中等](https://leetcode.cn/problems/VvJkup/)
+1. [46. 全排列 中等](https://leetcode.cn/problems/permutations/)
 2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
-3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
-4. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
-5. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
+3. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
+4. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
+5. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
+6. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 
 ### 5. 递归
 
@@ -247,6 +245,8 @@ def backtrack(路径, 选择列表):
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+5. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+6. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
 
 ### 6. 贪心算法
 
