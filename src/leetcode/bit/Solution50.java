@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.bit;
 
 public class Solution50 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.binarysearch;
 
 public class Solution154 {
 

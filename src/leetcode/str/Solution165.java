@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.str;
 
 public class Solution165 {
 
