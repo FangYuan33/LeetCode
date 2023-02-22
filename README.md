@@ -239,7 +239,14 @@ def backtrack(路径, 选择列表):
 5. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
 6. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 
-### 5. 递归
+### 5. 贪心算法
+
+1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
+3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
+4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
+
+### 6. 递归
 
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
@@ -247,15 +254,6 @@ def backtrack(路径, 选择列表):
 4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 5. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 6. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
-
-### 6. 贪心算法
-
-- 分糖果、最短服务时间和区间覆盖问题
-
-1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
-2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
-3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
-4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/description/)
 
 ### 7. 二分查找
 
