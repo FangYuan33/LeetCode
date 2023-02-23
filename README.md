@@ -233,11 +233,13 @@ def backtrack(路径, 选择列表):
 ```
 
 1. [46. 全排列 中等](https://leetcode.cn/problems/permutations/)
-2. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
-3. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
-4. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
-5. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
-6. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
+2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
+3. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
+4. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
+5. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
+6. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
+7. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
+8. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 
 ### 5. 贪心算法
 
@@ -248,12 +250,11 @@ def backtrack(路径, 选择列表):
 
 ### 6. 递归
 
+递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
+
 1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
-2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
-3. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
-4. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
-5. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
-6. [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)
+2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
 ### 7. 二分查找
 
