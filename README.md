@@ -166,8 +166,7 @@ for 状态1 in 状态1中的所有值
 8. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 10. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
-11. [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)
-12. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
+11. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
 
 #### 子序列问题
 
