@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode.tree.postorder;
 
 public class SolutionOffer33 {
     public boolean verifyPostorder(int[] postorder) {
