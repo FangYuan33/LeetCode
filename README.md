@@ -1,43 +1,55 @@
 ### 1. 链表
 
-#### 改变链表节点顺序
+#### 链表反转
+
+```java
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+
+        while (head != null) {
+            ListNode temp = head.next;
+            head.next = pre;
+            pre = head;
+            head = temp;
+        }
+
+        return pre;
+    }
+```
 
 1. [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)
-2. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
-3. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
-4. [剑指 Offer II 027. 回文链表 简单](https://leetcode.cn/problems/aMhZSa/)
-5. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
+2. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/): 也可递归解决
+3. [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/): 快慢指针分开链表
+4. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
+5. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 
-#### 递归
+#### 递归 合并链表
 
-1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
-2. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
-3. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想
+1. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
+2. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想(想想归并排序)
+3. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/): 也是分治的思想，但是它的难度是中等，其实和上一题差不多
 
-#### 双指针 or 快慢指针
+#### 双指针、快慢指针
 
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
-2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
-3. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
-4. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+2. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+3. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
+4. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
-#### 合并链表
-
-1. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)
-
-#### 辅助栈
-
-1. [剑指 Offer II 025. 链表中的两数相加 中等](https://leetcode.cn/problems/lMSNwu/)
-
-#### 删除链表节点
+#### 前驱节点在删除链表节点中的应用
 
 1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
 2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 
-#### 其他
+#### 辅助栈
 
-1. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+1. [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)
+
+#### 推导
+
+1. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
+2. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
 ### 2. 二叉树
 
