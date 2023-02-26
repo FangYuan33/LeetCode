@@ -375,7 +375,7 @@ def backtrack(路径, 选择列表):
 
 ### 栈
 
-- 判断括号是否有效
+栈用于解决**括号是否有效**的问题
 
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
@@ -384,13 +384,12 @@ def backtrack(路径, 选择列表):
    
 ### 队列/双向队列
 
-4. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
-1. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/): 用双向队列实现单调队列
 2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
 
 ### 堆
 
-- Top K问题、求中位数或中位数变体(99值问题)
+堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
 
 1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
 2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
