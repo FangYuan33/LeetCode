@@ -345,12 +345,23 @@ def backtrack(路径, 选择列表):
 4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
-## 9. 前缀和
+## 9. 字符串
 
-- 连续子数组
+### 字符串操作
 
-1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
-2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
+- `s.trim()` 去掉字符串两边的空格
+
+1. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
+2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
+
+### 字符转数字
+
+- `s.charAt(i) - '0'` = 数字
+- `Integer.parseInt()` 字符串转整数自动忽略前导0
+
+1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/): 
+2. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
+3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
 
 ## 10. 哈希
 
@@ -373,6 +384,7 @@ def backtrack(路径, 选择列表):
    
 ### 队列/双向队列
 
+4. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
 1. [剑指 Offer 59 - I. 滑动窗口的最大值 困难](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
 
@@ -385,28 +397,23 @@ def backtrack(路径, 选择列表):
 3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
 4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
 
-## 12. 字符串
+## 12. 前缀和
 
-1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)
-2. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
-3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
-4. [剑指 Offer 05. 替换空格 简单](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
-5. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
-6. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
+- 连续子数组
 
-## 13. 位运算
+1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
+2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
+
+## 13. 排序算法
+
+1. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
+
+## 14. 位运算
 
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
 4. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
-
-## 14. 排序算法
-
-1. [冒泡排序](https://www.hello-algo.com/chapter_sorting/bubble_sort/)
-2. [插入排序](https://www.hello-algo.com/chapter_sorting/insertion_sort/)
-3. [快速排序](https://www.hello-algo.com/chapter_sorting/quick_sort/)
-4. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 
 ## 15. 其他
 
