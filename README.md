@@ -313,34 +313,37 @@ def backtrack(路径, 选择列表):
 
 1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
-## 8. 双指针
+## 8. 双指针、滑动窗口
 
-- 判断数组是否有序，指针移动的条件是什么？
+双指针解题考虑点
 
-### 有序
+- 数组是否有序？
+- 初始指针怎么定义，是在用一个位置还是在数组两边？
+- 指针移动的条件是什么？
+- 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
+
+### 双指针
+
+针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
 
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
-2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
-3. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+2. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+3. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+4[42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
+5[剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+6[125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
 
-### 滑动窗口（无序）
-
-- 子数组、子字符串问题
-
-1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
-2. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
-3. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
-
-### 待归类
+两个有序数组的合并问题，一个数组分别一个指针
 
 1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
-2. [剑指 Offer II 018. 有效的回文 简单](https://leetcode.cn/problems/XltzEq/)
-3. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
-4. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-5. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
-6. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-7. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
+### 滑动窗口
+
+1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
+5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
 ## 9. 前缀和
 
