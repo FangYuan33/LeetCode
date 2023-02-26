@@ -400,7 +400,7 @@ def backtrack(路径, 选择列表):
 
 ## 12. 前缀和
 
-- 连续子数组
+**包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
