@@ -16,10 +16,13 @@ public class SolutionOffer572 {
             nums[i] = i + 1;
         }
 
+        // 初始化窗口
         int left = 0, right = left + 1;
         int sum = nums[left] + nums[right];
+
         while (right < nums.length) {
             if (sum < target) {
+                // 窗口变大
                 right++;
                 if (right < nums.length) {
                     sum += nums[right];
@@ -27,6 +30,7 @@ public class SolutionOffer572 {
                     break;
                 }
             } else if (sum > target) {
+                // 窗口缩小
                 sum -= nums[left];
                 left++;
             } else {
@@ -36,6 +40,7 @@ public class SolutionOffer572 {
                 }
                 res.add(element);
 
+                // 窗口缩小
                 sum -= nums[left];
                 left++;
             }
