@@ -413,8 +413,7 @@ def backtrack(路径, 选择列表):
 
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
-3. [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)
-4. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
+3. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
 
 ## 15. 其他
 
