@@ -248,12 +248,13 @@ def backtrack(路径, 选择列表):
 
 1. [46. 全排列 中等](https://leetcode.cn/problems/permutations/)
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
-3. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
-4. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
-5. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
-6. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
-7. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
-8. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
+3. [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)
+4. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
+5. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
+6. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
+7. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
+8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
+9. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 
 ## 5. 贪心算法
 
@@ -398,6 +399,7 @@ def backtrack(路径, 选择列表):
 2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
 3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
 4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
+5. [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)
 
 ## 12. 前缀和
 
