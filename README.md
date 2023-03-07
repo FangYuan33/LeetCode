@@ -262,6 +262,7 @@ def backtrack(路径, 选择列表):
 2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
+5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
 
 ## 6. 递归
 
