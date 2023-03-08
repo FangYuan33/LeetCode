@@ -1,4 +1,4 @@
-package leetcode.doublepointer;
+package leetcode.slidingwindow;
 
 public class Solution713 {
     public int numSubarrayProductLessThanK(int[] nums, int k) {

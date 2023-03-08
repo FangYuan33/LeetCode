@@ -1,4 +1,4 @@
-package leetcode.doublepointer;
+package leetcode.slidingwindow;
 
 public class Solution76 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package leetcode.doublepointer;
+package leetcode.slidingwindow;
 
 public class SolutionOffer57 {
     public int[] twoSum(int[] nums, int target) {

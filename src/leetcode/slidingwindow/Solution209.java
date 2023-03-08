@@ -1,4 +1,4 @@
-package leetcode.doublepointer;
+package leetcode.slidingwindow;
 
 public class Solution209 {
     public int minSubArrayLen(int target, int[] nums) {
