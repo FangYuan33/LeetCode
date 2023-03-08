@@ -412,6 +412,7 @@ def backtrack(路径, 选择列表):
 ## 13. 排序算法
 
 1. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
+2. [75. 颜色分类 中等](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 有点儿像快排的哨兵交换环节
 
 ## 14. 位运算
 
