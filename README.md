@@ -381,10 +381,24 @@ def backtrack(路径, 选择列表):
 
 栈用于解决**括号是否有效**的问题
 
+单调递增栈模版如下
+
+```java
+Stack<Integer> stack = new Stack<>();
+
+for (int i = 0; i < nums.length; i++) {
+    while (!stack.isEmpty() && nums[i] < stack.peek()) {
+        stack.pop();
+    }
+    stack.push(nums[i]);
+}
+```
+
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
 3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
 4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+5. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
    
 ### 队列/双向队列
 
