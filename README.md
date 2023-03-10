@@ -406,6 +406,7 @@ for (int i = 0; i < nums.length; i++) {
 
 1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
 2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
+3. [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/): 单调递减栈
    
 ### 队列/双向队列
 
