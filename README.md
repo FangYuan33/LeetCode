@@ -330,9 +330,8 @@ def backtrack(路径, 选择列表):
 1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 2. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 3. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-4. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)
-5. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-6. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
+4. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+5. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
 
 两个有序数组的合并问题，一个数组分别一个指针
 
@@ -405,7 +404,8 @@ for (int i = 0; i < nums.length; i++) {
 }
 ```   
 
-1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
+1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
+2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
    
 ### 队列/双向队列
 
