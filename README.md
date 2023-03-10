@@ -381,7 +381,18 @@ def backtrack(路径, 选择列表):
 
 栈用于解决**括号是否有效**的问题
 
-单调递增栈模版如下
+1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
+2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
+3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
+4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+
+#### 单调栈
+
+单调递增栈可以找到**距离当前栈顶元素左右两侧最近的小于当前元素的值**（单调递减栈相反，它能找到距离当前栈顶元素左右两侧最近的大于当前值的元素）。
+以单调递增栈为例，较小的值入栈的过程就像是它要"挤走"所有比它大的值，比它大的值不断地（while条件）出栈，
+而这个入栈的小值就是这些出栈元素右侧距离最近的小于当前元素的值。
+
+递增栈模版如下
 
 ```java
 Stack<Integer> stack = new Stack<>();
@@ -392,18 +403,18 @@ for (int i = 0; i < nums.length; i++) {
     }
     stack.push(nums[i]);
 }
-```
+```   
 
-1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
-2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
-3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
-4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
-5. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
+1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
    
 ### 队列/双向队列
 
-1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/): 用双向队列实现单调队列
-2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/): 和上一题思想一致
+#### 单调队列
+
+单调队列则是在单调栈的基础上实现**数据的两端操作**
+
+1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
+2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
 
 ### 堆
 

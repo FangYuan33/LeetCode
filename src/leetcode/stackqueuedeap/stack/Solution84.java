@@ -1,4 +1,4 @@
-package leetcode.stackqueuedeap.queue;
+package leetcode.stackqueuedeap.stack;
 
 import java.util.*;
 
