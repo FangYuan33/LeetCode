@@ -398,9 +398,11 @@ Stack<Integer> stack = new Stack<>();
 
 for (int i = 0; i < nums.length; i++) {
     while (!stack.isEmpty() && nums[i] < stack.peek()) {
-        stack.pop();
+        // 注意这个里弹出索引的妙用
+        int index = stack.pop();
     }
-    stack.push(nums[i]);
+    // 这里一般压入索引
+    stack.push(i);
 }
 ```   
 
