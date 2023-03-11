@@ -150,6 +150,7 @@ inf bfs(Node node, Node target) {
 ### 递归
 
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
+2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
 
 ## 3. 动态规划
 
