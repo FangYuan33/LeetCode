@@ -256,6 +256,7 @@ def backtrack(路径, 选择列表):
 7. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
 8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
 9. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
+10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头
 
 ## 5. 贪心算法
 
