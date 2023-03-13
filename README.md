@@ -437,6 +437,7 @@ for (int i = 0; i < nums.length; i++) {
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
+3. [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)
 
 ## 14. 排序算法
 
