@@ -1,4 +1,4 @@
-package leetcode.other;
+package leetcode.datastructure;
 
 import java.util.LinkedHashMap;
 
