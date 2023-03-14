@@ -450,8 +450,13 @@ for (int i = 0; i < nums.length; i++) {
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
 
-## 16. 其他
+## 16. 数据结构
+
+1. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
+2. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
+
+## 17. 其他
 
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
-3. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
+
