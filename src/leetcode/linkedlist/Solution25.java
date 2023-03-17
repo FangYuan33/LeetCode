@@ -27,7 +27,7 @@ public class Solution25 {
             ListNode nextBegin = end.next;
             // 拆分出反转链表
             end.next = null;
-            // 开始反转
+            // 开始反转 注意这里的拼接！
             reversePre.next = reverse(begin);
             // 反转完毕后组装，begin节点变成了尾巴节点
             begin.next = nextBegin;
