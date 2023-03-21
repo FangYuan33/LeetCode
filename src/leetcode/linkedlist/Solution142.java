@@ -4,6 +4,7 @@ import leetcode.ListNode;
 
 public class Solution142 {
     public ListNode detectCycle(ListNode head) {
+        // 空节点和单节点不能成环
         if (head == null || head.next == null) {
             return null;
         }
@@ -15,7 +16,8 @@ public class Solution142 {
             slow = slow.next;
             // 相遇说明有环
             if (slow == fast) {
-                // 推导公式出结果 slow 和 head一起走到环入口
+                // 推导公式出结果 头结点和慢节点一起走并相遇时可以到达环的入口
+                // 因为此时一起走并相遇正好走了n圈
                 while (slow != head) {
                     slow = slow.next;
                     head = head.next;
