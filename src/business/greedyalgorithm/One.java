@@ -3,6 +3,7 @@ package business.greedyalgorithm;
 import java.util.*;
 
 public class One {
+
     /**
      * map key: id, value num
      * target 每组最大的数量
@@ -12,16 +13,10 @@ public class One {
      * result: 1, 4; 2, 5; 3 or 1, 2, 5; 3; 4
      */
     public List<List<Integer>> split(Map<Integer, Integer> map, int target) {
-        this.target = target;
-        res = new ArrayList<>();
-        memo = new HashSet<>(map.size());
-
         // 根据value值对map进行排序，这样根据贪心算法可以使每个数按顺序选到能与它匹配的最大值
         LinkedHashMap<Integer, Integer> linkedHashMap = orderByValue(map);
 
-        backtrack(new ArrayList<>(), 0, linkedHashMap);
-
-        return res;
+        return greedy(linkedHashMap, target);
     }
 
     private LinkedHashMap<Integer, Integer> orderByValue(Map<Integer, Integer> map) {
@@ -38,52 +33,45 @@ public class One {
         return linkedHashMap;
     }
 
-    private int target;
-    List<List<Integer>> res;
+
     /**
-     * 备忘录
+     * 先确定一个值，然后猛拿大的值，直到拿不到为止，拿过的值都放到备忘录里去重
      */
-    private Set<Integer> memo;
+    private List<List<Integer>> greedy(LinkedHashMap<Integer, Integer> linkedHashMap, int target) {
+        // 结果集
+        List<List<Integer>> res = new ArrayList<>();
+        // 备忘录用于去重
+        Set<Integer> memo = new HashSet<>(linkedHashMap.size());
 
-    private void backtrack(ArrayList<Integer> element, int sum, LinkedHashMap<Integer, Integer> map) {
-        // 找到最后了，没有合适的了就添加进来
-        if (memo.size() == map.size()) {
-            res.add(element);
-            return;
-        }
-
-
-        // 遍历所有能选择的元素
-        Set<Integer> keySet = map.keySet();
-        for (Integer key : keySet) {
-            // 备忘录判断
-            if (memo.contains(key)) {
+        Integer[] keys = linkedHashMap.keySet().toArray(new Integer[0]);
+        for (int i = 0; i < keys.length; i++) {
+            // 去重
+            if (memo.contains(keys[i])) {
                 continue;
             }
+            // 每次先选一个数然后再去匹配
+            int sum = linkedHashMap.get(keys[i]);
+            ArrayList<Integer> element = new ArrayList<>();
+            element.add(keys[i]);
 
-            // 获取该id对应的值
-            Integer value = map.get(key);
-            // 如果求和比目标值小的话，继续向下回溯
-            if (sum + value <= target) {
-                element.add(key);
-                // 添加到备忘录
-                memo.add(key);
-                sum += value;
-
-                backtrack(element, sum, map);
-            } else {
-                // 添加到备忘录
-                memo.add(key);
-                // 如果大于的话 不能添加
-                backtrack(element, sum, map);
-                // 从备忘录移除
-                memo.remove(key);
+            // 开始猛拿
+            for (int j = i + 1; j < keys.length; j++) {
+                // 去重
+                if (memo.contains(keys[j])) {
+                    continue;
+                }
+                // 遍历了之后所有的数
+                if (sum + linkedHashMap.get(keys[j]) <= target) {
+                    sum += linkedHashMap.get(keys[j]);
+                    element.add(keys[j]);
+                    memo.add(keys[j]);
+                }
             }
-
-            // 回溯完成该值后 sum要清0
-            sum = 0;
-            element = new ArrayList<>();
+            // 遍历完成后说明没有再能够添加的值了
+            res.add(element);
         }
+
+        return res;
     }
 
     public static void main(String[] args) {
@@ -93,6 +81,11 @@ public class One {
         map.put(3, 4);
         map.put(4, 4);
         map.put(5, 2);
+        map.put(6, 1);
+        map.put(7, 1);
+        map.put(8, 2);
+        map.put(9, 4);
+        map.put(10, 4);
 
         System.out.println(new One().split(map, 5));
     }
