@@ -5,6 +5,7 @@ public class SolutionOffer33 {
         return doVerifyPostorder(postorder, 0, postorder.length - 1);
     }
 
+    // 其中 begin 为要验证的树的开始索引 end为树的结束索引
     private boolean doVerifyPostorder(int[] postorder, int left, int right) {
         if (left >= right) {
             return true;
