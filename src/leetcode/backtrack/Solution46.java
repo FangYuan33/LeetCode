@@ -5,10 +5,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Solution46 {
-    List<List<Integer>> res = new ArrayList<>();
+    List<List<Integer>> res;
 
     public List<List<Integer>> permute(int[] nums) {
-        backtrack(new LinkedList<Integer>(), nums);
+        res = new ArrayList<>();
+        backtrack(new LinkedList<>(), nums);
         return res;
     }
 
@@ -30,5 +31,10 @@ public class Solution46 {
             // 移除添加的结果
             element.removeLast();
         }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3};
+        System.out.println(new Solution46().permute(nums));
     }
 }
