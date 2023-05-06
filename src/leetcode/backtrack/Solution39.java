@@ -6,34 +6,32 @@ import java.util.List;
 
 public class Solution39 {
     List<List<Integer>> res;
-    int beginIndex = 0;
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         res = new ArrayList<>();
-        backtrack(new LinkedList<>(), 0, candidates, target);
+        backtrack(candidates, new LinkedList<Integer>(), 0, target);
 
         return res;
     }
 
-    private void backtrack(LinkedList<Integer> element, int sum, int[] candidates, int target) {
-        // 结束条件
-        if (sum >= target) {
-            if (sum == target) {
+    private void backtrack(int[] candidates, LinkedList<Integer> element, int begin, int target) {
+        if (target <= 0) {
+            if (target == 0) {
                 res.add((List) element.clone());
             }
 
             return;
         }
 
-        for (int i = beginIndex; i < candidates.length; i++) {
+        for (int i = begin; i < candidates.length; i++) {
+            target -= candidates[i];
             element.add(candidates[i]);
-            sum += candidates[i];
-            // 难点就在这里而已，其实也不难
-            beginIndex = i;
 
-            backtrack(element, sum, candidates, target);
+            // 注意这里的 i 的选择
+            backtrack(candidates, element, i, target);
 
-            sum -= candidates[i];
+            // 回溯完成后移除
+            target += candidates[i];
             element.removeLast();
         }
     }
