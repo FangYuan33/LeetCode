@@ -7,35 +7,47 @@ import java.util.List;
 
 public class Solution40 {
 
-    List<List<Integer>> res;
+    public static void main(String[] args) {
+        int[] candidates = new int[]{2, 5, 2, 1, 2};
+
+        System.out.println(new Solution40().combinationSum2(candidates, 5));
+    }
+
+    private List<List<Integer>> res;
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        this.res = new ArrayList<>();
+        res = new ArrayList<>();
+        // *排序
         Arrays.sort(candidates);
-        backtrack(target, new LinkedList<>(), candidates, 0);
+        backtrack(candidates, 0, new LinkedList<>(), target);
+
         return res;
     }
 
-    private void backtrack(int target, LinkedList<Integer> element, int[] candidates, int index) {
-        // 结束条件 target为0
-        if (target == 0) {
-            res.add((List) element.clone());
+    private void backtrack(int[] candidates, int begin, LinkedList<Integer> element, int target) {
+        // 结束条件
+        if (target <= 0) {
+            if (target == 0) {
+                res.add((List) element.clone());
+            }
+            return;
         }
 
-        for (int i = index; i < candidates.length; i++) {
-            // 如果当前数比目标值小的话才继续向下回溯
-            if (candidates[i] <= target) {
-                // 去重
-                if (i > index && candidates[i - 1] == candidates[i]) {
-                    continue;
-                }
-                target -= candidates[i];
-                element.addLast(candidates[i]);
-                backtrack(target, element, candidates, i + 1);
-                // 执行完该轮 把添加和改动的值去掉
-                target += candidates[i];
-                element.removeLast();
+        // 做选择
+        for (int i = begin; i < candidates.length; i++) {
+            // 去重，正常情况下 i > begin 是第一次选不进这里
+            // 只有说经过第一轮选择之后，再次进入这个循环才会来这里做校验，校验的是上一轮结果中是否在这个位置选过改元素，如果选过的话，需要跳过去重
+            if (i > begin && candidates[i - 1] == candidates[i]) {
+                continue;
             }
+
+            target -= candidates[i];
+            element.add(candidates[i]);
+
+            backtrack(candidates, i + 1, element, target);
+
+            target += candidates[i];
+            element.removeLast();
         }
     }
 }
