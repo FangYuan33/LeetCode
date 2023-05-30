@@ -5,39 +5,34 @@ import leetcode.TreeNode;
 import java.util.HashMap;
 
 public class Solution337 {
+
     private HashMap<TreeNode, Integer> memo = new HashMap<>();
 
     public int rob(TreeNode root) {
-        return backtrack(root);
-    }
-
-    private int backtrack(TreeNode node) {
-        // 结束条件 叶子节点
-        if (node == null) {
+        if (root == null) {
             return 0;
         }
-        if (memo.containsKey(node)) {
-            return memo.get(node);
+        if (memo.containsKey(root)) {
+            return memo.get(root);
         }
 
         // 偷当前节点
-        int value = node.val;
-        // 跳过当前节点的子节点 去偷
-        if (node.left != null) {
-            value += backtrack(node.left.left);
-            value += backtrack(node.left.right);
+        int value1 = root.val;
+        // 再去偷只能跳过左右节点去偷子节点
+        if (root.left != null) {
+            value1 += rob(root.left.left);
+            value1 += rob(root.left.right);
         }
-        if (node.right != null) {
-            value += backtrack(node.right.left);
-            value += backtrack(node.right.right);
+        if (root.right != null) {
+            value1 += rob(root.right.left);
+            value1 += rob(root.right.right);
         }
 
         // 不偷当前节点
-        int value2 = backtrack(node.left) + backtrack(node.right);
+        int value2 = rob(root.left) + rob(root.right);
 
-        // 备忘录解决超时问题
-        int res = Math.max(value, value2);
-        memo.put(node, res);
+        int res = Math.max(value1, value2);
+        memo.put(root, res);
 
         return res;
     }
