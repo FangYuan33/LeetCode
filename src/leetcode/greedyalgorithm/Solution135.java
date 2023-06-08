@@ -4,30 +4,27 @@ import java.util.Arrays;
 
 public class Solution135 {
     public int candy(int[] ratings) {
-        // 从左遍历，和左侧学生比较
-        // 从右遍历，和右侧学生比较，两个比较结果的最大值满足条件
-
-        // 每人先分1个糖果
+        // 左右两边分别比一次，去两者最大值
         int[] left = new int[ratings.length];
         int[] right = new int[ratings.length];
         Arrays.fill(left, 1);
         Arrays.fill(right, 1);
 
-        // 从左往右分
-        for (int i = 1; i < ratings.length; i++) {
-            // 多的话多分一颗
+        // 从第二个同学开始，不断地比较左边
+        for (int i = 1; i < left.length; i++) {
             if (ratings[i] > ratings[i - 1]) {
                 left[i] = left[i - 1] + 1;
             }
         }
+        // 注意这里，比较完左边后，最后一个同学的糖果数量就确定了，直接赋值即可
         int candyCount = left[left.length - 1];
-        // 从右往左分
-        for (int i = ratings.length - 2; i >= 0; i--) {
-            // 多的话也多分一颗
+        // 从倒数第二个同学开始比，不断地比较右边
+        for (int i = right.length - 2; i >= 0; i--) {
             if (ratings[i] > ratings[i + 1]) {
                 right[i] = right[i + 1] + 1;
             }
-            candyCount += Math.max(right[i], left[i]);
+            // 已经赋值了最右侧的同学，不断的从倒数第二个同学累加即可
+            candyCount += Math.max(left[i], right[i]);
         }
 
         return candyCount;
