@@ -1,6 +1,6 @@
 package leetcode.recursion;
 
-public class Solution13 {
+public class SolutionOffer13 {
     private int m;
     private int n;
     private int k;
@@ -11,21 +11,19 @@ public class Solution13 {
         this.n = n;
         this.k = k;
 
+        // 这个可能会重复，所以需要 boolean[][] visited 来记录
         recursion(0, 0, new boolean[m][n]);
 
         return res;
     }
 
     private void recursion(int row, int column, boolean[][] visited) {
-        // 结束条件 越界 超过规定的k值
-        if (row >= m || column >= n || row % 10 + row / 10 % 10 + column % 10 + column / 10 % 10 > k) {
+        // 结束条件：越界、超过规定的k值、已经访问过
+        if (row >= m || column >= n || row % 10 + row / 10 % 10 + column % 10 + column / 10 % 10 > k || visited[row][column]) {
             return;
         }
 
-        if (visited[row][column]) {
-            return;
-        }
-
+        // 到达某个格子结果加1
         res++;
         visited[row][column] = true;
 
@@ -35,6 +33,6 @@ public class Solution13 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution13().movingCount(2, 3, 1));
+        System.out.println(new SolutionOffer13().movingCount(2, 3, 1));
     }
 }
