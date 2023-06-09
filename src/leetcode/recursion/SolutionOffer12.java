@@ -35,6 +35,7 @@ public class SolutionOffer12 {
         boolean res3 = recursion(board, row, column + 1, visited, word, n + 1);
         boolean res4 = recursion(board, row, column - 1, visited, word, n + 1);
 
+        // 匹配完成该节点后再把它改回来
         visited[row][column] = false;
 
         return res1 || res2 || res3 || res4;
