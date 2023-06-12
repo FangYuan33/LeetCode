@@ -4,28 +4,33 @@ public class SolutionOffer53 {
     public int search(int[] nums, int target) {
         int res = 0;
 
+        // 二分查找
         int left = 0, right = nums.length - 1;
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            int mid = (left + right) / 2;
 
-            if (target > nums[mid]) {
-                left = mid + 1;
-            } else if (target < nums[mid]) {
+            if (nums[mid] > target) {
                 right = mid - 1;
+            } else if (nums[mid] < target) {
+                left = mid + 1;
             } else {
-                // 找到之后分别再向左向右找
-                left = mid;
-                right = mid;
-                while (left > 0 && nums[left - 1] == target) {
-                    left--;
+                // 找到了之后左找找右找找
+                res++;
+                // 注意这里索引值的定义
+                int index = mid;
+                while (index < nums.length - 1 && nums[index + 1] == target) {
+                    res++;
+                    index++;
                 }
-                while (right < nums.length - 1 && nums[right + 1] == target) {
-                    right++;
+                index = mid;
+                while (index > 0 && nums[index - 1] == target) {
+                    res++;
+                    index--;
                 }
-                res = right - left + 1;
                 break;
             }
         }
+
 
         return res;
     }
