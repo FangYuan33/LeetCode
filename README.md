@@ -310,14 +310,11 @@ def backtrack(路径, 选择列表):
 1. [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)
 2. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 3. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+4. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
 ### 数组无序
 
 1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
-
-### 二维数组
-
-1. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
 
 ## 8. 双指针
 
