@@ -10,38 +10,49 @@ public class Solution15 {
     }
 
     public List<List<Integer>> threeSum(int[] nums) {
+        // 先排序
         Arrays.sort(nums);
+        // 答案的结果集
         List<List<Integer>> res = new ArrayList<>();
 
         for (int i = 0; i < nums.length; i++) {
-            // 去重
-            if (i > 0 && nums[i - 1] == nums[i]) {
+            // 第一个数不能比0大
+            if (nums[i] > 0) {
+                break;
+            }
+            // 判断重复
+            if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
 
             int left = i + 1, right = nums.length - 1;
             while (left < right) {
+                // 定1个，剩下2个用双指针来选
+                List<Integer> element = new ArrayList<>();
+                element.add(nums[i]);
                 int sum = nums[i] + nums[left] + nums[right];
 
                 if (sum == 0) {
-                    List<Integer> element = Arrays.asList(nums[i], nums[left], nums[right]);
+                    // 符合条件的答案
+                    element.add(nums[left]);
+                    element.add(nums[right]);
                     res.add(element);
 
                     // 去重
-                    while (left < right && nums[left] == nums[left + 1]) {
+                    while (left < nums.length - 1 && nums[left] == nums[left + 1]) {
                         left++;
                     }
-                    while (left < right && nums[right] == nums[right - 1]) {
+                    while (right > 0 && nums[right] == nums[right - 1]) {
                         right--;
                     }
 
-                    // 不等条件
+                    // 指针移动
                     left++;
                     right--;
-                } else if (sum < 0) {
-                    left++;
+                } else if (sum > 0) {
+                    right--;
                 } else {
-                    right--;
+                    left++;
                 }
             }
         }
