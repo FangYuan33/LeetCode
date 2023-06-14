@@ -327,11 +327,10 @@ def backtrack(路径, 选择列表):
 
 针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
 
-1. [剑指 Offer 57. 和为s的两个数字 简单](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
-2. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
-3. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-4. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-5. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
+1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
 
 两个有序数组的合并问题，一个数组分别一个指针
 
