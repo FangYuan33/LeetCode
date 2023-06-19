@@ -27,4 +27,8 @@ public class Solution713 {
 
         return res;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution713().numSubarrayProductLessThanK(new int[]{1, 1, 1}, 2));
+    }
 }
