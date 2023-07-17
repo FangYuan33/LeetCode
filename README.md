@@ -32,15 +32,15 @@
 ### 双指针、快慢指针
 
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
-2. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
-3. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
-4. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
+2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
+3[142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
 ### 前驱节点在删除链表节点中的应用
 
 1. [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
 2. [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
 3. [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+4. [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
 ### 辅助栈
 
