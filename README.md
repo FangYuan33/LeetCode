@@ -1,5 +1,7 @@
 ## 1. 链表
 
+链表是一种 **递归** 的数据结构，与数组不同的是它不需要占用连续的内存空间，但是需要额外的空间保存后继节点的指针，以此将所有的链表节点串联起来。它的删除和插入操作比较高效，时间复杂度为 $O(1)$，但是想访问链表中某个值时，需要对链表进行遍历，时间复杂度为 $O(n)$。**链表是数组的一种重要的替代方式**。
+
 ### 链表反转
 
 ```java
@@ -23,7 +25,7 @@
 4. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 5. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 
-### 递归 合并链表
+### 递归
 
 1. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
 2. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想(想想归并排序)
