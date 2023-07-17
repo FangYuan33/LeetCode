@@ -35,7 +35,8 @@
 
 1. [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 2. [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)
-3[142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
+3. [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)
+4. [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
 
 ### 前驱节点在删除链表节点中的应用
 
