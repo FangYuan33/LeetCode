@@ -36,9 +36,7 @@ public class LRUCacheHashMap {
 
     private final HashMap<Integer, ListNode> map;
 
-    private final ListNode head;
-
-    private ListNode tail;
+    private final ListNode sentinel;
 
     private final int capacity;
 
@@ -50,10 +48,9 @@ public class LRUCacheHashMap {
         this.capacity = capacity;
         // 定义单个哨兵节点形成双向循环链表来简化边界条件的判断
         ListNode sentinel = new ListNode(-1, -1);
-        this.head = sentinel;
-        this.tail = sentinel;
-        head.right = tail;
-        tail.left = head;
+        this.sentinel = sentinel;
+        sentinel.right = sentinel;
+        sentinel.left = sentinel;
     }
 
     public int get(int key) {
@@ -79,9 +76,10 @@ public class LRUCacheHashMap {
             // 没有的话先判断容量
             if (map.size() == capacity) {
                 // 先移除头节点
-                map.remove(head.right.key);
-                head.right = head.right.right;
-                head.right.left = head;
+                ListNode head = sentinel.right;
+                map.remove(head.key);
+                sentinel.right = head.right;
+                head.right.left = sentinel;
             }
             // 插入到尾节点
             insert(node);
@@ -99,24 +97,26 @@ public class LRUCacheHashMap {
         pre.right = next;
         // 处理后继节点 next
         next.left = pre;
+
+        ListNode tail = sentinel.left;
         // 将当前节点移动到尾节点
         tail.right = node;
         node.left = tail;
         // 构建双向循环链表
-        node.right = head;
-        // 改变 tail 节点的指针
-        tail = node;
+        node.right = sentinel;
+        sentinel.left = node;
     }
 
     /**
      * 添加到尾节点
      */
     private void insert(ListNode node) {
+        ListNode tail = sentinel.left;
         // 添加到尾节点
         tail.right = node;
         node.left = tail;
-        node.right = head;
-        // 移动尾节点指针
-        tail = node;
+        // 双向循环链表
+        node.right = sentinel;
+        sentinel.left = node;
     }
 }
