@@ -30,6 +30,7 @@
 1. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
 2. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想(想想归并排序)
 3. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/): 也是分治的思想，但是它的难度是中等，其实和上一题差不多
+4. [430. 扁平化多级双向链表 中等](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
 
 ### 双指针、快慢指针
 
