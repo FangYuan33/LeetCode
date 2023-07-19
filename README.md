@@ -53,6 +53,7 @@
 
 1. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
 2. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+3. [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/)
 
 ## 2. 二叉树
 
