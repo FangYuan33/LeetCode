@@ -19,7 +19,7 @@
     }
 ```
 
-1. [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)
+1. [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/)
 
 3. [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/): 快慢指针分开链表
 4. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
