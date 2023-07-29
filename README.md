@@ -28,7 +28,7 @@
 ### 递归
 
 1. [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
-2. [21. 合并两个有序链表 简单](https://leetcode.cn/problems/merge-two-sorted-lists/)
+2. [剑指 Offer 25. 合并两个排序的链表 简单](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 3. [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/): 分治的思想(想想归并排序)
 4. [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/): 也是分治的思想，但是它的难度是中等，其实和上一题差不多
 5. [430. 扁平化多级双向链表 中等](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
