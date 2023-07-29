@@ -59,6 +59,7 @@
 2. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 3. [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/)
 4. [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)
+5. [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)
 
 ## 2. 二叉树
 
