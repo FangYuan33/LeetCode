@@ -2,32 +2,32 @@ package leetcode.linkedlist;
 
 import leetcode.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SolutionOffer06 {
-    int length = 0;
+
+    private List<Integer> res;
 
     public int[] reversePrint(ListNode head) {
-        ListNode reverse = reverse(head);
+        res = new ArrayList<>();
+        recursion(head);
 
-        int[] res = new int[length];
-        for (int i = 0; i < res.length && reverse != null; i++, reverse = reverse.next) {
-            res[i] = reverse.val;
+        int[] resArray = new int[res.size()];
+        for (int i = 0; i < resArray.length; i++) {
+            resArray[i] = res.get(i);
         }
 
-        return res;
+        return resArray;
     }
 
-    private ListNode reverse(ListNode head) {
-        ListNode pre = null;
-
-        while (head != null) {
-            ListNode temp = head.next;
-            head.next = pre;
-            pre = head;
-            head = temp;
-
-            length++;
+    private void recursion(ListNode node) {
+        // 递归结束条件
+        if (node == null) {
+            return;
         }
 
-        return pre;
+        recursion(node.next);
+        res.add(node.val);
     }
 }
