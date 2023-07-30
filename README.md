@@ -465,10 +465,10 @@ for (int i = 0; i < nums.length; i++) {
 3. [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)
 4. [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)
 5. [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)
-6. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
+6. [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/): todo
+7. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
 
 ## 17. 其他
 
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
-
