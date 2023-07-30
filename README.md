@@ -462,9 +462,10 @@ for (int i = 0; i < nums.length; i++) {
 
 1. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
 2. [460. LFU 缓存 困难](https://leetcode.cn/problems/lfu-cache/)
-3. [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)
-4. [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)
-5. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
+3. [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)
+4. [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)
+5. [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)
+6. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
 
 ## 17. 其他
 
