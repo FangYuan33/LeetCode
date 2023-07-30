@@ -61,6 +61,7 @@
 3. [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/)
 4. [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)
 5. [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)
+6. [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)
 
 ## 2. 二叉树
 
