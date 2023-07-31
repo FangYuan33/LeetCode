@@ -4,44 +4,55 @@ import leetcode.ListNode;
 
 public class Solution92 {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        ListNode res = new ListNode(-1);
-        res.next = head;
-
-        // 找到反转前置节点
-        ListNode pre = res;
-        pre.next = head;
-        while (left != 1) {
-            left--;
-            pre = pre.next;
+        if (left == right) {
+            return head;
         }
-        // 找到前置尾巴节点，避免空指针异常
-        ListNode preTail = res;
-        preTail.next = head;
-        while (right != 0) {
+
+        // 找到 right 节点和它的后继节点
+        ListNode rightNode = head;
+        while (right != 1) {
             right--;
-            preTail = preTail.next;
+            rightNode = rightNode.next;
         }
+        ListNode tail = rightNode.next;
+        // 断开链接
+        rightNode.next = null;
 
-        // 断开分割出中间要反转的链表
-        ListNode begin = pre.next;
-        ListNode tail = preTail.next;
-        preTail.next = null;
-        // 反转链表，头结点指向反转后的链表
-        pre.next = reverse(begin);
-        // 组装链表，begin变成了反转后的尾巴节点
-        begin.next = tail;
+        // 找到 left 节点和它的前驱节点
+        ListNode leftNode = head;
+        if (left == 1) {
+            ListNode newHead = reverse(head);
+            head.next = tail;
 
-        return res.next;
+            return newHead;
+        } else {
+            ListNode pre =  new ListNode(-1);
+            pre.next = head;
+
+            while (left > 1) {
+                left--;
+                leftNode = leftNode.next;
+                pre = pre.next;
+            }
+
+            // 反转并链接
+            ListNode reverseNode = reverse(leftNode);
+            pre.next = reverseNode;
+            leftNode.next = tail;
+
+            return head;
+        }
     }
 
-    private ListNode reverse(ListNode head) {
+    private ListNode reverse(ListNode node) {
         ListNode pre = null;
 
-        while (head != null) {
-            ListNode temp = head.next;
-            head.next = pre;
-            pre = head;
-            head = temp;
+        while (node != null) {
+            ListNode temp = node.next;
+
+            node.next = pre;
+            pre = node;
+            node = temp;
         }
 
         return pre;
