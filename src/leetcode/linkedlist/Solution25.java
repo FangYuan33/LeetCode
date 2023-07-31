@@ -4,40 +4,39 @@ import leetcode.ListNode;
 
 public class Solution25 {
     public ListNode reverseKGroup(ListNode head, int k) {
-        // 整个链表的前驱节点，用作结果返回
-        ListNode pre = new ListNode(-1);
-        pre.next = head;
+        ListNode res = new ListNode(-1);
+        res.next = head;
 
-        // 反转链表前的前驱节点
-        ListNode reversePre = pre;
-        // 每次链表反转的尾节点
-        ListNode end = pre;
+        // 开始反转的节点的前驱节点
+        ListNode reversePre = res;
+        // 反转节点的后继节点
+        ListNode end = head;
         while (end != null) {
-            for (int i = 0; i < k && end != null; i++) {
+            int tempK = k;
+            // 找到反转链表的尾节点
+            while (end != null && tempK != 1) {
+                tempK--;
                 end = end.next;
             }
-            // 说明不用再反转了
+            // 不够 K 个节点则直接结束
             if (end == null) {
                 break;
             }
 
-            // 开始反转链表的节点
-            ListNode begin = reversePre.next;
-            // 下一组开始的节点
+            // 反转开始节点
+            ListNode reverseBegin = reversePre.next;
             ListNode nextBegin = end.next;
-            // 拆分出反转链表
             end.next = null;
-            // 开始反转 注意这里的拼接！
-            reversePre.next = reverse(begin);
-            // 反转完毕后组装，begin节点变成了尾巴节点
-            begin.next = nextBegin;
 
-            // 重新开始下一组
-            reversePre = begin;
-            end = begin;
+            // 反转完成，开始重新拼接链表
+            ListNode reverse = reverse(reverseBegin);
+            reversePre.next = reverse;
+            reverseBegin.next = nextBegin;
+            end = nextBegin;
+            reversePre = reverseBegin;
         }
 
-        return pre.next;
+        return res.next;
     }
 
     private ListNode reverse(ListNode head) {
@@ -45,6 +44,7 @@ public class Solution25 {
 
         while (head != null) {
             ListNode temp = head.next;
+
             head.next = pre;
             pre = head;
             head = temp;
