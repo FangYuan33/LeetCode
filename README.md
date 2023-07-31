@@ -52,12 +52,11 @@
 ### 推导
 
 1. [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)
-2. [剑指 Offer 52. 两个链表的第一个公共节点 简单](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
-3. [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/)
-4. [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)
-5. [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)
-6. [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)
-7. [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)
+2. [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/)
+3. [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)
+4. [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)
+5. [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)
+6. [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)
 
 ## 2. 二叉树
 
