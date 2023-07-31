@@ -4,34 +4,27 @@ import leetcode.ListNode;
 
 public class Solution328 {
     public ListNode oddEvenList(ListNode head) {
-        if (head == null || head.next == null) {
+        if (head == null || head.next == null || head.next.next == null) {
             return head;
         }
 
-        ListNode res = new ListNode(-1);
-        res.next = head;
+        ListNode pre = new ListNode(1);
+        pre.next = head;
 
-        // 初始化两个头节点
-        ListNode one = res;
-        one = one.next;
-        ListNode two = res;
-        two = one.next;
-        ListNode twoHead = two;
+        ListNode one = head;
+        ListNode twoHead = head.next;
+        ListNode two = twoHead;
 
-        while (one != null && one.next != null) {
-            // 画图推导
-            if (two.next != null) {
-                one.next = two.next;
-                one = one.next;
-                two.next = one.next;
-                two = two.next;
-            } else {
-                break;
-            }
+        while (one.next != null && two.next != null) {
+            one.next = one.next.next;
+            two.next = one.next.next;
+
+            one = one.next;
+            two = two.next;
         }
-        // 奇数链表遍历完了，组装奇数偶数链表
+        // 拼接奇偶链表
         one.next = twoHead;
 
-        return res.next;
+        return pre.next;
     }
 }
