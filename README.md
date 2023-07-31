@@ -19,10 +19,15 @@
     }
 ```
 
-1. [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/)
+1. 
 2. [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/): 快慢指针分开链表
 3. [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)
 4. [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
+
+
+| 序号 | 题目链接 | 题解                                                 |
+|---|---|----------------------------------------------------|
+| 1 | [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [SolutionOffer24.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer24.java) |
 
 ### 递归
 
