@@ -93,6 +93,7 @@
 |    | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                       | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
 |    | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                 | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
 |    | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/) | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
+|    | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)             | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
 
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
