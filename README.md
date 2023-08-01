@@ -80,6 +80,48 @@
 | 6  | [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                               |    |
 | 7  | [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                               |    |
 
+## 3. 栈
+
+栈是一种基于 **后进先出（LIFO）策略** 的集合类型，这就需要我们在对值进行处理时注意结果值有没有对顺序的要求，因为入栈到出栈是倒序的。
+
+- 应用: 函数调用栈、括号的匹配、双栈实现浏览器的前进和后退功能、JVM栈、电子邮件的存放、算数表达式的求值(操作数栈和运算符栈)
+
+| 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
+|----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+|    |        [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                                                           |        [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                                                       |    |
+|    |                                                                                   |                                                                               |    |
+|    |                                                                                   |                                                                               |    |
+|    |                                                                                   |                                                                               |    |
+
+1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
+2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
+4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+
+### 单调栈
+
+单调递增栈可以找到**距离当前栈顶元素左右两侧最近的小于当前元素的值**（单调递减栈相反，它能找到距离当前栈顶元素左右两侧最近的大于当前值的元素）。
+以单调递增栈为例，较小的值入栈的过程就像是它要"挤走"所有比它大的值，比它大的值不断地（while条件）出栈，
+而这个入栈的小值就是这些出栈元素右侧距离最近的小于当前元素的值。
+
+递增栈模版如下
+
+```java
+Stack<Integer> stack = new Stack<>();
+
+for (int i = 0; i < nums.length; i++) {
+    while (!stack.isEmpty() && nums[i] < stack.peek()) {
+        // 注意这个里弹出索引的妙用
+        int index = stack.pop();
+    }
+    // 这里一般压入索引
+    stack.push(i);
+}
+```   
+
+1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
+2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
+3. [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/): 单调递减栈
+
 ## 2. 二叉树
 
 - 前、中、后序遍历模板
@@ -402,40 +444,6 @@ def backtrack(路径, 选择列表):
 5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 
 ## 12. 栈/队列/堆
-
-### 栈
-
-栈用于解决**括号是否有效**的问题
-
-1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
-2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
-3. [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)
-4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
-
-#### 单调栈
-
-单调递增栈可以找到**距离当前栈顶元素左右两侧最近的小于当前元素的值**（单调递减栈相反，它能找到距离当前栈顶元素左右两侧最近的大于当前值的元素）。
-以单调递增栈为例，较小的值入栈的过程就像是它要"挤走"所有比它大的值，比它大的值不断地（while条件）出栈，
-而这个入栈的小值就是这些出栈元素右侧距离最近的小于当前元素的值。
-
-递增栈模版如下
-
-```java
-Stack<Integer> stack = new Stack<>();
-
-for (int i = 0; i < nums.length; i++) {
-    while (!stack.isEmpty() && nums[i] < stack.peek()) {
-        // 注意这个里弹出索引的妙用
-        int index = stack.pop();
-    }
-    // 这里一般压入索引
-    stack.push(i);
-}
-```   
-
-1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
-2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
-3. [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/): 单调递减栈
    
 ### 队列/双向队列
 
