@@ -89,7 +89,7 @@
 | 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
 |----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
 |    |        [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                                                           |        [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                                                       |    |
-|    |                                                                                   |                                                                               |    |
+|    |           [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                                        |           [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                                                    |    |
 |    |                                                                                   |                                                                               |    |
 |    |                                                                                   |                                                                               |    |
 
