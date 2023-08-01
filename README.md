@@ -68,6 +68,18 @@
 | 5  | [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)     | [Solution445.java](src%2Fleetcode%2Flinkedlist%2FSolution445.java)               |    |
 | 6  | [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)    | [Solution817.java](src%2Fleetcode%2Flinkedlist%2FSolution817.java)               |    |
 
+## 2. 数据结构
+
+| 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
+|----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+| 1  | [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)                         | [LRUCacheHashMap.java](src%2Fleetcode%2Fdatastructure%2FLRUCacheHashMap.java) |    |
+| 2  | [460. LFU 缓存 困难](https://leetcode.cn/problems/lfu-cache/)                         | [LFUCache.java](src%2Fleetcode%2Fdatastructure%2FLFUCache.java)               |    |
+| 3  | [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)     | [AllOne.java](src%2Fleetcode%2Fdatastructure%2FAllOne.java)                   |    |
+| 4  | [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)                  | [MyLinkedList.java](src%2Fleetcode%2Fdatastructure%2FMyLinkedList.java)       |    |
+| 5  | [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)           | [MyCircularDeque.java](src%2Fleetcode%2Fdatastructure%2FMyCircularDeque.java) |    |
+| 6  | [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                               |    |
+| 7  | [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                               |    |
+
 ## 2. 二叉树
 
 - 前、中、后序遍历模板
@@ -462,16 +474,6 @@ for (int i = 0; i < nums.length; i++) {
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
-
-## 16. 数据结构
-
-1. [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)
-2. [460. LFU 缓存 困难](https://leetcode.cn/problems/lfu-cache/)
-3. [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)
-4. [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)
-5. [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)
-6. [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/): todo
-7. [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/)
 
 ## 17. 其他
 
