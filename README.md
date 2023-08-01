@@ -86,12 +86,13 @@
 
 - 应用: 函数调用栈、括号的匹配、双栈实现浏览器的前进和后退功能、JVM栈、电子邮件的存放、算数表达式的求值(操作数栈和运算符栈)
 
-| 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
-|----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-|    |        [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                                                           |        [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                                                       |    |
-|    |           [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                                        |           [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                                                    |    |
-|    |                                                                                   |                                                                               |    |
-|    |                                                                                   |                                                                               |    |
+| 序号 | 题目链接                                                                         | 题解                                                          | 备注 |
+|----|------------------------------------------------------------------------------|-------------------------------------------------------------|----|
+|    | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)              | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java) |    |
+|    | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/) | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)       |    |
+|    | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                       | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)     |    |
+|    |                                                                              |                                                             |    |
+|    |                                                                              |                                                             |    |
 
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
