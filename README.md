@@ -88,40 +88,49 @@
 
 | 序号 | 题目链接                                                                                                     | 题解                                                                                          | 备注 |
 |----|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----|
-|    | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                          | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
-|    | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)                             | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
-|    | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                   | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
-|    | [946. 验证栈序列 中等](https://leetcode.cn/problems/validate-stack-sequences/)                                  | [Solution946.java](src%2Fleetcode%2Fstack%2FSolution946.java)                               |    |
-|    | [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                                               | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
-|    | [1190. 反转每对括号间的子串 中等](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [Solution1190.java](src%2Fleetcode%2Fstack%2FSolution1190.java)                             |    |
-|    | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                                             | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
-|    | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)                             | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
-|    | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)                                         | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
-|    | [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)                                      | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
-|    | [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/)                           | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
-|    | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
-|    | [726. 原子的数量 困难](https://leetcode.cn/problems/number-of-atoms/)                                           | [Solution726.java](src%2Fleetcode%2Fstack%2FSolution726.java)                               |    |
+| 1  | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                          | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
+| 2  | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)                             | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
+| 3  | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                   | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
+| 4  | [946. 验证栈序列 中等](https://leetcode.cn/problems/validate-stack-sequences/)                                  | [Solution946.java](src%2Fleetcode%2Fstack%2FSolution946.java)                               |    |
+| 5  | [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                                               | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
+| 6  | [1190. 反转每对括号间的子串 中等](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [Solution1190.java](src%2Fleetcode%2Fstack%2FSolution1190.java)                             |    |
+| 7  | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                                             | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
+| 8  | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)                             | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
+| 9  | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)                                         | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
+| 10 | [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)                                      | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
+| 11 | [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/)                           | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
+| 12 | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
+| 13 | [726. 原子的数量 困难](https://leetcode.cn/problems/number-of-atoms/)                                           | [Solution726.java](src%2Fleetcode%2Fstack%2FSolution726.java)                               |    |
 
 ### 单调栈
 
-单调递增栈可以找到**距离当前栈顶元素左右两侧最近的小于当前元素的值**（单调递减栈相反，它能找到距离当前栈顶元素左右两侧最近的大于当前值的元素）。
-以单调递增栈为例，较小的值入栈的过程就像是它要"挤走"所有比它大的值，比它大的值不断地（while条件）出栈，
-而这个入栈的小值就是这些出栈元素右侧距离最近的小于当前元素的值。
+不断地有值入栈，如果遇到 **比栈顶元素小的值则出栈** 的栈为 **单调递增栈**，**该较小的值即为即将出栈的元素左/右侧最近的小值**。最终遍历完序列后，如果栈内还有元素的话，则为递增序列，那么我们需要检查是否需要对栈中剩余的元素进行处理。一般单调栈的题目会有 **在连续序列中找左/右侧最大或最小值** 的特点，如果我们顺序遍历序列，**单调递增栈用于找右侧最近的小值**，**单调递减栈用于找右侧最近的大值**。
 
-递增栈模版如下
+- 单调递增栈解题模版如下：
 
 ```java
 Stack<Integer> stack = new Stack<>();
 
 for (int i = 0; i < nums.length; i++) {
-    while (!stack.isEmpty() && nums[i] < stack.peek()) {
-        // 注意这个里弹出索引的妙用
+    while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
+        // 注意这里弹出索引的妙用
         int index = stack.pop();
+        
+        // 关于 index 的特殊处理
+        process();
     }
-    // 这里一般压入索引
+    // 一般压入对应的索引
     stack.push(i);
 }
+// 处理栈中剩余的递增序列值
+while (!stack.isEmpty()) {
+    process2();
+}
 ```   
+
+| 序号 | 题目链接                                                                                                | 题解                                                                          | 备注 |
+|----|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| 1  | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |    |
 
 1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
 2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
