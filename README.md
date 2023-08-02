@@ -102,10 +102,6 @@
 |    | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
 |    | [726. 原子的数量 困难](https://leetcode.cn/problems/number-of-atoms/)                                           | [Solution726.java](src%2Fleetcode%2Fstack%2FSolution726.java)                               |    |
 
-1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
-2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
-4. [剑指 Offer 31. 栈的压入、弹出序列 中等](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
-
 ### 单调栈
 
 单调递增栈可以找到**距离当前栈顶元素左右两侧最近的小于当前元素的值**（单调递减栈相反，它能找到距离当前栈顶元素左右两侧最近的大于当前值的元素）。
