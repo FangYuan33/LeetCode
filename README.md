@@ -86,18 +86,19 @@
 
 - 应用: 函数调用栈、括号的匹配、双栈实现浏览器的前进和后退功能、JVM栈、电子邮件的存放、算数表达式的求值(操作数栈和运算符栈)
 
-| 序号 | 题目链接                                                                           | 题解                                                                                          | 备注 |
-|----|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----|
-|    | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
-|    | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)   | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
-|    | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                         | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
-|    | [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                     | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
-|    | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                   | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
-|    | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)   | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
-|    | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)               | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
-|    | [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)            | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
-|    | [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/) | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
-|    | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)       | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
+| 序号 | 题目链接                                                                                                     | 题解                                                                                          | 备注 |
+|----|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----|
+|    | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                          | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
+|    | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)                             | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
+|    | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                   | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
+|    | [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                                               | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
+|    | [1190. 反转每对括号间的子串 中等](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [Solution1190.java](src%2Fleetcode%2Fstack%2FSolution1190.java)                             |    |
+|    | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                                             | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
+|    | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)                             | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
+|    | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)                                         | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
+|    | [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)                                      | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
+|    | [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/)                           | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
+|    | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
 
 1. [剑指 Offer 09. 用两个栈实现队列 简单](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 2. [剑指 Offer 30. 包含min函数的栈 简单](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
