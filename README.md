@@ -129,8 +129,9 @@ while (!stack.isEmpty()) {
 ```   
 
 | 序号 | 题目链接                                                                                                | 题解                                                                          | 备注 |
-|----|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| 1  | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |    |
+|---|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| 1 | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |    |
+|   | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |    |
 
 1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
 2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
@@ -235,6 +236,10 @@ inf bfs(Node node, Node target) {
 2. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
    
 ### 递归
+
+| 序号 | 题目链接                                                               | 题解                                                                                | 备注     |
+|----|--------------------------------------------------------------------|-----------------------------------------------------------------------------------|--------|
+| 1  | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654Recursion.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java) | 单调栈解法：[Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |
 
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
