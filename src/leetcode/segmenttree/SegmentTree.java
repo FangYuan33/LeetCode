@@ -1,4 +1,4 @@
-package leetcode.rmq;
+package leetcode.segmenttree;
 
 /**
  * 线段树

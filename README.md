@@ -244,6 +244,12 @@ inf bfs(Node node, Node target) {
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
 
+## n. 线段树
+
+| 序号 | 题目链接                                                                    | 题解                                                                  | 备注 |
+|----|-------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+| 1  | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
+
 ## 3. 动态规划
 
 动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
