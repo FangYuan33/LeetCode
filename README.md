@@ -247,8 +247,9 @@ inf bfs(Node node, Node target) {
 ## n. 线段树
 
 | 序号 | 题目链接                                                                    | 题解                                                                  | 备注 |
-|----|-------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-| 1  | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
+|---|-------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+|   | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
+|   | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java) |    |
 
 ## 3. 动态规划
 
