@@ -134,6 +134,7 @@ while (!stack.isEmpty()) {
 |    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |    |
 |    | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |    |
 |    | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |    |
+|    | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |    |
 
 1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
 2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
