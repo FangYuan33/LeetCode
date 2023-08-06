@@ -133,6 +133,7 @@ while (!stack.isEmpty()) {
 | 1  | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |    |
 |    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |    |
 |    | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |    |
+|    | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |    |
 
 1. [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/): 单调递增栈
 2. [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/): 单调递减栈
