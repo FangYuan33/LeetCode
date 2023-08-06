@@ -128,16 +128,17 @@ while (!stack.isEmpty()) {
 }
 ```   
 
-| 序号 | 题目链接                                                                                                | 题解                                                                          | 备注          |
-|----|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|
-| 1  | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |             |
-|    | [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                           | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
-|    | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
-|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |             |
-|    | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
-|    | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |             |
-|    | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
-|    | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
+| 序号 | 题目链接                                                                                               | 题解                                                                          | 备注          |
+|---|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|
+| 1 | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |             |
+|   | [739. 每日温度 中等](https://leetcode.cn/problems/daily-temperatures/)        | [Solution739.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution739.java) |             |
+|   | [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                          | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
+|   | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                        | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
+|   | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                 | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |             |
+|   | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)          | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
+|   | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                    | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |             |
+|   | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                   | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
+|   | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                     | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
 
 ## 2. 二叉树
 
