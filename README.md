@@ -144,11 +144,10 @@ while (!stack.isEmpty()) {
 
 ## 4. 队列
 
-| 序号 | 题目链接                                                                  | 题解                                                                    | 备注 |
-|----|-----------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/) | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
-
-
+| 序号 | 题目链接                                                                                              | 题解                                                                    | 备注 |
+|----|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
+|    | [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
 
 单调队列则是在单调栈的基础上实现**数据的两端操作**
 
