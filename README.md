@@ -142,6 +142,19 @@ while (!stack.isEmpty()) {
 | 10 | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
 | 11 | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
 
+## 4. 队列
+
+| 序号 | 题目链接                                                                  | 题解                                                                    | 备注 |
+|----|-----------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/) | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
+
+
+
+单调队列则是在单调栈的基础上实现**数据的两端操作**
+
+1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
+2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
+
 ## 2. 二叉树
 
 - 前、中、后序遍历模板
@@ -595,17 +608,6 @@ def backtrack(路径, 选择列表):
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
 4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
 5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
-
-## 12. 栈/队列/堆
-   
-### 队列/双向队列
-
-#### 单调队列
-
-单调队列则是在单调栈的基础上实现**数据的两端操作**
-
-1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
-2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
 
 ### 堆
 
