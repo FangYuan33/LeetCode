@@ -152,9 +152,14 @@ while (!stack.isEmpty()) {
 |    | [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
 |    | [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
 
-单调队列则是在单调栈的基础上实现**数据的两端操作**
+### 单调队列
 
-1. [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)
+单调队列是在单调栈的基础上实现 **数据的两端操作**，所以使用单调栈能解决的题目使用单调队列也能够解决，不过我们还是在有必要的数据两端操作的前提下，使用单调队列。
+
+| 序号 | 题目链接                                                                    | 题解                                                                        | 备注 |
+|----|-------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java) |    |
+
 2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
 
 ## 2. 二叉树
