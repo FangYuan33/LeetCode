@@ -176,10 +176,11 @@ while (!stack.isEmpty()) {
     }
 ```
 
-| 序号 | 题目链接                                                                              | 题解                                                                        | 备注 |
-|----|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
-|    | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/) | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)       |    |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)           | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java) |    |
+| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
+|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 ## 2. 二叉树
 
@@ -588,6 +589,10 @@ def backtrack(路径, 选择列表):
 - 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
 
 针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
+
+| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
