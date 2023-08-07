@@ -159,6 +159,23 @@ while (!stack.isEmpty()) {
 
 单调队列是在单调栈的基础上实现 **数据的两端操作**，所以使用单调栈能解决的题目使用单调队列也能够解决，不过我们还是在有必要的数据两端操作的前提下，使用单调队列。
 
+- 单调递减队列模板如下：
+
+```java
+    Deque<Integer> deque = new ArrayDeque<>();
+    for (int i = 0; i < nums.length; i++) {
+        while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
+            int index = deque.pollLast();
+            // 关于 index 的特殊处理
+            process();
+        }
+        deque.offer(i);
+        
+        // 必要处理逻辑
+        process1();
+    }
+```
+
 | 序号 | 题目链接                                                                    | 题解                                                                        | 备注 |
 |----|-------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
 |    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java) |    |
