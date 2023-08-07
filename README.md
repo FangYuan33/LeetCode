@@ -176,11 +176,10 @@ while (!stack.isEmpty()) {
     }
 ```
 
-| 序号 | 题目链接                                                                    | 题解                                                                        | 备注 |
-|----|-------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java) |    |
-
-2. [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)
+| 序号 | 题目链接                                                                              | 题解                                                                        | 备注 |
+|----|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
+|    | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/) | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)       |    |
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)           | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java) |    |
 
 ## 2. 二叉树
 
