@@ -151,9 +151,9 @@ while (!stack.isEmpty()) {
 
 | 序号 | 题目链接                                                                                              | 题解                                                                    | 备注 |
 |----|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
-|    | [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
-|    | [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
+| 1  | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
+| 2  | [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
+| 3  | [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
 
 ### 单调队列
 
@@ -178,9 +178,9 @@ while (!stack.isEmpty()) {
 
 | 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
 |----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
-|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
+| 1  | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
+| 2  | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
+| 3  | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 ## 2. 二叉树
 
