@@ -121,6 +121,9 @@ for (int i = 0; i < nums.length; i++) {
     }
     // 一般压入对应的索引
     stack.push(i);
+    
+    // 算法逻辑
+    process1();
 }
 // 处理栈中剩余的递增序列值
 while (!stack.isEmpty()) {
