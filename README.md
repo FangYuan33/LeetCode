@@ -309,6 +309,7 @@ inf bfs(Node node, Node target) {
 |    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)        | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
 |    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)             | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java) |    |
 |    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)       |    |
+|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             |                                                                     |    |
 
 ## 3. 动态规划
 
