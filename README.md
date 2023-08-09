@@ -5,6 +5,7 @@
 |    | [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fnsum%2FSolution1.java)                                                                                   |    |
 |    | [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)             | [Solution15.java](src%2Fleetcode%2Fnsum%2FSolution15.java); [Solution15TwoPointer.java](src%2Fleetcode%2Fnsum%2FSolution15TwoPointer.java) |    |
 |    | [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                 |    |
+|    | [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                 |    |
 
 ## 1. 链表
 
