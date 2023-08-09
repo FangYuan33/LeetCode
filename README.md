@@ -304,10 +304,11 @@ inf bfs(Node node, Node target) {
 
 - 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
 
-| 序号 | 题目链接                                                                    | 题解                                                                  | 备注 |
-|---|-------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-|   | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/) | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
-|   | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java) |    |
+| 序号 | 题目链接                                                                           | 题解                                                                  | 备注 |
+|----|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)        | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
+|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)             | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java) |    |
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)       |    |
 
 ## 3. 动态规划
 
