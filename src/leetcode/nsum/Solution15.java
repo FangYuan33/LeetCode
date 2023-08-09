@@ -10,7 +10,7 @@ public class Solution15 {
     }
 
     public List<List<Integer>> threeSum(int[] nums) {
-        // 先排序，再使用二分查找的解法，这也是在《算法 第四版》中的解法
+        // 先排序，再使用二分查找的解法，这也是在《算法 第四版》中的解法，时间复杂度为 O(N<sup>2</sup>logN)，不如双指针法的 O(N<sup>2</sup>)
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();
 
