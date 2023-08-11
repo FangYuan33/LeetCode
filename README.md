@@ -292,9 +292,9 @@ inf bfs(Node node, Node target) {
    
 ### 递归
 
-| 序号 | 题目链接                                                               | 题解                                                                                | 备注     |
-|----|--------------------------------------------------------------------|-----------------------------------------------------------------------------------|--------|
-| 1  | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654Recursion.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java) | 单调栈解法：[Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |
+| 序号 | 题目链接                                                               | 题解                                                                                                                                                                 | 备注 |
+|----|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| 1  | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654Recursion.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java); 单调栈解法：[Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |    |
 
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
