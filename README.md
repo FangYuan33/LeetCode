@@ -299,6 +299,16 @@ inf bfs(Node node, Node target) {
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
 
+## n. 树状数组
+
+树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RAM 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
+
+- 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
+
+| 序号 | 题目链接                                                                           | 题解                                                                  | 备注 |
+|----|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java) |    |
+
 ## n. 线段树
 
 线段树可以轻松的解决区间和、区间最大值或区间最小值的问题，区间和线段树模板如下，非区间和问题需要根据题意修改 `pushUp()` 和 `query()` 方法
