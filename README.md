@@ -305,9 +305,10 @@ inf bfs(Node node, Node target) {
 
 - 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
 
-| 序号 | 题目链接                                                                           | 题解                                                                  | 备注 |
-|----|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java) |    |
+| 序号 | 题目链接                                                                           | 题解                                                                          | 备注 |
+|----|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
+|    | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
 
 ## n. 线段树
 
