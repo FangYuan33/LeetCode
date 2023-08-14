@@ -396,6 +396,10 @@ for (int i = 0; i < n1; i++) {
 
 ### 其他问题
 
+| 序号 | 题目链接                                                                                          | 题解                                                         | 备注 |
+|----|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
+|    | [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
+
 1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
 ## 4. 回溯
