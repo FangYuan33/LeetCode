@@ -388,9 +388,10 @@ for (int i = 0; i < n1; i++) {
 }
 ```
 
-| 序号 | 题目链接                                                                            | 题解                                                         | 备注 |
-|----|---------------------------------------------------------------------------------|------------------------------------------------------------|----|
-|    | [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/) | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java) |    |
+| 序号 | 题目链接                                                                                         | 题解                                                         | 备注 |
+|----|----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
+|    | [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)              | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java) |    |
+|    | [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java) |    |
 
 1. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
 
