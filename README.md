@@ -309,6 +309,7 @@ inf bfs(Node node, Node target) {
 |----|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
 |    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
 |    | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
+|    | [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/) | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
 
 ## n. 线段树
 
