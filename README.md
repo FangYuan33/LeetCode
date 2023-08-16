@@ -596,3 +596,4 @@ def backtrack(路径, 选择列表):
 | 序号 | 题目链接                                                                                                       | 题解                                                                 | 备注 |
 |----|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
 |    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java) |    |
+|    | [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)   |    |
