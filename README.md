@@ -589,3 +589,9 @@ def backtrack(路径, 选择列表):
 
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
+
+## n. 模拟
+
+| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java) |    |
