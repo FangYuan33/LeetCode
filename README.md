@@ -319,12 +319,13 @@ inf bfs(Node node, Node target) {
 
 - 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
 
-| 序号 | 题目链接                                                                           | 题解                                                                  | 备注 |
-|----|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)       |    |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)        | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java) |    |
-|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)             | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java) |    |
-|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             |                                                                     |    |
+| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |    |
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |    |
+|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |    |
+|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |    |
+|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                       |    |
 
 ## 3. 动态规划
 
