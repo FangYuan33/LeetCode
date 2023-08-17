@@ -12,8 +12,7 @@ public class Solution209 {
             if (sum >= target) {
                 res = Math.min(res, right - left + 1);
                 // 找到答案后缩小窗口试试
-                sum -= nums[left];
-                left++;
+                sum -= nums[left++];
             } else {
                 // 不符合条件尽可能扩大窗口
                 right++;

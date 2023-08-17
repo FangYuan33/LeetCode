@@ -530,7 +530,10 @@ def backtrack(路径, 选择列表):
 
 滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
 
-1. [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+| 序号 | 题目链接                                                                        | 题解                                                                    | 备注 |
+|----|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java) |    |
+
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
 4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
@@ -576,6 +579,10 @@ def backtrack(路径, 选择列表):
 ## 13. 前缀和
 
 **包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
+
+| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    |                                                                                                            |                                                                       |    |
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
