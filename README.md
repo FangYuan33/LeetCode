@@ -1,4 +1,4 @@
-## n. n 数之和
+## 1. n 数之和
 
 | 序号 | 题目链接                                                          | 题解                                                                                                                                         | 备注                      |
 |----|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
@@ -7,7 +7,149 @@
 | 3  | [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                 |                         |
 | 4  | [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                 |                         |
 
-## 1. 链表
+## 2. 二分查找
+
+**思路很简单，细节是魔鬼**。使用二分查找法的标志不是数组有序（单调）而是**数据的两段性**，只要一段满足某个性质，另一段不满足某个性质，那么就可以使用二分法。
+双闭区间模板如下，不过注意其中的细节可能改变。
+
+```java
+    int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+
+        // 这里变？
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] < target) {
+                // 这里变？
+                left = mid + 1;
+            } else if (nums[mid] > target) {
+                // 这里变？
+                right = mid - 1;
+            } else {
+                // 还是这里变？
+                return mid;
+            }
+        }
+
+        return -1;
+    }
+```
+
+### 数组有序
+
+1. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+3. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
+
+### 数组无序
+
+1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+
+## 3. 双指针
+
+双指针解题考虑点
+
+- 数组是否有序？
+- 初始指针怎么定义，是在用一个位置还是在数组两边？
+- 指针移动的条件是什么？
+- 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
+
+针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
+
+| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
+
+1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
+
+两个有序数组的合并问题，一个数组分别一个指针
+
+1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
+
+## 4. 滑动窗口
+
+滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
+
+| 序号 | 题目链接                                                                        | 题解                                                                    | 备注 |
+|----|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java) |    |
+
+2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
+5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+6. [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)
+
+## 5. 前缀和
+
+**包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
+
+| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|    |                                                                                                            |                                                                       |    |
+
+1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
+2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
+3. [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)
+
+## 6. 差分
+
+## 7. 树状数组
+
+树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RAM 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
+
+- 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
+
+| 序号 | 题目链接                                                                                                       | 题解                                                                          | 备注 |
+|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
+|    | [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
+|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1893.java) |    |
+|    | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)                                    | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
+|    | [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/)                             | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
+
+## 8. 线段树
+
+线段树可以轻松的解决区间和、区间最大值或区间最小值的问题，区间和线段树模板如下，非区间和问题需要根据题意修改 `pushUp()` 和 `query()` 方法
+
+- 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
+
+| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注   |
+|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|------|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |      |
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |      |
+|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |      |
+|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |      |
+|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 |                                                                       | 区间修改 |
+|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           |                                                                       |      |
+|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)                                         |                                                                       |      |
+|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/)                                       |                                                                       |      |
+|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                       |      |
+|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)                                             |                                                                       |      |
+
+## 9. 字符串
+
+### 字符串操作
+
+- `s.trim()` 去掉字符串两边的空格
+
+1. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
+2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
+
+### 字符转数字
+
+- `s.charAt(i) - '0'` = 数字
+- `Integer.parseInt()` 字符串转整数自动忽略前导0
+
+1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/):
+2. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
+3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
+
+## 10. 链表
 
 链表是一种 **递归** 的数据结构，与数组不同的是它不需要占用连续的内存空间，但是需要额外的空间保存后继节点的指针，以此将所有的链表节点串联起来。它的删除和插入操作比较高效，时间复杂度为 $O(1)$，但是想访问链表中某个值时，需要对链表进行遍历，时间复杂度为 $O(n)$。**链表是数组的一种重要的替代方式**。
 
@@ -77,7 +219,7 @@
 | 5  | [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)     | [Solution445.java](src%2Fleetcode%2Flinkedlist%2FSolution445.java)               |    |
 | 6  | [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)    | [Solution817.java](src%2Fleetcode%2Flinkedlist%2FSolution817.java)               |    |
 
-## 2. 数据结构
+## 11. 数据结构
 
 | 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
 |----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
@@ -89,7 +231,7 @@
 | 6  | [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                               |    |
 | 7  | [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                               |    |
 
-## 3. 栈
+## 12. 栈
 
 栈是一种基于 **后进先出（LIFO）策略** 的集合类型，这就需要我们在对值进行处理时注意结果值有没有对顺序的要求，因为入栈到出栈是倒序的。
 
@@ -154,7 +296,7 @@ while (!stack.isEmpty()) {
 | 10 | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
 | 11 | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
 
-## 4. 队列
+## 13. 队列
 
 先进先出队列（简称队列）是一种基于先进先出（FIFO）策略的集合类型，它相比于栈多了能够在队首操作的方法，所以使用栈能解决的问题队列也能解决，不过使用队列解决的问题会突出 **需要操作两端数据** 的特点。
 
@@ -192,7 +334,25 @@ while (!stack.isEmpty()) {
 | 2  | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
 | 3  | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
-## 2. 二叉树
+## 14. 哈希
+
+1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
+2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
+3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
+4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
+5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
+
+## 15. 堆
+
+堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
+
+1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
+2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
+3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
+4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
+5. [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)
+
+## 16. 二叉树
 
 - 前、中、后序遍历模板
 
@@ -299,40 +459,7 @@ inf bfs(Node node, Node target) {
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
 
-## n. 树状数组
-
-树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RAM 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
-
-- 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
-
-| 序号 | 题目链接                                                                                                       | 题解                                                                          | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
-|    | [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1893.java) |    |
-|    | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)                                    | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
-|    | [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/)                             | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
-
-## n. 线段树
-
-线段树可以轻松的解决区间和、区间最大值或区间最小值的问题，区间和线段树模板如下，非区间和问题需要根据题意修改 `pushUp()` 和 `query()` 方法
-
-- 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
-
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注   |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|------|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |      |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |      |
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |      |
-|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |      |
-|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 |                                                                       | 区间修改 |
-|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           |                                                                       |      |
-|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)                                         |                                                                       |      |
-|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/)                                       |                                                                       |      |
-|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                       |      |
-|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)                                             |                                                                       |      |
-
-## 3. 动态规划
+## 17. 动态规划
 
 动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
 
@@ -416,7 +543,7 @@ for (int i = 0; i < n1; i++) {
 
 1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
-## 4. 回溯
+## 18. 回溯
 
 回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
 而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决**全排列、八皇后、正则表达式匹配和某些做选择的动态规划**问题，它的解题模板如下
@@ -447,7 +574,7 @@ def backtrack(路径, 选择列表):
 9. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头
 
-## 5. 贪心算法
+## 19. 贪心算法
 
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
@@ -455,7 +582,7 @@ def backtrack(路径, 选择列表):
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
 
-## 6. 递归
+## 20. 递归
 
 递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
 
@@ -463,151 +590,24 @@ def backtrack(路径, 选择列表):
 2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
-## 7. 二分查找
-
-**思路很简单，细节是魔鬼**。使用二分查找法的标志不是数组有序（单调）而是**数据的两段性**，只要一段满足某个性质，另一段不满足某个性质，那么就可以使用二分法。
-双闭区间模板如下，不过注意其中的细节可能改变。
-
-```java
-    int binarySearch(int[] nums, int target) {
-        int left = 0, right = nums.length - 1;
-
-        // 这里变？
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] < target) {
-                // 这里变？
-                left = mid + 1;
-            } else if (nums[mid] > target) {
-                // 这里变？
-                right = mid - 1;
-            } else {
-                // 还是这里变？
-                return mid;
-            }
-        }
-
-        return -1;
-    }
-```
-
-### 数组有序
-
-1. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
-2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
-3. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
-
-### 数组无序
-
-1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
-
-## 8. 双指针
-
-双指针解题考虑点
-
-- 数组是否有序？
-- 初始指针怎么定义，是在用一个位置还是在数组两边？
-- 指针移动的条件是什么？
-- 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
-
-针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
-
-| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
-|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
-
-1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
-2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
-
-两个有序数组的合并问题，一个数组分别一个指针
-
-1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
-
-## 9. 滑动窗口
-
-滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
-
-| 序号 | 题目链接                                                                        | 题解                                                                    | 备注 |
-|----|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java) |    |
-
-2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
-3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
-4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
-5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
-6. [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)
-
-## 10. 字符串
-
-### 字符串操作
-
-- `s.trim()` 去掉字符串两边的空格
-
-1. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
-2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
-
-### 字符转数字
-
-- `s.charAt(i) - '0'` = 数字
-- `Integer.parseInt()` 字符串转整数自动忽略前导0
-
-1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/): 
-2. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
-3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
-
-## 11. 哈希
-
-1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
-2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
-3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
-4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
-5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
-
-### 堆
-
-堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
-
-1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
-2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
-3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
-4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
-5. [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)
-
-## 13. 前缀和
-
-**包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
-
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    |                                                                                                            |                                                                       |    |
-
-1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
-2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
-3. [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)
-
-## 14. 排序算法
+## 21. 排序算法
 
 1. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 2. [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/): 有点儿像快排的哨兵交换环节
 
-## 15. 位运算
+## 22. 位运算
 
 1. [剑指 Offer 15. 二进制中1的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 2. [剑指 Offer 16. 数值的整数次方 中等](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
 3. [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)
 
-## 17. 其他
-
-1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
-2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
-
-## n. 模拟
+## 23. 模拟
 
 | 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
 |----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
 |    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)    |    |
 |    | [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)      |    |
 |    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
+
+1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
+2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
