@@ -3,12 +3,12 @@ package leetcode.segmenttree;
 public class SegmentTree2 {
 
     public static void main(String[] args) {
-
         SegmentTree2 segmentTree = new SegmentTree2(new int[]{10, 11, 12, 13, 14});
 
         System.out.println(segmentTree.query(1, 1, 5));
         segmentTree.update(1, 1, 5, 1);
         System.out.println(segmentTree.query(1, 1, 5));
+        System.out.println(segmentTree.query(1, 1, 1));
     }
 
     class Node {
@@ -100,10 +100,10 @@ public class SegmentTree2 {
             int res = 0;
             int mid = tree[pos].left + tree[pos].right >> 1;
             if (left <= mid) {
-                res += query(pos << 1, left, mid);
+                res += query(pos << 1, left, right);
             }
             if (right > mid) {
-                res += query(pos << 1 | 1, mid + 1, right);
+                res += query(pos << 1 | 1, left, right);
             }
 
             return res;
