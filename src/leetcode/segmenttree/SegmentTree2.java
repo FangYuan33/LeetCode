@@ -9,9 +9,10 @@ public class SegmentTree2 {
         segmentTree.update(1, 1, 5, 1);
         System.out.println(segmentTree.query(1, 1, 5));
         System.out.println(segmentTree.query(1, 1, 1));
+        System.out.println(segmentTree.query(1, 1, 5));
     }
 
-    class Node {
+    static class Node {
         int left;
 
         int right;
