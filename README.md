@@ -118,18 +118,18 @@
 
 - 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注   |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|------|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |      |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |      |
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |      |
-|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |      |
-|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) | 区间修改 |
-|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)     |      |
-|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)                                         |                                                                       |      |
-|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/)                                       |                                                                       |      |
-|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                       |      |
-|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)                                             |                                                                       |      |
+| 序号 | 题目链接                                                                                                       | 题解                                                                                                                                     | 备注   |
+|----|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------|
+|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)                                                                          |      |
+|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)                                                                    |      |
+|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java)                                                                  |      |
+|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)                                                                    |      |
+|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java)                                                                  | 区间修改 |
+|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java); <br/>[MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java) |      |
+|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)                                         |                                                                                                                                        |      |
+|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/)                                       |                                                                                                                                        |      |
+|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                                                                                        |      |
+|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)                                             |                                                                                                                                        |      |
 
 ## 9. 字符串
 
