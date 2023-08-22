@@ -3,7 +3,7 @@ package leetcode.segmenttree;
 public class SegmentTree3 {
 
     public static void main(String[] args) {
-        SegmentTree3 segmentTree = new SegmentTree3(5);
+        SegmentTree3 segmentTree = new SegmentTree3();
 
         segmentTree.update(1, 1, 5, 5, 5, 14);
         segmentTree.update(1, 1, 5, 4, 4, 13);
@@ -32,9 +32,9 @@ public class SegmentTree3 {
 
     Node[] tree;
 
-    public SegmentTree3(int n) {
+    public SegmentTree3() {
         count = 1;
-        tree = new Node[2 * n];
+        tree = new Node[(int) 5e6];
     }
 
     public int query(int pos, int left, int right, int l, int r) {
