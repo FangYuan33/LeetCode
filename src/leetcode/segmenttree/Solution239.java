@@ -59,18 +59,20 @@ public class Solution239 {
         }
 
         private int query(int pos, int left, int right) {
-            if (tree[pos].left == left && tree[pos].right == right) {
+            if (left <= tree[pos].left && tree[pos].right <= right) {
                 return tree[pos].val;
             }
 
+            int res = Integer.MIN_VALUE;
             int mid = tree[pos].left + tree[pos].right >> 1;
-            if (right <= mid) {
-                return query(pos << 1, left, right);
-            } else if (left > mid) {
-                return query(pos << 1 | 1, left, right);
-            } else {
-                return Math.max(query(pos << 1, left, mid), query(pos << 1 | 1, mid + 1, right));
+            if (left <= mid) {
+                res = Math.max(res, query(pos << 1, left, right));
             }
+            if (right > mid) {
+                res = Math.max(res, query(pos << 1 | 1, left, right));
+            }
+
+            return res;
         }
     }
 }

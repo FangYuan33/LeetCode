@@ -9,7 +9,6 @@ public class SegmentTree2 {
         segmentTree.update(1, 1, 5, 1);
         System.out.println(segmentTree.query(1, 1, 5));
         System.out.println(segmentTree.query(1, 1, 1));
-        System.out.println(segmentTree.query(1, 1, 5));
     }
 
     static class Node {
@@ -54,10 +53,6 @@ public class SegmentTree2 {
         pushUp(pos);
     }
 
-    private void pushUp(int pos) {
-        tree[pos].val = tree[pos << 1].val + tree[pos << 1 | 1].val;
-    }
-
     /**
      * 修改区间的值
      *
@@ -72,53 +67,53 @@ public class SegmentTree2 {
             tree[pos].val += (tree[pos].right - tree[pos].left + 1) * val;
             // 懒惰标记
             tree[pos].add += val;
-        } else {
-            // 该区间没有被包围的话，需要修改节点的信息
-            pushDown(pos);
-
-            int mid = tree[pos].left + tree[pos].right >> 1;
-            // 如果下界在 mid 左边，那么左子树需要修改
-            if (left <= mid) {
-                update(pos << 1, left, mid, val);
-            }
-            // 如果上界在 mid 右边，那么右子树也需要修改
-            if (right > mid) {
-                update(pos << 1 | 1, mid + 1, right, val);
-            }
-            // 修改完成后向上回溯修改父节点的值
-            pushUp(pos);
+            return;
         }
+
+        // 该区间没有被包围的话，需要修改节点的信息
+        pushDown(pos);
+
+        int mid = tree[pos].left + tree[pos].right >> 1;
+        // 如果下界在 mid 左边，那么左子树需要修改
+        if (left <= mid) {
+            update(pos << 1, left, right, val);
+        }
+        // 如果上界在 mid 右边，那么右子树也需要修改
+        if (right > mid) {
+            update(pos << 1 | 1, left, right, val);
+        }
+        // 修改完成后向上回溯修改父节点的值
+        pushUp(pos);
     }
 
     public int query(int pos, int left, int right) {
         if (left <= tree[pos].left && tree[pos].right <= right) {
             // 当前区间被包围
             return tree[pos].val;
-        } else {
-            // 懒惰标记需要下传修改子节点的值
-            pushDown(pos);
-
-            int res = 0;
-            int mid = tree[pos].left + tree[pos].right >> 1;
-            if (left <= mid) {
-                res += query(pos << 1, left, right);
-            }
-            if (right > mid) {
-                res += query(pos << 1 | 1, left, right);
-            }
-
-            return res;
         }
+
+        // 懒惰标记需要下传修改子节点的值
+        pushDown(pos);
+
+        int res = 0;
+        int mid = tree[pos].left + tree[pos].right >> 1;
+        if (left <= mid) {
+            res += query(pos << 1, left, right);
+        }
+        if (right > mid) {
+            res += query(pos << 1 | 1, left, right);
+        }
+
+        return res;
     }
 
     private void pushDown(int pos) {
-        // 根节点和为 0 的情况不需要再向下遍历
+        // 根节点 和 懒惰标记为 0 的情况不需要再向下遍历
         if (tree[pos].left != tree[pos].right && tree[pos].add != 0) {
-            int mid = tree[pos].left + tree[pos].right >> 1;
             int add = tree[pos].add;
             // 计算累加变化量
-            tree[pos << 1].val += add * (mid - tree[pos].left + 1);
-            tree[pos << 1 | 1].val += add * (tree[pos].right - mid);
+            tree[pos << 1].val += add * (tree[pos << 1].right - tree[pos << 1].left + 1);
+            tree[pos << 1 | 1].val += add * (tree[pos << 1 | 1].right - tree[pos << 1 | 1].left + 1);
 
             // 子节点懒惰标记
             tree[pos << 1].add += add;
@@ -127,6 +122,10 @@ public class SegmentTree2 {
             // 懒惰标记清 0
             tree[pos].add = 0;
         }
+    }
+
+    private void pushUp(int pos) {
+        tree[pos].val = tree[pos << 1].val + tree[pos << 1 | 1].val;
     }
 }
 
