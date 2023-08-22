@@ -14,7 +14,6 @@ public class MyCalendarTwo {
         System.out.println(calendar.book(25, 55));
     }
 
-
     SegmentTree segmentTree;
 
     public MyCalendarTwo() {
@@ -31,10 +30,8 @@ public class MyCalendarTwo {
         return true;
     }
 
-    // 动态开点，查询取最大值，如果查到的是 2 的话，那么说明会发生 3 重预定
     static class SegmentTree {
         static class Node {
-
             int left;
 
             int right;
@@ -49,7 +46,7 @@ public class MyCalendarTwo {
 
         public SegmentTree() {
             count = 1;
-            tree = new Node[(int) 5e6];
+            this.tree = new Node[(int) 5e6];
             tree[count] = new Node();
         }
 
@@ -96,22 +93,6 @@ public class MyCalendarTwo {
             pushUp(pos);
         }
 
-        private void pushUp(int pos) {
-            tree[pos].val = Math.max(tree[tree[pos].left].val, tree[tree[pos].right].val);
-        }
-
-        private void pushDown(int pos) {
-            if (tree[pos].left != 0 && tree[pos].right != 0 && tree[pos].add != 0) {
-                tree[tree[pos].left].val += tree[pos].add;
-                tree[tree[pos].right].val += tree[pos].add;
-
-                tree[tree[pos].left].add += tree[pos].add;
-                tree[tree[pos].right].add += tree[pos].add;
-
-                tree[pos].add = 0;
-            }
-        }
-
         private void lazyCreate(int pos) {
             if (tree[pos] == null) {
                 tree[pos] = new Node();
@@ -124,6 +105,24 @@ public class MyCalendarTwo {
                 tree[pos].right = ++count;
                 tree[tree[pos].right] = new Node();
             }
+        }
+
+        private void pushDown(int pos) {
+            if (tree[pos].left != 0 && tree[pos].right != 0 && tree[pos].add != 0) {
+                int add = tree[pos].add;
+
+                tree[tree[pos].left].val += add;
+                tree[tree[pos].right].val += add;
+
+                tree[tree[pos].left].add += add;
+                tree[tree[pos].right].add += add;
+
+                tree[pos].add = 0;
+            }
+        }
+
+        private void pushUp(int pos) {
+            tree[pos].val = Math.max(tree[tree[pos].left].val, tree[tree[pos].right].val);
         }
     }
 }
