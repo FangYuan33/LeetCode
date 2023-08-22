@@ -46,8 +46,8 @@ public class SegmentTree {
      * 建树
      *
      * @param pos   当前节点编号
-     * @param left  当前节点区间左值
-     * @param right 当前节点区间右值
+     * @param left  当前节点区间下界
+     * @param right 当前节点区间上界
      */
     private void build(int pos, int left, int right) {
         // 创建节点
@@ -76,7 +76,7 @@ public class SegmentTree {
      * @param val    修改后的值
      */
     private void update(int pos, int numPos, int val) {
-        // 找到该数值所在线段树种的叶子节点
+        // 找到该数值所在线段树中的叶子节点
         if (tree[pos].left == numPos && tree[pos].right == numPos) {
             tree[pos].val = val;
             return;
@@ -104,26 +104,25 @@ public class SegmentTree {
      * 查找对应区间的值
      *
      * @param pos   当前节点
-     * @param left  要查询的区间的左值
-     * @param right 要查询的区间的右值
+     * @param left  要查询的区间的下界
+     * @param right 要查询的区间的上界
      */
     private int query(int pos, int left, int right) {
-        // 如果当前节点是我们想要的区间值
-        if (tree[pos].left == left && tree[pos].right == right) {
+        // 如果我们要查找的区间把当前节点区间全部包含起来
+        if (left <= tree[pos].left && tree[pos].right <= right) {
             return tree[pos].val;
         }
 
-        // 如果不是的话，则需要根据情况再去找
+        int res = 0;
         int mid = tree[pos].left + tree[pos].right >> 1;
-        // 如果想要找的区间值全在左边
-        if (right <= mid) {
-            return query(pos << 1, left, right);
-        } else if (left > mid) {
-            // 如果区间值全在右边
-            return query(pos << 1 | 1, left, right);
-        } else {
-            // 左右两边都有的话，需要两边一起找
-            return query(pos << 1, left, mid) + query(pos << 1 | 1, mid + 1, right);
+        // 根据区间范围去左右节点分别查找求和
+        if (left <= mid) {
+            res += query(pos << 1, left, right);
         }
+        if (right > mid) {
+            res += query(pos << 1 | 1, left, right);
+        }
+        
+        return res;
     }
 }
