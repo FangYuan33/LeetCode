@@ -9,11 +9,10 @@ public class MyCalendar {
     }
 
     public boolean book(int start, int end) {
-        if (segmentTree.query(1, 1, (int) 1e9, start, end - 1) > 0) {
+        if (segmentTree.query(1, 1, (int) 1e9, start + 1, end) > 0) {
             return false;
         }
-
-        segmentTree.update(1, 1, (int) 1e9, start, end - 1, 1);
+        segmentTree.update(1, 1, (int) 1e9, start + 1, end, 1);
 
         return true;
     }
@@ -28,15 +27,37 @@ public class MyCalendar {
 
             int add;
 
-
         }
 
         Node[] tree;
+
         int count;
 
         public SegmentTree() {
             count = 1;
-            this.tree = new Node[(int) 1e5];
+            tree = new Node[(int) 5e6];
+        }
+
+        public void update(int pos, int left, int right, int l, int r, int val) {
+            if (l <= left && right <= r) {
+                tree[pos].val += (right - left + 1) * val;
+                tree[pos].add += val;
+
+                return;
+            }
+
+            lazyCreate(pos);
+            pushDown(pos, (right - left + 1));
+
+            int mid = left + right >> 1;
+            if (l <= mid) {
+                update(tree[pos].left, left, mid, l, r, val);
+            }
+            if (r > mid) {
+                update(tree[pos].right, mid + 1, right, l, r, val);
+            }
+
+            pushUp(pos);
         }
 
         public int query(int pos, int left, int right, int l, int r) {
@@ -46,7 +67,7 @@ public class MyCalendar {
 
             lazyCreate(pos);
 
-            pushDown(pos, right - left + 1);
+            pushDown(pos, (right - left) + 1);
 
             int res = 0;
             int mid = left + right >> 1;
@@ -58,28 +79,6 @@ public class MyCalendar {
             }
 
             return res;
-        }
-
-        public void update(int pos, int left, int right, int l, int r, int val) {
-            if (l <= left && right <= r) {
-                tree[pos].val += val * (right - left + 1);
-                tree[pos].add += val;
-                return;
-            }
-
-            lazyCreate(pos);
-
-            pushDown(pos, right - left + 1);
-
-            int mid = left + right >> 1;
-            if (l <= mid) {
-                update(tree[pos].left, left, mid, l, r, val);
-            }
-            if (r > mid) {
-                update(tree[pos].right, mid + 1, right, l, r, val);
-            }
-
-            pushUp(pos);
         }
 
         private void lazyCreate(int pos) {
@@ -97,10 +96,10 @@ public class MyCalendar {
             }
         }
 
-        private void pushDown(int pos, int len) {
+        private void pushDown(int pos, int length) {
             if (tree[pos].left != 0 && tree[pos].right != 0 && tree[pos].add != 0) {
-                tree[tree[pos].left].val += tree[pos].add * (len - len / 2);
-                tree[tree[pos].right].val += tree[pos].add * len / 2;
+                tree[tree[pos].left].val += tree[pos].add * (length - length / 2);
+                tree[tree[pos].right].val += tree[pos].add * length / 2;
 
                 tree[tree[pos].left].add += tree[pos].add;
                 tree[tree[pos].right].add += tree[pos].add;
