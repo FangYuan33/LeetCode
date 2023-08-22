@@ -147,13 +147,13 @@
 
 - 线段树模版：[SegmentTree3.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree3.java)
 
-| 序号 | 题目链接                                                                 | 题解                                                                      | 备注 |
-|----|----------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)       |    |
-|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java) |    |
-|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) |                                                                         |    |
-|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)   |                                                                         |    |
-|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       |                                                                         |    |
+| 序号 | 题目链接                                                                 | 题解                                                                          | 备注 |
+|----|----------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)           |    |
+|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java)     |    |
+|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) | [MyCalendarThree.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarThree.java) |    |
+|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)   |                                                                             |    |
+|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       |                                                                             |    |
 
 ## 9. 字符串
 
