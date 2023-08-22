@@ -36,6 +36,7 @@ public class MyCalendar {
         public SegmentTree() {
             count = 1;
             tree = new Node[(int) 5e6];
+            tree[count] = new Node();
         }
 
         public void update(int pos, int left, int right, int l, int r, int val) {

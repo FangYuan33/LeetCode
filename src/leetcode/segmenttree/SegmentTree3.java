@@ -35,6 +35,7 @@ public class SegmentTree3 {
     public SegmentTree3() {
         count = 1;
         tree = new Node[(int) 5e6];
+        tree[count] = new Node();
     }
 
     public int query(int pos, int left, int right, int l, int r) {

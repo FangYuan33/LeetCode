@@ -50,6 +50,7 @@ public class MyCalendarTwo {
         public SegmentTree() {
             count = 1;
             tree = new Node[(int) 5e6];
+            tree[count] = new Node();
         }
 
         public int query(int pos, int left, int right, int l, int r) {
