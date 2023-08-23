@@ -5,8 +5,9 @@ public class Solution1893 {
         for (int i = left; i <= right; i++) {
             boolean exist = false;
             for (int[] range : ranges) {
-                int a = range[0], b = range[1];
-                if (a <= i && i <= b) {
+                int l = range[0], r = range[1];
+
+                if (l <= i && i <= r) {
                     exist = true;
                     break;
                 }
