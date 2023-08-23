@@ -1,11 +1,11 @@
 ## 1. n 数之和
 
-| 序号 | 题目链接                                                          | 题解                                                                                                                                         | 备注                      |
-|----|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1  | [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fnsum%2FSolution1.java)                                                                                   |                         |
-| 2  | [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)             | [Solution15.java](src%2Fleetcode%2Fnsum%2FSolution15.java); <br/>[Solution15TwoPointer.java](src%2Fleetcode%2Fnsum%2FSolution15TwoPointer.java) | 优先看双指针解法，第一种解法时间复杂度相对较大 |
-| 3  | [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                 |                         |
-| 4  | [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                 |                         |
+| 题目链接                                                          | 题解                                                                                                                                         | 备注                      |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fnsum%2FSolution1.java)                                                                                   |                         |
+| [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)             | [Solution15.java](src%2Fleetcode%2Fnsum%2FSolution15.java); <br/>[Solution15TwoPointer.java](src%2Fleetcode%2Fnsum%2FSolution15TwoPointer.java) | 优先看双指针解法，第一种解法时间复杂度相对较大 |
+| [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                 |                         |
+| [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                 |                         |
 
 ## 2. 二分查找
 
@@ -57,9 +57,9 @@
 
 针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
 
-| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
-|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
+| 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
@@ -74,9 +74,9 @@
 
 滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
 
-| 序号 | 题目链接                                                                        | 题解                                                                    | 备注 |
-|----|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java) |    |
+| 题目链接                                                                        | 题解                                                                    | 备注 |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java) |    |
 
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
@@ -88,9 +88,9 @@
 
 **包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    |                                                                                                            |                                                                       |    |
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+|                                                                                                            |                                                                       |    |
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
@@ -104,13 +104,13 @@
 
 - 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                          | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
-|    | [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1893.java) |    |
-|    | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)                                    | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
-|    | [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/)                             | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
+| 题目链接                                                                                                       | 题解                                                                          | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
+| [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1893.java) |    |
+| [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)                                    | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
+| [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/)                             | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
 
 ## 8. 线段树
 
@@ -128,32 +128,32 @@
 
 - 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |    |
-|    | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |    |
-|    | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |    |
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |    |
+| [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |    |
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |    |
 
 ### 区间修改
 
 - 线段树模板：[SegmentTree2.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree2.java)
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |    |
-|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |    |
+| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
 
 ### 动态开点
 
 - 线段树模版：[SegmentTree3.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree3.java)
 
-| 序号 | 题目链接                                                                 | 题解                                                                          | 备注 |
-|----|----------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)           |    |
-|    | [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java)     | ⭐️ |
-|    | [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) | [MyCalendarThree.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarThree.java) |    |
-|    | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)   |                                                                             |    |
-|    | [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       |                                                                             |    |
+| 题目链接                                                                 | 题解                                                                          | 备注 |
+|----------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)           |    |
+| [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java)     | ⭐️ |
+| [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) | [MyCalendarThree.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarThree.java) |    |
+| [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)   |                                                                             |    |
+| [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       |                                                                             |    |
 
 ## 9. 字符串
 
@@ -194,66 +194,66 @@
     }
 ```
 
-| 序号 | 题目链接                                                                           | 题解                                                                         | 备注       |
-|----|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------|
-| 1  | [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [SolutionOffer24.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer24.java) |          |
-| 2  | [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/)           | [Solution234.java](src%2Fleetcode%2Flinkedlist%2FSolution234.java)         | 快慢指针分开链表 |
-| 3  | [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)         | [Solution92.java](src%2Fleetcode%2Flinkedlist%2FSolution92.java)           |          |
-| 4  | [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)     | [Solution25.java](src%2Fleetcode%2Flinkedlist%2FSolution25.java)           |          |
+| 题目链接                                                                           | 题解                                                                         | 备注       |
+|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------|
+| [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [SolutionOffer24.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer24.java) |          |
+| [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/)           | [Solution234.java](src%2Fleetcode%2Flinkedlist%2FSolution234.java)         | 快慢指针分开链表 |
+| [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)         | [Solution92.java](src%2Fleetcode%2Flinkedlist%2FSolution92.java)           |          |
+| [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)     | [Solution25.java](src%2Fleetcode%2Flinkedlist%2FSolution25.java)           |          |
 
 ### 递归
 
-| 序号 | 题目链接                                                                                                 | 题解                                                                         | 备注                          |
-|----|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------|
-| 1  | [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)     | [SolutionOffer06.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer06.java) |                             |
-| 2  | [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)              | [SolutionOffer35.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer35.java) |                             |
-| 3  | [24. 两两交换链表中的节点 中等](https://leetcode.cn/problems/swap-nodes-in-pairs/)                               | [Solution24.java](src%2Fleetcode%2Flinkedlist%2FSolution24.java)           |                             |
-| 4  | [剑指 Offer 25. 合并两个排序的链表 简单](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [SolutionOffer25.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer25.java) |                             |
-| 5  | [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/)                                | [Solution23.java](src%2Fleetcode%2Flinkedlist%2FSolution23.java)           | 分治的思想(想想归并排序)               |
-| 6  | [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)                                              | [Solution148.java](src%2Fleetcode%2Flinkedlist%2FSolution148.java)         | 也是分治的思想，但是它的难度是中等，其实和上一题差不多 |
-| 7  | [430. 扁平化多级双向链表 中等](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)           | [Solution430.java](src%2Fleetcode%2Flinkedlist%2FSolution430.java)         |                             |
+| 题目链接                                                                                                 | 题解                                                                         | 备注                          |
+|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------|
+| [剑指 Offer 06. 从尾到头打印链表 简单](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)     | [SolutionOffer06.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer06.java) |                             |
+| [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)              | [SolutionOffer35.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer35.java) |                             |
+| [24. 两两交换链表中的节点 中等](https://leetcode.cn/problems/swap-nodes-in-pairs/)                               | [Solution24.java](src%2Fleetcode%2Flinkedlist%2FSolution24.java)           |                             |
+| [剑指 Offer 25. 合并两个排序的链表 简单](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [SolutionOffer25.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer25.java) |                             |
+| [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/)                                | [Solution23.java](src%2Fleetcode%2Flinkedlist%2FSolution23.java)           | 分治的思想(想想归并排序)               |
+| [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)                                              | [Solution148.java](src%2Fleetcode%2Flinkedlist%2FSolution148.java)         | 也是分治的思想，但是它的难度是中等，其实和上一题差不多 |
+| [430. 扁平化多级双向链表 中等](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)           | [Solution430.java](src%2Fleetcode%2Flinkedlist%2FSolution430.java)         |                             |
 
 ### 双指针、快慢指针
 
-| 序号 | 题目链接                                                                                                     | 题解                                                                         | 备注 |
-|----|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
-| 1  | [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | [SolutionOffer22.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer22.java) |    |
-| 2  | [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)                                          | [Solution141.java](src%2Fleetcode%2Flinkedlist%2FSolution141.java)         |    |
-| 3  | [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)                                    | [Solution142.java](src%2Fleetcode%2Flinkedlist%2FSolution142.java)         |    |
-| 4  | [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)                           | [Solution160.java](src%2Fleetcode%2Flinkedlist%2FSolution160.java)         |    |
+| 题目链接                                                                                                     | 题解                                                                         | 备注 |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
+| [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | [SolutionOffer22.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer22.java) |    |
+| [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)                                          | [Solution141.java](src%2Fleetcode%2Flinkedlist%2FSolution141.java)         |    |
+| [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)                                    | [Solution142.java](src%2Fleetcode%2Flinkedlist%2FSolution142.java)         |    |
+| [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)                           | [Solution160.java](src%2Fleetcode%2Flinkedlist%2FSolution160.java)         |    |
 
 ### 前驱节点在删除链表节点中的应用
 
-| 序号 | 题目链接                                                                                          | 题解                                                                         | 备注 |
-|----|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
-| 1  | [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)  | [SolutionOffer18.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer18.java) |    |
-| 2  | [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)       | [Solution83.java](src%2Fleetcode%2Flinkedlist%2FSolution83.java)           |    |
-| 3  | [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | [Solution82.java](src%2Fleetcode%2Flinkedlist%2FSolution82.java)           |    |
-| 4  | [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)       | [Solution19.java](src%2Fleetcode%2Flinkedlist%2FSolution19.java)           |    |
-| 5  | [725. 分隔链表 中等](https://leetcode.cn/problems/split-linked-list-in-parts/)                      | [Solution725.java](src%2Fleetcode%2Flinkedlist%2FSolution725.java)         |    |
+| 题目链接                                                                                          | 题解                                                                         | 备注 |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
+| [剑指 Offer 18. 删除链表的节点 简单](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/)  | [SolutionOffer18.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer18.java) |    |
+| [83. 删除排序链表中的重复元素 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)       | [Solution83.java](src%2Fleetcode%2Flinkedlist%2FSolution83.java)           |    |
+| [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | [Solution82.java](src%2Fleetcode%2Flinkedlist%2FSolution82.java)           |    |
+| [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)       | [Solution19.java](src%2Fleetcode%2Flinkedlist%2FSolution19.java)           |    |
+| [725. 分隔链表 中等](https://leetcode.cn/problems/split-linked-list-in-parts/)                      | [Solution725.java](src%2Fleetcode%2Flinkedlist%2FSolution725.java)         |    |
 
 ### 推导
 
-| 序号 | 题目链接                                                                    | 题解                                                                               | 备注 |
-|----|-------------------------------------------------------------------------|----------------------------------------------------------------------------------|----|
-| 1  | [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)      | [Solution328.java](src%2Fleetcode%2Flinkedlist%2FSolution328.java)               |    |
-| 2  | [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/) | [Solution382.java](src%2Fleetcode%2Flinkedlist%2FSolution382.java)               |    |
-| 3  | [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)     | [SolutionOfferTwo29.java](src%2Fleetcode%2Flinkedlist%2FSolutionOfferTwo29.java) |    |
-| 4  | [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)      | [Solution0205.java](src%2Fleetcode%2Flinkedlist%2FSolution0205.java)             |    |
-| 5  | [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)     | [Solution445.java](src%2Fleetcode%2Flinkedlist%2FSolution445.java)               |    |
-| 6  | [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)    | [Solution817.java](src%2Fleetcode%2Flinkedlist%2FSolution817.java)               |    |
+| 题目链接                                                                    | 题解                                                                               | 备注 |
+|-------------------------------------------------------------------------|----------------------------------------------------------------------------------|----|
+| [328. 奇偶链表 中等](https://leetcode.cn/problems/odd-even-linked-list/)      | [Solution328.java](src%2Fleetcode%2Flinkedlist%2FSolution328.java)               |    |
+| [382. 链表随机节点 中等](https://leetcode.cn/problems/linked-list-random-node/) | [Solution382.java](src%2Fleetcode%2Flinkedlist%2FSolution382.java)               |    |
+| [剑指 Offer II 029. 排序的循环链表 中等](https://leetcode.cn/problems/4ueAj6/)     | [SolutionOfferTwo29.java](src%2Fleetcode%2Flinkedlist%2FSolutionOfferTwo29.java) |    |
+| [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)      | [Solution0205.java](src%2Fleetcode%2Flinkedlist%2FSolution0205.java)             |    |
+| [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)     | [Solution445.java](src%2Fleetcode%2Flinkedlist%2FSolution445.java)               |    |
+| [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)    | [Solution817.java](src%2Fleetcode%2Flinkedlist%2FSolution817.java)               |    |
 
 ## 11. 数据结构
 
-| 序号 | 题目链接                                                                              | 题解                                                                            | 备注 |
-|----|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-| 1  | [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)                         | [LRUCacheHashMap.java](src%2Fleetcode%2Fdatastructure%2FLRUCacheHashMap.java) |    |
-| 2  | [460. LFU 缓存 困难](https://leetcode.cn/problems/lfu-cache/)                         | [LFUCache.java](src%2Fleetcode%2Fdatastructure%2FLFUCache.java)               |    |
-| 3  | [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)     | [AllOne.java](src%2Fleetcode%2Fdatastructure%2FAllOne.java)                   |    |
-| 4  | [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)                  | [MyLinkedList.java](src%2Fleetcode%2Fdatastructure%2FMyLinkedList.java)       |    |
-| 5  | [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)           | [MyCircularDeque.java](src%2Fleetcode%2Fdatastructure%2FMyCircularDeque.java) |    |
-| 6  | [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                               |    |
-| 7  | [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                               |    |
+| 题目链接                                                                              | 题解                                                                            | 备注 |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+| [146. LRU 缓存 中等](https://leetcode.cn/problems/lru-cache/)                         | [LRUCacheHashMap.java](src%2Fleetcode%2Fdatastructure%2FLRUCacheHashMap.java) |    |
+| [460. LFU 缓存 困难](https://leetcode.cn/problems/lfu-cache/)                         | [LFUCache.java](src%2Fleetcode%2Fdatastructure%2FLFUCache.java)               |    |
+| [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)     | [AllOne.java](src%2Fleetcode%2Fdatastructure%2FAllOne.java)                   |    |
+| [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)                  | [MyLinkedList.java](src%2Fleetcode%2Fdatastructure%2FMyLinkedList.java)       |    |
+| [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)           | [MyCircularDeque.java](src%2Fleetcode%2Fdatastructure%2FMyCircularDeque.java) |    |
+| [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                               |    |
+| [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                               |    |
 
 ## 12. 栈
 
@@ -261,21 +261,21 @@
 
 - 应用: 函数调用栈、括号的匹配、双栈实现浏览器的前进和后退功能、JVM栈、电子邮件的存放、算数表达式的求值(操作数栈和运算符栈)
 
-| 序号 | 题目链接                                                                                                     | 题解                                                                                          | 备注 |
-|----|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----|
-| 1  | [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                          | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
-| 2  | [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)                             | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
-| 3  | [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                   | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
-| 4  | [946. 验证栈序列 中等](https://leetcode.cn/problems/validate-stack-sequences/)                                  | [Solution946.java](src%2Fleetcode%2Fstack%2FSolution946.java)                               |    |
-| 5  | [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                                               | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
-| 6  | [1190. 反转每对括号间的子串 中等](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [Solution1190.java](src%2Fleetcode%2Fstack%2FSolution1190.java)                             |    |
-| 7  | [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                                             | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
-| 8  | [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)                             | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
-| 9  | [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)                                         | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
-| 10 | [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)                                      | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
-| 11 | [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/)                           | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
-| 12 | [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
-| 13 | [726. 原子的数量 困难](https://leetcode.cn/problems/number-of-atoms/)                                           | [Solution726.java](src%2Fleetcode%2Fstack%2FSolution726.java)                               |    |
+| 题目链接                                                                                                     | 题解                                                                                          | 备注 |
+|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----|
+| [20. 有效的括号 简单](https://leetcode.cn/problems/valid-parentheses/)                                          | [Solution20.java](src%2Fleetcode%2Fstack%2FSolution20.java)                                 |    |
+| [232. 用栈实现队列 简单](https://leetcode.cn/problems/implement-queue-using-stacks/)                             | [MyQueue.java](src%2Fleetcode%2Fstack%2FMyQueue.java)                                       |    |
+| [155. 最小栈 中等](https://leetcode.cn/problems/min-stack/)                                                   | [MinStack.java](src%2Fleetcode%2Fstack%2FMinStack.java)                                     |    |
+| [946. 验证栈序列 中等](https://leetcode.cn/problems/validate-stack-sequences/)                                  | [Solution946.java](src%2Fleetcode%2Fstack%2FSolution946.java)                               |    |
+| [71. 简化路径 中等](https://leetcode.cn/problems/simplify-path/)                                               | [Solution71.java](src%2Fleetcode%2Fstack%2FSolution71.java)                                 |    |
+| [1190. 反转每对括号间的子串 中等](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [Solution1190.java](src%2Fleetcode%2Fstack%2FSolution1190.java)                             |    |
+| [385. 迷你语法分析器 中等](https://leetcode.cn/problems/mini-parser/)                                             | [【宫水三叶】栈运用模拟题](https://leetcode.cn/problems/mini-parser/solutions/1422125/by-ac_oier-zuy6/) |    |
+| [636. 函数的独占时间 中等](https://leetcode.cn/problems/exclusive-time-of-functions/)                             | [Solution636.java](src%2Fleetcode%2Fstack%2FSolution636.java)                               |    |
+| [735. 行星碰撞 中等](https://leetcode.cn/problems/asteroid-collision/)                                         | [Solution735.java](src%2Fleetcode%2Fstack%2FSolution735.java)                               |    |
+| [856. 括号的分数 中等](https://leetcode.cn/problems/score-of-parentheses/)                                      | [Solution856.java](src%2Fleetcode%2Fstack%2FSolution856.java)                               |    |
+| [1106. 解析布尔表达式 困难](https://leetcode.cn/problems/parsing-a-boolean-expression/)                           | [Solution1106.java](src%2Fleetcode%2Fstack%2FSolution1106.java)                             |    |
+| [32. 最长有效括号 困难](https://leetcode.cn/problems/longest-valid-parentheses/)                                 | [Solution32.java](src%2Fleetcode%2Fstack%2FSolution32.java)                                 |    |
+| [726. 原子的数量 困难](https://leetcode.cn/problems/number-of-atoms/)                                           | [Solution726.java](src%2Fleetcode%2Fstack%2FSolution726.java)                               |    |
 
 ### 单调栈
 
@@ -306,30 +306,30 @@ while (!stack.isEmpty()) {
 }
 ```   
 
-| 序号 | 题目链接                                                                                                | 题解                                                                          | 备注          |
-|----|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|
-| 1  | [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |             |
-| 2  | [739. 每日温度 中等](https://leetcode.cn/problems/daily-temperatures/)                                    | [Solution739.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution739.java)   |             |
-| 3  | [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                   | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |             |
-| 4  | [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                           | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
-| 5  | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
-| 6  | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |             |
-| 7  | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
-| 8  | [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)                         | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java)   |             |
-| 9  | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |             |
-| 10 | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
-| 11 | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
+| 题目链接                                                                                                | 题解                                                                          | 备注          |
+|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|
+| [1475. 商品折扣后的最终价格 简单](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [Solution1475.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1475.java) |             |
+| [739. 每日温度 中等](https://leetcode.cn/problems/daily-temperatures/)                                    | [Solution739.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution739.java)   |             |
+| [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                   | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |             |
+| [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                           | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
+| [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |             |
+| [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
+| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)                         | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java)   |             |
+| [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     |             |
+| [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
+| [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
 
 ## 13. 队列
 
 先进先出队列（简称队列）是一种基于先进先出（FIFO）策略的集合类型，它相比于栈多了能够在队首操作的方法，所以使用栈能解决的问题队列也能解决，不过使用队列解决的问题会突出 **需要操作两端数据** 的特点。
 
-| 序号 | 题目链接                                                                                              | 题解                                                                    | 备注 |
-|----|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-| 1  | [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
-| 2  | [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
-| 3  | [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
-| 4  | [933. 最近的请求次数 简单](https://leetcode.cn/problems/number-of-recent-calls/)                           | [RecentCounter.java](src%2Fleetcode%2Fqueue%2FRecentCounter.java)     |    |
+| 题目链接                                                                                              | 题解                                                                    | 备注 |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
+| [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
+| [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
+| [933. 最近的请求次数 简单](https://leetcode.cn/problems/number-of-recent-calls/)                           | [RecentCounter.java](src%2Fleetcode%2Fqueue%2FRecentCounter.java)     |    |
 
 ### 单调队列
 
@@ -352,11 +352,11 @@ while (!stack.isEmpty()) {
     }
 ```
 
-| 序号 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
-|----|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| 1  | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
-| 2  | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
-| 3  | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
+| 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
+| [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
+| [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 ## 14. 哈希
 
@@ -476,9 +476,9 @@ inf bfs(Node node, Node target) {
    
 ### 递归
 
-| 序号 | 题目链接                                                               | 题解                                                                                                                                                                 | 备注 |
-|----|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
-| 1  | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654Recursion.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java); <br/>单调栈解法：[Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |    |
+| 题目链接                                                               | 题解                                                                                                                                                                 | 备注 |
+|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654Recursion.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java); <br/>单调栈解法：[Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java) |    |
 
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
@@ -548,11 +548,11 @@ for (int i = 0; i < n1; i++) {
 }
 ```
 
-| 序号 | 题目链接                                                                                         | 题解                                                         | 备注 |
-|----|----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
-|    | [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)              | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java) |    |
-|    | [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java) |    |
-|    | [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)            | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
+| 题目链接                                                                                         | 题解                                                         | 备注 |
+|----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
+| [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)              | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java) |    |
+| [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java) |    |
+| [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)            | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
 
 1. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
 
@@ -561,9 +561,9 @@ for (int i = 0; i < n1; i++) {
 
 ### 其他问题
 
-| 序号 | 题目链接                                                                                          | 题解                                                         | 备注 |
-|----|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
-|    | [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
+| 题目链接                                                                                          | 题解                                                         | 备注 |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
+| [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
 
 1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
@@ -627,12 +627,12 @@ def backtrack(路径, 选择列表):
 
 ## 23. 模拟
 
-| 序号 | 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|----|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|    | [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)    |    |
-|    | [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)      |    |
-|    | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
-|    | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)        |    |
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)    |    |
+| [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)      |    |
+| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
+| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)        |    |
 
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
