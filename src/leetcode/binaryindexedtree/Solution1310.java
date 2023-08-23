@@ -18,23 +18,13 @@ public class Solution1310 {
     }
 
     static class BinaryIndexedTree {
-        // 用这颗树来保存异或的结果值
+
         int[] tree;
 
-        int[] arr;
-
-        public BinaryIndexedTree(int[] arr) {
-            this.arr = arr;
-            tree = new int[arr.length + 1];
-
-            for (int i = 0; i < arr.length; i++) {
-                calculate(i + 1, arr[i]);
-            }
-        }
-
-        private void calculate(int index, int num) {
-            for (int i = index; i < tree.length; i += lowbit(i)) {
-                tree[i] ^= num;
+        public BinaryIndexedTree(int[] nums) {
+            this.tree = new int[nums.length + 1];
+            for (int i = 0; i < nums.length; i++) {
+                update(i + 1, nums[i]);
             }
         }
 
@@ -42,17 +32,24 @@ public class Solution1310 {
             return query(right) ^ query(left - 1);
         }
 
-        private int query(int index) {
+        public int query(int i) {
             int res = 0;
-            for (int i = index; i > 0; i -= lowbit(i)) {
-                res ^= tree[i];
+            for (int j = i; j > 0; j -= lowbit(j)) {
+                res ^= tree[j];
             }
 
             return res;
         }
 
-        private int lowbit(int x) {
-            return x & -x;
+        private void update(int i, int num) {
+            for (int j = i; j < tree.length; j += lowbit(j)) {
+                tree[j] ^= num;
+            }
+        }
+
+        private int lowbit(int j) {
+            return j & -j;
         }
     }
+
 }
