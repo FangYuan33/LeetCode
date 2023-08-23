@@ -1,6 +1,5 @@
 package leetcode.datastructure;
 
-
 import java.util.HashMap;
 
 class LFUCache {
@@ -32,13 +31,9 @@ class LFUCache {
      */
     static class Node {
 
-        Node left;
+        int key, value;
 
-        Node right;
-
-        int key;
-
-        int value;
+        Node pre, next;
 
         int accessNum;
 
@@ -47,117 +42,146 @@ class LFUCache {
             this.value = value;
             this.accessNum = accessNum;
         }
-
     }
 
-    private HashMap<Integer, Node> keyNodeMap;
-
-    private HashMap<Integer, Node> accessNodeMap;
-
+    /**
+     * 记录访问最小的值
+     */
     private int minAccessNum;
 
-    private int capacity;
+    private final int capacity;
+
+    private final HashMap<Integer, Node> accessNodeMap;
+
+    private final HashMap<Integer, Node> keyNodeMap;
 
     public LFUCache(int capacity) {
-        keyNodeMap = new HashMap<>(capacity);
-        accessNodeMap = new HashMap<>(capacity);
-        minAccessNum = 0;
         this.capacity = capacity;
+        accessNodeMap = new HashMap<>(capacity);
+        keyNodeMap = new HashMap<>(capacity);
+
+        // 初始化访问次数为 1 的哨兵节点
+        minAccessNum = 1;
+        accessNodeMap.put(minAccessNum, initialSentinelNode(1));
     }
 
     public int get(int key) {
         if (keyNodeMap.containsKey(key)) {
             Node node = keyNodeMap.get(key);
-            // 如果所在链表只有一个节点的话，那么直接将该访问次数的链表删掉
-            Node sentinelHead = accessNodeMap.get(node.accessNum);
-            if (sentinelHead.left == sentinelHead.right) {
-                accessNodeMap.remove(node.accessNum);
-                // 维护缓存中最小的访问次数
-                if (minAccessNum == node.accessNum) {
-                    minAccessNum++;
-                }
-            } else {
-                // 断开与原链表的连接
-                node.left.right = node.right;
-                node.right.left = node.left;
-            }
-
-            // 增加后的访问次数链表看看有没有
-            node.accessNum++;
-            if (accessNodeMap.containsKey(node.accessNum)) {
-                Node target = accessNodeMap.get(node.accessNum);
-                // 插入头节点
-                insertHead(node, target);
-            } else {
-                // 带有哨兵的循环双向链表
-                Node head = initialSentinelLinkedList(node);
-                // 没有对应的链表 直接插入
-                accessNodeMap.put(node.accessNum, head);
-            }
+            // 找到新的位置
+            insertIntoNextSentinel(node);
 
             return node.value;
-        } else {
-            return -1;
         }
+
+        return -1;
     }
 
     public void put(int key, int value) {
         if (keyNodeMap.containsKey(key)) {
             Node node = keyNodeMap.get(key);
             node.value = value;
-            // 执行get方法
-            get(key);
+
+            insertIntoNextSentinel(node);
         } else {
-            Node node = new Node(key, value, 1);
             if (keyNodeMap.size() == capacity) {
-                // 容量不够需要将最少使用的节点移除
-                Node sentinel = accessNodeMap.get(minAccessNum);
-
-                Node tail = sentinel.left;
-                // 如果所在链表只有一个节点的话，那么直接将该访问次数的链表删掉
-                if (sentinel.left == sentinel.right) {
-                    accessNodeMap.remove(minAccessNum);
-                } else {
-                    // 断开与原链表的连接
-                    tail.left.right = tail.right;
-                    tail.right.left = tail.left;
-                }
-                keyNodeMap.remove(tail.key);
+                // 移除最老的节点
+                removeEldest();
             }
-            // 这样就有有足够的容量了
-            keyNodeMap.put(key, node);
-
-            // 是否有对应的链表
-            if (accessNodeMap.containsKey(node.accessNum)) {
-                // 插入头节点
-                insertHead(node, accessNodeMap.get(node.accessNum));
-            } else {
-                // 带有哨兵的循环双向链表
-                Node head = initialSentinelLinkedList(node);
-                // 没有对应的链表 直接插入
-                accessNodeMap.put(node.accessNum, head);
-            }
+            // 新加进来的肯定是最小访问次数 1
             minAccessNum = 1;
+            Node newNode = new Node(key, value, minAccessNum);
+
+            // 插入到头节点
+            insertInfoHead(newNode, accessNodeMap.get(minAccessNum));
+            keyNodeMap.put(key, newNode);
         }
     }
 
-    private void insertHead(Node node, Node target) {
-        node.left = target;
-        node.right = target.right;
-        target.right.left = node;
-        target.right = node;
+    /**
+     * 插入下一个链表中
+     */
+    private void insertIntoNextSentinel(Node node) {
+        // 在原来的位置移除
+        remove(node);
+        // 尝试更新 minAccessNum
+        tryToIncreaseMinAccessNum(node.accessNum++);
+        // 获取增加 1 后的哨兵节点
+        Node nextCacheSentinel = getSpecificAccessNumSentinel(node.accessNum);
+        // 插入该链表的头节点
+        insertInfoHead(node, nextCacheSentinel);
     }
 
-    private Node initialSentinelLinkedList(Node node) {
-        Node sentinel = new Node(-1, -1, -1);
+    /**
+     * 在原链表中移除
+     */
+    private void remove(Node node) {
+        node.pre.next = node.next;
+        node.next.pre = node.pre;
+        node.next = null;
+        node.pre = null;
+    }
 
-        // 构建双向循环链表
-        sentinel.right = node;
-        sentinel.left = node;
-        node.left = sentinel;
-        node.right = sentinel;
+    /**
+     * 尝试更新 minAccessNum
+     */
+    private void tryToIncreaseMinAccessNum(int accessNum) {
+        // 原访问次数的哨兵节点
+        Node originSentinel = accessNodeMap.get(accessNum);
+        // 如果只剩下哨兵节点的话，需要看看需不需要把 minAccessNum 增加 1
+        if (originSentinel.next == originSentinel) {
+            if (originSentinel.accessNum == minAccessNum) {
+                minAccessNum++;
+            }
+        }
+    }
+
+    /**
+     * 获取指定访问次数的哨兵节点
+     */
+    private Node getSpecificAccessNumSentinel(int accessNum) {
+        if (accessNodeMap.containsKey(accessNum)) {
+            return accessNodeMap.get(accessNum);
+        } else {
+            // 没有的话得初始化一个
+            Node nextCacheSentinel = initialSentinelNode(accessNum);
+            accessNodeMap.put(accessNum, nextCacheSentinel);
+
+            return nextCacheSentinel;
+        }
+    }
+
+    /**
+     * 生成具体访问次数的哨兵节点
+     */
+    private Node initialSentinelNode(int accessNum) {
+        Node sentinel = new Node(-1, -1, accessNum);
+        // 双向循环链表
+        sentinel.next = sentinel;
+        sentinel.pre = sentinel;
 
         return sentinel;
     }
 
+    /**
+     * 插入头节点
+     */
+    private void insertInfoHead(Node node, Node nextCacheSentinel) {
+        node.next = nextCacheSentinel.next;
+        nextCacheSentinel.next.pre = node;
+        nextCacheSentinel.next = node;
+        node.pre = nextCacheSentinel;
+    }
+
+    /**
+     * 如果容量满了的话，需要把 minAccessNum 访问次数的尾巴节点先移除掉
+     */
+    private void removeEldest() {
+        Node minSentinel = accessNodeMap.get(minAccessNum);
+
+        Node tail = minSentinel.pre;
+        tail.pre.next = tail.next;
+        minSentinel.pre = tail.pre;
+        keyNodeMap.remove(tail.key);
+    }
 }
