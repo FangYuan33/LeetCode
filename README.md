@@ -86,12 +86,13 @@
 
 ## 5. 前缀和
 
-连续子数组求和
+连续子数组求和，不涉及元素值变化
 
 ### 一维数组前缀和
 
 | 题目链接                                                                             | 题解                                                                | 备注 |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
+| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/) | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)       |    |
 | [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |    |
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
