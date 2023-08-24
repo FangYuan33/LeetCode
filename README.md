@@ -293,9 +293,13 @@
 
 ### 单调栈
 
-顺序遍历数组入栈，如果遇到 **比栈顶元素小的值则出栈** 的栈为 **单调递增栈**，**该较小的值即为即将出栈的元素右侧最近的小值**，元素出栈后若有 **栈顶元素**，该元素为出栈元素 **左侧最近的小值**。最终遍历完序列后，如果栈内还有元素的话，则为递增序列，那么我们需要检查是否需要对栈中剩余的元素进行处理。一般单调栈的题目会有 **在连续序列中找左/右侧最大或最小值** 的特点，而且 **不要局限** 在只使用一个单调栈解题，有的题目需要维护两个单调栈来求解。
+顺序遍历数组入栈，如果遇到 **比栈顶元素小的值则出栈** 的栈为 **单调递增栈**，**该较小的值即为即将出栈的元素右侧最近的小值**，元素出栈后若有 **栈顶元素**，该元素为出栈元素 **左侧最近的小值**。
 
-- 单调递增栈解题模版如下：
+最终遍历完序列后，如果栈内还有元素的话，则为递增序列，那么我们需要检查是否需要对栈中剩余的元素进行处理。
+
+一般单调栈的题目会有 **在连续序列中找左/右侧最大或最小值** 的特点，此外我们还可以借助单调栈来 **维护区间内的最小值/最大值的序列**，而且 **不要局限** 在只使用一个单调栈解题，有的题目需要维护两个单调栈来求解。
+
+- 单调递增栈解题模版，注意我们压入栈的不是数组中的值而是值的索引：
 
 ```java
 Stack<Integer> stack = new Stack<>();
@@ -370,7 +374,7 @@ while (!stack.isEmpty()) {
 |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
 | [面试题59 - II. 队列的最大值 中等](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/)                                                     | [MaxQueue.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FMaxQueue.java)         |    |
 | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |    |
-| [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
+| [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) | ⭐️ |
 
 ## 14. 哈希
 
