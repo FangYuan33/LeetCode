@@ -7,22 +7,23 @@ public class MyCalendarThree {
         myCalendarThree.book(0, 1000000000);
     }
 
-    SegmentTree segmentTree;
-
     int max = 0;
 
+    SegmentTree segmentTree;
+
+    // 区间修改和区间查询，并拿 max 记录最大的预定次数
     public MyCalendarThree() {
         segmentTree = new SegmentTree();
     }
 
     public int book(int startTime, int endTime) {
         segmentTree.update(1, 1, (int) 1e9, startTime + 1, endTime);
-        max = Math.max(max, segmentTree.query(1, 1, (int) 1e9, startTime + 1, endTime));
+
+        max = Math.max(segmentTree.query(1, 1, (int) 1e9, startTime + 1, endTime), max);
 
         return max;
     }
 
-    // 同样是保存区间最大值的动态开点线段树
     static class SegmentTree {
         static class Node {
 
@@ -40,8 +41,8 @@ public class MyCalendarThree {
         int count;
 
         public SegmentTree() {
-            tree = new Node[(int) 5e6];
             count = 1;
+            tree = new Node[(int) 5e6];
             tree[count] = new Node();
         }
 
@@ -68,8 +69,8 @@ public class MyCalendarThree {
 
         public void update(int pos, int left, int right, int l, int r) {
             if (l <= left && right <= r) {
-                tree[pos].val++;
-                tree[pos].add++;
+                tree[pos].val += 1;
+                tree[pos].add += 1;
                 return;
             }
 
@@ -88,18 +89,8 @@ public class MyCalendarThree {
             pushUp(pos);
         }
 
-        private void lazyCreate(int pos) {
-            if (tree[pos] == null) {
-                tree[pos] = new Node();
-            }
-            if (tree[pos].left == 0) {
-                tree[pos].left = ++count;
-                tree[tree[pos].left] = new Node();
-            }
-            if (tree[pos].right == 0) {
-                tree[pos].right = ++count;
-                tree[tree[pos].right] = new Node();
-            }
+        private void pushUp(int pos) {
+            tree[pos].val = Math.max(tree[tree[pos].left].val, tree[tree[pos].right].val);
         }
 
         private void pushDown(int pos) {
@@ -116,8 +107,18 @@ public class MyCalendarThree {
             }
         }
 
-        private void pushUp(int pos) {
-            tree[pos].val = Math.max(tree[tree[pos].left].val, tree[tree[pos].right].val);
+        private void lazyCreate(int pos) {
+            if (tree[pos] == null) {
+                tree[pos] = new Node();
+            }
+            if (tree[pos].left == 0) {
+                tree[pos].left = ++count;
+                tree[tree[pos].left] = new Node();
+            }
+            if (tree[pos].right == 0) {
+                tree[pos].right = ++count;
+                tree[tree[pos].right] = new Node();
+            }
         }
     }
 }
