@@ -88,13 +88,12 @@
 
 **包含负数**的连续子数组，非负数连续子数组问题可以使用滑动窗口求解
 
-| 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-|                                                                                                            |                                                                       |    |
+| 题目链接                                                                             | 题解                                                                | 备注 |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
+| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |    |
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
-3. [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)
 
 ## 6. 差分
 
@@ -632,6 +631,7 @@ def backtrack(路径, 选择列表):
 | [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)      |    |
 | [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
 | [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)        |    |
+| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/)                      | [NumMatrix.java](src%2Fleetcode%2Fsimulate%2FNumMatrix.java)          |    |
 
 1. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
