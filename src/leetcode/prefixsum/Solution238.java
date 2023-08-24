@@ -4,25 +4,25 @@ import java.util.Arrays;
 
 public class Solution238 {
     public int[] productExceptSelf(int[] nums) {
-        // 两遍前缀和 res[i] = 左边的乘积 * 右边的乘积
-        int length = nums.length;
-        int[] preSum = new int[length];
-        Arrays.fill(preSum, 1);
-        int[] postSum = new int[length];
-        Arrays.fill(postSum, 1);
+        // 左右方向各乘一次
+        int[] answer1 = new int[nums.length];
+        int[] answer2 = new int[nums.length];
+        Arrays.fill(answer1, 1);
+        Arrays.fill(answer2, 1);
 
-        for (int i = 1; i < preSum.length; i++) {
-            preSum[i] = preSum[i - 1] * nums[i - 1];
+        // 先乘后边
+        for (int i = nums.length - 2; i >= 0; i--) {
+            answer1[i] = answer1[i + 1] * nums[i + 1];
         }
-        for (int i = length - 2; i >= 0; i--) {
-            postSum[i] = postSum[i + 1] * nums[i + 1];
+        // 再乘左边
+        for (int i = 1; i < nums.length; i++) {
+            answer2[i] = answer2[i - 1] * nums[i - 1];
+        }
+        int[] answer = new int[nums.length];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = answer1[i] * answer2[i];
         }
 
-        int[] res = new int[length];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = preSum[i] * postSum[i];
-        }
-
-        return res;
+        return answer;
     }
 }
