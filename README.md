@@ -90,10 +90,11 @@
 
 ### 一维数组前缀和
 
-| 题目链接                                                                             | 题解                                                                | 备注 |
-|----------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
-| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/) | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)       |    |
-| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |    |
+| 题目链接                                                                             | 题解                                                                | 备注                  |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------|---------------------|
+| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/) | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)       |                     |
+| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |                     |
+| [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                    | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java) | 暴力法会直接超时，解决本题需要推导一下 |
 
 1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
