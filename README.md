@@ -59,7 +59,6 @@
 
 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
 |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) |    |
 
 1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
@@ -293,13 +292,11 @@
 
 ### 单调栈
 
-顺序遍历数组入栈，如果遇到 **比栈顶元素小的值则出栈** 的栈为 **单调递增栈**，**该较小的值即为即将出栈的元素右侧最近的小值**，元素出栈后若有 **栈顶元素**，该元素为出栈元素 **左侧最近的小值**。
+以 **单调递增栈** 为例，顺序遍历数组入栈，遇到 **比栈顶元素小的值则出栈**，该较小的值即为**当前栈顶元素右侧最近的小值**，若元素出栈后还有 **栈顶元素**，则该元素为出栈元素的 **左侧最近的小值**。
 
-最终遍历完序列后，如果栈内还有元素的话，则为递增序列，那么我们需要检查是否需要对栈中剩余的元素进行处理。
+一般单调栈的题目会有 **在连续序列中找数组中各个元素左/右侧最近的大/小值** 的特点，我们可以根据 找小值还是找大值来确定如下模板中的 while 条件，如果找小值则使用小于号，则 `nums[i] < nums[stack.peek()]`，如果找大值则使用大于号，则 `nums[i] > nums[stack.peek()]`，再根据题意判断是否需要给大于小于号添加上等号 而且 **不要局限** 在只使用一个单调栈解题，有的题目需要维护两个单调栈来求解。
 
-一般单调栈的题目会有 **在连续序列中找左/右侧最大或最小值** 的特点，此外我们还可以借助单调栈来 **维护区间内的最小值/最大值的序列**，而且 **不要局限** 在只使用一个单调栈解题，有的题目需要维护两个单调栈来求解。
-
-- 单调递增栈解题模版，注意我们压入栈的不是数组中的值而是值的索引：
+- 找小值的单调递增栈模板如下，注意我们压入栈的不是数组中的值而是 **值的索引**：
 
 ```java
 Stack<Integer> stack = new Stack<>();
@@ -333,10 +330,38 @@ while (!stack.isEmpty()) {
 | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                  | [Solution654.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution654.java)   |             |
 | [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
-| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)                         | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java)   |             |
 | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     | ⭐️          |
-| [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)                    | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)     |             |
-| [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                                      | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)     | 转换成 84 题来求解 |
+
+#### 计算当前值作为区间最大/最小值时的最大区间范围
+
+该类型题目不要求查找某元素的左/右最近的大/小值，而是利用单调栈能找到元素最近的大值/小值的特点来确定当前元素作为最大值/最小值的区间范围，我们初始化每个元素的默认下界和上界区间范围如下，这是该元素作为极值时的特殊情况：
+
+```java
+int[] left = new int[nums.length];
+Arrays.fill(left, -1);
+int[] right = new int[nums.length];
+Arrays.fill(right, nums.length);
+```
+
+现在，我们以单调递增栈为例，如果我们顺序遍历数组，它能记录每个元素右侧能到达的最远区间范围：
+
+```java
+Stack<Integer> stack = new Stack<>();
+
+for(int i = 0; i < nums.length; i++) {
+    while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
+        // 当前出栈的元素
+        right[stack.pop()] = i;    
+    }  
+    stack.push(i);
+}
+```
+
+| 题目链接                                                                             | 题解                                                                        | 备注              |
+|----------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------|
+| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)      | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java) | 乘法原理和重复值判断很需要注意 |
+| [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/) | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)   | ⭐️              |
+| [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                   | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)   | 转换成 84 题来求解     |
 
 ## 13. 队列
 
@@ -351,7 +376,7 @@ while (!stack.isEmpty()) {
 
 ### 单调队列
 
-单调队列是在单调栈的基础上实现 **数据的两端操作**，所以使用单调栈能解决的题目使用单调队列也能够解决，不过我们还是在有必要的数据两端操作的前提下，使用单调队列。
+单调队列是在单调栈的基础上实现 **数据的两端操作**，那么我们使用单调队列就能获取到队列 **当前序列中的最大或最小值**，以单调递增队列为例，队列的头元素便是最小的，这是单调栈不具备的特性，所以理论上单调栈能解决的题目使用单调队列也能够解决。
 
 - 单调递减队列模板如下：
 

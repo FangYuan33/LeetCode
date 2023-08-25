@@ -6,50 +6,67 @@ import java.util.Stack;
 public class Solution85 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution85().maximalRectangle(new char[][]{new char[]{'1', '0', '1', '0', '0'}}));
+        System.out.println(new Solution85().maximalRectangle(new char[][]{
+                new char[]{'1', '0', '1', '0', '0'},
+                new char[]{'1', '0', '1', '1', '1'},
+                new char[]{'1', '1', '1', '1', '1'},
+                new char[]{'1', '0', '0', '1', '0'}
+        }));
     }
 
     public int maximalRectangle(char[][] matrix) {
-        // 以每行为基准，将 matrix 转换成每列连续 1 的个数，那么这样就转换成了 84 题求矩阵的面积
-        int[][] heights = new int[matrix.length][matrix[0].length];
-        // 初始化第一行
-        for (int i = 0; i < matrix[0].length; i++) {
-            heights[0][i] = matrix[0][i] == '1' ? 1 : 0;
-        }
-        for (int i = 1; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                heights[i][j] = matrix[i][j] == '1' ?  (heights[i - 1][j] + 1) : 0;
+        int[][] intMatrix = new int[matrix.length][matrix[0].length];
+        for (int i = 0; i < intMatrix.length; i++) {
+            for (int j = 0; j < intMatrix[0].length; j++) {
+                intMatrix[i][j] = matrix[i][j] - '0';
             }
         }
 
         int res = 0;
-        // 遍历每行
-        for (int[] height : heights) {
-            // 单调递增站找当前值左右两边最小的柱子
-            Stack<Integer> stack = new Stack<>();
-            int[] left = new int[height.length];
-            Arrays.fill(left, -1);
-            int[] right = new int[height.length];
-            Arrays.fill(right, right.length);
+        // 计算出第一行的面积
+        int temp = 0;
+        for (int i = 0; i < intMatrix[0].length; i++) {
+            if (intMatrix[0][i] == 1) {
+                temp++;
+            } else {
+                temp = 0;
+            }
+            res = Math.max(res, temp);
+        }
 
-            // 正序统计右小值
-            for (int j = 0; j < height.length; j++) {
-                while (!stack.isEmpty() && height[j] < height[stack.peek()]) {
-                    right[stack.pop()] = j;
+        // 从第二行开始不断的构造矩形，如果当前行是 1 的话，累加上边的，否则的话为 0 不变
+        for (int i = 1; i < intMatrix.length; i++) {
+            for (int j = 0; j < intMatrix[0].length; j++) {
+                if (intMatrix[i][j] == 1) {
+                    intMatrix[i][j] += intMatrix[i - 1][j];
                 }
-                stack.push(j);
+            }
+            // 矩形构造完了，使用单调递增栈遇到小值时记录当前矩形左右最早的高度
+            Stack<Integer> stack = new Stack<>();
+            int[] left = new int[intMatrix[0].length];
+            Arrays.fill(left, -1);
+            int[] right = new int[intMatrix[0].length];
+            Arrays.fill(right, intMatrix[0].length);
+
+            // 正序找右
+            for (int k = 0; k < intMatrix[0].length; k++) {
+                while (!stack.isEmpty() && intMatrix[i][k] < intMatrix[i][stack.peek()]) {
+                    right[stack.pop()] = k;
+                }
+                stack.push(k);
             }
             stack.clear();
-            // 倒序统计左小值
-            for (int j = height.length - 1; j >= 0; j--) {
-                while (!stack.isEmpty() && height[j] < height[stack.peek()]) {
-                    left[stack.pop()] = j;
+            // 倒序找左
+            for (int k = intMatrix[0].length - 1; k >= 0; k--) {
+                while (!stack.isEmpty() && intMatrix[i][k] < intMatrix[i][stack.peek()]) {
+                    left[stack.pop()] = k;
                 }
-                stack.push(j);
+                stack.push(k);
             }
 
-            for (int j = 0; j < height.length; j++) {
-                res = Math.max(res, (right[j] - left[j] - 1) * height[j]);
+            // 计算面积
+            for (int k = 0; k < intMatrix[0].length; k++) {
+                res = Math.max(res, (right[k] - left[k] - 1) * intMatrix[i][k]);
             }
         }
 

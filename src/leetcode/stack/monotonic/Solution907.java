@@ -4,14 +4,20 @@ import java.util.Arrays;
 import java.util.Stack;
 
 public class Solution907 {
+
+    public static void main(String[] args) {
+        System.out.println(new Solution907().sumSubarrayMins(new int[]{3, 1, 2, 4}));
+    }
+
     public int sumSubarrayMins(int[] arr) {
-        // 单调递增栈，统计每个元素作为子数组最小元素的贡献次数
+        // 以每个元素为区间最小值找到它能最大的区间范围
+        Stack<Integer> stack = new Stack<>();
         int[] left = new int[arr.length];
         Arrays.fill(left, -1);
         int[] right = new int[arr.length];
         Arrays.fill(right, arr.length);
 
-        Stack<Integer> stack = new Stack<>();
+        // 正序找右
         for (int i = 0; i < arr.length; i++) {
             while (!stack.isEmpty() && arr[i] <= arr[stack.peek()]) {
                 right[stack.pop()] = i;
@@ -19,6 +25,7 @@ public class Solution907 {
             stack.push(i);
         }
         stack.clear();
+        // 倒序找左
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!stack.isEmpty() && arr[i] < arr[stack.peek()]) {
                 left[stack.pop()] = i;
@@ -31,6 +38,6 @@ public class Solution907 {
             res += (long) arr[i] * (right[i] - i) * (i - left[i]);
         }
 
-        return res > Integer.MAX_VALUE ? (int) (res % 1000000007) : (int) res;
+        return (int) (res % ((int) 1e9 + 7));
     }
 }
