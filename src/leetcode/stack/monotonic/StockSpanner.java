@@ -1,18 +1,19 @@
 package leetcode.stack.monotonic;
 
-import java.util.Stack;
+import java.util.*;
 
 public class StockSpanner {
 
     public static void main(String[] args) {
         StockSpanner stockSpanner = new StockSpanner();
-        stockSpanner.next(100);
-        stockSpanner.next(80);
+        System.out.println(stockSpanner.next(100));
+        System.out.println(stockSpanner.next(80));
+        System.out.println(stockSpanner.next(60));
+        System.out.println(stockSpanner.next(70));
+        System.out.println(stockSpanner.next(60));
+        System.out.println(stockSpanner.next(75));
+        System.out.println(stockSpanner.next(85));
     }
-
-    private Stack<PriceAndIndex> stack;
-
-    private int index;
 
     static class PriceAndIndex {
 
@@ -26,19 +27,21 @@ public class StockSpanner {
         }
     }
 
+    Stack<PriceAndIndex> stack;
+
+    int index;
+
     public StockSpanner() {
         stack = new Stack<>();
-        // 哨兵节点
         stack.push(new PriceAndIndex(Integer.MAX_VALUE, -1));
         index = 0;
     }
 
     public int next(int price) {
-        // 单调递减栈
+        // 从大到小顺序排列，更高的作为新的停止点，所以是找大值
         while (!stack.isEmpty() && price >= stack.peek().price) {
             stack.pop();
         }
-
         int res = index - stack.peek().index;
         stack.push(new PriceAndIndex(price, index++));
 

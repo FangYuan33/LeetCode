@@ -1,10 +1,15 @@
 package leetcode.stack.monotonic;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Solution739 {
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Solution739().dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73})));
+    }
+
     public int[] dailyTemperatures(int[] temperatures) {
-        // 单调递减栈 找更大的温度
         Stack<Integer> stack = new Stack<>();
         int[] res = new int[temperatures.length];
 
