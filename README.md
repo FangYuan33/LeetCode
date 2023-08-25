@@ -328,7 +328,6 @@ while (!stack.isEmpty()) {
 | [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                   | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |             |
 | [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                           | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
 | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
-| [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/)           | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java)   |             |
 | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     | ⭐️          |
 
 #### 计算当前值作为区间最大/最小值时的最大区间范围
@@ -356,11 +355,12 @@ for(int i = 0; i < nums.length; i++) {
 }
 ```
 
-| 题目链接                                                                             | 题解                                                                        | 备注              |
-|----------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------|
-| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)      | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java) | 乘法原理和重复值判断很需要注意 |
-| [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/) | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)   | ⭐️              |
-| [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                   | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)   | 转换成 84 题来求解     |
+| 题目链接                                                                                      | 题解                                                                        | 备注              |
+|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------|
+| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)               | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java) | 乘法原理和重复值判断很需要注意 |
+| [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java) |                 |
+| [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)          | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)   | ⭐️              |
+| [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                            | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)   | 转换成 84 题来求解     |
 
 ## 13. 队列
 
@@ -375,7 +375,7 @@ for(int i = 0; i < nums.length; i++) {
 
 ### 单调队列
 
-单调队列是在单调栈的基础上实现 **数据的两端操作**，那么我们使用单调队列就能获取到队列 **当前序列中的最大或最小值**，以单调递增队列为例，队列的头元素便是最小的，这是单调栈不具备的特性，所以理论上单调栈能解决的题目使用单调队列也能够解决。
+单调队列是在单调栈的基础上实现 **数据的两端操作**，那么我们使用单调队列就能获取到 **当前序列中的最大或最小值**，所以单调队列能够解决 **区间最值问题**。以单调递增队列为例，队列的头元素便是最小的。
 
 - 单调递减队列模板如下：
 

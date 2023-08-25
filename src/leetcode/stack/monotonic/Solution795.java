@@ -5,39 +5,34 @@ import java.util.Stack;
 
 public class Solution795 {
     public int numSubarrayBoundedMax(int[] nums, int a, int b) {
-        // 单调递减栈解法，找出 nums[i] 作为区间最大值时，左右两边能达到最远的距离，即碰见大值即停止
-        // 注意 如果有重复的值，且这两个值之间没有更大的值时，会发生重复统计的问题，那么这里需要在统计左边或右边的时，要使一边停止住
-        int res = 0;
-        // 定义左右最大的边界索引值
+        // 找每个元素作为最大值满足条件的最左和最右区间边界，然后借助乘法原理来计算个数
+        Stack<Integer> stack = new Stack<>();
         int[] left = new int[nums.length];
         Arrays.fill(left, -1);
         int[] right = new int[nums.length];
         Arrays.fill(right, nums.length);
 
-        Stack<Integer> stack = new Stack<>();
+        // 正序遍历找右
         for (int i = 0; i < nums.length; i++) {
-            // 碰见大值则不断的出栈，当前索引即为所有出栈元素的最大右边界
-            while (!stack.isEmpty() && nums[stack.peek()] < nums[i]) {
+            while (!stack.isEmpty() && nums[i] > nums[stack.peek()]) {
                 right[stack.pop()] = i;
             }
             stack.push(i);
         }
         stack.clear();
-
+        // 反向遍历找左
         for (int i = nums.length - 1; i >= 0; i--) {
-            // 注意这里 = 的边界条件
-            while (!stack.isEmpty() && nums[stack.peek()] <= nums[i]) {
+            while (!stack.isEmpty() && nums[i] > nums[stack.peek()]) {
                 left[stack.pop()] = i;
             }
             stack.push(i);
         }
 
-        // 计算每个 num 对结果的贡献
+        int res = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] < a || nums[i] > b) {
-                continue;
+            if (a <= nums[i] && nums[i] <= b) {
+                res += (right[i] - i) * (i - left[i]);
             }
-            res += (i - left[i]) * (right[i] - i);
         }
 
         return res;
