@@ -1,34 +1,41 @@
 package leetcode.queue.monotonic;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 
 public class Solution239 {
-    public int[] maxSlidingWindow(int[] nums, int k) {
-        int[] res = new int[nums.length - k + 1];
-        int index = 0;
 
-        // 单调递减队列 找大值
-        Deque<Integer> deque = new ArrayDeque<>();
-        for (int i = 0; i < nums.length; i++) {
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Solution239().maxSlidingWindow(new int[]{1, 3, -1, -3, 5, 3, 6, 7}, 3)));
+    }
+
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        // n - k = 滑动次数
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        int n = nums.length;
+        int[] res = new int[n - k + 1];
+
+        // 维护第一个窗口
+        for (int i = 0; i < k; i++) {
+            while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
+                deque.pollLast();
+            }
+            deque.offer(i);
+        }
+        int index = 0;
+        res[index++] = nums[deque.peekFirst()];
+
+        for (int i = k; i < n; i++) {
+            if ((i - k) == deque.peekFirst()) {
+                deque.pollFirst();
+            }
             while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
                 deque.pollLast();
             }
             deque.offer(i);
 
-            // 先满足窗口大小
-            if (i + 1 < k) {
-                continue;
-            }
-            // 判断队列头元素的最大值是不是窗口即将划过的值
-            if (i - k >= 0) {
-                if (nums[deque.peek()] == nums[i - k]) {
-                    deque.poll();
-                }
-            }
-
-            // 封装结果
-            res[index++] = nums[deque.peek()];
+            res[index++] = nums[deque.peekFirst()];
         }
 
         return res;
