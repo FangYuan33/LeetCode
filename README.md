@@ -85,7 +85,7 @@
 
 ## 5. 前缀和
 
-连续子数组求和，不涉及元素值变化
+连续子数组求和，理解连续子数组很重要，**通过前缀和我们能计算出任意区间和**，利用这一点可以解决很多区间求和的问题，不过前缀和的计算不涉及元素值变化
 
 ### 一维数组前缀和
 
@@ -94,8 +94,8 @@
 | [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/) | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)       |                     |
 | [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |                     |
 | [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                    | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java) | 暴力法会直接超时，解决本题需要推导一下 |
+| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)         | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java) | ⭐️                  |
 
-1. [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)
 2. [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)
 
 ### 二维数组前缀和
