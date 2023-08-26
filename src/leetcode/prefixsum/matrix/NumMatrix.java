@@ -1,4 +1,4 @@
-package leetcode.prefixsum;
+package leetcode.prefixsum.matrix;
 
 public class NumMatrix {
 
