@@ -118,13 +118,13 @@
 
 - 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
 
-| 题目链接                                                                                                       | 题解                                                                          | 备注 |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
-| [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
-| [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)                                    | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
-| [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/)                             | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
-| [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)                                         |                                                                             |    |
+| 题目链接                                                                           | 题解                                                                          | 备注 |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
+| [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)    | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
+| [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
+| [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/) | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
+| [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             | [Solution327.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution327.java)   |    |
 
 ## 8. 线段树
 
