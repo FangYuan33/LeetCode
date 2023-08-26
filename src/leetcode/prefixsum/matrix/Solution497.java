@@ -2,7 +2,7 @@ package leetcode.prefixsum.matrix;
 
 import java.util.Random;
 
-public class Solution {
+public class Solution497 {
 
     // 用来取随机数
     Random random;
@@ -12,7 +12,7 @@ public class Solution {
 
     int[][] rects;
 
-    public Solution(int[][] rects) {
+    public Solution497(int[][] rects) {
         this.rects = rects;
         random = new Random();
         sum = new int[rects.length];
