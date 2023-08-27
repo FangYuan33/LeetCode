@@ -4,11 +4,14 @@ import java.util.HashMap;
 
 public class Solution560 {
     public static void main(String[] args) {
-        System.out.println(new Solution560().subarraySum(new int[]{1, 2, 3}, 3));
+        System.out.println(new Solution560().subarraySum(new int[]{1, 2, 3, -3, 3}, 3));
     }
 
     public int subarraySum(int[] nums, int k) {
-        // 使用 map 标记前缀和出现的次数，即连续子数组的个数
+        // p[0, n] + p[n + 1, i] = p[0, i] i为当前处理的索引位置，n < i，p[0, n] 表示已经处理过的前缀和
+        // 其中 p[n + 1, i] = k，那么有 p[0, i] - k = p[0, n]
+        // 如果我们知道 p[0, n] 前缀和的数量，那么我们就知道了区间和为 k 的数量
+        // 所以需要使用 map 来对计算过的前缀和进行数量标记
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
 
