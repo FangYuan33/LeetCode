@@ -104,6 +104,7 @@
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
 | [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)                   | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java)   |    |
 | [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/) | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java) |    |
+| [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                         | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java) |    |
 | [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                        | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)   |    |
 
 ### 二维数组前缀和
