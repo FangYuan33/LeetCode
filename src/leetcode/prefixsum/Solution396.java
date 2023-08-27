@@ -8,24 +8,20 @@ public class Solution396 {
 
     public int maxRotateFunction(int[] nums) {
         int n = nums.length;
-        int[] sum = new int[n * 2];
-        // 计算 2 倍数组长度的前缀和
-        sum[0] = nums[0];
-        for (int i = 1; i < sum.length; i++) {
-            sum[i] = sum[i - 1] + nums[i % n];
+        int[] preSum = new int[2 * n + 1];
+        for (int i = 1; i < preSum.length; i++) {
+            preSum[i] = preSum[i - 1] + nums[(i - 1) % n];
         }
 
-        // 计算第一组结果
         int res = 0;
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             res += i * nums[i];
         }
 
-        // 从第一组不断的递推之后的
         int temp = res;
-        for (int i = 0; i < n - 1; i++) {
-            temp += (n - 1) * nums[i];
-            temp -= sum[n - 1 + i] - sum[i];
+        for (int i = 0; i < nums.length - 1; i++) {
+            temp -= preSum[nums.length + i] - preSum[i + 1];
+            temp += nums[i] * (nums.length - 1);
 
             res = Math.max(res, temp);
         }

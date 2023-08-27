@@ -7,7 +7,6 @@ public class Solution1588 {
     }
 
     public int sumOddLengthSubarrays(int[] arr) {
-        // 前缀和先都计算出来
         int[] preSum = new int[arr.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + arr[i - 1];

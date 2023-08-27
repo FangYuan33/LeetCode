@@ -8,12 +8,12 @@ public class Solution560 {
     }
 
     public int subarraySum(int[] nums, int k) {
-        int preSum = 0;
-        // 记录对应前缀和的数量
+        // 使用 map 标记前缀和出现的次数，即连续子数组的个数
         HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(preSum, 1);
+        map.put(0, 1);
 
         int res = 0;
+        int preSum = 0;
         for (int num : nums) {
             preSum += num;
             res += map.getOrDefault(preSum - k, 0);
