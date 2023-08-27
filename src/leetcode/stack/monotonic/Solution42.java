@@ -9,25 +9,21 @@ public class Solution42 {
     }
 
     public int trap(int[] height) {
-        // 单调递减栈找高的值
-        Stack<Integer> max = new Stack<>();
-
+        Stack<Integer> stack = new Stack<>();
         int res = 0;
-        for (int i = 0; i < height.length; i++) {
-            while (!max.isEmpty() && height[i] > height[max.peek()]) {
-                Integer mid = max.pop();
-                // 如果存在柱子才能继续计算面积
-                if (!max.isEmpty()) {
-                    // 宽度
-                    int w = i - max.peek() - 1;
-                    // 高度取小高度并减去洼地的高度
-                    int h = Math.min(height[i], height[max.peek()]);
-                    h -= height[mid];
 
-                    res += w * h;
+        for (int i = 0; i < height.length; i++) {
+            while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
+                Integer mid = stack.pop();
+
+                if (!stack.isEmpty()) {
+                    int h = Math.min(height[stack.peek()], height[i]) - height[mid];
+                    int w = i - stack.peek() - 1;
+
+                    res += h * w;
                 }
             }
-            max.push(i);
+            stack.push(i);
         }
 
         return res;

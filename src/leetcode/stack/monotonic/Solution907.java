@@ -10,7 +10,6 @@ public class Solution907 {
     }
 
     public int sumSubarrayMins(int[] arr) {
-        // 以每个元素为区间最小值找到它能最大的区间范围
         Stack<Integer> stack = new Stack<>();
         int[] left = new int[arr.length];
         Arrays.fill(left, -1);
@@ -25,7 +24,7 @@ public class Solution907 {
             stack.push(i);
         }
         stack.clear();
-        // 倒序找左
+        // 逆序找左
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!stack.isEmpty() && arr[i] < arr[stack.peek()]) {
                 left[stack.pop()] = i;
@@ -34,10 +33,10 @@ public class Solution907 {
         }
 
         long res = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < left.length; i++) {
             res += (long) arr[i] * (right[i] - i) * (i - left[i]);
         }
 
-        return (int) (res % ((int) 1e9 + 7));
+        return (int) (res % (1e9 + 7));
     }
 }

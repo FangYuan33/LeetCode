@@ -11,21 +11,21 @@ public class Solution496 {
     }
 
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        // 先维护好所有元素的第一个大值，并采用 hash 表进行映射
         Stack<Integer> stack = new Stack<>();
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums2.length; i++) {
-            while (!stack.isEmpty() && nums2[stack.peek()] < nums2[i]) {
+            while (!stack.isEmpty() && nums2[i] > nums2[stack.peek()]) {
                 map.put(nums2[stack.pop()], nums2[i]);
             }
             stack.push(i);
         }
 
+        int[] res = new int[nums1.length];
         for (int i = 0; i < nums1.length; i++) {
-            nums1[i] = map.getOrDefault(nums1[i], -1);
+            res[i] = map.getOrDefault(nums1[i], -1);
         }
 
-        return nums1;
+        return res;
     }
 }

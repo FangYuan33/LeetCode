@@ -5,44 +5,43 @@ import java.util.Deque;
 
 public class MaxQueue {
 
-    // 两个队列，一个是单调递减栈维护最大值 另一个队列维护所有的元素
-    private Deque<Integer> dequeMax;
+    Deque<Integer> max;
 
-    private Deque<Integer> dequeNums;
+    Deque<Integer> queue;
 
     public MaxQueue() {
-        dequeMax = new ArrayDeque<>();
-        dequeNums = new ArrayDeque<>();
+        max = new ArrayDeque<>();
+        queue = new ArrayDeque<>();
     }
 
     public int max_value() {
-        if (dequeMax.isEmpty()) {
+        if (queue.isEmpty()) {
             return -1;
-        } else {
-            return dequeMax.peekFirst();
         }
+
+        return max.peekFirst();
     }
 
     public void push_back(int value) {
-        dequeNums.offer(value);
+        queue.addLast(value);
 
-        while (!dequeMax.isEmpty() && value > dequeMax.peekLast()) {
-            dequeMax.pollLast();
+        while (!max.isEmpty() && value > max.peekLast()) {
+            max.pollLast();
         }
-        dequeMax.offer(value);
+        max.addLast(value);
     }
 
     public int pop_front() {
-        if (dequeNums.isEmpty()) {
+        if (queue.isEmpty()) {
             return -1;
-        } else {
-            Integer res = dequeNums.poll();
-            if (res.equals(dequeMax.peekFirst())) {
-                dequeMax.poll();
-            }
-
-            return res;
         }
+
+        Integer res = queue.pollFirst();
+        if (res.equals(max.peekFirst())) {
+            max.pollFirst();
+        }
+
+        return res;
     }
 
 }

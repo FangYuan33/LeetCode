@@ -33,17 +33,17 @@ public class StockSpanner {
 
     public StockSpanner() {
         stack = new Stack<>();
-        stack.push(new PriceAndIndex(Integer.MAX_VALUE, -1));
-        index = 0;
+        index = -1;
+        stack.push(new PriceAndIndex(Integer.MAX_VALUE, index++));
     }
 
     public int next(int price) {
-        // 从大到小顺序排列，更高的作为新的停止点，所以是找大值
         while (!stack.isEmpty() && price >= stack.peek().price) {
             stack.pop();
         }
-        int res = index - stack.peek().index;
-        stack.push(new PriceAndIndex(price, index++));
+        PriceAndIndex priceAndIndex = new PriceAndIndex(price, index++);
+        int res = priceAndIndex.index - stack.peek().index;
+        stack.push(priceAndIndex);
 
         return res;
     }
