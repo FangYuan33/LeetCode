@@ -95,6 +95,7 @@
 | [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/) | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java) |                            |
 | [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                    | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java) | 暴力法会直接超时，解决本题需要推导一下        |
 | [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)         | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java) | ⭐️                         |
+| [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)              | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java) | 前缀和减法                      |
 | [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                   | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java) | 真正的理解前缀和减法能得出任意区间和能很好的解决本题 |
 
 ### 二维数组前缀和
