@@ -103,6 +103,7 @@
 | [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                                                        | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)          |                                   |
 | [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                             | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)          | ⭐️                                |
 | [523. 连续的子数组和 中等](https://leetcode.cn/problems/continuous-subarray-sum/)                                             | [Solution523.java](src%2Fleetcode%2Fprefixsum%2FSolution523.java)          | "将推导的公式当前元素 i 和先前元素 k 转移到等号的两边️"  |
+| [926. 将字符串翻转到单调递增 中等](https://leetcode.cn/problems/flip-string-to-monotone-increasing/)                              | [Solution926.java](src%2Fleetcode%2Fprefixsum%2FSolution926.java)          |                                   |
 
 ### 二维数组前缀和
 
