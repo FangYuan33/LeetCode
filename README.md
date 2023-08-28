@@ -117,6 +117,8 @@
 
 ## 7. 树状数组
 
+相关学习：[深入理解树状数组](https://juejin.cn/post/7271862751957909523)
+
 树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RMQ 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
 
 - 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
