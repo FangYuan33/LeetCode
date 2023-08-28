@@ -89,16 +89,16 @@
 
 ### 一维数组前缀和
 
-| 题目链接                                                                                  | 题解                                                                  | 备注           |
-|---------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------|
-| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)      | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java)   |              |
-| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)              | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)   | ⭐️           |
-| [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                        | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)   |              |
-| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/)      | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)         | 从该题往下都是前缀和减法 |
-| [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)                   | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java)   |              |
-| [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/) | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java) |              |
-| [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                         | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java) |              |
-| [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                         | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)   |              |
+| 题目链接                                                                                  | 题解                                                                  | 备注                                |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------|
+| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)      | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java)   |                                   |
+| [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                        | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)   | 本题技巧性比较强，思路是找到相等的前缀和作差后得到最长连续区间长度 |
+| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/)      | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)         | 从该题往下都是前缀和减法                      |
+| [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)                   | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java)   |                                   |
+| [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/) | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java) |                                   |
+| [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                         | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java) |                                   |
+| [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                         | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)   |                                   |
+| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)              | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)   | ⭐️                                |
 
 ### 二维数组前缀和
 
