@@ -180,6 +180,10 @@
 
 - `s.trim()` 去掉字符串两边的空格
 
+| 题目链接                                                                     | 题解                                                          | 备注 |
+|--------------------------------------------------------------------------|-------------------------------------------------------------|----|
+| [187. 重复的DNA序列 中等](https://leetcode.cn/problems/repeated-dna-sequences/) | [Solution187.java](src%2Fleetcode%2Fstr%2FSolution187.java) |    |
+
 1. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
 2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
 
