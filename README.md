@@ -85,7 +85,8 @@
 
 ## 5. 前缀和
 
-**连续子数组** 求和且不涉及区间修改的都可以使用前缀和来求解，需要注意的是数组 0 索引的前缀和为 0，这个特殊值不要忘记。**通过前缀和减法计算我们能计算出任意区间和**，这一点很重要，利用这一点可以解决很多区间求和的问题
+**连续子数组** 求和且不涉及区间修改的都可以使用前缀和来求解，需要注意的是数组 0 索引的前缀和为 0，这个特殊值不要忘记，我们创建前缀和数组都会比原数组长度多一位，对应索引的为该元素前的前缀和，而索引值加 1 对应的是包含了该元素值的前缀和。**通过前缀和减法计算我们能计算出任意区间和**，这一点很重要，利用这一点可以解决很多区间求和的问题
+
 
 ### 一维数组前缀和
 
@@ -105,6 +106,7 @@
 | [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                             | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)          | ⭐️                                |
 | [523. 连续的子数组和 中等](https://leetcode.cn/problems/continuous-subarray-sum/)                                             | [Solution523.java](src%2Fleetcode%2Fprefixsum%2FSolution523.java)          | "将推导的公式当前元素 i 和先前元素 k 转移到等号的两边️"  |
 | [926. 将字符串翻转到单调递增 中等](https://leetcode.cn/problems/flip-string-to-monotone-increasing/)                              | [Solution926.java](src%2Fleetcode%2Fprefixsum%2FSolution926.java)          |                                   |
+| [2055. 蜡烛之间的盘子 中等](https://leetcode.cn/problems/plates-between-candles/)                                             | [Solution2055.java](src%2Fleetcode%2Fprefixsum%2FSolution2055.java)        |                                   |
 
 ### 二维数组前缀和
 
