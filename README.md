@@ -91,6 +91,7 @@
 
 | 题目链接                                                                                                                 | 题解                                                                         | 备注                                |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------|
+| [1894. 找到需要补充粉笔的学生编号 中等](https://leetcode.cn/problems/find-the-student-that-will-replace-the-chalk/)                 | [Solution1894.java](src%2Fleetcode%2Fprefixsum%2FSolution1894.java)        |                                   |
 | [1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？ 中等](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [Solution1744.java](src%2Fleetcode%2Fprefixsum%2FSolution1744.java)        |                                   |
 | [497. 非重叠矩形中的随机点 中等](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/)                       | [Solution497.java](src%2Fleetcode%2Fprefixsum%2Fmatrix%2FSolution497.java) |                                   |
 | [528. 按权重随机选择 中等](https://leetcode.cn/problems/random-pick-with-weight/)                                             | [Solution528.java](src%2Fleetcode%2Fprefixsum%2FSolution528.java)          |                                   |
