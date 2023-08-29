@@ -97,7 +97,7 @@ public class RangeModule {
                     tree[pos].add = right - left + 1;
                 } else {
                     tree[pos].val = 0;
-                    tree[pos].add = -(right - left + 1);
+                    tree[pos].add = val;
                 }
 
                 return;
@@ -129,12 +129,16 @@ public class RangeModule {
                 if (add > 0) {
                     tree[tree[pos].left].val = add - add / 2;
                     tree[tree[pos].right].val = add / 2;
+
+                    tree[tree[pos].left].add = add - add / 2;
+                    tree[tree[pos].right].add = add / 2;
                 } else {
                     tree[tree[pos].left].val = 0;
                     tree[tree[pos].right].val = 0;
+
+                    tree[tree[pos].left].add = -1;
+                    tree[tree[pos].right].add = -1;
                 }
-                tree[tree[pos].left].add = add - add / 2;
-                tree[tree[pos].right].add = add / 2;
 
                 tree[pos].add = 0;
             }

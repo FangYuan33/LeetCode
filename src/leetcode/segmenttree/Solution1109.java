@@ -4,13 +4,14 @@ public class Solution1109 {
 
     public int[] corpFlightBookings(int[][] bookings, int n) {
         SegmentTree segmentTree = new SegmentTree(n);
+
         for (int[] booking : bookings) {
             segmentTree.update(1, booking[0], booking[1], booking[2]);
         }
 
         int[] res = new int[n];
         for (int i = 0; i < res.length; i++) {
-            res[i] = segmentTree.query(1, i + 1);
+            res[i] = segmentTree.query(1, i + 1, i + 1);
         }
 
         return res;
@@ -18,7 +19,6 @@ public class Solution1109 {
 
     static class SegmentTree {
         static class Node {
-
             int left;
 
             int right;
@@ -36,7 +36,7 @@ public class Solution1109 {
         Node[] tree;
 
         public SegmentTree(int n) {
-            this.tree = new Node[4 * n];
+            this.tree = new Node[n * 4];
             build(1, 1, n);
         }
 
@@ -51,24 +51,28 @@ public class Solution1109 {
             build(pos << 1 | 1, mid + 1, right);
         }
 
-        public int query(int pos, int numPos) {
-            if (tree[pos].left == numPos && tree[pos].right == numPos) {
+        public int query(int pos, int left, int right) {
+            if (left <= tree[pos].left && tree[pos].right <= right) {
                 return tree[pos].val;
             }
 
             pushDown(pos);
 
+            int res = 0;
             int mid = tree[pos].left + tree[pos].right >> 1;
-            if (numPos <= mid) {
-                return query(pos << 1, numPos);
-            } else {
-                return query(pos << 1 | 1, numPos);
+            if (left <= mid) {
+                res += query(pos << 1, left, right);
             }
+            if (right > mid) {
+                res += query(pos << 1 | 1, left, right);
+            }
+
+            return res;
         }
 
         public void update(int pos, int left, int right, int val) {
             if (left <= tree[pos].left && tree[pos].right <= right) {
-                tree[pos].val += (tree[pos].right - tree[pos].left + 1) * val;
+                tree[pos].val += val * (tree[pos].right - tree[pos].left + 1);
                 tree[pos].add += val;
                 return;
             }
@@ -86,6 +90,10 @@ public class Solution1109 {
             pushUp(pos);
         }
 
+        private void pushUp(int pos) {
+            tree[pos].val = tree[pos << 1].val + tree[pos << 1 | 1].val;
+        }
+
         private void pushDown(int pos) {
             if (tree[pos].left != tree[pos].right && tree[pos].add != 0) {
                 int add = tree[pos].add;
@@ -98,10 +106,6 @@ public class Solution1109 {
 
                 tree[pos].add = 0;
             }
-        }
-
-        private void pushUp(int pos) {
-            tree[pos].val = tree[pos << 1].val + tree[pos << 1 | 1].val;
         }
     }
 }
