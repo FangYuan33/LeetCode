@@ -404,7 +404,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 单调队列
 
-单调队列是在单调栈的基础上实现了对 **序列的两端操作**，所以我们能够使用单调队列获取到 **当前序列中的最值**（即操作栈底元素），帮助我们解决 **区间最值问题**。此外 **不要局限** 在只使用一个单调队列解题，有的题目需要维护两个单调队列来分别记录区间内的最大值和最小值来求解。
+单调队列是在单调栈的基础上实现了对 **序列的两端操作**，所以使用单调队能让我们 **获取区间最值**（队首即为最值）和 **移除队首值**。此外 **不要局限** 在只使用一个单调队列解题，有的题目需要维护两个单调队列来分别记录区间内的最大值和最小值来求解。
 
 > 理论上使用单调栈能解决的问题单调队列也能解决，不过在我们不需要获取区间最值时还是使用单调栈来求解。
 
@@ -431,6 +431,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                                               | [Solution239.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution239.java)   |     |
 | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) | ⭐️  |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                                    | [Solution654.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution654.java)   |     |
+| [2100. 适合打劫银行的日子 中等](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)                                                    | [Solution2100.java](src%2Fleetcode%2Fprefixsum%2FSolution2100.java)         |     |
 
 ## 14. 哈希
 

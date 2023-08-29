@@ -22,30 +22,29 @@ public class Solution2100 {
         Deque<Integer> left = new ArrayDeque<>();
         Deque<Integer> right = new ArrayDeque<>();
 
-        for (int i = 0; i < security.length - time - 1; i++) {
-            // 左边维护一个递增的
-            while (!left.isEmpty() && security[i] <= security[left.peekLast()]) {
+        for (int i = 0, j = time; j < security.length; i++, j++) {
+            while (!left.isEmpty() && security[i] > security[left.peekLast()]) {
                 left.pollLast();
             }
             left.offer(i);
 
-            // 右边维护一个递减的
-            while (!right.isEmpty() && security[i + time + 1] >= security[right.peekLast()]) {
+            while (!right.isEmpty() && security[j] < security[right.peekLast()]) {
                 right.pollLast();
             }
-            right.offer(i + time + 1);
+            right.offer(j);
 
-            if (i < time - 1) {
+            if (i < time) {
                 continue;
             }
 
-            if (!(left.size() == time || right.size() == time)) {
-                res.add(i + 1);
+            if (left.size() == time + 1 && right.size() == time + 1) {
+                res.add(i);
             }
-            while (!left.isEmpty() && i - time + 1 >= left.peekFirst()) {
+
+            while (!left.isEmpty() && i - time >= left.peekFirst()) {
                 left.pollFirst();
             }
-            while (!right.isEmpty() && i + 1 >= right.peekFirst()) {
+            while (!right.isEmpty() && j - time >= right.peekFirst()) {
                 right.pollFirst();
             }
         }
