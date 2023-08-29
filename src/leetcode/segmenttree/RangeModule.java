@@ -54,10 +54,8 @@ public class RangeModule {
 
             int right;
 
-            // val 字段来表示被覆盖区间的长度
             int val;
 
-            // add 字段表示当前区间的长度
             int add;
         }
 

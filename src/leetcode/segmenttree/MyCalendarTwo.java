@@ -20,12 +20,10 @@ public class MyCalendarTwo {
         segmentTree = new SegmentTree();
     }
 
-    // 区间修改和区间查询，动态开点
     public boolean book(int start, int end) {
         if (segmentTree.query(1, 1, (int) 1e9, start + 1, end) >= 2) {
             return false;
         }
-
         segmentTree.update(1, 1, (int) 1e9, start + 1, end);
 
         return true;
@@ -49,8 +47,7 @@ public class MyCalendarTwo {
 
         public SegmentTree() {
             count = 1;
-            tree = new Node[(int) 1e5 + 1];
-            // 创建根节点
+            tree = new Node[(int) 5e6 + 1];
             tree[count] = new Node();
         }
 
