@@ -42,7 +42,7 @@
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
 | [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java) |    |
 | [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java) |    |
-| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java) |    |
+| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java) | ⭐️ |
 
 1. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
@@ -50,7 +50,9 @@
 
 ### 数组无序
 
-1. [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)
+| 题目链接                                                            | 题解                                                                   | 备注 |
+|-----------------------------------------------------------------|----------------------------------------------------------------------|----|
+| [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/) | [Solution162.java](src%2Fleetcode%2Fbinarysearch%2FSolution162.java) |    |
 
 ## 3. 双指针
 
