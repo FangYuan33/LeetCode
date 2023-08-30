@@ -36,10 +36,13 @@
     }
 ```
 
+需要思考当使用全闭区间时，while 条件中的等号会造成什么样的影响，不使用等号又如何
+
 ### 数组有序
 
 | 题目链接                                                                                                                  | 题解                                                                   | 备注              |
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-----------------|
+| [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java) |                 |
 | [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)   |                 |
 | [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java) |                 |
 | [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java) | 有点儿像小时候看的猜价格的逻辑 |
