@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class LRUCacheLinkedHashMap extends LinkedHashMap<Integer, Integer> {
 
-    private final int capacity;
+    int capacity;
 
     public LRUCacheLinkedHashMap(int capacity) {
         super(capacity, 0.75F, true);
@@ -19,11 +19,7 @@ public class LRUCacheLinkedHashMap extends LinkedHashMap<Integer, Integer> {
     }
 
     public int get(int key) {
-        if (super.containsKey(key)) {
-            return super.get(key);
-        }
-
-        return -1;
+        return super.getOrDefault(key, -1);
     }
 
     public void put(int key, int value) {
@@ -32,6 +28,6 @@ public class LRUCacheLinkedHashMap extends LinkedHashMap<Integer, Integer> {
 
     @Override
     protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-        return size() > capacity;
+        return super.size() > capacity;
     }
 }

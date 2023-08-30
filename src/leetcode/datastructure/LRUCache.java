@@ -4,42 +4,42 @@ import java.util.HashMap;
 
 public class LRUCache {
 
-    static class LinkedListNode {
-
-        int val;
+    static class Node {
 
         int key;
 
-        LinkedListNode next;
+        int val;
 
-        LinkedListNode pre;
+        Node next;
 
-        public LinkedListNode(int key, int val) {
+        Node pre;
+
+        public Node(int key, int val) {
             this.key = key;
             this.val = val;
         }
     }
 
-    private final int capacity;
+    HashMap<Integer, Node> keyNode;
 
-    private final HashMap<Integer, LinkedListNode> map;
+    int capacity;
 
-    private final LinkedListNode sentinel;
+    Node sentinel;
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        map = new HashMap<>(capacity);
-        sentinel = new LinkedListNode(-1, -1);
-        // 链表的哨兵节点
+        keyNode = new HashMap<>();
+
+        sentinel = new Node(-1, -1);
         sentinel.next = sentinel;
         sentinel.pre = sentinel;
     }
 
     public int get(int key) {
-        if (map.containsKey(key)) {
-            LinkedListNode node = map.get(key);
-            // 在原位置删除并移动到头节点
-            toHead(node);
+        if (keyNode.containsKey(key)) {
+            Node node = keyNode.get(key);
+            // 移动到头节点
+            removeToHead(node);
 
             return node.val;
         } else {
@@ -48,39 +48,40 @@ public class LRUCache {
     }
 
     public void put(int key, int value) {
-        if (map.containsKey(key)) {
-            LinkedListNode node = map.get(key);
+        if (keyNode.containsKey(key)) {
+            Node node = keyNode.get(key);
             node.val = value;
 
-            toHead(node);
+            removeToHead(node);
         } else {
-            if (capacity == map.size()) {
-                // 移除尾巴节点
-                LinkedListNode tail = sentinel.pre;
-                sentinel.pre = tail.pre;
-                sentinel.pre.next = sentinel;
-                map.remove(tail.key);
-            }
-            LinkedListNode newHead = new LinkedListNode(key, value);
-            // 放到头节点
-            insertHead(newHead);
+            if (keyNode.size() == capacity) {
+                Node tail = sentinel.pre;
+                keyNode.remove(tail.key);
 
-            map.put(key, newHead);
+                tail.pre.next = sentinel;
+                tail.next.pre = tail.pre;
+            }
+
+            Node node = new Node(key, value);
+            // 加入头节点
+            insertToHead(node);
+            keyNode.put(key, node);
         }
     }
 
-    private void toHead(LinkedListNode node) {
-        // 在原位置删除并移动到头节点
+    private void removeToHead(Node node) {
+        // 在原位置移除
         node.pre.next = node.next;
         node.next.pre = node.pre;
 
-        insertHead(node);
+        // 放到头节点
+        insertToHead(node);
     }
 
-    private void insertHead(LinkedListNode newHead) {
-        newHead.next = sentinel.next;
-        sentinel.next.pre = newHead;
-        sentinel.next = newHead;
-        newHead.pre = sentinel;
+    private void insertToHead(Node node) {
+        sentinel.next.pre = node;
+        node.next = sentinel.next;
+        sentinel.next = node;
+        node.pre = sentinel;
     }
 }

@@ -26,6 +26,7 @@ class LFUCache {
         System.out.println(lfuCache2.get(2));
     }
 
+
     /**
      * 双向链表节点
      */
@@ -62,7 +63,7 @@ class LFUCache {
 
         // 初始化访问次数为 1 的哨兵节点
         minAccessNum = 1;
-        accessNodeMap.put(minAccessNum, initialSentinelNode(1));
+        accessNodeMap.put(minAccessNum, initialSentinelNode(minAccessNum));
     }
 
     public int get(int key) {
@@ -93,7 +94,7 @@ class LFUCache {
             Node newNode = new Node(key, value, minAccessNum);
 
             // 插入到头节点
-            insertInfoHead(newNode, accessNodeMap.get(minAccessNum));
+            insertIntoHead(newNode, accessNodeMap.get(minAccessNum));
             keyNodeMap.put(key, newNode);
         }
     }
@@ -109,7 +110,7 @@ class LFUCache {
         // 获取增加 1 后的哨兵节点
         Node nextCacheSentinel = getSpecificAccessNumSentinel(node.accessNum);
         // 插入该链表的头节点
-        insertInfoHead(node, nextCacheSentinel);
+        insertIntoHead(node, nextCacheSentinel);
     }
 
     /**
@@ -129,10 +130,8 @@ class LFUCache {
         // 原访问次数的哨兵节点
         Node originSentinel = accessNodeMap.get(accessNum);
         // 如果只剩下哨兵节点的话，需要看看需不需要把 minAccessNum 增加 1
-        if (originSentinel.next == originSentinel) {
-            if (originSentinel.accessNum == minAccessNum) {
-                minAccessNum++;
-            }
+        if (originSentinel.next == originSentinel && originSentinel.accessNum == minAccessNum) {
+            minAccessNum++;
         }
     }
 
@@ -166,7 +165,7 @@ class LFUCache {
     /**
      * 插入头节点
      */
-    private void insertInfoHead(Node node, Node nextCacheSentinel) {
+    private void insertIntoHead(Node node, Node nextCacheSentinel) {
         node.next = nextCacheSentinel.next;
         nextCacheSentinel.next.pre = node;
         nextCacheSentinel.next = node;
