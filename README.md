@@ -40,6 +40,7 @@
 
 | 题目链接                                                                                                                  | 题解                                                                 | 备注 |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
+| [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java) |    |
 | [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java) |    |
 | [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java) |    |
 
