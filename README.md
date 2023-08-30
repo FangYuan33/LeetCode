@@ -38,6 +38,10 @@
 
 ### 数组有序
 
+| 题目链接                                                                            | 题解                                                                 | 备注 |
+|---------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
+| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java) |    |
+
 1. [剑指 Offer 53 - I. 在排序数组中查找数字 I 简单](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 3. [剑指 Offer 04. 二维数组中的查找 中等](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
