@@ -702,6 +702,10 @@ def backtrack(路径, 选择列表):
 
 ## 21. 排序算法
 
+| 题目链接                                                                                  | 题解 | 备注      |
+|---------------------------------------------------------------------------------------|----|---------|
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并，待做 |
+
 1. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 2. [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/): 有点儿像快排的哨兵交换环节
 
