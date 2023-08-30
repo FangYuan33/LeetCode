@@ -1,4 +1,4 @@
-package leetcode.prefixsum;
+package leetcode.queue.monotonic;
 
 import java.util.*;
 
