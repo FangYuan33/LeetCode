@@ -103,24 +103,25 @@
 
 ### 一维数组前缀和
 
-| 题目链接                                                                                                                 | 题解                                                                         | 备注                                |
-|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------|
-| [1894. 找到需要补充粉笔的学生编号 中等](https://leetcode.cn/problems/find-the-student-that-will-replace-the-chalk/)                 | [Solution1894.java](src%2Fleetcode%2Fprefixsum%2FSolution1894.java)        |                                   |
-| [1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？ 中等](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [Solution1744.java](src%2Fleetcode%2Fprefixsum%2FSolution1744.java)        |                                   |
-| [497. 非重叠矩形中的随机点 中等](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/)                       | [Solution497.java](src%2Fleetcode%2Fprefixsum%2Fmatrix%2FSolution497.java) |                                   |
-| [528. 按权重随机选择 中等](https://leetcode.cn/problems/random-pick-with-weight/)                                             | [Solution528.java](src%2Fleetcode%2Fprefixsum%2FSolution528.java)          |                                   |
-| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)                                     | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java)          |                                   |
-| [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                                                       | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)          | 本题技巧性比较强，思路是找到相等的前缀和作差后得到最长连续区间长度 |
-| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/)                                     | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)                | 从该题往下都是前缀和减法                      |
-| [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)                                                  | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java)          |                                   |
-| [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/)                                | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java)        |                                   |
-| [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                                                        | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java)        |                                   |
-| [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                                                         | [SolutionLCR008.java](src%2Fleetcode%2Fprefixsum%2FSolutionLCR008.java)    |                                   |
-| [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                                                        | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)          |                                   |
-| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                             | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)          | ⭐️                                |
-| [523. 连续的子数组和 中等](https://leetcode.cn/problems/continuous-subarray-sum/)                                             | [Solution523.java](src%2Fleetcode%2Fprefixsum%2FSolution523.java)          | "将推导的公式当前元素 i 和先前元素 k 转移到等号的两边️"  |
-| [926. 将字符串翻转到单调递增 中等](https://leetcode.cn/problems/flip-string-to-monotone-increasing/)                              | [Solution926.java](src%2Fleetcode%2Fprefixsum%2FSolution926.java)          |                                   |
-| [2055. 蜡烛之间的盘子 中等](https://leetcode.cn/problems/plates-between-candles/)                                             | [Solution2055.java](src%2Fleetcode%2Fprefixsum%2FSolution2055.java)        |                                   |
+| 题目链接                                                                                                                 | 题解                                                                          | 备注                                |
+|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------|
+| [1894. 找到需要补充粉笔的学生编号 中等](https://leetcode.cn/problems/find-the-student-that-will-replace-the-chalk/)                 | [Solution1894.java](src%2Fleetcode%2Fprefixsum%2FSolution1894.java)         |                                   |
+| [1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？ 中等](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [Solution1744.java](src%2Fleetcode%2Fprefixsum%2FSolution1744.java)         |                                   |
+| [497. 非重叠矩形中的随机点 中等](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/)                       | [Solution497.java](src%2Fleetcode%2Fprefixsum%2Fmatrix%2FSolution497.java)  |                                   |
+| [528. 按权重随机选择 中等](https://leetcode.cn/problems/random-pick-with-weight/)                                             | [Solution528.java](src%2Fleetcode%2Fprefixsum%2FSolution528.java)           |                                   |
+| [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)                                     | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java)           |                                   |
+| [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                                                       | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)           | 本题技巧性比较强，思路是找到相等的前缀和作差后得到最长连续区间长度 |
+| [303. 区域和检索 - 数组不可变 简单](https://leetcode.cn/problems/range-sum-query-immutable/)                                     | [NumArray.java](src%2Fleetcode%2Fprefixsum%2FNumArray.java)                 | 从该题往下都是前缀和减法                      |
+| [724. 寻找数组的中心下标 简单](https://leetcode.cn/problems/find-pivot-index/)                                                  | [Solution724.java](src%2Fleetcode%2Fprefixsum%2FSolution724.java)           |                                   |
+| [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/)                                | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java)         |                                   |
+| [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                                                        | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java)         |                                   |
+| [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)                                          | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |                                   |
+| [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                                                         | [SolutionLCR008.java](src%2Fleetcode%2Fprefixsum%2FSolutionLCR008.java)     |                                   |
+| [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                                                        | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)           |                                   |
+| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                             | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)           | ⭐️                                |
+| [523. 连续的子数组和 中等](https://leetcode.cn/problems/continuous-subarray-sum/)                                             | [Solution523.java](src%2Fleetcode%2Fprefixsum%2FSolution523.java)           | "将推导的公式当前元素 i 和先前元素 k 转移到等号的两边️"  |
+| [926. 将字符串翻转到单调递增 中等](https://leetcode.cn/problems/flip-string-to-monotone-increasing/)                              | [Solution926.java](src%2Fleetcode%2Fprefixsum%2FSolution926.java)           |                                   |
+| [2055. 蜡烛之间的盘子 中等](https://leetcode.cn/problems/plates-between-candles/)                                             | [Solution2055.java](src%2Fleetcode%2Fprefixsum%2FSolution2055.java)         |                                   |
 
 ### 二维数组前缀和
 
@@ -150,7 +151,6 @@
 | 题目链接                                                                           | 题解                                                                          | 备注 |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
 | [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
-| [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)    | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |    |
 | [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) |    |
 | [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/) | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
 | [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             | [Solution327.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution327.java)   |    |
