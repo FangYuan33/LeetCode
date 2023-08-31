@@ -46,6 +46,7 @@
 | [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)   |                 |
 | [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java) |                 |
 | [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java) | 有点儿像小时候看的猜价格的逻辑 |
+| [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java) |                 |
 | [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)   |                 |
 | [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)   | ⭐️              |
 | [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                      |                 |
