@@ -57,9 +57,12 @@
 
 ### 数组无序
 
-| 题目链接                                                            | 题解                                                                   | 备注 |
-|-----------------------------------------------------------------|----------------------------------------------------------------------|----|
-| [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/) | [Solution162.java](src%2Fleetcode%2Fbinarysearch%2FSolution162.java) | ⭐️ |
+查找峰值是非常典型的根据数据二段性进行二分的题目
+
+| 题目链接                                                                              | 题解                                                                   | 备注 |
+|-----------------------------------------------------------------------------------|----------------------------------------------------------------------|----|
+| [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)                   | [Solution162.java](src%2Fleetcode%2Fbinarysearch%2FSolution162.java) | ⭐️ |
+| [852. 山脉数组的峰顶索引 中等](https://leetcode.cn/problems/peak-index-in-a-mountain-array/) | [Solution852.java](src%2Fleetcode%2Fbinarysearch%2FSolution852.java) |    |
 
 ## 3. 双指针
 

@@ -12,13 +12,13 @@ public class Solution162 {
         while (left < right) {
             int mid = left + right >> 1;
 
-            if (nums[mid] < nums[right]) {
-                left = mid + 1;
+            if (nums[mid] > nums[mid + 1]) {
+                right = mid;
             } else {
-                right -= 1;
+                left = mid + 1;
             }
         }
 
-        return right;
+        return left;
     }
 }
