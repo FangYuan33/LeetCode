@@ -8,20 +8,20 @@ public class Solution1395 {
 
     public int numTeams(int[] rating) {
         int res = 0;
-        BinaryIndexedTree tree = new BinaryIndexedTree(rating.length);
+        BinaryIndexedTree tree = new BinaryIndexedTree();
 
         for (int i = 0; i < rating.length; i++) {
             for (int j = i + 1; j < rating.length; j++) {
                 if (rating[i] > rating[j]) {
                     res += tree.query(rating[j], rating[i]);
-                } else {
+                }
+                if (rating[i] < rating[j]) {
                     res += tree.query(rating[i], rating[j]);
                 }
 
                 tree.update(rating[j], 1);
             }
 
-            // 统计完这轮后把标记的士兵消除
             for (int j = i + 1; j < rating.length; j++) {
                 tree.update(rating[j], -1);
             }
@@ -30,13 +30,12 @@ public class Solution1395 {
         return res;
     }
 
-    // 单点修改和区间查询
     static class BinaryIndexedTree {
 
         int[] tree;
 
-        public BinaryIndexedTree(int n) {
-            tree = new int[(int) 1e5 + 1];
+        public BinaryIndexedTree() {
+            this.tree = new int[(int) 1e5 + 1];
         }
 
         public void update(int index, int val) {
@@ -46,12 +45,12 @@ public class Solution1395 {
         }
 
         public int query(int left, int right) {
-            return query(right - 1) - query(left);
+            return query(right) - query(left - 1);
         }
 
-        public int query(int x) {
+        private int query(int index) {
             int res = 0;
-            for (int i = x; i > 0; i -= lowbit(i)) {
+            for (int i = index; i > 0; i -= lowbit(i)) {
                 res += tree[i];
             }
 

@@ -3,42 +3,41 @@ package leetcode.binaryindexedtree;
 public class Solution775 {
 
     public static void main(String[] args) {
-        new Solution775().isIdealPermutation(new int[]{0, 1});
+        System.out.println(new Solution775().isIdealPermutation(new int[]{1, 0, 2}));
     }
 
-    // 全局倒置即为查询当前数字后边有多少个数字出现
     public boolean isIdealPermutation(int[] nums) {
-        BinaryIndexedTree tree = new BinaryIndexedTree(nums.length);
-        int local = 0, all = 0;
-        tree.update(nums[0] + 1);
+        BinaryIndexedTree tree = new BinaryIndexedTree(nums);
 
+        int local = 0;
+        int all = 0;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i - 1] > nums[i]) {
                 local++;
             }
+
+            tree.update(nums[i - 1] + 1);
             all += tree.queryNum(nums[i] + 1);
-            tree.update(nums[i] + 1);
         }
 
         return local == all;
     }
 
-    // 单点修改和区间查询
     static class BinaryIndexedTree {
 
         int[] tree;
 
-        public BinaryIndexedTree(int n) {
-            tree = new int[n + 1];
+        public BinaryIndexedTree(int[] nums) {
+            this.tree = new int[nums.length + 1];
         }
 
-        public int queryNum(int x) {
-            return query(tree.length - 1) - query(x - 1);
+        public int queryNum(int index) {
+            return query(tree.length - 1) - query(index);
         }
 
-        public int query(int x) {
+        public int query(int index) {
             int res = 0;
-            for (int i = x; i > 0; i -= lowbit(i)) {
+            for (int i = index; i > 0; i -= lowbit(i)) {
                 res += tree[i];
             }
 
@@ -55,5 +54,4 @@ public class Solution775 {
             return i & -i;
         }
     }
-
 }
