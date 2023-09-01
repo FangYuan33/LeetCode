@@ -16,7 +16,6 @@ public class Solution84 {
         int[] right = new int[heights.length];
         Arrays.fill(right, heights.length);
 
-
         for (int i = 0; i < heights.length; i++) {
             while (!stack.isEmpty() && heights[i] <= heights[stack.peek()]) {
                 right[stack.pop()] = i;
@@ -33,7 +32,7 @@ public class Solution84 {
 
         int res = 0;
         for (int i = 0; i < heights.length; i++) {
-            res = Math.max(res, heights[i] * (right[i] - left[i] - 1));
+            res = Math.max(res, (right[i] - left[i] - 1) * heights[i]);
         }
 
         return res;

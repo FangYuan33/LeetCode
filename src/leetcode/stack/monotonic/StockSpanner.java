@@ -27,23 +27,23 @@ public class StockSpanner {
         }
     }
 
-    Stack<PriceAndIndex> stack;
+    Stack<PriceAndIndex> priceAndIndices;
 
     int index;
 
     public StockSpanner() {
-        stack = new Stack<>();
-        index = -1;
-        stack.push(new PriceAndIndex(Integer.MAX_VALUE, index++));
+        index = 0;
+        priceAndIndices = new Stack<>();
+        priceAndIndices.push(new PriceAndIndex(Integer.MAX_VALUE, -1));
     }
 
     public int next(int price) {
-        while (!stack.isEmpty() && price >= stack.peek().price) {
-            stack.pop();
+        while (!priceAndIndices.isEmpty() && price >= priceAndIndices.peek().price) {
+            priceAndIndices.pop();
         }
-        PriceAndIndex priceAndIndex = new PriceAndIndex(price, index++);
-        int res = priceAndIndex.index - stack.peek().index;
-        stack.push(priceAndIndex);
+        PriceAndIndex newElement = new PriceAndIndex(price, index++);
+        int res = newElement.index - priceAndIndices.peek().index;
+        priceAndIndices.push(newElement);
 
         return res;
     }

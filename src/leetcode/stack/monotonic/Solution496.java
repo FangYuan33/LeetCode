@@ -11,19 +11,22 @@ public class Solution496 {
     }
 
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        Stack<Integer> stack = new Stack<>();
-        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> numIndex = new HashMap<>();
+        for (int i = 0; i < nums1.length; i++) {
+            numIndex.put(nums1[i], i);
+        }
+        int[] res = new int[nums1.length];
+        Arrays.fill(res, -1);
 
+        Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < nums2.length; i++) {
             while (!stack.isEmpty() && nums2[i] > nums2[stack.peek()]) {
-                map.put(nums2[stack.pop()], nums2[i]);
+                Integer index = stack.pop();
+                if (numIndex.containsKey(nums2[index])) {
+                    res[numIndex.get(nums2[index])] = nums2[i];
+                }
             }
             stack.push(i);
-        }
-
-        int[] res = new int[nums1.length];
-        for (int i = 0; i < nums1.length; i++) {
-            res[i] = map.getOrDefault(nums1[i], -1);
         }
 
         return res;
