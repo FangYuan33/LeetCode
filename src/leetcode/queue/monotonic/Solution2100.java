@@ -7,10 +7,11 @@ public class Solution2100 {
     public static void main(String[] args) {
         // 5, 10, 14
         new Solution2100().goodDaysToRobBank(new int[]{1, 2, 5, 4, 1, 0, 2, 4, 5, 3, 1, 2, 4, 3, 2, 4, 8}, 2);
+//        new Solution2100().goodDaysToRobBank(new int[]{5, 3, 3, 3, 5, 6, 2}, 2);
     }
 
     public List<Integer> goodDaysToRobBank(int[] security, int time) {
-        ArrayList<Integer> res = new ArrayList<>();
+        List<Integer> res = new ArrayList<>();
         if (time == 0) {
             for (int i = 0; i < security.length; i++) {
                 res.add(i);
@@ -18,33 +19,31 @@ public class Solution2100 {
 
             return res;
         }
-        // 用两个单调队列应该能解决
-        Deque<Integer> left = new ArrayDeque<>();
-        Deque<Integer> right = new ArrayDeque<>();
 
-        for (int i = 0, j = time; j < security.length; i++, j++) {
-            while (!left.isEmpty() && security[i] > security[left.peekLast()]) {
+        ArrayDeque<Integer> left = new ArrayDeque<>();
+        ArrayDeque<Integer> right = new ArrayDeque<>();
+        for (int l = 0, r = time; r < security.length; l++, r++) {
+            while (!left.isEmpty() && security[l] > security[left.peekLast()]) {
                 left.pollLast();
             }
-            left.offer(i);
-
-            while (!right.isEmpty() && security[j] < security[right.peekLast()]) {
+            left.offer(l);
+            while (!right.isEmpty() && security[r] < security[right.peekLast()]) {
                 right.pollLast();
             }
-            right.offer(j);
+            right.offer(r);
 
-            if (i < time) {
+            if (l < time) {
                 continue;
             }
 
-            if (left.size() == time + 1 && right.size() == time + 1) {
-                res.add(i);
+            if (left.size() == (time + 1) && right.size() == (time + 1)) {
+                res.add(l);
             }
 
-            while (!left.isEmpty() && i - time >= left.peekFirst()) {
+            while (!left.isEmpty() && l - time >= left.peekFirst()) {
                 left.pollFirst();
             }
-            while (!right.isEmpty() && j - time >= right.peekFirst()) {
+            while (!right.isEmpty() && r - time >= right.peekFirst()) {
                 right.pollFirst();
             }
         }

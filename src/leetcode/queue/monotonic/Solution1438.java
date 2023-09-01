@@ -12,10 +12,9 @@ public class Solution1438 {
     public int longestSubarray(int[] nums, int limit) {
         ArrayDeque<Integer> max = new ArrayDeque<>();
         ArrayDeque<Integer> min = new ArrayDeque<>();
+
         int res = 0;
         int left = 0, right = 0;
-
-
         while (right < nums.length) {
             while (!max.isEmpty() && nums[right] > nums[max.peekLast()]) {
                 max.pollLast();
@@ -26,8 +25,9 @@ public class Solution1438 {
             }
             min.addLast(right);
 
-            if (nums[max.peekFirst()] - nums[min.peekFirst()] <= limit) {
-                res = Math.max(right - left + 1, res);
+            int n = nums[max.peekFirst()] - nums[min.peekFirst()];
+            if (n <= limit) {
+                res = Math.max(res, right - left + 1);
                 right++;
             } else {
                 left++;
