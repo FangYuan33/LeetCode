@@ -156,12 +156,12 @@
 
 计算 `matrix[i][j]` 我们能够依靠已知的前缀和 `matrix[i - 1][j - 1]`、`matrix[i - 1][j]` 和 `matrix[i][j - 1]`，其实我们可以轻易的根据图示得出 `matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1] - matrix[i - 1][j - 1]`，为什么要减去 `matrix[i - 1][j - 1]` 呢，因为在 `matrix[i - 1][j]` 和 `matrix[i][j - 1]` 中都包含着 `matrix[i - 1][j - 1]`，我们做加和计算时把 `matrix[i - 1][j - 1]` 加了两遍，所以需要再减去一个，记住这个图示之后遇到类似的题推导一下就可以了，不必记住模板。
 
-计算二维数组前缀和的要点一定是确定好矩形的左上角和右下角
+计算二维数组前缀和的要点一定是确定好 **矩形的左上角和右下角**
 
-| 题目链接                                                                                  | 题解                                                                | 备注 |
-|---------------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
-| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | [NumMatrix.java](src%2Fleetcode%2Fprefixsum%2FNumMatrix.java)     |    |
-| [661. 图片平滑器 简单](https://leetcode.cn/problems/image-smoother/)                         | [Solution661.java](src%2Fleetcode%2Fprefixsum%2FSolution661.java) |    |
+| 题目链接                                                                                  | 题解                                                                         | 备注 |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
+| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | [NumMatrix.java](src%2Fleetcode%2Fprefixsum%2FNumMatrix.java)              |    |
+| [661. 图片平滑器 简单](https://leetcode.cn/problems/image-smoother/)                         | [Solution661.java](src%2Fleetcode%2Fprefixsum%2Fmatrix%2FSolution661.java) |    |
 
 ## 6. 差分
 
