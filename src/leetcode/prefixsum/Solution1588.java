@@ -13,11 +13,10 @@ public class Solution1588 {
         }
 
         int res = 0;
-        for (int i = 1; i < preSum.length; i++) {
-            int j = i;
-            while (j < preSum.length) {
-                res += preSum[j] - preSum[i - 1];
-                j += 2;
+        // preSum[left, right] = preSum[0, right] - preSum[0, left]
+        for (int i = 1; i < preSum.length; i += 2) {
+            for (int left = 0, right = left + i; right <= arr.length; left++, right++) {
+                res += preSum[right] - preSum[left];
             }
         }
 

@@ -9,20 +9,20 @@ public class Solution238 {
     }
 
     public int[] productExceptSelf(int[] nums) {
-        int[] preSum = new int[nums.length + 1];
-        Arrays.fill(preSum, 1);
-        for (int i = 1; i < preSum.length; i++) {
-            preSum[i] = preSum[i - 1] * nums[i - 1];
+        int[] left = new int[nums.length + 1];
+        Arrays.fill(left, 1);
+        for (int i = 1; i < left.length; i++) {
+            left[i] = left[i - 1] * nums[i - 1];
         }
-        int[] preSum2 = new int[nums.length + 1];
-        Arrays.fill(preSum2, 1);
-        for (int i = preSum2.length - 2; i >= 0; i--) {
-            preSum2[i] = preSum2[i + 1] * nums[i];
+        int[] right = new int[nums.length + 1];
+        Arrays.fill(right, 1);
+        for (int i = right.length - 2; i >= 0; i--) {
+            right[i] = right[i + 1] * nums[i];
         }
 
         int[] res = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            res[i] = preSum[i] * preSum2[i + 1];
+            res[i] = left[i] * right[i + 1];
         }
 
         return res;

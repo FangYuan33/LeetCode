@@ -7,18 +7,19 @@ public class Solution926 {
     }
 
     public int minFlipsMonoIncr(String s) {
-        // 计算每个位置左边有多少个 1 和右边有多少个 0
+        // 左边 1 的个数 和 右边 0 的个数
+        char[] charArray = s.toCharArray();
         int[] preSum = new int[s.length() + 1];
         for (int i = 1; i < preSum.length; i++) {
-            preSum[i] = preSum[i - 1] + (s.charAt(i - 1) - '0');
+            preSum[i] = preSum[i - 1] + (charArray[i - 1] - '0');
         }
 
         int res = s.length();
-        for (int i = 0; i < s.length(); i++) {
-            int leftOne = preSum[i];
-            int rightZero = (s.length() - i - 1) - (preSum[preSum.length - 1] - preSum[i + 1]);
+        for (int i = 0; i < charArray.length; i++) {
+            int left = preSum[i];
+            int right = s.length() - 1 - i - (preSum[preSum.length - 1] - preSum[i + 1]);
 
-            res = Math.min(res, leftOne + rightZero);
+            res = Math.min(res, left + right);
         }
 
         return res;

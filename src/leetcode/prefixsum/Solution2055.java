@@ -1,53 +1,59 @@
 package leetcode.prefixsum;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Solution2055 {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new Solution2055().platesBetweenCandles("***|**|*****|**||**|*",
+        System.out.println(Arrays.toString(new Solution2055().platesBetweenCandles("**|**|***|",
                 new int[][]{
-                        new int[]{1, 17},
-                        new int[]{4, 5},
-                        new int[]{14, 17},
-                        new int[]{5, 11}
+                        new int[]{2, 5},
+                        new int[]{5, 9}
                 })));
+
+//        System.out.println(Arrays.toString(new Solution2055().platesBetweenCandles("***|**|*****|**||**|*",
+//                new int[][]{
+//                        new int[]{1, 17},
+//                        new int[]{4, 5},
+//                        new int[]{14, 17},
+//                        new int[]{5, 11}
+//                })));
     }
 
     public int[] platesBetweenCandles(String s, int[][] queries) {
-        // 找到每个元素左右两边最近的蜡烛
         char[] charArray = s.toCharArray();
+        int[] preSum = new int[charArray.length + 1];
+        for (int i = 1; i < preSum.length; i++) {
+            preSum[i] = preSum[i - 1] + (charArray[i - 1] == '*' ? 1 : 0);
+        }
+
         int[] left = new int[s.length()];
-        int[] right = new int[s.length()];
-        int[] preSum = new int[s.length() + 1];
-
-        int leftVal = -1;
-        int rightVal = s.length();
-        for (int i = 0, j = charArray.length - 1; i < charArray.length; i++, j--) {
+        int l = -1;
+        for (int i = 0; i < left.length; i++) {
             if (charArray[i] == '|') {
-                leftVal = i;
+                l = i;
             }
-            if (charArray[j] == '|') {
-                rightVal = j;
+            left[i] = l;
+        }
+        int[] right = new int[s.length()];
+        int r = s.length();
+        for (int i = right.length - 1; i >= 0; i--) {
+            if (charArray[i] == '|') {
+                r = i;
             }
-            left[i] = leftVal;
-            right[j] = rightVal;
-            preSum[i + 1] = preSum[i] + (charArray[i] == '*' ? 1 : 0);
+            right[i] = r;
         }
 
-        int[] res = new int[queries.length];
+        int[] answer = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
-            int l = queries[i][0], r = queries[i][1];
-            int a = right[l], b = left[r];
+            int l1 = queries[i][0], r1 = queries[i][1];
 
-            if (a < b && a != -1 && b != s.length()) {
-                res[i] = preSum[b] - preSum[a];
+            if (right[l1] < left[r1]) {
+                answer[i] = preSum[left[r1] + 1] - preSum[right[l1]];
             }
         }
 
-        return res;
+        return answer;
     }
 
 }

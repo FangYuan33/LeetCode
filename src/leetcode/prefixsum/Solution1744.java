@@ -17,18 +17,19 @@ public class Solution1744 {
     }
 
     public boolean[] canEat(int[] candiesCount, int[][] queries) {
+        boolean[] res = new boolean[queries.length];
+
         long[] preSum = new long[candiesCount.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + candiesCount[i - 1];
         }
 
-        boolean[] res = new boolean[queries.length];
         for (int i = 0; i < queries.length; i++) {
-            // 最多吃 queries[i][i] + 1 天 * 最多的数量
-            long maxCandies = (long) (queries[i][1] + 1) * queries[i][2];
-            // 最少吃
-            long minCandies = queries[i][1] + 1;
-            if (maxCandies > preSum[queries[i][0]] && minCandies <= preSum[queries[i][0] + 1]) {
+            int fType = queries[i][0], fDay = queries[i][1], dCapacity = queries[i][2];
+            long max = (long) dCapacity * (fDay + 1);
+            int min = fDay + 1;
+
+            if (min <= preSum[fType + 1] && max > preSum[fType]) {
                 res[i] = true;
             }
         }

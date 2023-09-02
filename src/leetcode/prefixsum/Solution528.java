@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Solution528 {
 
-    int[] preSum;
-
     Random random;
+
+    int[] preSum;
 
     public Solution528(int[] w) {
         random = new Random();
@@ -17,12 +17,12 @@ public class Solution528 {
     }
 
     public int pickIndex() {
-        int area = random.nextInt(preSum[preSum.length - 1]) + 1;
+        int target = random.nextInt(preSum[preSum.length - 1]) + 1;
         int left = 1, right = preSum.length;
         while (left < right) {
             int mid = left + right >> 1;
 
-            if (preSum[mid] >= area) {
+            if (preSum[mid] >= target) {
                 right = mid;
             } else {
                 left = mid + 1;

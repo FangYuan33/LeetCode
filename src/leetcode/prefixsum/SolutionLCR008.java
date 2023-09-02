@@ -7,26 +7,26 @@ public class SolutionLCR008 {
     }
 
     public int minSubArrayLen(int target, int[] nums) {
+        int res = Integer.MAX_VALUE;
+
         int[] preSum = new int[nums.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + nums[i - 1];
         }
 
-        int res = nums.length;
+        int sum = 0;
         int left = 0, right = 0;
         while (right < nums.length) {
-            int sum = preSum[right + 1] - preSum[left];
+            sum = preSum[right + 1] - preSum[left];
 
-            if (sum < target) {
-                right++;
+            if (sum >= target) {
+                res = Math.min(res, right - left + 1);
+                left++;
             } else {
-                while (left <= right && sum >= target) {
-                    res = Math.min(res, right - left + 1);
-                    sum = preSum[right + 1] - preSum[++left];
-                }
+                right++;
             }
         }
 
-        return res == nums.length ? 0 : res;
+        return res == Integer.MAX_VALUE ? 0 : res;
     }
 }

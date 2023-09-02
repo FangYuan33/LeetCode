@@ -7,15 +7,14 @@ public class Solution724 {
     }
 
     public int pivotIndex(int[] nums) {
-        // preSum[0, k - 1] == preSum[k + 1, n]
-        int n = nums.length;
+        // preSum[i - 1] == preSum[i + 1, n] == preSum[0, n] - preSum[0, i]
         int[] preSum = new int[nums.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + nums[i - 1];
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (preSum[i] == preSum[n] - preSum[i + 1]) {
+            if (preSum[i] == preSum[preSum.length - 1] - preSum[i + 1]) {
                 return i;
             }
         }

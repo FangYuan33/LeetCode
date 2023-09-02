@@ -8,20 +8,20 @@ public class Solution396 {
 
     public int maxRotateFunction(int[] nums) {
         int n = nums.length;
-        int[] preSum = new int[2 * n + 1];
+        int[] preSum = new int[n * 2 + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + nums[(i - 1) % n];
         }
 
         int res = 0;
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             res += i * nums[i];
         }
 
         int temp = res;
-        for (int i = 0; i < nums.length - 1; i++) {
-            temp -= preSum[nums.length + i] - preSum[i + 1];
-            temp += nums[i] * (nums.length - 1);
+        for (int i = 1; i < nums.length; i++) {
+            temp += (n - 1) * nums[i - 1];
+            temp -= preSum[i + n - 1] - preSum[i];
 
             res = Math.max(res, temp);
         }
