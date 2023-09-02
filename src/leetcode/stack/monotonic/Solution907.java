@@ -16,7 +16,6 @@ public class Solution907 {
         int[] right = new int[arr.length];
         Arrays.fill(right, arr.length);
 
-        // 正序找右
         for (int i = 0; i < arr.length; i++) {
             while (!stack.isEmpty() && arr[i] <= arr[stack.peek()]) {
                 right[stack.pop()] = i;
@@ -24,7 +23,6 @@ public class Solution907 {
             stack.push(i);
         }
         stack.clear();
-        // 逆序找左
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!stack.isEmpty() && arr[i] < arr[stack.peek()]) {
                 left[stack.pop()] = i;
@@ -33,10 +31,10 @@ public class Solution907 {
         }
 
         long res = 0;
-        for (int i = 0; i < left.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             res += (long) arr[i] * (right[i] - i) * (i - left[i]);
         }
 
-        return (int) (res % (1e9 + 7));
+        return (int) (res % ((int) 1e9 + 7));
     }
 }
