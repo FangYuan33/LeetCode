@@ -1,4 +1,4 @@
-package leetcode.binarysearch;
+package leetcode.slidingwindow;
 
 import java.util.Arrays;
 

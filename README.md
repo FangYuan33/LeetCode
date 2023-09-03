@@ -9,53 +9,24 @@
 
 ## 2. 二分查找
 
-**思路很简单，细节是魔鬼**。使用二分查找法的标志不是数组有序（单调）而是**数据的两段性**，只要一段满足某个性质，另一段不满足某个性质，那么就可以使用二分法。
-双闭区间模板如下，不过注意其中的细节可能改变。
-
-```java
-    int binarySearch(int[] nums, int target) {
-        int left = 0, right = nums.length - 1;
-
-        // 这里变？
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] < target) {
-                // 这里变？
-                left = mid + 1;
-            } else if (nums[mid] > target) {
-                // 这里变？
-                right = mid - 1;
-            } else {
-                // 还是这里变？
-                return mid;
-            }
-        }
-
-        return -1;
-    }
-```
-
-需要思考当使用全闭区间时，while 条件中的等号会造成什么样的影响，不使用等号又如何
-
 ### 数组有序
 
-| 题目链接                                                                                                                  | 题解                                                                             | 备注                  |
-|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------|
-| [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java)           |                     |
-| [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)             |                     |
-| [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)           |                     |
-| [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)           | 有点儿像小时候看的猜价格的逻辑     |
-| [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java)           |                     |
-| [1608. 特殊数组的特征值 简单](https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/)              | [Solution1608.java](src%2Fleetcode%2Fbinarysearch%2FSolution1608.java)         | 有更简单的写法，之后看看        |
-| [1818. 绝对差值和 中等](https://leetcode.cn/problems/minimum-absolute-sum-difference/)                                       | [Solution1818.java](src%2Fleetcode%2Fbinarysearch%2FSolution1818.java)         | 有上一题类似，都是包含等于号的最佳实践 |
-| [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)             |                     |
-| [剑指 Offer 53 - II. 0～n-1中缺失的数字 简单](https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/)                              | [SolutionOffer532.java](src%2Fleetcode%2Fbinarysearch%2FSolutionOffer532.java) |                     |
-| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)             | ⭐️                  |
-| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                |                     |
-| [878. 第 N 个神奇数字 困难](https://leetcode.cn/problems/nth-magical-number/)                                                 |                                                                                |                     |
-
-2. [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+| 题目链接                                                                                                                  | 题解                                                                             | 备注 |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----|
+| [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java)           |    |
+| [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)             |    |
+| [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)             |    |
+| [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)           |    |
+| [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)           |    |
+| [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java)           |    |
+| [1608. 特殊数组的特征值 简单](https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/)              | [Solution1608.java](src%2Fleetcode%2Fbinarysearch%2FSolution1608.java)         |    |
+| [剑指 Offer 53 - II. 0～n-1中缺失的数字 简单](https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/)                              | [SolutionOffer532.java](src%2Fleetcode%2Fbinarysearch%2FSolutionOffer532.java) |    |
+| [1818. 绝对差值和 中等](https://leetcode.cn/problems/minimum-absolute-sum-difference/)                                       | [Solution1818.java](src%2Fleetcode%2Fbinarysearch%2FSolution1818.java)         |    |
+| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)             | ️  |
+| [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)           |    |
+| [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)           |    |
+| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                |    |
+| [878. 第 N 个神奇数字 困难](https://leetcode.cn/problems/nth-magical-number/)                                                 |                                                                                |    |
 
 ### 数组无序
 
@@ -93,10 +64,10 @@
 
 滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
 
-| 题目链接                                                                                                          | 题解                                                                     | 备注 |
-|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
-| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fbinarysearch%2FSolution1984.java) |    |
-| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)  |    |
+| 题目链接                                                                                                          | 题解                                                                      | 备注 |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
+| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
 
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)

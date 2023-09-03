@@ -8,24 +8,18 @@ public class Solution1608 {
         Arrays.sort(nums);
 
         for (int i = 0; i <= nums.length; i++) {
-            int left = 0, right = nums.length - 1;
-
-            while (left <= right) {
+            int left = 0, right = nums.length;
+            while (left < right) {
                 int mid = left + right >> 1;
 
-                if (i > nums[mid]) {
-                    left = mid + 1;
-                } else if (i < nums[mid]) {
-                    right = mid - 1;
+                if (nums[mid] >= i) {
+                    right = mid;
                 } else {
-                    left = mid;
-                    while (left > 0 && nums[left - 1] == i) {
-                        left--;
-                    }
+                    left = mid + 1;
                 }
             }
 
-            if (nums.length - left == i) {
+            if (i == nums.length - left) {
                 return i;
             }
         }
