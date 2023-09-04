@@ -48,6 +48,7 @@
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
 | [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2FSolution1760.java) |    |
 | [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)  |                                                                        |    |
+| [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                |                                                                        |    |
 
 ## 3. 双指针
 
