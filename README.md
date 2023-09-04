@@ -7,7 +7,45 @@
 | [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                      |                         |
 | [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                      |                         |
 
-## 2. 二分查找
+## 2. 双指针
+
+双指针解题考虑点
+
+- 数组是否有序？
+- 初始指针怎么定义，是在用一个位置还是在数组两边？
+- 指针移动的条件是什么？
+- 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
+
+针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
+
+| 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
+|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+
+1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
+2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
+3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
+
+两个有序数组的合并问题，一个数组分别一个指针
+
+1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
+
+## 3. 滑动窗口
+
+滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
+
+| 题目链接                                                                                                          | 题解                                                                      | 备注 |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
+| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
+
+2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
+4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
+5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+6. [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)
+
+## 4. 二分查找
 
 ### 数组有序
 
@@ -50,44 +88,6 @@
 | [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2FSolution1760.java) |    |
 | [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)  |                                                                        |    |
 | [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                |                                                                        |    |
-
-## 3. 双指针
-
-双指针解题考虑点
-
-- 数组是否有序？
-- 初始指针怎么定义，是在用一个位置还是在数组两边？
-- 指针移动的条件是什么？
-- 是否有连续子数组、连续子字符串要求？有的话优先考虑滑动窗口
-
-针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
-
-| 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
-|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-
-1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
-2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
-3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
-4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
-
-两个有序数组的合并问题，一个数组分别一个指针
-
-1. [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)
-
-## 4. 滑动窗口
-
-滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
-
-| 题目链接                                                                                                          | 题解                                                                      | 备注 |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
-| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
-
-2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
-3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
-4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
-5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
-6. [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)
 
 ## 5. 前缀和
 
