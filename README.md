@@ -18,9 +18,10 @@
 
 针对数组中两个值的问题，从数组两边开始找的情况；针对回文串问题，从两边开始比
 
-| 题目链接                                                                      | 题解                                                                  | 备注 |
-|---------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-| [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/) | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java) |    |
+| 题目链接                                                                      | 题解                                                                    | 备注 |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/) | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)   |    |
+| [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)         | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java) |    |
 
 3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
