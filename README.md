@@ -16,6 +16,7 @@
 | [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java)             |    |
 | [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)               |    |
 | [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)               |    |
+| [74. 搜索二维矩阵 中等](https://leetcode.cn/problems/search-a-2d-matrix/)                                                     | [Solution74.java](src%2Fleetcode%2Fbinarysearch%2FSolution74.java)               |    |
 | [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)             |    |
 | [911. 在线选举 中等](https://leetcode.cn/problems/online-election/)                                                         | [TopVotedCandidate.java](src%2Fleetcode%2Fbinarysearch%2FTopVotedCandidate.java) |    |
 | [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)             |    |
@@ -27,7 +28,6 @@
 | [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)             |    |
 | [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)             |    |
 | [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                  |    |
-| [878. 第 N 个神奇数字 困难](https://leetcode.cn/problems/nth-magical-number/)                                                 |                                                                                  |    |
 
 ### 数组无序
 
