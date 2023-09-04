@@ -18,6 +18,7 @@
 | [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)               |    |
 | [74. 搜索二维矩阵 中等](https://leetcode.cn/problems/search-a-2d-matrix/)                                                     | [Solution74.java](src%2Fleetcode%2Fbinarysearch%2FSolution74.java)               |    |
 | [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)             |    |
+| [436. 寻找右区间 中等](https://leetcode.cn/problems/find-right-interval/)                                                    | [Solution436.java](src%2Fleetcode%2Fbinarysearch%2FSolution436.java)             |    |
 | [911. 在线选举 中等](https://leetcode.cn/problems/online-election/)                                                         | [TopVotedCandidate.java](src%2Fleetcode%2Fbinarysearch%2FTopVotedCandidate.java) |    |
 | [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)             |    |
 | [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java)             |    |
