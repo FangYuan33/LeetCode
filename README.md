@@ -26,6 +26,7 @@
 | [1818. 绝对差值和 中等](https://leetcode.cn/problems/minimum-absolute-sum-difference/)                                       | [Solution1818.java](src%2Fleetcode%2Fbinarysearch%2FSolution1818.java)           |    |
 | [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)               | ️  |
 | [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)             |    |
+| [81. 搜索旋转排序数组 II 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)                                 | [Solution81.java](src%2Fleetcode%2Fbinarysearch%2FSolution81.java)               |    |
 | [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)             |    |
 | [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                  |    |
 
