@@ -37,6 +37,12 @@
 | [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)                   | [Solution162.java](src%2Fleetcode%2Fbinarysearch%2FSolution162.java) | ⭐️  |
 | [852. 山脉数组的峰顶索引 中等](https://leetcode.cn/problems/peak-index-in-a-mountain-array/) | [Solution852.java](src%2Fleetcode%2Fbinarysearch%2FSolution852.java) |     |
 
+### 最大值最小，最小值最大
+
+| 题目链接                                                                                | 题解                                                                     | 备注 |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
+| [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2FSolution1760.java) |    |
+
 ## 3. 双指针
 
 双指针解题考虑点
