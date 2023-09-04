@@ -21,7 +21,6 @@
 | 题目链接                                                                                                                                  | 题解                                                                          | 备注 |
 |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
 
-1. [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)
 2. [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)
 3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
@@ -37,6 +36,7 @@
 | 题目链接                                                                                                          | 题解                                                                      | 备注 |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
 | [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
+| [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
 
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
