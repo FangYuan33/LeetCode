@@ -697,6 +697,10 @@ def backtrack(路径, 选择列表):
 
 ## 19. 贪心算法
 
+| 题目链接                                                                             | 题解                                                                      | 备注   |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------|------|
+| [334. 递增的三元子序列 中等](https://leetcode.cn/problems/increasing-triplet-subsequence/) | [Solution334.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution334.java) | todo |
+
 1. [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 2. [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
