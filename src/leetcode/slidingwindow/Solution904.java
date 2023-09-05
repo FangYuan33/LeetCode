@@ -1,7 +1,5 @@
 package leetcode.slidingwindow;
 
-import java.util.HashMap;
-
 public class Solution904 {
 
     public static void main(String[] args) {
@@ -9,26 +7,27 @@ public class Solution904 {
     }
 
     public int totalFruit(int[] fruits) {
-        int res = 0;
-        HashMap<Integer, Integer> bucket = new HashMap<>();
+        int max = 2;
+        int[] already = new int[fruits.length + 1];
 
+        int res = 0;
         int left = 0, right = 0;
         while (right < fruits.length) {
-            bucket.put(fruits[right], bucket.getOrDefault(fruits[right], 0) + 1);
-
-            while (bucket.size() > 2) {
-                Integer remove = bucket.get(fruits[left]);
-                if (remove - 1 == 0) {
-                    bucket.remove(fruits[left]);
-                } else {
-                    bucket.put(fruits[left], remove - 1);
+            if (max > 0 || already[fruits[right]] > 0) {
+                if (already[fruits[right]] == 0) {
+                    max--;
                 }
+                already[fruits[right]]++;
+                right++;
 
+                res = Math.max(res, right - left);
+            } else {
+                already[fruits[left]]--;
+                if (already[fruits[left]] == 0) {
+                    max++;
+                }
                 left++;
             }
-
-            res = Math.max(right - left + 1, res);
-            right++;
         }
 
         return res;
