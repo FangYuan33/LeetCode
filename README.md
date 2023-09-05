@@ -40,12 +40,12 @@
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                              | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)   |    |
+| [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                       | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)     |    |
 
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
 4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
-6. [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)
 
 ## 二分查找
 
