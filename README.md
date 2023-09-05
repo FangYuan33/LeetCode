@@ -84,6 +84,26 @@
 
 最大值最小和最小值最大问题一般需要二分结合贪心算法来求解
 
+```java
+void process(int[] nums) {
+    int left = 0, right = nums.length;
+    while (left < right) {
+        int mid = left + right >> 1;
+
+        if (check(mid)) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
+    }    
+}
+
+boolean check(int mid) {
+    // doSomething
+    return true or false;    
+}
+```
+
 | 题目链接                                                                                | 题解                                                                     | 备注 |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
 | [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2FSolution1760.java) |    |
