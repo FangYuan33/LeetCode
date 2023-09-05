@@ -2,22 +2,20 @@ package leetcode.doublepointer;
 
 public class Solution125 {
     public boolean isPalindrome(String s) {
-        String lowerS = s.toLowerCase();
-        int left = 0, right = lowerS.length() - 1;
+        String lowerCase = s.toLowerCase();
 
+        int left = 0, right = lowerCase.length() - 1;
         while (left < right) {
-            // 跳过非字母数字
-            while (left < right && !Character.isLetterOrDigit(lowerS.charAt(left))) {
+            while (left < lowerCase.length() && !Character.isLetterOrDigit(s.charAt(left))) {
                 left++;
             }
-            while (left < right && !Character.isLetterOrDigit(lowerS.charAt(right))) {
+            while (right >= 0 && !Character.isLetterOrDigit(s.charAt(right))) {
                 right--;
             }
 
-            if (left < right) {
-                if (lowerS.charAt(left) != lowerS.charAt(right)) {
-                    return false;
-                }
+            if (left < right && lowerCase.charAt(left) != lowerCase.charAt(right)) {
+                return false;
+            } else {
                 left++;
                 right--;
             }
