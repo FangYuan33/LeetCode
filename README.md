@@ -37,6 +37,7 @@
 
 | 题目链接                                                                                                          | 题解                                                                      | 备注 |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                         | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java) |    |
 | [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
