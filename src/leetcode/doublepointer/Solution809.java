@@ -20,28 +20,28 @@ public class Solution809 {
     private boolean isExpand(String origin, String cur) {
         int oL = 0, oR = 0;
         int cL = 0, cR = 0;
-        while (cR < cur.length() && oR < origin.length()) {
-            if (cur.charAt(cR) != origin.charAt(oR)) {
+        while (oR < origin.length() && cR < cur.length()) {
+            if (origin.charAt(oR) != cur.charAt(cR)) {
                 return false;
             }
 
-            while (cR + 1 < cur.length() && cur.charAt(cR) == cur.charAt(cR + 1)) {
-                cR++;
-            }
             while (oR + 1 < origin.length() && origin.charAt(oR) == origin.charAt(oR + 1)) {
                 oR++;
             }
+            while (cR + 1 < cur.length() && cur.charAt(cR) == cur.charAt(cR + 1)) {
+                cR++;
+            }
+
             if (cR - cL > oR - oL) {
                 return false;
             }
             if (cR - cL < oR - oL && oR - oL + 1 < 3) {
                 return false;
             }
-
-            cR++;
-            cL = cR;
             oR++;
             oL = oR;
+            cR++;
+            cL = cR;
         }
 
         return cR == cur.length() && oR == origin.length();
