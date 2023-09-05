@@ -13,21 +13,21 @@ public class Solution904 {
         int res = 0;
         int left = 0, right = 0;
         while (right < fruits.length) {
-            if (max > 0 || already[fruits[right]] > 0) {
-                if (already[fruits[right]] == 0) {
-                    max--;
-                }
-                already[fruits[right]]++;
-                right++;
+            if (already[fruits[right]] == 0) {
+                max--;
+            }
+            already[fruits[right]]++;
 
-                res = Math.max(res, right - left);
-            } else {
+            while (max < 0) {
                 already[fruits[left]]--;
                 if (already[fruits[left]] == 0) {
                     max++;
                 }
                 left++;
             }
+
+            res = Math.max(res, right - left + 1);
+            right++;
         }
 
         return res;

@@ -15,28 +15,27 @@ public class Solution76 {
         String res = "";
         int length = Integer.MAX_VALUE;
         int left = 0, right = 0;
-        while (right <= s.length()) {
-            if (needCount == 0) {
-                if (right - left < length) {
-                    length = right - left;
-                    res = s.substring(left, right);
-                }
-
-                if (counts[s.charAt(left)] == 0) {
-                    needCount++;
-                }
-                counts[s.charAt(left)]++;
-                left++;
-            } else {
-                if (right < s.length()) {
-                    if (counts[s.charAt(right)] > 0) {
-                        needCount--;
-                    }
-                    counts[s.charAt(right)]--;
-                }
-
-                right++;
+        while (right < s.length()) {
+            if (counts[s.charAt(right)] > 0) {
+                needCount--;
             }
+            counts[s.charAt(right)]--;
+
+            if (needCount == 0) {
+                while (left < right && counts[s.charAt(left)] < 0) {
+                    counts[s.charAt(left++)]++;
+                }
+
+                if (right - left + 1 < length) {
+                    length = right - left + 1;
+                    res = s.substring(left, right + 1);
+                }
+
+                counts[s.charAt(left)]++;
+                needCount++;
+                left++;
+            }
+            right++;
         }
 
         return res;

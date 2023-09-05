@@ -39,6 +39,7 @@
 | [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
+| [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                               | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java) |    |
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                              | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)   |    |
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                       | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)     |    |
 
