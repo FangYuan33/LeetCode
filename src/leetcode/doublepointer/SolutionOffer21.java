@@ -1,10 +1,16 @@
 package leetcode.doublepointer;
 
+import java.util.Arrays;
+
 public class SolutionOffer21 {
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new SolutionOffer21().exchange(new int[]{1, 2, 3, 4})));
+    }
+
     public int[] exchange(int[] nums) {
         int left = 0, right = nums.length - 1;
 
-        // 左边找偶数，右边找奇数
         while (left < right) {
             while (left < right && nums[left] % 2 == 1) {
                 left++;
@@ -14,10 +20,6 @@ public class SolutionOffer21 {
             }
 
             swap(nums, left, right);
-
-            // 指针移动
-            left++;
-            right--;
         }
 
         return nums;
