@@ -22,6 +22,7 @@
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
 | [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/) | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)   |    |
 | [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)         | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java) |    |
+| [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)           | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java) |    |
 
 3. [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 4. [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)
