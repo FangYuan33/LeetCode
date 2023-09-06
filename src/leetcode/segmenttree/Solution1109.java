@@ -4,7 +4,6 @@ public class Solution1109 {
 
     public int[] corpFlightBookings(int[][] bookings, int n) {
         SegmentTree segmentTree = new SegmentTree(n);
-
         for (int[] booking : bookings) {
             segmentTree.update(1, booking[0], booking[1], booking[2]);
         }
@@ -36,7 +35,7 @@ public class Solution1109 {
         Node[] tree;
 
         public SegmentTree(int n) {
-            this.tree = new Node[n * 4];
+            tree = new Node[n * 4];
             build(1, 1, n);
         }
 
@@ -95,13 +94,12 @@ public class Solution1109 {
         }
 
         private void pushDown(int pos) {
-            if (tree[pos].left != tree[pos].right && tree[pos].add != 0) {
+            if (tree[pos].add != 0 && tree[pos].left != tree[pos].right) {
                 int add = tree[pos].add;
 
                 tree[pos << 1].val += add * (tree[pos << 1].right - tree[pos << 1].left + 1);
-                tree[pos << 1 | 1].val += add * (tree[pos << 1 | 1].right - tree[pos << 1 | 1].left + 1);
-
                 tree[pos << 1].add += add;
+                tree[pos << 1 | 1].val += add * (tree[pos << 1 | 1].right - tree[pos << 1 | 1].left + 1);
                 tree[pos << 1 | 1].add += add;
 
                 tree[pos].add = 0;

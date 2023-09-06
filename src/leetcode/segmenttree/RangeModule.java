@@ -1,13 +1,13 @@
 package leetcode.segmenttree;
 
-/**
- * 区间修改和区间查询，我们可以选择使用线段树来解题
- * 根据题意，我们需要满足动态开点
- */
 public class RangeModule {
 
     public static void main(String[] args) {
         RangeModule rangeModule = new RangeModule();
+
+        rangeModule.addRange(10, 20);
+        rangeModule.removeRange(14, 16);
+        rangeModule.queryRange(10, 14);
 
         rangeModule.addRange(5, 7);
         rangeModule.queryRange(5, 7);
@@ -37,15 +37,15 @@ public class RangeModule {
     }
 
     public void addRange(int left, int right) {
-        segmentTree.update(1, 1, (int) 1e9, left, right - 1, 1);
+        segmentTree.update(1, 1, (int) 1e9 + 1, left + 1, right, 1);
     }
 
     public boolean queryRange(int left, int right) {
-        return segmentTree.query(1, 1, (int) 1e9, left, right - 1) == right - left;
+        return segmentTree.queryResult(1, 1, (int) 1e9 + 1, left + 1, right);
     }
 
     public void removeRange(int left, int right) {
-        segmentTree.update(1, 1, (int) 1e9, left, right - 1, -1);
+        segmentTree.update(1, 1, (int) 1e9 + 1, left + 1, right, -1);
     }
 
     static class SegmentTree {
@@ -59,14 +59,19 @@ public class RangeModule {
             int add;
         }
 
-        Node[] tree;
-
         int count;
+
+        Node[] tree;
 
         public SegmentTree() {
             count = 1;
-            tree = new Node[(int) 5e6];
-            tree[count] = new Node();
+            tree = new Node[(int) 5e6 + 1];
+            tree[count++] = new Node();
+        }
+
+        public boolean queryResult(int pos, int left, int right, int l, int r) {
+            int res = query(pos, left, right, l, r);
+            return res == r - l + 1;
         }
 
         public int query(int pos, int left, int right, int l, int r) {
@@ -90,16 +95,15 @@ public class RangeModule {
             return res;
         }
 
-        public void update(int pos, int left, int right, int l, int r, int val) {
+        public void update(int pos, int left, int right, int l, int r, int add) {
             if (l <= left && right <= r) {
-                if (val == 1) {
-                    tree[pos].val = right - left + 1;
-                    tree[pos].add = right - left + 1;
-                } else {
+                if (add == -1) {
                     tree[pos].val = 0;
-                    tree[pos].add = val;
+                    tree[pos].add = -1;
+                } else {
+                    tree[pos].val = right - left + 1;
+                    tree[pos].add = tree[pos].val;
                 }
-
                 return;
             }
 
@@ -109,10 +113,10 @@ public class RangeModule {
 
             int mid = left + right >> 1;
             if (l <= mid) {
-                update(tree[pos].left, left, mid, l, r, val);
+                update(tree[pos].left, left, mid, l, r, add);
             }
             if (r > mid) {
-                update(tree[pos].right, mid + 1, right, l, r, val);
+                update(tree[pos].right, mid + 1, right, l, r, add);
             }
 
             pushUp(pos);
@@ -126,18 +130,18 @@ public class RangeModule {
             if (tree[pos].left != 0 && tree[pos].right != 0 && tree[pos].add != 0) {
                 int add = tree[pos].add;
 
-                if (add > 0) {
-                    tree[tree[pos].left].val = add - add / 2;
-                    tree[tree[pos].right].val = add / 2;
-
-                    tree[tree[pos].left].add = add - add / 2;
-                    tree[tree[pos].right].add = add / 2;
-                } else {
+                if (add == -1) {
                     tree[tree[pos].left].val = 0;
-                    tree[tree[pos].right].val = 0;
-
                     tree[tree[pos].left].add = -1;
+
+                    tree[tree[pos].right].val = 0;
                     tree[tree[pos].right].add = -1;
+                } else {
+                    tree[tree[pos].left].val = add - add / 2;
+                    tree[tree[pos].left].add = tree[tree[pos].left].val;
+
+                    tree[tree[pos].right].val = add / 2;
+                    tree[tree[pos].right].add = tree[tree[pos].right].val;
                 }
 
                 tree[pos].add = 0;
@@ -148,12 +152,13 @@ public class RangeModule {
             if (tree[pos] == null) {
                 tree[pos] = new Node();
             }
+
             if (tree[pos].left == 0) {
-                tree[pos].left = ++count;
+                tree[pos].left = count++;
                 tree[tree[pos].left] = new Node();
             }
             if (tree[pos].right == 0) {
-                tree[pos].right = ++count;
+                tree[pos].right = count++;
                 tree[tree[pos].right] = new Node();
             }
         }
