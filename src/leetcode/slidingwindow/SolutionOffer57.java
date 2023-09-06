@@ -1,44 +1,42 @@
 package leetcode.slidingwindow;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SolutionOffer57 {
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.deepToString(new SolutionOffer57().findContinuousSequence(9)));
+    }
+
     public int[][] findContinuousSequence(int target) {
-        List<int[]> resList = new ArrayList<>();
-        // 滑动窗口
-        int left = 1, right = 1;
-        // 中值，左窗口不能超过它
-        int half = target / 2;
+        ArrayList<int[]> res = new ArrayList<>();
 
         int sum = 0;
-        while (left <= half) {
-            if (sum > target) {
-                // 过大，缩小窗口
-                sum -= left;
-                left++;
-            } else if (sum < target) {
-                // 过小，扩大窗口
-                sum += right;
-                right++;
-            } else {
-                resList.add(initialElement(left, right));
+        int left = 1, right = 1;
+        while (right < target) {
+            sum += right;
 
-                // 缩小窗口
-                sum -= left;
-                left++;
+            while (sum >= target) {
+                if (sum == target) {
+                    res.add(initialElement(left, right));
+                }
+                sum -= left++;
             }
+
+            right++;
         }
 
-        return resList.toArray(new int[resList.size()][]);
+        return res.toArray(new int[res.size()][]);
     }
 
     private int[] initialElement(int left, int right) {
-        int[] array = new int[right - left];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = left++;
+        int[] element = new int[right - left + 1];
+        for (int i = 0; i < element.length; i++) {
+            element[i] = left + i;
         }
 
-        return array;
+        return element;
     }
 }

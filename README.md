@@ -41,18 +41,19 @@
 
 ### 动态窗口
 
-| 题目链接                                                                                                          | 题解                                                                      | 备注 |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-| [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                         | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java) |    |
-| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
-| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                      | [Solution219.java](src%2Fleetcode%2Fslidingwindow%2FSolution219.java)   |    |
-| [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
-| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
-| [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                               | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java) |    |
-| [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                              | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)   |    |
-| [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                       | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)     |    |
-| [438. 找到字符串中所有字母异位词 中等](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)                          | [Solution438.java](src%2Fleetcode%2Fslidingwindow%2FSolution438.java)   |    |
-| [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)                   | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)   |    |
+| 题目链接                                                                                                          | 题解                                                                            | 备注 |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+| [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)     | [SolutionOffer57.java](src%2Fleetcode%2Fslidingwindow%2FSolutionOffer57.java) |    |
+| [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                         | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java)       |    |
+| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java)       |    |
+| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                      | [Solution219.java](src%2Fleetcode%2Fslidingwindow%2FSolution219.java)         |    |
+| [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |    |
+| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)         |    |
+| [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                               | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java)       |    |
+| [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                              | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |    |
+| [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                       | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |    |
+| [438. 找到字符串中所有字母异位词 中等](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)                          | [Solution438.java](src%2Fleetcode%2Fslidingwindow%2FSolution438.java)         |    |
+| [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)                   | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |    |
 
 2. [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 3. [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)
