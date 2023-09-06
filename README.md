@@ -628,9 +628,9 @@ inf bfs(Node node, Node target) {
 
 ### 红黑树
 
-| 题目链接                                                                       | 题解                                                                          | 备注 |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java) |    |
+| 题目链接                                                                       | 题解                                                                          | 备注       |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------|
+| [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java) | 认识和使用红黑树 |
 
 ## 动态规划
 
