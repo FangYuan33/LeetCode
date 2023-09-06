@@ -33,11 +33,18 @@
 
 滑动窗口的变化条件**需要有准确的规则**。如果数组是无序且包含的元素并**不都是非负数**的话，往往窗口的变化条件比较难判断，可能无法使用该方法求解
 
+### 固定窗口
+
+| 题目链接                                                                           | 题解                                                                  | 备注 |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/) | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java) |    |
+
+### 动态窗口找极值
+
 | 题目链接                                                                                                          | 题解                                                                      | 备注 |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
 | [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                         | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java) |    |
 | [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
-| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/)                                | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java)     |    |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)       |    |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)   |    |
 | [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                               | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java) |    |
