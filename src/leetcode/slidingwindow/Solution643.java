@@ -1,4 +1,4 @@
-package leetcode.segmenttree;
+package leetcode.slidingwindow;
 
 public class Solution643 {
     public double findMaxAverage(int[] nums, int k) {
