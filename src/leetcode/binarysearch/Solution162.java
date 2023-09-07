@@ -11,7 +11,7 @@ public class Solution162 {
         while (left < right) {
             int mid = left + right >> 1;
 
-            if (mid == nums.length - 1 || nums[mid] > nums[mid + 1]) {
+            if (mid + 1 == nums.length || nums[mid] > nums[mid + 1]) {
                 right = mid;
             } else {
                 left = mid + 1;

@@ -14,31 +14,35 @@ public class Solution436 {
     }
 
     public int[] findRightInterval(int[][] intervals) {
-        int[] res = new int[intervals.length];
-        Arrays.fill(res, -1);
-        HashMap<int[], Integer> hashMap = new HashMap<>();
+        HashMap<int[], Integer> map = new HashMap<>();
         for (int i = 0; i < intervals.length; i++) {
-            hashMap.put(intervals[i], i);
+            map.put(intervals[i], i);
         }
-
         Arrays.sort(intervals, Comparator.comparingInt(x -> x[0]));
-        for (int i = 0; i < intervals.length; i++) {
+
+        int[] res = new int[intervals.length];
+        for (int i = 0; i < res.length; i++) {
             if (intervals[i][0] == intervals[i][1]) {
-                res[hashMap.get(intervals[i])] = hashMap.get(intervals[i]);
+                res[map.get(intervals[i])] = map.get(intervals[i]);
                 continue;
             }
 
-            int left = i + 1, right = intervals.length;
+            int target = intervals[i][1];
+            int left = i + 1, right = res.length;
             while (left < right) {
                 int mid = left + right >> 1;
 
-                if (intervals[mid][0] >= intervals[i][1]) {
+                if (intervals[mid][0] >= target) {
                     right = mid;
                 } else {
                     left = mid + 1;
                 }
             }
-            res[hashMap.get(intervals[i])] = hashMap.get(intervals[left]);
+            if (i < left && left < res.length) {
+                res[map.get(intervals[i])] = map.get(intervals[left]);
+            } else {
+                res[map.get(intervals[i])] = -1;
+            }
         }
 
         return res;

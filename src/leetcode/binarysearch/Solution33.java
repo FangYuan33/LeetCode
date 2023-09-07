@@ -3,7 +3,7 @@ package leetcode.binarysearch;
 public class Solution33 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution33().search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
+        System.out.println(new Solution33().search(new int[]{1, 3, 5}, 3));
     }
 
     public int search(int[] nums, int target) {

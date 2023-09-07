@@ -13,17 +13,17 @@ public class Solution1818 {
         int[] temp = new int[nums1.length];
         System.arraycopy(nums1, 0, temp, 0, temp.length);
         Arrays.sort(temp);
+        long sum = 0;
+        int max = 0;
 
-        long res = 0;
-        int num = 0;
         for (int i = 0; i < nums1.length; i++) {
             if (nums1[i] == nums2[i]) {
                 continue;
             }
+            int abs = Math.abs(nums1[i] - nums2[i]);
+            sum += abs;
 
-            int origin = Math.abs(nums1[i] - nums2[i]);
-            res += origin;
-            int left = 0, right = nums1.length;
+            int left = 0, right = temp.length;
             while (left < right) {
                 int mid = left + right >> 1;
 
@@ -33,22 +33,17 @@ public class Solution1818 {
                     left = mid + 1;
                 }
             }
-            // 记录最大的变化量
-            int n;
-            if (left == nums1.length) {
-                n = Math.abs(temp[left - 1] - nums2[i]);
-            } else if (left == 0) {
-                n = Math.abs(temp[0] - nums2[i]);
-            } else {
-                n = Math.min(Math.abs(temp[left] - nums2[i]), Math.abs(temp[left - 1] - nums2[i]));
+            if (left < temp.length) {
+                int cur = temp[right] - nums2[i];
+                max = Math.max(max, abs - cur);
             }
-
-            if (n < origin) {
-                num = Math.max(origin - n, num);
+            if (left - 1 >= 0) {
+                int cur2 = nums2[i] - temp[left - 1];
+                max = Math.max(max, abs - cur2);
             }
         }
 
-        return (int) ((res - num) % N);
+        return (int) ((sum - max) % N);
     }
 
 }

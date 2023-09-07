@@ -5,34 +5,40 @@ import java.util.HashMap;
 public class TopVotedCandidate {
 
     public static void main(String[] args) {
-        TopVotedCandidate candidate = new TopVotedCandidate(new int[]{0, 1, 1, 0, 0, 1, 0}, new int[]{0, 5, 10, 15, 20, 25, 30});
+        TopVotedCandidate candidate = new TopVotedCandidate(
+                new int[]{0,0,0,0,1},
+                new int[]{0,6,39,52,75}
+        );
 
-        System.out.println(candidate.q(5));
+        System.out.println(candidate.q(45));
+        System.out.println(candidate.q(49));
+        System.out.println(candidate.q(59));
+        System.out.println(candidate.q(68));
+        System.out.println(candidate.q(42));
+        System.out.println(candidate.q(37));
+        System.out.println(candidate.q(99));
     }
-
-    int[] persons;
 
     int[] times;
 
     int[] result;
 
+    HashMap<Integer, Integer> personVote;
+
     public TopVotedCandidate(int[] persons, int[] times) {
-        this.persons = persons;
         this.times = times;
-        this.result = new int[times.length];
+        result = new int[persons.length];
+        personVote = new HashMap<>();
+        int curPerson = -1;
 
-        // 唱票
-        int max = 0, person = -1;
-        HashMap<Integer, Integer> personVote = new HashMap<>();
-        for (int i = 0; i < times.length; i++) {
-            personVote.put(persons[i], personVote.getOrDefault(persons[i], 0) + 1);
+        for (int i = 0; i < persons.length; i++) {
+            int vote = personVote.getOrDefault(persons[i], 0) + 1;
+            personVote.put(persons[i], vote);
 
-            Integer vote = personVote.get(persons[i]);
-            if (vote >= max) {
-                person = persons[i];
-                max = vote;
+            if (vote >= personVote.getOrDefault(curPerson, 0)) {
+                curPerson = persons[i];
             }
-            result[i] = person;
+            result[i] = curPerson;
         }
     }
 

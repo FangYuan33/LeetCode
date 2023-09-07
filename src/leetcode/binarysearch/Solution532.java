@@ -12,13 +12,14 @@ public class Solution532 {
                 continue;
             }
 
-            int left = i + 1, right = nums.length;
-            while (left < right) {
+            int target = nums[i] + k;
+            int left = i + 1, right = nums.length - 1;
+            while (left <= right) {
                 int mid = left + right >> 1;
 
-                if (nums[mid] - nums[i] > k) {
-                    right = mid;
-                } else if (nums[mid] - nums[i] < k) {
+                if (nums[mid] > target) {
+                    right = mid - 1;
+                } else if (nums[mid] < target) {
                     left = mid + 1;
                 } else {
                     res++;

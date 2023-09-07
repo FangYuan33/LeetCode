@@ -11,18 +11,19 @@ public class Solution34 {
             } else if (nums[mid] < target) {
                 left = mid + 1;
             } else {
-                int l = mid, r = mid;
-                while (l - 1 >= 0 && nums[l - 1] == target) {
-                    l--;
-                }
-                while (r + 1 < nums.length && nums[r + 1] == target) {
-                    r++;
-                }
+                left = mid;
+                right = mid;
 
-                return new int[]{l, r};
+                while (left - 1 >= 0 && nums[left - 1] == target) {
+                    left--;
+                }
+                while (right + 1 < nums.length && nums[right + 1] == target) {
+                    right++;
+                }
+                return new int[]{left, right};
             }
         }
 
-        return new int[]{-1, -1};
+        return new int[]{left, right};
     }
 }

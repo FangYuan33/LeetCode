@@ -63,26 +63,26 @@
 
 ### 数组有序
 
-| 题目链接                                                                                                                  | 题解                                                                               | 备注 |
-|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----|
-| [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java)             |    |
-| [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)               |    |
-| [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)               |    |
-| [74. 搜索二维矩阵 中等](https://leetcode.cn/problems/search-a-2d-matrix/)                                                     | [Solution74.java](src%2Fleetcode%2Fbinarysearch%2FSolution74.java)               |    |
-| [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)             |    |
-| [436. 寻找右区间 中等](https://leetcode.cn/problems/find-right-interval/)                                                    | [Solution436.java](src%2Fleetcode%2Fbinarysearch%2FSolution436.java)             |    |
-| [911. 在线选举 中等](https://leetcode.cn/problems/online-election/)                                                         | [TopVotedCandidate.java](src%2Fleetcode%2Fbinarysearch%2FTopVotedCandidate.java) |    |
-| [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)             |    |
-| [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java)             |    |
-| [1608. 特殊数组的特征值 简单](https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/)              | [Solution1608.java](src%2Fleetcode%2Fbinarysearch%2FSolution1608.java)           |    |
-| [剑指 Offer 53 - II. 0～n-1中缺失的数字 简单](https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/)                              | [SolutionOffer532.java](src%2Fleetcode%2Fbinarysearch%2FSolutionOffer532.java)   |    |
-| [1818. 绝对差值和 中等](https://leetcode.cn/problems/minimum-absolute-sum-difference/)                                       | [Solution1818.java](src%2Fleetcode%2Fbinarysearch%2FSolution1818.java)           |    |
-| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)               | ️  |
-| [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)             |    |
-| [81. 搜索旋转排序数组 II 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)                                 | [Solution81.java](src%2Fleetcode%2Fbinarysearch%2FSolution81.java)               |    |
-| [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)             |    |
-| [532. 数组中的 k-diff 数对 中等](https://leetcode.cn/problems/k-diff-pairs-in-an-array/)                                      | [Solution532.java](src%2Fleetcode%2Fbinarysearch%2FSolution532.java)             |    |
-| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                  |    |
+| 题目链接                                                                                                                  | 题解                                                                               | 备注           |
+|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|--------------|
+| [704. 二分查找 简单](https://leetcode.cn/problems/binary-search/)                                                           | [Solution704.java](src%2Fleetcode%2Fbinarysearch%2FSolution704.java)             |              |
+| [35. 搜索插入位置 简单](https://leetcode.cn/problems/search-insert-position/)                                                 | [Solution35.java](src%2Fleetcode%2Fbinarysearch%2FSolution35.java)               |              |
+| [744. 寻找比目标字母大的最小字母 简单](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/)                       | [Solution744.java](src%2Fleetcode%2Fbinarysearch%2FSolution744.java)             |              |
+| [367. 有效的完全平方数 简单](https://leetcode.cn/problems/valid-perfect-square/)                                                | [Solution367.java](src%2Fleetcode%2Fbinarysearch%2FSolution367.java)             |              |
+| [34. 在排序数组中查找元素的第一个和最后一个位置 中等](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution34.java](src%2Fleetcode%2Fbinarysearch%2FSolution34.java)               |              |
+| [74. 搜索二维矩阵 中等](https://leetcode.cn/problems/search-a-2d-matrix/)                                                     | [Solution74.java](src%2Fleetcode%2Fbinarysearch%2FSolution74.java)               |              |
+| [240. 搜索二维矩阵 II 中等](https://leetcode.cn/problems/search-a-2d-matrix-ii/)                                              | [Solution240.java](src%2Fleetcode%2Fbinarysearch%2FSolution240.java)             |              |
+| [剑指 Offer 53 - II. 0～n-1中缺失的数字 简单](https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/)                              | [SolutionOffer532.java](src%2Fleetcode%2Fbinarysearch%2FSolutionOffer532.java)   | 二分查找两段性的典型应用 |
+| [436. 寻找右区间 中等](https://leetcode.cn/problems/find-right-interval/)                                                    | [Solution436.java](src%2Fleetcode%2Fbinarysearch%2FSolution436.java)             |              |
+| [532. 数组中的 k-diff 数对 中等](https://leetcode.cn/problems/k-diff-pairs-in-an-array/)                                      | [Solution532.java](src%2Fleetcode%2Fbinarysearch%2FSolution532.java)             |              |
+| [911. 在线选举 中等](https://leetcode.cn/problems/online-election/)                                                         | [TopVotedCandidate.java](src%2Fleetcode%2Fbinarysearch%2FTopVotedCandidate.java) | ⭐️           |
+| [1608. 特殊数组的特征值 简单](https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/)              | [Solution1608.java](src%2Fleetcode%2Fbinarysearch%2FSolution1608.java)           |              |
+| [1818. 绝对差值和 中等](https://leetcode.cn/problems/minimum-absolute-sum-difference/)                                       | [Solution1818.java](src%2Fleetcode%2Fbinarysearch%2FSolution1818.java)           |              |
+| [33. 搜索旋转排序数组 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array/)                                       | [Solution33.java](src%2Fleetcode%2Fbinarysearch%2FSolution33.java)               | ️            |
+| [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)             |              |
+| [81. 搜索旋转排序数组 II 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)                                 | [Solution81.java](src%2Fleetcode%2Fbinarysearch%2FSolution81.java)               |              |
+| [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)             |              |
+| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                  |              |
 
 ### 数组无序
 

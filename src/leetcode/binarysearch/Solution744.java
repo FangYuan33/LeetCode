@@ -3,7 +3,6 @@ package leetcode.binarysearch;
 public class Solution744 {
     public char nextGreatestLetter(char[] letters, char target) {
         int left = 0, right = letters.length;
-
         while (left < right) {
             int mid = left + right >> 1;
 

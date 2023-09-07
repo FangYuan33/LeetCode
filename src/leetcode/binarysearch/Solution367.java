@@ -7,16 +7,14 @@ public class Solution367 {
     }
 
     public boolean isPerfectSquare(int num) {
-        int left = 1, right = num + 1;
+        long left = 1, right = num - 1;
+        while (left <= right) {
+            long mid = left + right >> 1;
 
-        while (left < right) {
-            int mid = left + right >> 1;
-
-            long val = (long) mid * mid;
-
-            if (val > num) {
-                right = mid;
-            } else if (val < num) {
+            long midNum = mid * mid;
+            if (midNum > num) {
+                right = mid - 1;
+            } else if (midNum < num) {
                 left = mid + 1;
             } else {
                 return true;

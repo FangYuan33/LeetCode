@@ -19,7 +19,7 @@ public class Solution1608 {
                 }
             }
 
-            if (i == nums.length - left) {
+            if (nums.length - left == i) {
                 return i;
             }
         }

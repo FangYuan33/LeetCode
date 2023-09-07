@@ -11,17 +11,17 @@ public class Solution81 {
         while (left <= right) {
             int mid = left + right >> 1;
 
-            if (nums[mid] > nums[right] && target <= nums[right]) {
+            if (nums[mid] > nums[right] && target < nums[left]) {
                 left = mid + 1;
                 continue;
             }
             if (nums[mid] < nums[right] && target > nums[right]) {
-                right = mid;
+                right = mid - 1;
                 continue;
             }
 
             for (int i = left; i <= right; i++) {
-                if (target == nums[i]) {
+                if (nums[i] == target) {
                     return true;
                 }
             }
