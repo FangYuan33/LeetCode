@@ -123,7 +123,7 @@ boolean check(int mid) {
 | [875. 爱吃香蕉的珂珂 中等](https://leetcode.cn/problems/koko-eating-bananas/)                            | [Solution875.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution875.java)   |    |
 | [1011. 在 D 天内送达包裹的能力 中等](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/) | [Solution1011.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1011.java) |    |
 | [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)              | [Solution1552.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1552.java) |    |
-| [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                            |                                                                                          |    |
+| [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                            | [Solution475.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution475.java)   |    |
 
 ## 排序算法
 
