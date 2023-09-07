@@ -93,9 +93,9 @@
 | [162. 寻找峰值 中等](https://leetcode.cn/problems/find-peak-element/)                   | [Solution162.java](src%2Fleetcode%2Fbinarysearch%2FSolution162.java) | ⭐️  |
 | [852. 山脉数组的峰顶索引 中等](https://leetcode.cn/problems/peak-index-in-a-mountain-array/) | [Solution852.java](src%2Fleetcode%2Fbinarysearch%2FSolution852.java) |     |
 
-### 最大值最小，最小值最大
+### 贪心算法
 
-最大值最小和最小值最大问题一般需要二分结合贪心算法来求解
+最大值最小和最小值最大问题一般需要二分结合贪心算法来求解，求解模板如下：
 
 ```java
 void process(int[] nums) {
@@ -117,11 +117,12 @@ boolean check(int mid) {
 }
 ```
 
-| 题目链接                                                                                | 题解                                                                     | 备注 |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
-| [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2FSolution1760.java) |    |
-| [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)  |                                                                        |    |
-| [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                |                                                                        |    |
+| 题目链接                                                                                | 题解                                                                                       | 备注 |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|----|
+| [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1760.java) |    |
+| [875. 爱吃香蕉的珂珂 中等](https://leetcode.cn/problems/koko-eating-bananas/)                | [Solution875.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution875.java)   |    |
+| [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)  |                                                                                          |    |
+| [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                |                                                                                          |    |
 
 ## 排序算法
 
