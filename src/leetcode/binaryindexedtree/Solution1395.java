@@ -12,13 +12,12 @@ public class Solution1395 {
 
         for (int i = 0; i < rating.length; i++) {
             for (int j = i + 1; j < rating.length; j++) {
-                if (rating[i] > rating[j]) {
-                    res += tree.query(rating[j], rating[i]);
-                }
                 if (rating[i] < rating[j]) {
                     res += tree.query(rating[i], rating[j]);
                 }
-
+                if (rating[i] > rating[j]) {
+                    res += tree.query(rating[j], rating[i]);
+                }
                 tree.update(rating[j], 1);
             }
 
@@ -31,30 +30,29 @@ public class Solution1395 {
     }
 
     static class BinaryIndexedTree {
-
         int[] tree;
 
         public BinaryIndexedTree() {
-            this.tree = new int[(int) 1e5 + 1];
-        }
-
-        public void update(int index, int val) {
-            for (int i = index; i < tree.length; i += lowbit(i)) {
-                tree[i] += val;
-            }
+            tree = new int[(int) 1e5 + 1];
         }
 
         public int query(int left, int right) {
             return query(right) - query(left - 1);
         }
 
-        private int query(int index) {
+        public int query(int index) {
             int res = 0;
             for (int i = index; i > 0; i -= lowbit(i)) {
                 res += tree[i];
             }
 
             return res;
+        }
+
+        public void update(int index, int val) {
+            for (int i = index; i < tree.length; i += lowbit(i)) {
+                tree[i] += val;
+            }
         }
 
         private int lowbit(int i) {
