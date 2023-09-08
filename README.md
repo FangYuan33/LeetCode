@@ -121,6 +121,7 @@ boolean check(int mid) {
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|----|
 | [1760. 袋子里最少数目的球 中等](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/)             | [Solution1760.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1760.java) |    |
 | [875. 爱吃香蕉的珂珂 中等](https://leetcode.cn/problems/koko-eating-bananas/)                            | [Solution875.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution875.java)   |    |
+| [2226. 每个小孩最多能分到多少糖果 中等](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/) | [Solution2226.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution2226.java) |    |
 | [1011. 在 D 天内送达包裹的能力 中等](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/) | [Solution1011.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1011.java) |    |
 | [410. 分割数组的最大值 困难](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/)       | [Solution410.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution410.java)   |    |
 | [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)              | [Solution1552.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1552.java) |    |
