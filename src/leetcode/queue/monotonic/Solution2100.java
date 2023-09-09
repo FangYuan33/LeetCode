@@ -16,36 +16,38 @@ public class Solution2100 {
             for (int i = 0; i < security.length; i++) {
                 res.add(i);
             }
-
             return res;
         }
 
+        int leftBegin = 0, leftEnd = 0;
+        int rightBegin = time, rightEnd = rightBegin;
         ArrayDeque<Integer> left = new ArrayDeque<>();
         ArrayDeque<Integer> right = new ArrayDeque<>();
-        for (int l = 0, r = time; r < security.length; l++, r++) {
-            while (!left.isEmpty() && security[l] > security[left.peekLast()]) {
+        while (rightEnd < security.length) {
+            while (!left.isEmpty() && security[leftEnd] > security[left.peekLast()]) {
                 left.pollLast();
             }
-            left.offer(l);
-            while (!right.isEmpty() && security[r] < security[right.peekLast()]) {
+            left.addLast(leftEnd++);
+            while (!right.isEmpty() && security[rightEnd] < security[right.peekLast()]) {
                 right.pollLast();
             }
-            right.offer(r);
+            right.addLast(rightEnd++);
 
-            if (l < time) {
+            if (leftEnd <= time) {
                 continue;
             }
 
-            if (left.size() == (time + 1) && right.size() == (time + 1)) {
-                res.add(l);
+            if (left.size() == time + 1 && time + 1 == right.size()) {
+                res.add(leftEnd - 1);
             }
-
-            while (!left.isEmpty() && l - time >= left.peekFirst()) {
+            while (!left.isEmpty() && left.peekFirst() <= leftBegin) {
                 left.pollFirst();
             }
-            while (!right.isEmpty() && r - time >= right.peekFirst()) {
+            leftBegin++;
+            while (!right.isEmpty() && right.peekFirst() <= rightBegin) {
                 right.pollFirst();
             }
+            rightBegin++;
         }
 
         return res;

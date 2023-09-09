@@ -461,8 +461,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 | 题目链接                                                                                      | 题解                                                                        | 备注              |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------|
-| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)               | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java) | 乘法原理和重复值判断很需要注意 |
-| [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java) |                 |
+| [795. 区间子数组个数 中等](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) | [Solution795.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution795.java) | 乘法原理和重复值判断很需要注意 |
+| [907. 子数组的最小值之和 中等](https://leetcode.cn/problems/sum-of-subarray-minimums/)               | [Solution907.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution907.java) |                 |
 | [84. 柱状图中最大的矩形 困难](https://leetcode.cn/problems/largest-rectangle-in-histogram/)          | [Solution84.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution84.java)   | ⭐️              |
 | [85. 最大矩形 困难](https://leetcode.cn/problems/maximal-rectangle/)                            | [Solution85.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution85.java)   | 转换成 84 题来求解     |
 

@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Solution795 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution795().numSubarrayBoundedMax(new int[]{2, 1, 4, 3}, 2, 3));
+        System.out.println(new Solution795().numSubarrayBoundedMax(new int[]{0, 1, 3, 2, 3, 0, 1, 4}, 2, 3));
     }
 
     public int numSubarrayBoundedMax(int[] nums, int left, int right) {

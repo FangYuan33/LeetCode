@@ -10,6 +10,7 @@ public class Solution907 {
     }
 
     public int sumSubarrayMins(int[] arr) {
+        int N = (int) 1e9 + 7;
         Stack<Integer> stack = new Stack<>();
         int[] left = new int[arr.length];
         Arrays.fill(left, -1);
@@ -30,11 +31,11 @@ public class Solution907 {
             stack.push(i);
         }
 
-        long res = 0;
+        long sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            res += (long) arr[i] * (right[i] - i) * (i - left[i]);
+            sum += (long) (right[i] - i) * (i - left[i]) * arr[i];
         }
 
-        return (int) (res % ((int) 1e9 + 7));
+        return (int) (sum % N);
     }
 }
