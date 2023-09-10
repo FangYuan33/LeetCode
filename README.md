@@ -57,6 +57,7 @@
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                          | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |                          |
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)               | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |                          |
+| [1052. 爱生气的书店老板 中等](https://leetcode.cn/problems/grumpy-bookstore-owner/)                                 | [Solution1052.java](src%2Fleetcode%2Fslidingwindow%2FSolution1052.java)       | 技巧性有点儿强，不一定能想得出来         |
 
 4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
