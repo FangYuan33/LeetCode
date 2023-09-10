@@ -9,14 +9,16 @@ public class Solution1984 {
     }
 
     public int minimumDifference(int[] nums, int k) {
-        if (k == 1) {
+        if (k == 0) {
             return 0;
         }
         Arrays.sort(nums);
 
-        int res = nums[k - 1] - nums[0];
-        for (int i = k; i < nums.length; i++) {
-            res = Math.min(res, nums[i] - nums[i - k + 1]);
+        int res = Integer.MAX_VALUE;
+        int right = k - 1;
+        while (right < nums.length) {
+            res = Math.min(nums[right] - nums[right - k + 1], res);
+            right++;
         }
 
         return res;

@@ -35,9 +35,10 @@
 
 ### 固定窗口
 
-| 题目链接                                                                           | 题解                                                                  | 备注 |
-|--------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/) | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java) |    |
+| 题目链接                                                                                                          | 题解                                                                      | 备注 |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/)                                | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java)     |    |
+| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
 
 ### 动态窗口
 
@@ -45,8 +46,6 @@
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|--------------------------|
 | [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)     | [SolutionOffer57.java](src%2Fleetcode%2Fslidingwindow%2FSolutionOffer57.java) |                          |
 | [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                         | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java)       |                          |
-| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java)       |                          |
-| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                      | [Solution219.java](src%2Fleetcode%2Fslidingwindow%2FSolution219.java)         |                          |
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                             | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)              | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
 | [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                   | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)         |                          |
@@ -782,15 +781,16 @@ def backtrack(路径, 选择列表):
 
 ## 模拟
 
-| 题目链接                                                                                                       | 题解                                                                          | 备注  |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----|
-| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)          |     |
-| [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)            |     |
-| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java)       |     |
-| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)              |     |
-| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/)                      | [NumMatrix.java](src%2Fleetcode%2Fsimulate%2FNumMatrix.java)                |     |
-| [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                          | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |     |
-| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                   | [Solution560.java](src%2Fleetcode%2Fsimulate%2FSolution560.java)            |     |
-| [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                                  | [Solution496.java](src%2Fleetcode%2Fsimulate%2FSolution496.java)            |     |
+| 题目链接                                                                                                       | 题解                                                                          | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)          |    |
+| [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)            |    |
+| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java)       |    |
+| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)              |    |
+| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/)                      | [NumMatrix.java](src%2Fleetcode%2Fsimulate%2FNumMatrix.java)                |    |
+| [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                          | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |    |
+| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                   | [Solution560.java](src%2Fleetcode%2Fsimulate%2FSolution560.java)            |    |
+| [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                                  | [Solution496.java](src%2Fleetcode%2Fsimulate%2FSolution496.java)            |    |
+| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                   | [Solution219.java](src%2Fleetcode%2Fsimulate%2FSolution219.java)            |    |
 
 2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)

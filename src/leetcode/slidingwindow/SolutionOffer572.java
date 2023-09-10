@@ -11,46 +11,24 @@ public class SolutionOffer572 {
 
     public int[][] findContinuousSequence(int target) {
         List<int[]> res = new ArrayList<>();
-        int[] nums = new int[target / 2 + 1];
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = i + 1;
-        }
 
-        // 初始化窗口
-        int left = 0, right = left + 1;
-        int sum = nums[left] + nums[right];
-
-        while (right < nums.length) {
-            if (sum < target) {
-                // 窗口变大
-                right++;
-                if (right < nums.length) {
-                    sum += nums[right];
-                } else {
-                    break;
-                }
-            } else if (sum > target) {
-                // 窗口缩小
-                sum -= nums[left];
-                left++;
-            } else {
-                int[] element = new int[right - left + 1];
-                for (int i = 0, j = left; i < element.length && j <= right; i++, j++) {
-                    element[i] = nums[j];
+        int sum = 0;
+        int left = 1, right = 1;
+        while (right < target) {
+            while (sum > target) {
+                sum -= left++;
+            }
+            if (sum == target) {
+                int[] element = new int[right - left];
+                for (int i = left; i < right; i++) {
+                    element[i - left] = i;
                 }
                 res.add(element);
-
-                // 窗口缩小
-                sum -= nums[left];
-                left++;
             }
+
+            sum += right++;
         }
 
-        int[][] resArray = new int[res.size()][1];
-        for (int i = 0; i < res.size(); i++) {
-            resArray[i] = res.get(i);
-        }
-
-        return resArray;
+        return res.toArray(new int[res.size()][]);
     }
 }

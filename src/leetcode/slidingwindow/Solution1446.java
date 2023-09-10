@@ -1,18 +1,23 @@
 package leetcode.slidingwindow;
 
 public class Solution1446 {
-    public int maxPower(String s) {
-        int left = 0, right = 0;
 
+    public static void main(String[] args) {
+        System.out.println(new Solution1446().maxPower("cc"));
+    }
+
+    public int maxPower(String s) {
         int res = 1;
+        char cur = s.charAt(0);
+        int left = 0, right = 1;
         while (right < s.length()) {
-            while (right + 1 < s.length() && s.charAt(right) == s.charAt(right + 1)) {
-                right++;
+            if (s.charAt(right) != cur) {
+                cur = s.charAt(right);
+                left = right;
             }
-            res = Math.max(res, right - left + 1);
+            res = Math.max(right - left + 1, res);
 
             right++;
-            left = right;
         }
 
         return res;

@@ -1,25 +1,23 @@
 package leetcode.slidingwindow;
 
 public class Solution209 {
+
+    public static void main(String[] args) {
+        System.out.println(new Solution209().minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
+    }
+
     public int minSubArrayLen(int target, int[] nums) {
         int res = Integer.MAX_VALUE;
-
-        // 初始化窗口大小
+        int sum = 0;
         int left = 0, right = 0;
-        int sum = nums[right];
-
         while (right < nums.length) {
-            if (sum >= target) {
+            sum += nums[right];
+
+            while (sum >= target && left <= right) {
                 res = Math.min(res, right - left + 1);
-                // 找到答案后缩小窗口试试
                 sum -= nums[left++];
-            } else {
-                // 不符合条件尽可能扩大窗口
-                right++;
-                if (right < nums.length) {
-                    sum += nums[right];
-                }
             }
+            right++;
         }
 
         return res == Integer.MAX_VALUE ? 0 : res;

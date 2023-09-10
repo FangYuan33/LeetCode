@@ -15,7 +15,7 @@ public class Solution3 {
         int left = 0, right = 0;
         while (right < s.length()) {
             if (map.containsKey(s.charAt(right))) {
-                left = Math.max(map.get(s.charAt(right)) + 1, left);
+                left = Math.max(left, map.get(s.charAt(right)) + 1);
             }
 
             res = Math.max(res, right - left + 1);

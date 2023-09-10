@@ -17,8 +17,8 @@ public class Solution713 {
         while (right < nums.length) {
             sum *= nums[right];
 
-            while (sum >= k) {
-                sum /= nums[left];
+            while (sum >= k && left <= right) {
+                sum /= nums[left++];
             }
 
             res += right - left + 1;
