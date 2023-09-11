@@ -6,29 +6,24 @@ public class Solution523 {
 
     public static void main(String[] args) {
 //        System.out.println(new Solution523().checkSubarraySum(new int[]{1, 0}, 2));
-        System.out.println(new Solution523().checkSubarraySum(new int[]{5, 0, 0, 0}, 3));
+        System.out.println(new Solution523().checkSubarraySum(new int[]{23, 2, 6, 4, 7}, 6));
 //        System.out.println(new Solution523().checkSubarraySum(new int[]{0, 1, 0, 3, 0, 4, 0, 4, 0}, 5));
     }
 
     public boolean checkSubarraySum(int[] nums, int k) {
-        // preSum[n, i] % k == 0;
-        // (preSum[0, i] - preSum[0, n - 1]) % k == 0;
-        // preSum[0, i] % k == preSum[0, n - 1] % k; i >= 2,
-        HashMap<Integer, Integer> sumIndex = new HashMap<>();
-        int index = -1;
-        sumIndex.put(0, index);
         int preSum = 0;
+        HashMap<Integer, Integer> preSumIndex = new HashMap<>();
+        preSumIndex.put(preSum, -1);
+        for (int i = 0; i < nums.length; i++) {
+            preSum += nums[i];
 
-        for (int num : nums) {
-            index++;
-            preSum += num;
-
-            if (sumIndex.containsKey(preSum % k)) {
-                Integer originIndex = sumIndex.get(preSum % k);
-                if (index - originIndex >= 2)
+            if (preSumIndex.containsKey(preSum % k)) {
+                Integer index = preSumIndex.get(preSum % k);
+                if (i - index >= 2) {
                     return true;
+                }
             } else {
-                sumIndex.put(preSum % k, index);
+                preSumIndex.put(preSum % k, i);
             }
         }
 

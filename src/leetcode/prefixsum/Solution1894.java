@@ -7,9 +7,9 @@ public class Solution1894 {
             preSum[i] = preSum[i - 1] + chalk[i - 1];
         }
 
-        long n = k % preSum[preSum.length - 1];
+        long all = k % preSum[preSum.length - 1];
         for (int i = 1; i < preSum.length; i++) {
-            if (n < preSum[i]) {
+            if (all < preSum[i]) {
                 return i - 1;
             }
         }

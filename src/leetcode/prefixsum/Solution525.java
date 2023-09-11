@@ -16,7 +16,8 @@ public class Solution525 {
 
         int res = 0;
         HashMap<Integer, Integer> sumIndex = new HashMap<>();
-        for (int i = 0; i < preSum.length; i++) {
+        sumIndex.put(0, 0);
+        for (int i = 1; i < preSum.length; i++) {
             if (sumIndex.containsKey(preSum[i])) {
                 res = Math.max(res, i - sumIndex.get(preSum[i]));
             } else {

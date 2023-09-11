@@ -13,17 +13,16 @@ public class Solution396 {
             preSum[i] = preSum[i - 1] + nums[(i - 1) % n];
         }
 
-        int res = 0;
-        for (int i = 0; i < nums.length; i++) {
-            res += i * nums[i];
+        int first = 0;
+        for (int i = 1; i < nums.length; i++) {
+            first += i * nums[i];
         }
 
-        int temp = res;
+        int res = first;
         for (int i = 1; i < nums.length; i++) {
-            temp += (n - 1) * nums[i - 1];
-            temp -= preSum[i + n - 1] - preSum[i];
-
-            res = Math.max(res, temp);
+            first += nums[i - 1] * (n - 1);
+            first -= preSum[n + i - 1] - preSum[i];
+            res = Math.max(res, first);
         }
 
         return res;

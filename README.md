@@ -50,6 +50,7 @@
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|--------------------------|
 | [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) | [SolutionOffer57.java](src%2Fleetcode%2Fslidingwindow%2FSolutionOffer57.java) |                          |
 | [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                     | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java)       |                          |
+| [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                                              | [SolutionLCR008.java](src%2Fleetcode%2Fslidingwindow%2FSolutionLCR008.java)   |                          |
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                         | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)          | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
 | [1695. 删除子数组的最大得分 中等](https://leetcode.cn/problems/maximum-erasure-value/)                                | [Solution1695.java](src%2Fleetcode%2Fslidingwindow%2FSolution1695.java)       |                          |
@@ -141,11 +142,13 @@ boolean check(int mid) {
 
 ## 前缀和
 
-前缀和表示数组的前 n 项和，它是一种数据预处理的方法，是对空间换时间的应用，我们一般会创建 **数组长度 + 1** 大小的数组来记录前缀和，并将 0 索引处的前缀和标记为 0，表示前 0 项和，如下图所示，索引 1 处的前缀和表示原数组中的前 1 项和（nums[0]），所以我们想获取原数组中某索引元素的前缀和的话，需要将索引值加 1 再从前缀和数组中取值，当然我们也可以获取到不包含当前元素的前 n - 1 项和。
+前缀和表示数组的前 n 项和，它是一种数据预处理的方法，是对空间换时间的应用，我们一般会创建 **数组长度 + 1** 大小的数组来记录前缀和，并将 0 索引处的前缀和标记为 0，表示前 0 项和，如下图所示，索引 1 处的前缀和表示原数组中的前 1 项和（nums[0]），所以我们想获取原数组中某索引元素的前缀和的话，需要将索引值加 1 再从前缀和数组中取值。
 
 ![前缀和.drawio.png](src%2Fleetcode%2Fprefixsum%2F%E5%89%8D%E7%BC%80%E5%92%8C.drawio.png)
 
 一般 **连续子数组** 求和且不涉及区间修改的问题都可以使用前缀和来求解，通过 **前缀和减法计算** 我们能计算出任意区间和，这一点很重要，利用这一点可以解决很多区间求和的问题。
+
+- 一维数组前缀和计算模板如下：
 
 ```java
     int[] preSum = new int[nums.length + 1];
@@ -175,7 +178,6 @@ boolean check(int mid) {
 | [1588. 所有奇数长度子数组的和 简单](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/)   | [Solution1588.java](src%2Fleetcode%2Fprefixsum%2FSolution1588.java)         |                                                     |
 | [1652. 拆炸弹 简单](https://leetcode.cn/problems/defuse-the-bomb/)                           | [Solution1652.java](src%2Fleetcode%2Fprefixsum%2FSolution1652.java)         |                                                     |
 | [1310. 子数组异或查询 中等](https://leetcode.cn/problems/xor-queries-of-a-subarray/)             | [Solution1310.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1310.java) |                                                     |
-| [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                            | [SolutionLCR008.java](src%2Fleetcode%2Fprefixsum%2FSolutionLCR008.java)     |                                                     |
 | [525. 连续数组 中等](https://leetcode.cn/problems/contiguous-array/)                          | [Solution525.java](src%2Fleetcode%2Fprefixsum%2FSolution525.java)           | 本题技巧性比较强，思路是将 0 看成 -1，并找到相等的前缀和后计算最长的数组长度，本质上是前缀和减法 |
 | [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                | [Solution560.java](src%2Fleetcode%2Fprefixsum%2FSolution560.java)           | ⭐️                                                  |
 | [396. 旋转函数 中等](https://leetcode.cn/problems/rotate-function/)                           | [Solution396.java](src%2Fleetcode%2Fprefixsum%2FSolution396.java)           |                                                     |
@@ -191,7 +193,7 @@ boolean check(int mid) {
 
 计算 `matrix[i][j]` 我们能够依靠已知的前缀和 `matrix[i - 1][j - 1]`、`matrix[i - 1][j]` 和 `matrix[i][j - 1]`，其实我们可以轻易的根据图示得出 `matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1] - matrix[i - 1][j - 1]`，为什么要减去 `matrix[i - 1][j - 1]` 呢，因为在 `matrix[i - 1][j]` 和 `matrix[i][j - 1]` 中都包含着 `matrix[i - 1][j - 1]`，我们做加和计算时把 `matrix[i - 1][j - 1]` 加了两遍，所以需要再减去一个，记住这个图示之后遇到类似的题推导一下就可以了，不必记住模板。
 
-计算二维数组前缀和的要点一定是确定好 **矩形的左上角和右下角**
+计算二维数组前缀和的要点一定是确定好 **矩形的对角（左上角和右下角 或 左下角和右上角）**
 
 | 题目链接                                                                                  | 题解                                                                         | 备注 |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
