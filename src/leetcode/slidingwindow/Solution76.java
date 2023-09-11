@@ -2,38 +2,36 @@ package leetcode.slidingwindow;
 
 public class Solution76 {
     public static void main(String[] args) {
-        System.out.println(new Solution76().minWindow("bba", "ab"));
+        System.out.println(new Solution76().minWindow("a", "a"));
     }
 
     public String minWindow(String s, String t) {
-        int[] counts = new int[128];
-        for (char c : t.toCharArray()) {
-            counts[c]++;
-        }
-        int needCount = t.length();
-
         String res = "";
-        int length = Integer.MAX_VALUE;
+        int length = s.length() + 1;
+        int need = t.length();
+        int[] mark = new int[128];
+        for (int i = 0; i < t.toCharArray().length; i++) {
+            mark[t.charAt(i)]++;
+        }
+
         int left = 0, right = 0;
         while (right < s.length()) {
-            if (counts[s.charAt(right)] > 0) {
-                needCount--;
+            if (mark[s.charAt(right)] > 0) {
+                need--;
             }
-            counts[s.charAt(right)]--;
+            mark[s.charAt(right)]--;
 
-            if (needCount == 0) {
-                while (left < right && counts[s.charAt(left)] < 0) {
-                    counts[s.charAt(left++)]++;
+            if (need == 0) {
+                while (mark[s.charAt(left)] < 0 && left < right) {
+                    mark[s.charAt(left++)]++;
                 }
-
-                if (right - left + 1 < length) {
+                if (length > right - left + 1) {
                     length = right - left + 1;
                     res = s.substring(left, right + 1);
                 }
 
-                counts[s.charAt(left)]++;
-                needCount++;
-                left++;
+                mark[s.charAt(left++)]++;
+                need++;
             }
             right++;
         }

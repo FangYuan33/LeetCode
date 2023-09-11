@@ -7,26 +7,25 @@ public class Solution904 {
     }
 
     public int totalFruit(int[] fruits) {
-        int max = 2;
-        int[] already = new int[fruits.length + 1];
-
         int res = 0;
+        int k = 2;
+        int[] mark = new int[fruits.length];
+
         int left = 0, right = 0;
         while (right < fruits.length) {
-            if (already[fruits[right]] == 0) {
-                max--;
+            if (mark[fruits[right]] == 0) {
+                k--;
             }
-            already[fruits[right]]++;
+            mark[fruits[right]]++;
 
-            while (max < 0) {
-                already[fruits[left]]--;
-                if (already[fruits[left]] == 0) {
-                    max++;
+            while (k < 0 && left < right) {
+                mark[fruits[left]]--;
+                if (mark[fruits[left]] == 0) {
+                    k++;
                 }
                 left++;
             }
-
-            res = Math.max(res, right - left + 1);
+            res = Math.max(right - left + 1, res);
             right++;
         }
 

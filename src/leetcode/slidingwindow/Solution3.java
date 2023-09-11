@@ -14,12 +14,20 @@ public class Solution3 {
         int res = 0;
         int left = 0, right = 0;
         while (right < s.length()) {
-            if (map.containsKey(s.charAt(right))) {
-                left = Math.max(left, map.get(s.charAt(right)) + 1);
+            map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
+            if (right - left + 1 == map.size()) {
+                res = Math.max(res, right - left + 1);
             }
 
-            res = Math.max(res, right - left + 1);
-            map.put(s.charAt(right), right);
+            while (right - left + 1 > map.size()) {
+                Integer num = map.get(s.charAt(left));
+                if (num == 0) {
+                    map.remove(s.charAt(left));
+                } else {
+                    map.put(s.charAt(left), num - 1);
+                }
+                left++;
+            }
             right++;
         }
 

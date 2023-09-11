@@ -14,18 +14,19 @@ public class Solution1004 {
         while (right < nums.length) {
             if (nums[right] == 0) {
                 k--;
-                mark[right] = 1;
+                mark[right]++;
             }
 
-            while (k < 0) {
-                if (mark[left] == 1) {
+            while (k < 0 && left < right) {
+                if (mark[left] > 0) {
                     k++;
-                    mark[left]--;
                 }
-                left++;
+                mark[left++]--;
+            }
+            if (k >= 0) {
+                res = Math.max(res, right - left + 1);
             }
 
-            res = Math.max(res, right - left + 1);
             right++;
         }
 

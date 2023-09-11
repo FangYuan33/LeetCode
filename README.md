@@ -60,8 +60,6 @@
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)               | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |                          |
 
-5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
-
 ## 二分查找
 
 ### 数组有序
