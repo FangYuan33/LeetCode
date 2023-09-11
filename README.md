@@ -28,6 +28,7 @@
 | [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)                                                          | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)           |                                          |
 | [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                                                  | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)         |                                          |
 | [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                                    | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)         |                                          |
+| [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                                       | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)           |                                          |
 
 ## 滑动窗口
 
@@ -35,12 +36,13 @@
 
 ### 固定窗口
 
-| 题目链接                                                                                                          | 题解                                                                      | 备注 |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/)                                | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java)     |    |
-| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |    |
-| [438. 找到字符串中所有字母异位词 中等](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)                          | [Solution438.java](src%2Fleetcode%2Fslidingwindow%2FSolution438.java)   |    |
-| [567. 字符串的排列 中等](https://leetcode.cn/problems/permutation-in-string/)                                         | [Solution567.java](src%2Fleetcode%2Fslidingwindow%2FSolution567.java)   |    |
+| 题目链接                                                                                                          | 题解                                                                      | 备注               |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
+| [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/)                                | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java)     |                  |
+| [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |                  |
+| [438. 找到字符串中所有字母异位词 中等](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)                          | [Solution438.java](src%2Fleetcode%2Fslidingwindow%2FSolution438.java)   |                  |
+| [567. 字符串的排列 中等](https://leetcode.cn/problems/permutation-in-string/)                                         | [Solution567.java](src%2Fleetcode%2Fslidingwindow%2FSolution567.java)   |                  |
+| [1052. 爱生气的书店老板 中等](https://leetcode.cn/problems/grumpy-bookstore-owner/)                                     | [Solution1052.java](src%2Fleetcode%2Fslidingwindow%2FSolution1052.java) | 技巧性有点儿强，不一定能想得出来 |
 
 ### 动态窗口
 
@@ -57,9 +59,7 @@
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                          | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |                          |
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)               | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |                          |
-| [1052. 爱生气的书店老板 中等](https://leetcode.cn/problems/grumpy-bookstore-owner/)                                 | [Solution1052.java](src%2Fleetcode%2Fslidingwindow%2FSolution1052.java)       | 技巧性有点儿强，不一定能想得出来         |
 
-4. [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)
 5. [剑指 Offer 48. 最长不含重复字符的子字符串 中等](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
 ## 二分查找
