@@ -39,6 +39,7 @@
 | 题目链接                                                                                                          | 题解                                                                      | 备注               |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
 | [643. 子数组最大平均数 I 简单](https://leetcode.cn/problems/maximum-average-subarray-i/)                                | [Solution643.java](src%2Fleetcode%2Fsegmenttree%2FSolution643.java)     |                  |
+| [1423. 可获得的最大点数 中等](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/)                   | [Solution1423.java](src%2Fleetcode%2Fslidingwindow%2FSolution1423.java) |                  |
 | [1984. 学生分数的最小差值 简单](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [Solution1984.java](src%2Fleetcode%2Fslidingwindow%2FSolution1984.java) |                  |
 | [438. 找到字符串中所有字母异位词 中等](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)                          | [Solution438.java](src%2Fleetcode%2Fslidingwindow%2FSolution438.java)   |                  |
 | [567. 字符串的排列 中等](https://leetcode.cn/problems/permutation-in-string/)                                         | [Solution567.java](src%2Fleetcode%2Fslidingwindow%2FSolution567.java)   |                  |
