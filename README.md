@@ -61,6 +61,7 @@
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                          | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |                          |
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)               | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |                          |
+| [2024. 考试的最大困扰度 中等](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/)                      | [Solution2024.java](src%2Fleetcode%2Fslidingwindow%2FSolution2024.java)       |                          |
 
 ## 二分查找
 
