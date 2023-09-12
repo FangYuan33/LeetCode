@@ -7,32 +7,29 @@ public class Solution76 {
 
     public String minWindow(String s, String t) {
         String res = "";
-        int length = s.length() + 1;
-        int need = t.length();
         int[] mark = new int[128];
-        for (int i = 0; i < t.toCharArray().length; i++) {
-            mark[t.charAt(i)]++;
+        for (char c : t.toCharArray()) {
+            mark[c]++;
         }
+        int needCount = t.length();
 
         int left = 0, right = 0;
         while (right < s.length()) {
             if (mark[s.charAt(right)] > 0) {
-                need--;
+                needCount--;
             }
             mark[s.charAt(right)]--;
 
-            if (need == 0) {
-                while (mark[s.charAt(left)] < 0 && left < right) {
-                    mark[s.charAt(left++)]++;
-                }
-                if (length > right - left + 1) {
-                    length = right - left + 1;
+            while (needCount == 0 && left <= right) {
+                if ("".equals(res) || right - left + 1 < res.length()) {
                     res = s.substring(left, right + 1);
                 }
-
+                if (mark[s.charAt(left)] >= 0) {
+                    needCount++;
+                }
                 mark[s.charAt(left++)]++;
-                need++;
             }
+
             right++;
         }
 

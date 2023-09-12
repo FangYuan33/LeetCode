@@ -3,7 +3,7 @@ package leetcode.slidingwindow;
 public class Solution713 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution713().numSubarrayProductLessThanK(new int[]{1, 1, 1}, 2));
+        System.out.println(new Solution713().numSubarrayProductLessThanK(new int[]{1, 3, 1}, 2));
     }
 
     public int numSubarrayProductLessThanK(int[] nums, int k) {
@@ -20,8 +20,8 @@ public class Solution713 {
             while (sum >= k && left <= right) {
                 sum /= nums[left++];
             }
-
             res += right - left + 1;
+
             right++;
         }
 

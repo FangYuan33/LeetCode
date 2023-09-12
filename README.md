@@ -54,7 +54,6 @@
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                         | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)          | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
 | [1695. 删除子数组的最大得分 中等](https://leetcode.cn/problems/maximum-erasure-value/)                                | [Solution1695.java](src%2Fleetcode%2Fslidingwindow%2FSolution1695.java)       |                          |
-| [209. 长度最小的子数组 中等](https://leetcode.cn/problems/minimum-size-subarray-sum/)                               | [Solution209.java](src%2Fleetcode%2Fslidingwindow%2FSolution209.java)         |                          |
 | [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                           | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java)       |                          |
 | [1208. 尽可能使字符串相等 中等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)                    | [Solution1208.java](src%2Fleetcode%2Fslidingwindow%2FSolution1208.java)       |                          |
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                          | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |                          |

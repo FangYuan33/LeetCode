@@ -9,10 +9,10 @@ public class Solution1052 {
     }
 
     public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
-        int res = 0;
-        for (int i = 0; i < grumpy.length; i++) {
+        int already = 0;
+        for (int i = 0; i < customers.length; i++) {
             if (grumpy[i] == 0) {
-                res += customers[i];
+                already += customers[i];
                 customers[i] = 0;
             }
         }
@@ -23,14 +23,14 @@ public class Solution1052 {
         while (right < customers.length) {
             sum += customers[right];
 
-            if (right - left + 1 > minutes) {
-                sum -= customers[left];
-                left++;
+            if (right - left + 1 == minutes) {
+                max = Math.max(max, sum);
+                sum -= customers[left++];
             }
-            max = Math.max(max, sum);
+
             right++;
         }
 
-        return res + max;
+        return already + max;
     }
 }

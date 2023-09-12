@@ -9,29 +9,26 @@ public class Solution1695 {
     }
 
     public int maximumUniqueSubarray(int[] nums) {
+        HashMap<Integer, Integer> numCounts = new HashMap<>();
         int res = 0;
         int sum = 0;
-        HashMap<Integer, Integer> map = new HashMap<>();
-
         int left = 0, right = 0;
         while (right < nums.length) {
             sum += nums[right];
-            map.put(nums[right], map.getOrDefault(nums[right], 0) + 1);
 
-            if (right - left + 1 == map.size()) {
-                res = Math.max(res, sum);
-            }
-
-            while (right - left + 1 > map.size()) {
-                Integer num = map.get(nums[left]);
-                if (num == 1) {
-                    map.remove(nums[left]);
+            while (numCounts.containsKey(nums[right]) && left < right) {
+                Integer counts = numCounts.get(nums[left]);
+                if (counts == 1) {
+                    numCounts.remove(nums[left]);
                 } else {
-                    map.put(nums[left], num - 1);
+                    numCounts.put(nums[left], --counts);
                 }
                 sum -= nums[left];
                 left++;
             }
+
+            res = Math.max(res, sum);
+            numCounts.put(nums[right], numCounts.getOrDefault(nums[right], 0) + 1);
             right++;
         }
 

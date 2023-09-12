@@ -9,25 +9,22 @@ public class Solution3 {
     }
 
     public int lengthOfLongestSubstring(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
-
+        HashMap<Character, Integer> charNum = new HashMap<>();
         int res = 0;
         int left = 0, right = 0;
         while (right < s.length()) {
-            map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
-            if (right - left + 1 == map.size()) {
-                res = Math.max(res, right - left + 1);
-            }
-
-            while (right - left + 1 > map.size()) {
-                Integer num = map.get(s.charAt(left));
-                if (num == 0) {
-                    map.remove(s.charAt(left));
+            while (charNum.containsKey(s.charAt(right)) && left < right) {
+                Integer num = charNum.get(s.charAt(left));
+                if (num == 1) {
+                    charNum.remove(s.charAt(left));
                 } else {
-                    map.put(s.charAt(left), num - 1);
+                    charNum.put(s.charAt(left), --num);
                 }
                 left++;
             }
+
+            res = Math.max(right - left + 1, res);
+            charNum.put(s.charAt(right), charNum.getOrDefault(s.charAt(right), 0) + 1);
             right++;
         }
 

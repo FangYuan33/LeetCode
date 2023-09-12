@@ -9,23 +9,21 @@ public class Solution1004 {
     public int longestOnes(int[] nums, int k) {
         int res = 0;
         int[] mark = new int[nums.length];
-
         int left = 0, right = 0;
         while (right < nums.length) {
             if (nums[right] == 0) {
+                mark[right] = 1;
                 k--;
-                mark[right]++;
             }
 
-            while (k < 0 && left < right) {
-                if (mark[left] > 0) {
+            while (k < 0 && left <= right) {
+                if (mark[left] == 1) {
+                    mark[left]--;
                     k++;
                 }
-                mark[left++]--;
+                left++;
             }
-            if (k >= 0) {
-                res = Math.max(res, right - left + 1);
-            }
+            res = Math.max(res, right - left + 1);
 
             right++;
         }

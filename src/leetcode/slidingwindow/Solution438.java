@@ -10,32 +10,32 @@ public class Solution438 {
     }
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> res = new ArrayList<>();
-        int need = p.length();
         int[] mark = new int[26];
         for (char c : p.toCharArray()) {
             mark[c - 'a']++;
         }
+        int needCount = p.length();
 
         int left = 0, right = 0;
         while (right < s.length()) {
             int index = s.charAt(right) - 'a';
             if (mark[index] > 0) {
-                need--;
+                needCount--;
             }
             mark[index]--;
 
-            if (need == 0) {
-                res.add(left);
-            }
-
-            if (right >= p.length() - 1) {
+            if (right - left + 1 == p.length()) {
+                if (needCount == 0) {
+                    res.add(left);
+                }
                 int leftIndex = s.charAt(left) - 'a';
                 if (mark[leftIndex] >= 0) {
-                    need++;
+                    needCount++;
                 }
                 mark[leftIndex]++;
                 left++;
             }
+
             right++;
         }
 

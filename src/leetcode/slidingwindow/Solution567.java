@@ -6,28 +6,28 @@ public class Solution567 {
         for (char c : s1.toCharArray()) {
             mark[c - 'a']++;
         }
-        int need = s1.length();
+        int needCount = s1.length();
 
         int left = 0, right = 0;
         while (right < s2.length()) {
-            int index = s2.charAt(right) - 'a';
-            if (mark[index] > 0) {
-                need--;
+            int rightIndex = s2.charAt(right) - 'a';
+            if (mark[rightIndex] > 0) {
+                needCount--;
             }
-            mark[index]--;
+            mark[rightIndex]--;
 
-            if (need == 0) {
-                return true;
-            }
-
-            if (right - left >= s1.length() - 1) {
+            if (right - left + 1 == s1.length()) {
+                if (needCount == 0) {
+                    return true;
+                }
                 int leftIndex = s2.charAt(left) - 'a';
                 if (mark[leftIndex] >= 0) {
-                    need++;
+                    needCount++;
                 }
                 mark[leftIndex]++;
                 left++;
             }
+
             right++;
         }
 
