@@ -29,6 +29,7 @@
 | [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                                                  | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)         |                                          |
 | [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                                    | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)         |                                          |
 | [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                                       | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)           |                                          |
+| [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                                  | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)         |                                          |
 
 ## 滑动窗口
 
