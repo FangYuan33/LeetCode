@@ -11,7 +11,6 @@ public class Solution1608 {
             int left = 0, right = nums.length;
             while (left < right) {
                 int mid = left + right >> 1;
-
                 if (nums[mid] >= i) {
                     right = mid;
                 } else {

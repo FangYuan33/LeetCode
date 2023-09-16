@@ -6,8 +6,8 @@ public class TopVotedCandidate {
 
     public static void main(String[] args) {
         TopVotedCandidate candidate = new TopVotedCandidate(
-                new int[]{0,0,0,0,1},
-                new int[]{0,6,39,52,75}
+                new int[]{0, 0, 0, 0, 1},
+                new int[]{0, 6, 39, 52, 75}
         );
 
         System.out.println(candidate.q(45));
@@ -21,24 +21,22 @@ public class TopVotedCandidate {
 
     int[] times;
 
-    int[] result;
-
-    HashMap<Integer, Integer> personVote;
+    HashMap<Integer, Integer> timePerson;
 
     public TopVotedCandidate(int[] persons, int[] times) {
         this.times = times;
-        result = new int[persons.length];
-        personVote = new HashMap<>();
-        int curPerson = -1;
-
-        for (int i = 0; i < persons.length; i++) {
-            int vote = personVote.getOrDefault(persons[i], 0) + 1;
-            personVote.put(persons[i], vote);
-
-            if (vote >= personVote.getOrDefault(curPerson, 0)) {
-                curPerson = persons[i];
+        this.timePerson = new HashMap<>();
+        HashMap<Integer, Integer> personVotes = new HashMap<>();
+        int maxVote = 0, currentPerson = -1;
+        for (int i = 0; i < times.length; i++) {
+            int v = persons[i];
+            int votes = personVotes.getOrDefault(v, 0) + 1;
+            if (votes >= maxVote) {
+                maxVote = votes;
+                currentPerson = v;
             }
-            result[i] = curPerson;
+            timePerson.put(times[i], currentPerson);
+            personVotes.put(v, votes);
         }
     }
 
@@ -46,7 +44,6 @@ public class TopVotedCandidate {
         int left = 0, right = times.length;
         while (left < right) {
             int mid = left + right >> 1;
-
             if (times[mid] > t) {
                 right = mid;
             } else {
@@ -54,6 +51,6 @@ public class TopVotedCandidate {
             }
         }
 
-        return result[--left];
+        return timePerson.get(times[left - 1]);
     }
 }

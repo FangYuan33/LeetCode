@@ -1,7 +1,5 @@
 package leetcode.binarysearch;
 
-import java.util.ArrayDeque;
-
 public class Solution154 {
 
     public static void main(String[] args) {
@@ -18,19 +16,16 @@ public class Solution154 {
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + right >> 1;
-
             if (nums[mid] > nums[right]) {
                 left = mid + 1;
                 continue;
             }
-            if (mid - 1 >= 0 && nums[mid - 1] < nums[mid]) {
-                right = mid - 1;
-                continue;
-            }
 
             int min = nums[left];
-            for (int i = left; i <= right; i++) {
-                min = Math.min(min, nums[i]);
+            for (int i = left + 1; i <= right; i++) {
+                if (nums[i] < min) {
+                    min = nums[i];
+                }
             }
             return min;
         }

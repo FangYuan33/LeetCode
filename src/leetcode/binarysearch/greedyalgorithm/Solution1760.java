@@ -11,25 +11,22 @@ public class Solution1760 {
     public int minimumSize(int[] nums, int maxOperations) {
         Arrays.sort(nums);
 
-        int left = 1, right = nums[nums.length - 1];
+        int left = 1, right = nums[nums.length - 1] + 1;
         while (left < right) {
             int mid = left + right >> 1;
 
             int op = 0;
             for (int num : nums) {
-                if (num > mid) {
-                    op += (num - 1) / mid;
-                }
+                op += (num - 1) / mid;
             }
-
-            if (op <= maxOperations) {
-                right = mid;
-            } else {
+            if (op > maxOperations) {
                 left = mid + 1;
+            } else {
+                right = mid;
             }
         }
 
-        return left;
+        return right;
     }
 
 }

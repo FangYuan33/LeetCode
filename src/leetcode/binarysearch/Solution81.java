@@ -21,10 +21,11 @@ public class Solution81 {
             }
 
             for (int i = left; i <= right; i++) {
-                if (nums[i] == target) {
+                if (target == nums[i]) {
                     return true;
                 }
             }
+            break;
         }
 
         return false;

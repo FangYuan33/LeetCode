@@ -15,18 +15,21 @@ public class Solution875 {
         while (left < right) {
             int mid = left + right >> 1;
 
-            int hour = 0;
+            int curHour = 0;
             for (int pile : piles) {
-                hour += Math.ceil((double) pile / mid);
+                curHour += pile / mid;
+                if (pile % mid > 0) {
+                    curHour++;
+                }
             }
 
-            if (hour <= h) {
-                right = mid;
-            } else {
+            if (curHour > h) {
                 left = mid + 1;
+            } else {
+                right = mid;
             }
         }
 
-        return left;
+        return right;
     }
 }
