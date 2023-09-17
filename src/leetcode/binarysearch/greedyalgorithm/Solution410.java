@@ -9,29 +9,30 @@ public class Solution410 {
     }
 
     public int splitArray(int[] nums, int m) {
-        int left = 0, right = 1;
+        int left = 0, right = 0;
         for (int num : nums) {
             left = Math.max(left, num);
             right += num;
         }
+
         while (left < right) {
             int mid = left + right >> 1;
 
-            int count = 1;
-            int cost = 0;
-            for (int i = 0; i < nums.length;) {
-                if (cost + nums[i] <= mid) {
-                    cost += nums[i++];
+            int sum = 0;
+            int tempM = 0;
+            for (int num : nums) {
+                if (sum + num <= mid) {
+                    sum += num;
                 } else {
-                    count++;
-                    cost = 0;
+                    tempM++;
+                    sum = num;
                 }
             }
-            if (cost > 0) {
-                count++;
+            if (sum > 0) {
+                tempM++;
             }
 
-            if (count <= m) {
+            if (tempM <= m) {
                 right = mid;
             } else {
                 left = mid + 1;

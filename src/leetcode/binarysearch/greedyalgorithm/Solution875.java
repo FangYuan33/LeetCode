@@ -9,9 +9,7 @@ public class Solution875 {
     }
 
     public int minEatingSpeed(int[] piles, int h) {
-        Arrays.sort(piles);
-
-        int left = 1, right = piles[piles.length - 1] + 1;
+        int left = 1, right = Arrays.stream(piles).max().getAsInt() + 1;
         while (left < right) {
             int mid = left + right >> 1;
 

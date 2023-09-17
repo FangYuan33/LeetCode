@@ -1,5 +1,7 @@
 package leetcode.binarysearch.greedyalgorithm;
 
+import java.util.Arrays;
+
 public class Solution1011 {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Solution1011 {
     public int shipWithinDays(int[] weights, int days) {
         int left = 0, right = 0;
         for (int weight : weights) {
-            left = Math.max(left, weight);
+            left = Math.max(weight, left);
             right += weight;
         }
 
@@ -17,16 +19,16 @@ public class Solution1011 {
             int mid = left + right >> 1;
 
             int day = 0;
-            int cost = 0;
-            for (int i = 0; i < weights.length;) {
-                if (cost + weights[i] <= mid) {
-                    cost += weights[i++];
+            long already = 0;
+            for (int weight : weights) {
+                if (already + weight <= mid) {
+                    already += weight;
                 } else {
                     day++;
-                    cost = 0;
+                    already = weight;
                 }
             }
-            if (cost > 0) {
+            if (already > 0) {
                 day++;
             }
 

@@ -9,9 +9,7 @@ public class Solution1760 {
     }
 
     public int minimumSize(int[] nums, int maxOperations) {
-        Arrays.sort(nums);
-
-        int left = 1, right = nums[nums.length - 1] + 1;
+        int left = 1, right = Arrays.stream(nums).max().getAsInt();
         while (left < right) {
             int mid = left + right >> 1;
 
