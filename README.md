@@ -31,6 +31,7 @@
 | [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                                       | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)           |                                          |
 | [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                                  | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)         |                                          |
 | [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                                                  | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)         |                                          |
+| [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                                                      | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java)         |                                          |
 
 ## 滑动窗口
 
