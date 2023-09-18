@@ -30,6 +30,7 @@
 | [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                                    | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)         |                                          |
 | [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                                       | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)           |                                          |
 | [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                                  | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)         |                                          |
+| [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                                                  | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)         |                                          |
 
 ## 滑动窗口
 
