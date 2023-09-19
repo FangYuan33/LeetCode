@@ -33,6 +33,7 @@
 | [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                                                  | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)         |                                          |
 | [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                                                      | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java)         |                                          |
 | [524. 通过删除字母匹配到字典里最长单词 中等](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)                              | [Solution524.java](src%2Fleetcode%2Fdoublepointer%2FSolution524.java)         |                                          |
+| [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                                           | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)         |                                          |
 
 ## 滑动窗口
 
