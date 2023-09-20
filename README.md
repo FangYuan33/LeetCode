@@ -115,6 +115,7 @@
 | [1552. 两球之间的磁力 中等](https://leetcode.cn/problems/magnetic-force-between-two-balls/)                         | [Solution1552.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1552.java) |                            |
 | [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                                       | [Solution475.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution475.java)   |                            |
 | [1802. 有界数组中指定下标处的最大值 中等](https://leetcode.cn/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [Solution1802.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1802.java) | 等差数列求和公式：（首项 + 尾项）* 项数 / 2 |
+| [719. 找出第 K 小的数对距离 困难](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/)                     | [Solution719.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution719.java)   |                            |
 
 ## 排序算法
 
