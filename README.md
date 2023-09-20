@@ -59,6 +59,7 @@
 | [剑指 Offer 57 - II. 和为s的连续正数序列 简单](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) | [SolutionOffer57.java](src%2Fleetcode%2Fslidingwindow%2FSolutionOffer57.java) |                          |
 | [1446. 连续字符 简单](https://leetcode.cn/problems/consecutive-characters/)                                     | [Solution1446.java](src%2Fleetcode%2Fslidingwindow%2FSolution1446.java)       |                          |
 | [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                                              | [SolutionLCR008.java](src%2Fleetcode%2Fslidingwindow%2FSolutionLCR008.java)   |                          |
+| [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                         | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
 | [992. K 个不同整数的子数组 困难](https://leetcode.cn/problems/subarrays-with-k-different-integers/)                  | [Solution992.java](src%2Fleetcode%2Fslidingwindow%2FSolution992.java)         |                          |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)          | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
@@ -66,7 +67,6 @@
 | [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                           | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java)       |                          |
 | [1208. 尽可能使字符串相等 中等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)                    | [Solution1208.java](src%2Fleetcode%2Fslidingwindow%2FSolution1208.java)       |                          |
 | [904. 水果成篮 中等](https://leetcode.cn/problems/fruit-into-baskets/)                                          | [Solution904.java](src%2Fleetcode%2Fslidingwindow%2FSolution904.java)         |                          |
-| [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [424. 替换后的最长重复字符 中等](https://leetcode.cn/problems/longest-repeating-character-replacement/)               | [Solution424.java](src%2Fleetcode%2Fslidingwindow%2FSolution424.java)         |                          |
 | [2024. 考试的最大困扰度 中等](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/)                      | [Solution2024.java](src%2Fleetcode%2Fslidingwindow%2FSolution2024.java)       |                          |
 

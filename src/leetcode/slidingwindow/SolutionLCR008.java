@@ -3,6 +3,7 @@ package leetcode.slidingwindow;
 public class SolutionLCR008 {
 
     public static void main(String[] args) {
+        // 1
         System.out.println(new SolutionLCR008().minSubArrayLen(4, new int[]{1, 4, 4}));
     }
 
@@ -14,7 +15,9 @@ public class SolutionLCR008 {
             sum += nums[right];
 
             while (sum >= target && left <= right) {
-                res = Math.min(res, right - left + 1);
+                if (right - left + 1 < res) {
+                    res = right - left + 1;
+                }
                 sum -= nums[left++];
             }
             right++;

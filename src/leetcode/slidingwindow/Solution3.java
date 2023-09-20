@@ -1,6 +1,6 @@
 package leetcode.slidingwindow;
 
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class Solution3 {
 
@@ -9,22 +9,16 @@ public class Solution3 {
     }
 
     public int lengthOfLongestSubstring(String s) {
-        HashMap<Character, Integer> charNum = new HashMap<>();
         int res = 0;
+        HashSet<Character> mark = new HashSet<>();
         int left = 0, right = 0;
         while (right < s.length()) {
-            while (charNum.containsKey(s.charAt(right)) && left < right) {
-                Integer num = charNum.get(s.charAt(left));
-                if (num == 1) {
-                    charNum.remove(s.charAt(left));
-                } else {
-                    charNum.put(s.charAt(left), --num);
-                }
-                left++;
+            while (mark.contains(s.charAt(right)) && left < right) {
+                mark.remove(s.charAt(left++));
             }
+            mark.add(s.charAt(right));
+            res = Math.max(res, right - left + 1);
 
-            res = Math.max(right - left + 1, res);
-            charNum.put(s.charAt(right), charNum.getOrDefault(s.charAt(right), 0) + 1);
             right++;
         }
 

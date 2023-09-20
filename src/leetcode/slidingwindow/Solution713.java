@@ -3,6 +3,7 @@ package leetcode.slidingwindow;
 public class Solution713 {
 
     public static void main(String[] args) {
+        // 2
         System.out.println(new Solution713().numSubarrayProductLessThanK(new int[]{1, 3, 1}, 2));
     }
 

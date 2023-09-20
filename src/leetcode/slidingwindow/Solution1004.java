@@ -8,17 +8,14 @@ public class Solution1004 {
 
     public int longestOnes(int[] nums, int k) {
         int res = 0;
-        int[] mark = new int[nums.length];
         int left = 0, right = 0;
         while (right < nums.length) {
             if (nums[right] == 0) {
-                mark[right] = 1;
                 k--;
             }
 
             while (k < 0 && left <= right) {
-                if (mark[left] == 1) {
-                    mark[left]--;
+                if (nums[left] == 0) {
                     k++;
                 }
                 left++;

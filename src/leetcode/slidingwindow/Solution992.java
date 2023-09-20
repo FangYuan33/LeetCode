@@ -13,25 +13,24 @@ public class Solution992 {
         return doSubarraysWithKDistinct(nums, k) - doSubarraysWithKDistinct(nums, k - 1);
     }
 
-
     private int doSubarraysWithKDistinct(int[] nums, int k) {
         int res = 0;
-        HashMap<Integer, Integer> numCounts = new HashMap<>();
+        HashMap<Integer, Integer> mark = new HashMap<>();
         int left = 0, right = 0;
         while (right < nums.length) {
-            numCounts.put(nums[right], numCounts.getOrDefault(nums[right], 0) + 1);
+            mark.put(nums[right], mark.getOrDefault(nums[right], 0) + 1);
 
-            while (numCounts.size() > k && left <= right) {
-                Integer count = numCounts.get(nums[left]);
-                if (count == 1) {
-                    numCounts.remove(nums[left]);
+            while (mark.size() > k && left <= right) {
+                Integer num = mark.get(nums[left]);
+                if (num == 1) {
+                    mark.remove(nums[left]);
                 } else {
-                    numCounts.put(nums[left], --count);
+                    mark.put(nums[left], num - 1);
                 }
                 left++;
             }
-
             res += right - left + 1;
+
             right++;
         }
 

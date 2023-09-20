@@ -21,8 +21,8 @@ public class Solution2024 {
                 }
                 left++;
             }
-
             res = Math.max(res, right - left + 1);
+
             right++;
         }
 
