@@ -7,14 +7,13 @@ public class Solution567 {
             mark[c - 'a']++;
         }
         int needCount = s1.length();
-
         int left = 0, right = 0;
         while (right < s2.length()) {
-            int rightIndex = s2.charAt(right) - 'a';
-            if (mark[rightIndex] > 0) {
+            int index = s2.charAt(right) - 'a';
+            if (mark[index] > 0) {
                 needCount--;
             }
-            mark[rightIndex]--;
+            mark[index]--;
 
             if (right - left + 1 == s1.length()) {
                 if (needCount == 0) {

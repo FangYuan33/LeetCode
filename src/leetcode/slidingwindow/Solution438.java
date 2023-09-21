@@ -15,7 +15,6 @@ public class Solution438 {
             mark[c - 'a']++;
         }
         int needCount = p.length();
-
         int left = 0, right = 0;
         while (right < s.length()) {
             int index = s.charAt(right) - 'a';
@@ -25,10 +24,10 @@ public class Solution438 {
             mark[index]--;
 
             if (right - left + 1 == p.length()) {
+                int leftIndex = s.charAt(left) - 'a';
                 if (needCount == 0) {
                     res.add(left);
                 }
-                int leftIndex = s.charAt(left) - 'a';
                 if (mark[leftIndex] >= 0) {
                     needCount++;
                 }
