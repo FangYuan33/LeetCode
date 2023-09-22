@@ -7,30 +7,29 @@ public class Solution775 {
     }
 
     public boolean isIdealPermutation(int[] nums) {
-        BinaryIndexedTree tree = new BinaryIndexedTree();
+        BinaryIndexedTree tree = new BinaryIndexedTree(nums.length);
 
-        int local = 0;
-        int all = 0;
+        int all = 0, local = 0;
         for (int i = 0; i < nums.length; i++) {
             if (i > 0 && nums[i - 1] > nums[i]) {
                 local++;
             }
-            all += tree.queryNum(nums[i] + 1);
-            tree.update(nums[i] + 1);
+            all += tree.query(nums[i] + 1, nums.length);
+            tree.update(nums[i] + 1, 1);
         }
 
-        return local == all;
+        return all == local;
     }
 
     static class BinaryIndexedTree {
         int[] tree;
 
-        public BinaryIndexedTree() {
-            tree = new int[(int) 1e5 + 1];
+        public BinaryIndexedTree(int n) {
+            this.tree = new int[n + 1];
         }
 
-        public int queryNum(int index) {
-            return query((int) 1e5) - query(index - 1);
+        public int query(int left, int right) {
+            return query(right) - query(left - 1);
         }
 
         public int query(int index) {
@@ -42,9 +41,9 @@ public class Solution775 {
             return res;
         }
 
-        public void update(int index) {
+        public void update(int index, int val) {
             for (int i = index; i < tree.length; i += lowbit(i)) {
-                tree[i] += 1;
+                tree[i] += val;
             }
         }
 

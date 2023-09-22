@@ -9,32 +9,33 @@ public class Solution327 {
     }
 
     public int countRangeSum(int[] nums, int lower, int upper) {
-        Set<Long> set = new HashSet<>();
         long preSum = 0;
+        Set<Long> set = new HashSet<>();
         set.add(preSum);
         for (int num : nums) {
             preSum += num;
 
             set.add(preSum);
-            set.add(preSum - lower);
             set.add(preSum - upper);
+            set.add(preSum - lower);
         }
         ArrayList<Long> list = new ArrayList<>(set);
         Collections.sort(list);
-        HashMap<Long, Integer> numIndex = new HashMap<>();
+        HashMap<Long, Integer> sumIndex = new HashMap<>();
         for (int i = 0; i < list.size(); i++) {
-            numIndex.put(list.get(i), i + 1);
+            sumIndex.put(list.get(i), i + 1);
         }
 
+        preSum = 0L;
         BinaryIndexedTree tree = new BinaryIndexedTree();
+        tree.update(sumIndex.get(preSum));
         int res = 0;
-        preSum = 0;
-        tree.update(numIndex.get(0L));
         for (int num : nums) {
             preSum += num;
-            int left = numIndex.get(preSum - upper), right = numIndex.get(preSum - lower);
-            res += tree.query(left, right);
-            tree.update(numIndex.get(preSum));
+            long left = preSum - upper;
+            long right = preSum - lower;
+            res += tree.query(sumIndex.get(left), sumIndex.get(right));
+            tree.update(sumIndex.get(preSum));
         }
 
         return res;
@@ -44,7 +45,7 @@ public class Solution327 {
         int[] tree;
 
         public BinaryIndexedTree() {
-            tree = new int[(int) 3e5 + 1];
+            this.tree = new int[(int) 3e5 + 1];
         }
 
         public int query(int left, int right) {
@@ -56,6 +57,7 @@ public class Solution327 {
             for (int i = index; i > 0; i -= lowbit(i)) {
                 res += tree[i];
             }
+
             return res;
         }
 
