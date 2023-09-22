@@ -20,34 +20,34 @@ public class Solution658 {
                 left = mid + 1;
             }
         }
-        if (left == arr.length || (left - 1 >= 0 && check(arr, x, left - 1, left))) {
+        if (left == arr.length || (left > 0 && check(arr[left - 1], arr[left], x))) {
             left--;
         }
 
-        int l = left - 1, r = left + 1;
-        while (r - l - 1 < k) {
-            if (l >= 0 && r < arr.length) {
-                if (check(arr, x, l, r)) {
+        int l = left, r = left;
+        while (r - l + 1 < k) {
+            if (l - 1 >= 0 && r + 1 < arr.length) {
+                if (check(arr[l - 1], arr[r + 1], x)) {
                     l--;
                 } else {
                     r++;
                 }
-            } else if (l >= 0) {
+            } else if (l - 1 >= 0) {
                 l--;
             } else {
                 r++;
             }
         }
 
-        ArrayList<Integer> res = new ArrayList<>();
-        for (int i = l + 1; i <= r - 1; i++) {
-            res.add(arr[i]);
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < k; i++) {
+            res.add(arr[l++]);
         }
 
         return res;
     }
 
-    private boolean check(int[] arr, int x, int left, int right) {
-        return Math.abs(x - arr[left]) < Math.abs(arr[right] - x) || (x - arr[left] == arr[right] - x && arr[left] < arr[right]);
+    private boolean check(int a, int b, int x) {
+        return Math.abs(a - x) < Math.abs(b - x) || (x - a == b - x && a < b);
     }
 }

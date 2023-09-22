@@ -15,15 +15,17 @@ public class Solution56 {
         Arrays.sort(intervals, Comparator.comparingInt(x -> x[0]));
         ArrayList<int[]> res = new ArrayList<>();
 
-        int i = 0, j = 1;
-        while (i < intervals.length) {
-            int right = intervals[i][1];
-            while (j < intervals.length && intervals[j][0] <= right) {
-                right = Math.max(intervals[j][1], right);
-                j++;
+        int left = 0, right = 0;
+        while (right < intervals.length) {
+            int l = intervals[left][0];
+            int r = intervals[left][1];
+            while (right + 1 < intervals.length && r >= intervals[right + 1][0]) {
+                r = Math.max(r, intervals[right + 1][1]);
+                right++;
             }
-            res.add(new int[]{intervals[i][0], right});
-            i = j++;
+            res.add(new int[]{l, r});
+            right++;
+            left = right;
         }
 
         return res.toArray(new int[0][]);

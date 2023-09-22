@@ -12,28 +12,22 @@ public class Solution870 {
 
     public int[] advantageCount(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
-        HashMap<Integer, LinkedList<Integer>> map = new HashMap<>();
+        HashMap<Integer, LinkedList<Integer>> num2Index = new HashMap<>();
         for (int i = 0; i < nums2.length; i++) {
-            LinkedList<Integer> list = map.getOrDefault(nums2[i], new LinkedList<>());
-            list.add(i);
-            map.put(nums2[i], list);
+            LinkedList<Integer> linkedList = num2Index.getOrDefault(nums2[i], new LinkedList<>());
+            linkedList.add(i);
+            num2Index.put(nums2[i], linkedList);
         }
         Arrays.sort(nums2);
 
-        int[] res = new int[nums2.length];
-        int n1 = 0;
-        int n2 = 0, n3 = nums2.length - 1;
-        while (n2 <= n3) {
-            if (nums1[n1] > nums2[n2]) {
-                LinkedList<Integer> list = map.get(nums2[n2]);
-                res[list.pollLast()] = nums1[n1];
-                n1++;
-                n2++;
+        int n = 0;
+        int left = 0, right = nums2.length - 1;
+        int[] res = new int[nums1.length];
+        while (left <= right) {
+            if (nums1[n] > nums2[left]) {
+                res[num2Index.get(nums2[left++]).pollFirst()] = nums1[n++];
             } else {
-                LinkedList<Integer> list = map.get(nums2[n3]);
-                res[list.pollLast()] = nums1[n1];
-                n1++;
-                n3--;
+                res[num2Index.get(nums2[right--]).pollFirst()] = nums1[n++];
             }
         }
 

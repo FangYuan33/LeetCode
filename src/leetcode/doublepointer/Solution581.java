@@ -17,7 +17,7 @@ public class Solution581 {
         while (left <= right && nums[left] == temp[left]) {
             left++;
         }
-        while (left <= right && nums[right] == nums[right]) {
+        while (left <= right && nums[right] == temp[right]) {
             right--;
         }
 
