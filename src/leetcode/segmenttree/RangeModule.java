@@ -7,7 +7,7 @@ public class RangeModule {
 
         rangeModule.addRange(10, 20);
         rangeModule.removeRange(14, 16);
-        rangeModule.queryRange(10, 14);
+        rangeModule.queryRange(10, 20);
 
         rangeModule.addRange(5, 7);
         rangeModule.queryRange(5, 7);
@@ -41,7 +41,7 @@ public class RangeModule {
     }
 
     public boolean queryRange(int left, int right) {
-        return segmentTree.queryResult(1, 1, (int) 1e9 + 1, left + 1, right);
+        return segmentTree.query(1, 1, (int) 1e9 + 1, left + 1, right) == right - left;
     }
 
     public void removeRange(int left, int right) {
@@ -69,18 +69,12 @@ public class RangeModule {
             tree[count++] = new Node();
         }
 
-        public boolean queryResult(int pos, int left, int right, int l, int r) {
-            int res = query(pos, left, right, l, r);
-            return res == r - l + 1;
-        }
-
         public int query(int pos, int left, int right, int l, int r) {
             if (l <= left && right <= r) {
                 return tree[pos].val;
             }
 
             lazyCreate(pos);
-
             pushDown(pos);
 
             int res = 0;
@@ -95,28 +89,27 @@ public class RangeModule {
             return res;
         }
 
-        public void update(int pos, int left, int right, int l, int r, int add) {
+        public void update(int pos, int left, int right, int l, int r, int val) {
             if (l <= left && right <= r) {
-                if (add == -1) {
+                if (val == 1) {
+                    tree[pos].val = right - left + 1;
+                    tree[pos].add = right - left + 1;
+                } else {
                     tree[pos].val = 0;
                     tree[pos].add = -1;
-                } else {
-                    tree[pos].val = right - left + 1;
-                    tree[pos].add = tree[pos].val;
                 }
                 return;
             }
 
             lazyCreate(pos);
-
             pushDown(pos);
 
             int mid = left + right >> 1;
             if (l <= mid) {
-                update(tree[pos].left, left, mid, l, r, add);
+                update(tree[pos].left, left, mid, l, r, val);
             }
             if (r > mid) {
-                update(tree[pos].right, mid + 1, right, l, r, add);
+                update(tree[pos].right, mid + 1, right, l, r, val);
             }
 
             pushUp(pos);
@@ -133,15 +126,13 @@ public class RangeModule {
                 if (add == -1) {
                     tree[tree[pos].left].val = 0;
                     tree[tree[pos].left].add = -1;
-
                     tree[tree[pos].right].val = 0;
                     tree[tree[pos].right].add = -1;
                 } else {
                     tree[tree[pos].left].val = add - add / 2;
-                    tree[tree[pos].left].add = tree[tree[pos].left].val;
-
+                    tree[tree[pos].left].add = add - add / 2;
                     tree[tree[pos].right].val = add / 2;
-                    tree[tree[pos].right].add = tree[tree[pos].right].val;
+                    tree[tree[pos].right].add = add / 2;
                 }
 
                 tree[pos].add = 0;

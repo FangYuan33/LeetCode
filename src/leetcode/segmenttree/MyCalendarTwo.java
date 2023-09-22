@@ -29,7 +29,9 @@ public class MyCalendarTwo {
     }
 
     static class SegmentTree {
+
         static class Node {
+
             int left;
 
             int right;
@@ -39,14 +41,34 @@ public class MyCalendarTwo {
             int add;
         }
 
-        int count;
-
         Node[] tree;
+
+        int count;
 
         public SegmentTree() {
             count = 1;
             tree = new Node[(int) 5e6 + 1];
             tree[count++] = new Node();
+        }
+
+        public int query(int pos, int left, int right, int l, int r) {
+            if (l <= left && right <= r) {
+                return tree[pos].val;
+            }
+
+            lazyCreate(pos);
+            pushDown(pos);
+
+            int res = 0;
+            int mid = left + right >> 1;
+            if (l <= mid) {
+                res = Math.max(res, query(tree[pos].left, left, mid, l, r));
+            }
+            if (r > mid) {
+                res = Math.max(res, query(tree[pos].right, mid + 1, right, l, r));
+            }
+
+            return res;
         }
 
         public void update(int pos, int left, int right, int l, int r) {
@@ -57,7 +79,6 @@ public class MyCalendarTwo {
             }
 
             lazyCreate(pos);
-
             pushDown(pos);
 
             int mid = left + right >> 1;
@@ -69,27 +90,6 @@ public class MyCalendarTwo {
             }
 
             pushUp(pos);
-        }
-
-        public int query(int pos, int left, int right, int l, int r) {
-            if (l <= left && right <= r) {
-                return tree[pos].val;
-            }
-
-            lazyCreate(pos);
-
-            pushDown(pos);
-
-            int res = 0;
-            int mid = left + right >> 1;
-            if (l <= mid) {
-                res = Math.max(query(tree[pos].left, left, mid, l, r), res);
-            }
-            if (r > mid){
-                res = Math.max(query(tree[pos].right, mid + 1, right, l, r), res);
-            }
-
-            return res;
         }
 
         private void pushUp(int pos) {
