@@ -495,14 +495,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                                    | [Solution654.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution654.java)   |             |
 | [2100. 适合打劫银行的日子 中等](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)                                                    | [Solution2100.java](src%2Fleetcode%2Fprefixsum%2FSolution2100.java)         | 单调队列的单调性的应用 |
 
-## 哈希
-
-1. [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)
-2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
-3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
-4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
-5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
-
 ## 堆
 
 堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
@@ -626,6 +618,13 @@ inf bfs(Node node, Node target) {
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------|
 | [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java) | 认识和使用红黑树 |
 
+## 哈希
+
+2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
+3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
+4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
+5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
+
 ## 动态规划
 
 动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
@@ -741,6 +740,14 @@ def backtrack(路径, 选择列表):
 9. [337. 打家劫舍 III 中等](https://leetcode.cn/problems/house-robber-iii/)
 10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头
 
+## 递归
+
+递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
+
+1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
+2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
 ## 贪心算法
 
 | 题目链接                                                                             | 题解                                                                      | 备注   |
@@ -752,14 +759,6 @@ def backtrack(路径, 选择列表):
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
-
-## 递归
-
-递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
-
-1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
-2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
-3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
 ## 位运算
 
