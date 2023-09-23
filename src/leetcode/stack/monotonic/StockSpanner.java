@@ -16,7 +16,6 @@ public class StockSpanner {
     }
 
     static class PriceAndIndex {
-
         int price;
 
         int index;
@@ -33,17 +32,17 @@ public class StockSpanner {
 
     public StockSpanner() {
         stack = new Stack<>();
-        stack.push(new PriceAndIndex(Integer.MAX_VALUE, -1));
-        index = 0;
+        index = -1;
+        stack.push(new PriceAndIndex(Integer.MAX_VALUE, index++));
     }
 
     public int next(int price) {
-        while (price >= stack.peek().price) {
+        while (!stack.isEmpty() && price >= stack.peek().price) {
             stack.pop();
         }
-        PriceAndIndex priceAndIndex = new PriceAndIndex(price, index++);
-        int res = priceAndIndex.index - stack.peek().index;
-        stack.push(priceAndIndex);
+        PriceAndIndex peek = stack.peek();
+        int res = index - peek.index;
+        stack.push(new PriceAndIndex(price, index++));
 
         return res;
     }

@@ -25,18 +25,18 @@ public class Solution1438 {
             }
             min.addLast(right);
 
-            if (nums[max.peekFirst()] - nums[min.peekFirst()] <= limit) {
-                res = Math.max(right - left + 1, res);
-                right++;
-            } else {
-                while (!max.isEmpty() && max.peekFirst() <= left) {
+            while (!max.isEmpty() && !min.isEmpty() && nums[max.peekFirst()] - nums[min.peekFirst()] > limit && left < right) {
+                if (left == max.peekFirst()) {
                     max.pollFirst();
                 }
-                while (!min.isEmpty() && min.peekFirst() <= left) {
+                if (left == min.peekFirst()) {
                     min.pollFirst();
                 }
                 left++;
             }
+            res = Math.max(res, right - left + 1);
+
+            right++;
         }
 
         return res;

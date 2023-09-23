@@ -15,7 +15,6 @@ public class Solution84 {
         Arrays.fill(left, -1);
         int[] right = new int[heights.length];
         Arrays.fill(right, heights.length);
-
         for (int i = 0; i < heights.length; i++) {
             while (!stack.isEmpty() && heights[i] < heights[stack.peek()]) {
                 right[stack.pop()] = i;
