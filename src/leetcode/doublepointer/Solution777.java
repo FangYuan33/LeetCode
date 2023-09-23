@@ -7,30 +7,30 @@ public class Solution777 {
     }
 
     public boolean canTransform(String start, String end) {
-        int left, right = 0;
-        while (right < start.length()) {
-            while (right < start.length() && start.charAt(right) == end.charAt(right)) {
-                right++;
+        int s = 0, e = 0;
+        while (s < start.length() || e < end.length()) {
+            while (s < start.length() && start.charAt(s) == 'X') {
+                s++;
             }
-            if (right < start.length() && start.charAt(right) != end.charAt(right)) {
-                left = right;
-                if (left + 1 < start.length()) {
-                    right += 2;
-                    String s = start.substring(left, right);
-                    String e = end.substring(left, right);
-                    char one = s.charAt(0), two = s.charAt(1);
-
-                    if (e.contains(String.valueOf(one)) && e.contains(String.valueOf(two))) {
-                        continue;
-                    } else {
-                        break;
-                    }
-                } else {
-                    break;
-                }
+            while (e < end.length() && end.charAt(e) == 'X') {
+                e++;
             }
+            if (s == start.length() || e == end.length()) {
+                return s == e;
+            }
+            if (start.charAt(s) != end.charAt(e)) {
+                return false;
+            }
+            if (start.charAt(s) == 'L' && s < e) {
+                return false;
+            }
+            if (start.charAt(s) == 'R' && s > e) {
+                return false;
+            }
+            s++;
+            e++;
         }
 
-        return right == start.length();
+        return true;
     }
 }
