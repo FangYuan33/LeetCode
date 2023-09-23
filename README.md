@@ -23,6 +23,7 @@
 | [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                                  | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)         |    |
 | [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                                           | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)         |    |
 | [658. 找到 K 个最接近的元素 中等](https://leetcode.cn/problems/find-k-closest-elements/)                                                      | [Solution658.java](src%2Fleetcode%2Fdoublepointer%2FSolution658.java)         |    |
+| [825. 适龄的朋友 中等](https://leetcode.cn/problems/friends-of-appropriate-ages/)                                                         | [Solution825.java](src%2Fleetcode%2Fdoublepointer%2FSolution825.java)         |    |
 
 ### 字符串
 
