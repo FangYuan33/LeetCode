@@ -35,6 +35,7 @@
 | [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                         | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java) |                                          |
 | [524. 通过删除字母匹配到字典里最长单词 中等](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [Solution524.java](src%2Fleetcode%2Fdoublepointer%2FSolution524.java) |                                          |
 | [777. 在LR字符串中交换相邻字符 中等](https://leetcode.cn/problems/swap-adjacent-in-lr-string/)                     | [Solution777.java](src%2Fleetcode%2Fdoublepointer%2FSolution777.java) |                                          |
+| [838. 推多米诺 中等](https://leetcode.cn/problems/push-dominoes/)                                           | [Solution838.java](src%2Fleetcode%2Fdoublepointer%2FSolution838.java) |                                          |
 
 ## 滑动窗口
 
