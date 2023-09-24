@@ -31,6 +31,7 @@
 | 题目链接                                                                                                  | 题解                                                                        | 备注                                       |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------|
 | [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)                                       | [Solution125.java](src%2Fleetcode%2Fdoublepointer%2FSolution125.java)     | Character.isLetterOrDigit() 静态方法判断是字母和数字 |
+| [面试题 17.11. 单词距离 中等](https://leetcode.cn/problems/find-closest-lcci/)                                 | [Interview1711.java](src%2Fleetcode%2Fdoublepointer%2FInterview1711.java) |                                          |
 | [1759. 统计同质子字符串的数目 中等](https://leetcode.cn/problems/count-number-of-homogenous-substrings/)           | [Solution1759.java](src%2Fleetcode%2Fdoublepointer%2FSolution1759.java)   |                                          |
 | [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                     | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)     |                                          |
 | [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                     | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)     |                                          |
