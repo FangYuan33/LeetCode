@@ -126,6 +126,7 @@
 
 | 题目链接 | 题解                                                                            | 备注 |
 |------|-------------------------------------------------------------------------------|----|
+| 插入排序 | [InsertSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FInsertSort.java)       |    |
 | 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
 
 | 题目链接                                                                                  | 题解 | 备注      |
