@@ -20,11 +20,10 @@ public class Solution238 {
             right[i] = right[i + 1] * nums[i];
         }
 
-        int[] answer = new int[nums.length];
+        int[] res = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            answer[i] = left[i] * right[i + 1];
+            res[i] = left[i] * right[i + 1];
         }
-
-        return answer;
+        return res;
     }
 }

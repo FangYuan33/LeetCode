@@ -10,19 +10,19 @@ public class Solution528 {
 
     public Solution528(int[] w) {
         random = new Random();
-        preSum = new int[w.length + 1];
+        this.preSum = new int[w.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + w[i - 1];
         }
     }
 
     public int pickIndex() {
-        int target = random.nextInt(preSum[preSum.length - 1]) + 1;
+        int num = random.nextInt(preSum[preSum.length - 1]) + 1;
         int left = 1, right = preSum.length;
         while (left < right) {
             int mid = left + right >> 1;
 
-            if (preSum[mid] >= target) {
+            if (preSum[mid] >= num) {
                 right = mid;
             } else {
                 left = mid + 1;

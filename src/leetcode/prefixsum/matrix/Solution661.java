@@ -17,18 +17,18 @@ public class Solution661 {
         int[][] preSum = new int[img.length + 1][img[0].length + 1];
         for (int i = 1; i < preSum.length; i++) {
             for (int j = 1; j < preSum[0].length; j++) {
-                preSum[i][j] = preSum[i - 1][j] + preSum[i][j - 1] - preSum[i - 1][j - 1] + img[i - 1][j - 1];
+                preSum[i][j] = img[i - 1][j - 1] + preSum[i - 1][j] + preSum[i][j - 1] - preSum[i - 1][j - 1];
             }
         }
 
         int[][] res = new int[img.length][img[0].length];
         for (int i = 0; i < res.length; i++) {
             for (int j = 0; j < res[0].length; j++) {
-                int up = Math.max(0, i - 1), down = Math.min(i + 1, res.length - 1);
-                int left = Math.max(0, j - 1), right = Math.min(res[0].length - 1, j + 1);
-                int area = (right - left + 1) * (down - up + 1);
+                int a = Math.max(0, i - 1), b = Math.max(0, j - 1);
+                int c = Math.min(res.length - 1, i + 1), d = Math.min(res[0].length - 1, j + 1);
+                int area = (c - a + 1) * (d - b + 1);
 
-                res[i][j] = (preSum[down + 1][right + 1] - preSum[up][right + 1] - preSum[down + 1][left] + preSum[up][left]) / area;
+                res[i][j] = (preSum[c + 1][d + 1] - preSum[a][d + 1] - preSum[c + 1][b] + preSum[a][b]) / area;
             }
         }
 

@@ -17,13 +17,12 @@ public class Solution1744 {
     }
 
     public boolean[] canEat(int[] candiesCount, int[][] queries) {
-        boolean[] res = new boolean[queries.length];
-
         long[] preSum = new long[candiesCount.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + candiesCount[i - 1];
         }
 
+        boolean[] res = new boolean[queries.length];
         for (int i = 0; i < queries.length; i++) {
             int fType = queries[i][0], fDay = queries[i][1], dCapacity = queries[i][2];
             long max = (long) dCapacity * (fDay + 1);

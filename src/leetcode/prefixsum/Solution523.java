@@ -11,12 +11,11 @@ public class Solution523 {
     }
 
     public boolean checkSubarraySum(int[] nums, int k) {
-        int preSum = 0;
         HashMap<Integer, Integer> preSumIndex = new HashMap<>();
+        int preSum = 0;
         preSumIndex.put(preSum, -1);
         for (int i = 0; i < nums.length; i++) {
             preSum += nums[i];
-
             if (preSumIndex.containsKey(preSum % k)) {
                 Integer index = preSumIndex.get(preSum % k);
                 if (i - index >= 2) {

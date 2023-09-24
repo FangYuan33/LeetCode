@@ -7,21 +7,20 @@ public class Solution396 {
     }
 
     public int maxRotateFunction(int[] nums) {
-        int n = nums.length;
-        int[] preSum = new int[n * 2 + 1];
+        int[] preSum = new int[nums.length * 2 + 1];
         for (int i = 1; i < preSum.length; i++) {
-            preSum[i] = preSum[i - 1] + nums[(i - 1) % n];
+            preSum[i] = preSum[i - 1] + nums[(i - 1) % nums.length];
         }
 
         int first = 0;
         for (int i = 1; i < nums.length; i++) {
-            first += i * nums[i];
+            first += nums[i] * i;
         }
-
         int res = first;
         for (int i = 1; i < nums.length; i++) {
-            first += nums[i - 1] * (n - 1);
-            first -= preSum[n + i - 1] - preSum[i];
+            first -= preSum[nums.length + i - 1] - preSum[i];
+            first += (nums.length - 1) * nums[i - 1];
+
             res = Math.max(res, first);
         }
 

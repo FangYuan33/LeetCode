@@ -11,13 +11,12 @@ public class Solution560 {
     }
 
     public int subarraySum(int[] nums, int k) {
-        int res = 0;
-        int preSum = 0;
         HashMap<Integer, Integer> preSumNum = new HashMap<>();
+        int preSum = 0;
         preSumNum.put(preSum, 1);
+        int res = 0;
         for (int num : nums) {
             preSum += num;
-
             if (preSumNum.containsKey(preSum - k)) {
                 res += preSumNum.get(preSum - k);
             }
