@@ -128,6 +128,7 @@
 |------|-------------------------------------------------------------------------------|----|
 | 插入排序 | [InsertSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FInsertSort.java)       |    |
 | 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
+| 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
 
 | 题目链接                                                                                  | 题解 | 备注      |
 |---------------------------------------------------------------------------------------|----|---------|
