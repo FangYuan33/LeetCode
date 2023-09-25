@@ -18,7 +18,7 @@ public class ShellSort {
         }
 
         while (h >= 1) {
-            for (int i = h; i < N; i++) {
+            for (int i = h; i < nums.length; i++) {
                 int base = nums[i];
 
                 int j = i - h;
@@ -28,7 +28,6 @@ public class ShellSort {
                 }
                 nums[j + h] = base;
             }
-
             h /= 3;
         }
     }

@@ -12,7 +12,6 @@ public class BubbleSort {
 
     public void sort(int[] nums) {
         for (int i = nums.length - 1; i > 0; i--) {
-            // 没有发生元素交换的标志位
             boolean flag = true;
             for (int j = 0; j < i; j++) {
                 if (nums[j] > nums[j + 1]) {
@@ -20,7 +19,6 @@ public class BubbleSort {
                     flag = false;
                 }
             }
-
             if (flag) {
                 break;
             }
