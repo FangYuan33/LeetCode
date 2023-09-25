@@ -12,23 +12,25 @@ public class Interview0105 {
             first = second;
             second = temp;
         }
+
         if (first.length() - second.length() > 1) {
             return false;
         }
-
         int count = 0;
         int f = 0, s = 0;
-        while (s < second.length() && f < first.length()) {
+        while (f < first.length() && s < second.length()) {
+            // 相等长度是替换
             if (first.charAt(f) == second.charAt(s)) {
                 f++;
                 s++;
             } else {
-                if (first.length() == second.length()) {
+                // 大长度则是删除
+                if (first.length() - f > second.length() - s) {
                     f++;
-                    s++;
                     count++;
                 } else {
                     f++;
+                    s++;
                     count++;
                 }
             }

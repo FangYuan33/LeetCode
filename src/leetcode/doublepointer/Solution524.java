@@ -18,19 +18,16 @@ public class Solution524 {
         });
 
         String res = "";
-        for (String element : dictionary) {
-            if (element.length() > res.length()) {
-                int origin = 0, e = 0;
-                while (origin < s.length() && e < element.length()) {
-                    if (s.charAt(origin) == element.charAt(e)) {
-                        e++;
-                    }
-                    origin++;
+        for (String d : dictionary) {
+            int sIndex = 0, dIndex = 0;
+            while (sIndex < s.length() && dIndex < d.length()) {
+                if (s.charAt(sIndex) == d.charAt(dIndex)) {
+                    dIndex++;
                 }
-                if (e == element.length()) {
-                    res = element;
-                }
-            } else {
+                sIndex++;
+            }
+            if (dIndex == d.length()) {
+                res = d;
                 break;
             }
         }
