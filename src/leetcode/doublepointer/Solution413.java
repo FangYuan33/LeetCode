@@ -1,4 +1,4 @@
-package leetcode.slidingwindow;
+package leetcode.doublepointer;
 
 public class Solution413 {
 
@@ -17,12 +17,11 @@ public class Solution413 {
             int d = nums[right] - nums[left];
             while (right + 1 < nums.length && nums[right + 1] - nums[right] == d) {
                 right++;
-                int currentLength = right - left + 1;
-                if (currentLength >= 3) {
-                    res += currentLength - 2;
+                int length = right - left + 1;
+                if (length >= 3) {
+                    res += length - 2;
                 }
             }
-
             left = right++;
         }
 

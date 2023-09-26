@@ -6,7 +6,7 @@ import java.util.List;
 public class Solution658 {
 
     public static void main(String[] args) {
-        new Solution658().findClosestElements(new int[]{3, 5, 8, 10}, 2, 15);
+        System.out.println(new Solution658().findClosestElements(new int[]{3, 5, 8, 10}, 2, 15));
     }
 
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
@@ -24,30 +24,29 @@ public class Solution658 {
             left--;
         }
 
-        int l = left, r = left;
-        while (r - l + 1 < k) {
-            if (l - 1 >= 0 && r + 1 < arr.length) {
-                if (check(arr[l - 1], arr[r + 1], x)) {
-                    l--;
+        right = left;
+        while (right - left + 1 < k) {
+            if (left - 1 >= 0 && right + 1 < arr.length) {
+                if (check(arr[left - 1], arr[right + 1], x)) {
+                    left--;
                 } else {
-                    r++;
+                    right++;
                 }
-            } else if (l - 1 >= 0) {
-                l--;
+            } else if (left - 1 >= 0) {
+                left--;
             } else {
-                r++;
+                right++;
             }
         }
 
-        List<Integer> res = new ArrayList<>();
+        List<Integer> res = new ArrayList<>(k);
         for (int i = 0; i < k; i++) {
-            res.add(arr[l++]);
+            res.add(arr[left++]);
         }
-
         return res;
     }
 
     private boolean check(int a, int b, int x) {
-        return Math.abs(a - x) < Math.abs(b - x) || (x - a == b - x && a < b);
+        return Math.abs(a - x) < Math.abs(b - x) || (Math.abs(a - x) == Math.abs(b - x) && a < b);
     }
 }
