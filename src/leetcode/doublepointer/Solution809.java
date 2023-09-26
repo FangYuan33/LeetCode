@@ -29,21 +29,16 @@ public class Solution809 {
             while (wR + 1 < word.length() && word.charAt(wR) == word.charAt(wR + 1)) {
                 wR++;
             }
-
-
             if (oR - oL < wR - wL) {
                 return false;
             }
-            if (oR - oL + 1 != wR - wL + 1 && oR - oL + 1 <= 2) {
+            if (oR - oL > wR - wL && oR - oL + 1 <= 2) {
                 return false;
             }
-
-            oR++;
-            oL = oR;
-            wR++;
-            wL = wR;
+            oL = ++oR;
+            wL = ++wR;
         }
 
-        return wR == word.length() && oR == origin.length();
+        return oR == origin.length() && wR == word.length();
     }
 }

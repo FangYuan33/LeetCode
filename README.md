@@ -32,7 +32,6 @@
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------|
 | [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)                                       | [Solution125.java](src%2Fleetcode%2Fdoublepointer%2FSolution125.java)     | Character.isLetterOrDigit() 静态方法判断是字母和数字 |
 | [面试题 17.11. 单词距离 中等](https://leetcode.cn/problems/find-closest-lcci/)                                 | [Interview1711.java](src%2Fleetcode%2Fdoublepointer%2FInterview1711.java) |                                          |
-| [1759. 统计同质子字符串的数目 中等](https://leetcode.cn/problems/count-number-of-homogenous-substrings/)           | [Solution1759.java](src%2Fleetcode%2Fdoublepointer%2FSolution1759.java)   |                                          |
 | [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                     | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)     |                                          |
 | [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                     | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)     |                                          |
 | [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                         | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java)     |                                          |
@@ -65,6 +64,7 @@
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                         | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
 | [992. K 个不同整数的子数组 困难](https://leetcode.cn/problems/subarrays-with-k-different-integers/)                  | [Solution992.java](src%2Fleetcode%2Fslidingwindow%2FSolution992.java)         |                          |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)          | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
+| [1759. 统计同质子字符串的数目 中等](https://leetcode.cn/problems/count-number-of-homogenous-substrings/)               | [Solution1759.java](src%2Fleetcode%2Fslidingwindow%2FSolution1759.java)       |                          |
 | [1695. 删除子数组的最大得分 中等](https://leetcode.cn/problems/maximum-erasure-value/)                                | [Solution1695.java](src%2Fleetcode%2Fslidingwindow%2FSolution1695.java)       |                          |
 | [1004. 最大连续1的个数 III 中等](https://leetcode.cn/problems/max-consecutive-ones-iii/)                           | [Solution1004.java](src%2Fleetcode%2Fslidingwindow%2FSolution1004.java)       |                          |
 | [1208. 尽可能使字符串相等 中等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)                    | [Solution1208.java](src%2Fleetcode%2Fslidingwindow%2FSolution1208.java)       |                          |
