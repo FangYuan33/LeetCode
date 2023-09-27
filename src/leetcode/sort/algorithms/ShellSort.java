@@ -11,10 +11,9 @@ public class ShellSort {
     }
 
     private void sort(int[] nums) {
-        int N = nums.length;
         int h = 1;
-        while (h < N / 3) {
-            h = 3 * h + 1;
+        while (h < nums.length / 3) {
+            h = h * 3 + 1;
         }
 
         while (h >= 1) {
