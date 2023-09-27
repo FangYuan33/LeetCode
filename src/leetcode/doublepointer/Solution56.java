@@ -3,6 +3,7 @@ package leetcode.doublepointer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class Solution56 {
 
@@ -13,19 +14,18 @@ public class Solution56 {
 
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(x -> x[0]));
-        ArrayList<int[]> res = new ArrayList<>();
+        List<int[]> res = new ArrayList<>();
 
         int left = 0, right = 0;
         while (right < intervals.length) {
             int l = intervals[left][0];
-            int r = intervals[left][1];
-            while (right + 1 < intervals.length && r >= intervals[right + 1][0]) {
+            int r = intervals[right][1];
+            while (right + 1 < intervals.length && intervals[right + 1][0] <= r) {
                 r = Math.max(r, intervals[right + 1][1]);
                 right++;
             }
             res.add(new int[]{l, r});
-            right++;
-            left = right;
+            left = ++right;
         }
 
         return res.toArray(new int[0][]);
