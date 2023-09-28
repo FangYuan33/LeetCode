@@ -131,6 +131,15 @@
 | 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
 | 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
 
+| 题目链接                        | 题解                                                                      | 备注 |
+|-----------------------------|-------------------------------------------------------------------------|----|
+| 归并排序：基本实现                   | [MergeSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort.java)   |    |
+| 归并排序：将多次创建小数组的开销转换为只创建一次大数组 | [MergeSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort2.java) |    |
+| 归并排序：当数组有序时，跳过 merge() 方法   | [MergeSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort3.java) |    |
+| 归并排序：对小规模子数组使用插入排序          | [MergeSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort4.java) |    |
+
+### 相关练习
+
 | 题目链接                                                                                  | 题解 | 备注      |
 |---------------------------------------------------------------------------------------|----|---------|
 | [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并，待做 |
