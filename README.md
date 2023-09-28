@@ -140,11 +140,11 @@
 
 ### 相关练习
 
-| 题目链接                                                                                  | 题解 | 备注      |
-|---------------------------------------------------------------------------------------|----|---------|
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并，待做 |
+| 题目链接                                                                                  | 题解                                                                 | 备注      |
+|---------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------|
+| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)  | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序    |
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                    | 多路归并，待做 |
 
-1. [剑指 Offer 51. 数组中的逆序对 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/): 归并排序
 2. [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/): 有点儿像快排的哨兵交换环节
 3. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
 
