@@ -10,15 +10,15 @@ public class Solution719 {
         while (left < right) {
             int mid = left + right >> 1;
 
-            int num = 0;
+            int count = 0;
             for (int i = 0, j = 1; i < nums.length; i++) {
                 while (j < nums.length && nums[j] - nums[i] <= mid) {
                     j++;
                 }
-                num += j - i - 1;
+                count += j - i - 1;
             }
 
-            if (num >= k) {
+            if (count >= k) {
                 right = mid;
             } else {
                 left = mid + 1;

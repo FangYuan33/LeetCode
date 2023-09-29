@@ -19,31 +19,33 @@ public class TopVotedCandidate {
         System.out.println(candidate.q(99));
     }
 
-    int[] times;
+    HashMap<Integer, Integer> timeIndexPeople;
 
-    HashMap<Integer, Integer> timePerson;
+    int[] times;
 
     public TopVotedCandidate(int[] persons, int[] times) {
         this.times = times;
-        this.timePerson = new HashMap<>();
-        HashMap<Integer, Integer> personVotes = new HashMap<>();
-        int maxVote = 0, currentPerson = -1;
+        timeIndexPeople = new HashMap<>(times.length);
+
+        int[] personsVotes = new int[persons.length];
+        int maxVote = 0;
+        int currentPerson = -1;
         for (int i = 0; i < times.length; i++) {
-            int v = persons[i];
-            int votes = personVotes.getOrDefault(v, 0) + 1;
-            if (votes >= maxVote) {
-                maxVote = votes;
-                currentPerson = v;
+            personsVotes[persons[i]]++;
+            if (personsVotes[persons[i]] >= maxVote) {
+                maxVote = personsVotes[persons[i]];
+                currentPerson = persons[i];
             }
-            timePerson.put(times[i], currentPerson);
-            personVotes.put(v, votes);
+            timeIndexPeople.put(i, currentPerson);
         }
+
     }
 
     public int q(int t) {
         int left = 0, right = times.length;
         while (left < right) {
             int mid = left + right >> 1;
+
             if (times[mid] > t) {
                 right = mid;
             } else {
@@ -51,6 +53,6 @@ public class TopVotedCandidate {
             }
         }
 
-        return timePerson.get(times[left - 1]);
+        return timeIndexPeople.get(left - 1);
     }
 }

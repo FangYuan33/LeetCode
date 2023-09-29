@@ -4,24 +4,23 @@ import java.util.Arrays;
 
 public class Solution532 {
     public int findPairs(int[] nums, int k) {
-        int res = 0;
         Arrays.sort(nums);
-
+        int res = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
+            if (i > 0 && nums[i - 1] == nums[i]) {
                 continue;
             }
-            int target = nums[i] + k;
             int left = i + 1, right = nums.length;
             while (left < right) {
                 int mid = left + right >> 1;
-                if (nums[mid] == target) {
+
+                if (nums[mid] - nums[i] == k) {
                     res++;
                     break;
-                } else if (nums[mid] < target) {
-                    left = mid + 1;
-                } else {
+                } else if (nums[mid] - nums[i] > k) {
                     right = mid;
+                } else {
+                    left = mid + 1;
                 }
             }
         }

@@ -16,19 +16,19 @@ public class Solution1552 {
         while (left < right) {
             int mid = left + right >> 1;
 
-            int pre = position[0];
+            int l = 0;
             int count = 1;
             for (int i = 1; i < position.length; i++) {
-                if (position[i] - pre >= mid) {
-                    pre = position[i];
+                if (position[i] - position[l] >= mid) {
                     count++;
+                    l = i;
                 }
             }
 
-            if (count >= m) {
-                left = mid + 1;
-            } else {
+            if (count < m) {
                 right = mid;
+            } else {
+                left = mid + 1;
             }
         }
 
