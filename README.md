@@ -95,7 +95,6 @@
 | [153. 寻找旋转排序数组中的最小值 中等](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)                           | [Solution153.java](src%2Fleetcode%2Fbinarysearch%2FSolution153.java)             |              |
 | [81. 搜索旋转排序数组 II 中等](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)                                 | [Solution81.java](src%2Fleetcode%2Fbinarysearch%2FSolution81.java)               |              |
 | [154. 寻找旋转排序数组中的最小值 II 困难](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)                     | [Solution154.java](src%2Fleetcode%2Fbinarysearch%2FSolution154.java)             |              |
-| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)                        |                                                                                  |              |
 
 ### 数组无序
 
@@ -119,6 +118,7 @@
 | [475. 供暖器 中等](https://leetcode.cn/problems/heaters/)                                                       | [Solution475.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution475.java)   |                            |
 | [1802. 有界数组中指定下标处的最大值 中等](https://leetcode.cn/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [Solution1802.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution1802.java) | 等差数列求和公式：（首项 + 尾项）* 项数 / 2 |
 | [719. 找出第 K 小的数对距离 困难](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/)                     | [Solution719.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution719.java)   |                            |
+| [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)             | [Solution668.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution668.java)   |                            |
 
 ## 排序算法
 
