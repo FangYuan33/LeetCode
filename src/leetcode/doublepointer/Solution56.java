@@ -18,9 +18,8 @@ public class Solution56 {
 
         int left = 0, right = 0;
         while (right < intervals.length) {
-            int l = intervals[left][0];
-            int r = intervals[right][1];
-            while (right + 1 < intervals.length && intervals[right + 1][0] <= r) {
+            int l = intervals[left][0], r = intervals[right][1];
+            while (right + 1 < intervals.length && r >= intervals[right + 1][0]) {
                 r = Math.max(r, intervals[right + 1][1]);
                 right++;
             }

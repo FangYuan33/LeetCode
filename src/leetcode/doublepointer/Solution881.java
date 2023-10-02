@@ -16,13 +16,13 @@ public class Solution881 {
         int left = 0, right = people.length - 1;
         while (left <= right) {
             int weight = 0;
-            int count = 0;
-            while (left <= right && weight + people[right] <= limit && count < 2) {
-                count++;
+            int peopleNum = 0;
+            while (left <= right && weight + people[right] <= limit && peopleNum < 2) {
+                peopleNum++;
                 weight += people[right--];
             }
-            while (left <= right && weight + people[left] <= limit && count < 2) {
-                count++;
+            while (left <= right && weight + people[left] <= limit && peopleNum < 2) {
+                peopleNum++;
                 weight += people[left++];
             }
             res++;
