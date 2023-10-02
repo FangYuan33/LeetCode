@@ -15,7 +15,7 @@ public class BubbleSort {
             boolean flag = true;
             for (int j = 0; j < i; j++) {
                 if (nums[j] > nums[j + 1]) {
-                    swap(nums, j + 1, j);
+                    swap(nums, j, j + 1);
                     flag = false;
                 }
             }
