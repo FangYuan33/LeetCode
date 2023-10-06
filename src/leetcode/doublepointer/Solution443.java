@@ -10,19 +10,18 @@ public class Solution443 {
         int index = 0;
         int left = 0, right = 0;
         while (right < chars.length) {
-            while (right < chars.length && chars[right] == chars[left]) {
+            while (right + 1 < chars.length && chars[right + 1] == chars[right]) {
                 right++;
             }
-            chars[index++] = chars[left];
-            if (right - left > 1) {
-                char[] nums = String.valueOf(right - left).toCharArray();
-                for (char num : nums) {
-                    chars[index++] = num;
+            chars[index++] = chars[right];
+            if (right - left > 0) {
+                char[] num = String.valueOf(right - left + 1).toCharArray();
+                for (char c : num) {
+                    chars[index++] = c;
                 }
             }
-            left = right;
+            left = ++right;
         }
-
         return index;
     }
 }

@@ -2,35 +2,38 @@ package leetcode.doublepointer;
 
 public class Solution481 {
 
+    public static void main(String[] args) {
+        System.out.println(new Solution481().magicalString(7));
+    }
 
     public int magicalString(int n) {
-        // 1221121221221121122...
+        // 122 112 1 221221121122...
         if (n <= 3) {
             return 1;
         }
 
-        int res = 1;
-        boolean one = true;
-        int index = 2, numIndex = 3;
+        int index = 2;
         int[] nums = new int[n + 2];
         nums[0] = 1;
         nums[1] = 2;
         nums[2] = 2;
-        while (numIndex < n) {
-            if (one) {
-                nums[numIndex++] = 1;
-                res++;
-                if (nums[index] == 2 && numIndex < n) {
-                    nums[numIndex++] = 1;
-                    res++;
-                }
-            } else {
-                nums[numIndex++] = 2;
-                if (nums[index] == 2) {
-                    nums[numIndex++] = 2;
-                }
+        int num = 1;
+        for (int i = 3; i < n;) {
+            nums[i++] = num;
+            if (nums[index] == 2) {
+                nums[i++] = num;
             }
-            one = !one;
+            if (num == 1) {
+                num = 2;
+            } else {
+                num = 1;
+            }
+            index++;
+        }
+
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            res += nums[i] == 1 ? 1 : 0;
         }
 
         return res;

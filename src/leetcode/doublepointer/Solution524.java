@@ -19,11 +19,13 @@ public class Solution524 {
 
         String res = "";
         for (String d : dictionary) {
-            int sIndex = 0, dIndex = 0;
-            while (sIndex < s.length() && dIndex < d.length()) {
-                if (s.charAt(sIndex) == d.charAt(dIndex)) {
-                    dIndex++;
+            int dIndex = 0, sIndex = 0;
+            while (dIndex < d.length() && sIndex < s.length()) {
+                if (d.charAt(dIndex) != s.charAt(sIndex)) {
+                    sIndex++;
+                    continue;
                 }
+                dIndex++;
                 sIndex++;
             }
             if (dIndex == d.length()) {
@@ -31,7 +33,6 @@ public class Solution524 {
                 break;
             }
         }
-
         return res;
     }
 }

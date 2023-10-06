@@ -16,23 +16,21 @@ public class Interview0105 {
         if (first.length() - second.length() > 1) {
             return false;
         }
+        int fIndex = 0, sIndex = 0;
         int count = 0;
-        int f = 0, s = 0;
-        while (f < first.length() && s < second.length()) {
-            // 相等长度是替换
-            if (first.charAt(f) == second.charAt(s)) {
-                f++;
-                s++;
+        while (fIndex < first.length() && sIndex < second.length()) {
+            if (first.charAt(fIndex) == second.charAt(sIndex)) {
+                fIndex++;
+                sIndex++;
             } else {
-                // 大长度则是删除
-                if (first.length() - f > second.length() - s) {
-                    f++;
-                    count++;
+                // 不等长选择删除策略，等长选择替换策略
+                if (first.length() - fIndex > second.length() - sIndex) {
+                    fIndex++;
                 } else {
-                    f++;
-                    s++;
-                    count++;
+                    fIndex++;
+                    sIndex++;
                 }
+                count++;
             }
         }
 

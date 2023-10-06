@@ -5,39 +5,39 @@ import java.io.IOException;
 public class Solution838 {
 
     public static void main(String[] args) throws IOException {
-        System.out.println(new Solution838().pushDominoes("RR.L"));
+        System.out.println(new Solution838().pushDominoes(".L.R...LR..L.."));
     }
 
     public String pushDominoes(String dominoes) {
-        char[] res = dominoes.toCharArray();
-        for (int i = 0; i < res.length; i++) {
-            if (res[i] == '.') {
-                char leftChar = i - 1 >= 0 ? res[i - 1] : 'L';
-                int right = i + 1;
-                while (right < res.length && res[right] == '.') {
+        char[] charArray = dominoes.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] == '.') {
+                int left = i - 1, right = i + 1;
+                while (right < charArray.length && charArray[right] == '.') {
                     right++;
                 }
-                char rightChar = right < res.length ? res[right] : 'R';
+                i = right;
 
-                int l = i, r = right - 1;
+                char leftChar = left == -1 ? 'L' : charArray[left];
+                char rightChar = right == charArray.length ? 'R' : charArray[right];
+                left++; right--;
                 if (leftChar == 'R' && rightChar == 'L') {
-                    while (l < r) {
-                        res[l++] = 'R';
-                        res[r--] = 'L';
+                    while (left < right) {
+                        charArray[left++] = 'R';
+                        charArray[right--] = 'L';
                     }
-                } else if (leftChar == 'R') {
-                    while (l <= r) {
-                        res[l++] = 'R';
+                } else if (leftChar == 'R' && rightChar == 'R') {
+                    while (left <= right) {
+                        charArray[left++] = 'R';
                     }
-                } else if (rightChar == 'L') {
-                    while (l <= r) {
-                        res[l++] = 'L';
+                } else if (leftChar == 'L' && rightChar == 'L') {
+                    while (left <= right) {
+                        charArray[left++] = 'L';
                     }
                 }
-                i = right;
             }
         }
 
-        return new String(res);
+        return new String(charArray);
     }
 }

@@ -3,32 +3,33 @@ package leetcode.doublepointer;
 public class Solution777 {
 
     public static void main(String[] args) {
+        // true
         System.out.println(new Solution777().canTransform("XXXXXLXXXX", "LXXXXXXXXX"));
     }
 
     public boolean canTransform(String start, String end) {
-        int s = 0, e = 0;
-        while (s < start.length() || e < end.length()) {
-            while (s < start.length() && start.charAt(s) == 'X') {
-                s++;
+        int sIndex = 0, eIndex = 0;
+        while (sIndex < start.length() || eIndex < end.length()) {
+            while (sIndex < start.length() && start.charAt(sIndex) == 'X') {
+                sIndex++;
             }
-            while (e < end.length() && end.charAt(e) == 'X') {
-                e++;
+            while (eIndex < end.length() && end.charAt(eIndex) == 'X') {
+                eIndex++;
             }
-            if (s == start.length() || e == end.length()) {
-                return s == e;
+            if (sIndex == start.length() || eIndex == end.length()) {
+                return sIndex == eIndex;
             }
-            if (start.charAt(s) != end.charAt(e)) {
+            if (start.charAt(sIndex) != end.charAt(eIndex)) {
                 return false;
             }
-            if (start.charAt(s) == 'L' && s < e) {
+            if (start.charAt(sIndex) == 'R' && sIndex > eIndex) {
                 return false;
             }
-            if (start.charAt(s) == 'R' && s > e) {
+            if (start.charAt(sIndex) == 'L' && sIndex < eIndex) {
                 return false;
             }
-            s++;
-            e++;
+            sIndex++;
+            eIndex++;
         }
 
         return true;

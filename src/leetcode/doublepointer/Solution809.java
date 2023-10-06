@@ -9,36 +9,37 @@ public class Solution809 {
     public int expressiveWords(String s, String[] words) {
         int res = 0;
         for (String word : words) {
-            if (isExpand(s, word)) {
+            if (isStretchy(s, word)) {
                 res++;
             }
         }
         return res;
     }
 
-    private boolean isExpand(String origin, String word) {
-        int oL = 0, oR = 0;
-        int wL = 0, wR = 0;
-        while (oR < origin.length() && wR < word.length()) {
-            if (origin.charAt(oR) != word.charAt(wR)) {
+    private boolean isStretchy(String origin, String word) {
+        int originBegin = 0, originEnd = 0;
+        int wordBegin = 0, wordEnd = 0;
+        while (originEnd < origin.length() && wordEnd < word.length()) {
+            if (origin.charAt(originEnd) != word.charAt(wordEnd)) {
                 return false;
             }
-            while (oR + 1 < origin.length() && origin.charAt(oR) == origin.charAt(oR + 1)) {
-                oR++;
+            while (originEnd + 1 < origin.length() && origin.charAt(originEnd) == origin.charAt(originEnd + 1)) {
+                originEnd++;
             }
-            while (wR + 1 < word.length() && word.charAt(wR) == word.charAt(wR + 1)) {
-                wR++;
+            while (wordEnd + 1 < word.length() && word.charAt(wordEnd) == word.charAt(wordEnd + 1)) {
+                wordEnd++;
             }
-            if (oR - oL < wR - wL) {
+            if (wordEnd - wordBegin > originEnd - originBegin) {
                 return false;
             }
-            if (oR - oL > wR - wL && oR - oL + 1 <= 2) {
+            if (wordEnd - wordBegin < originEnd - originBegin && originEnd - originBegin + 1 < 3) {
                 return false;
             }
-            oL = ++oR;
-            wL = ++wR;
+            originBegin = ++originEnd;
+            wordBegin = ++wordEnd;
         }
 
-        return oR == origin.length() && wR == word.length();
+        return originEnd == origin.length() && wordEnd == word.length();
     }
+
 }
