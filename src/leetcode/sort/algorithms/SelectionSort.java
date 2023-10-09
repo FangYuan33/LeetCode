@@ -25,7 +25,7 @@ public class SelectionSort {
                     min = j;
                 }
             }
-            swap(nums, min, i);
+            swap(nums, i, min);
         }
     }
 
