@@ -42,6 +42,8 @@
 
 ## 滑动窗口
 
+- 相关学习：[滑动窗口算法技巧](https://juejin.cn/post/7287907234704162828)
+
 ### 固定窗口
 
 | 题目链接                                                                                                          | 题解                                                                      | 备注 |
@@ -62,7 +64,7 @@
 | [LCR 008. 长度最小的子数组 中等](https://leetcode.cn/problems/2VG8Kg/)                                              | [SolutionLCR008.java](src%2Fleetcode%2Fslidingwindow%2FSolutionLCR008.java)   |                          |
 | [76. 最小覆盖子串 困难](https://leetcode.cn/problems/minimum-window-substring/)                                   | [Solution76.java](src%2Fleetcode%2Fslidingwindow%2FSolution76.java)           |                          |
 | [713. 乘积小于 K 的子数组 中等](https://leetcode.cn/problems/subarray-product-less-than-k/)                         | [Solution713.java](src%2Fleetcode%2Fslidingwindow%2FSolution713.java)         | 固定右端点的子数组数量为以该右端点结尾的数组长度 |
-| [992. K 个不同整数的子数组 困难](https://leetcode.cn/problems/subarrays-with-k-different-integers/)                  | [Solution992.java](src%2Fleetcode%2Fslidingwindow%2FSolution992.java)         |                          |
+| [992. K 个不同整数的子数组 困难](https://leetcode.cn/problems/subarrays-with-k-different-integers/)                  | [Solution992.java](src%2Fleetcode%2Fslidingwindow%2FSolution992.java)         | ⭐️                       |
 | [3. 无重复字符的最长子串 中等](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)          | [Solution3.java](src%2Fleetcode%2Fslidingwindow%2FSolution3.java)             |                          |
 | [1759. 统计同质子字符串的数目 中等](https://leetcode.cn/problems/count-number-of-homogenous-substrings/)               | [Solution1759.java](src%2Fleetcode%2Fslidingwindow%2FSolution1759.java)       |                          |
 | [1695. 删除子数组的最大得分 中等](https://leetcode.cn/problems/maximum-erasure-value/)                                | [Solution1695.java](src%2Fleetcode%2Fslidingwindow%2FSolution1695.java)       |                          |
@@ -73,6 +75,8 @@
 | [2024. 考试的最大困扰度 中等](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/)                      | [Solution2024.java](src%2Fleetcode%2Fslidingwindow%2FSolution2024.java)       |                          |
 
 ## 二分查找
+
+- 相关学习：[二分查找是偏爱细节的魔鬼](https://juejin.cn/post/7284158980112400419)
 
 ### 数组有序
 

@@ -15,19 +15,20 @@ public class Solution992 {
 
     private int doSubarraysWithKDistinct(int[] nums, int k) {
         int res = 0;
-        HashMap<Integer, Integer> mark = new HashMap<>();
+        HashMap<Integer, Integer> numCount = new HashMap<>();
         int left = 0, right = 0;
         while (right < nums.length) {
-            mark.put(nums[right], mark.getOrDefault(nums[right], 0) + 1);
+            numCount.put(nums[right], numCount.getOrDefault(nums[right], 0) + 1);
+            if (numCount.get(nums[right]) == 1) {
+                k--;
+            }
 
-            while (mark.size() > k && left <= right) {
-                Integer num = mark.get(nums[left]);
-                if (num == 1) {
-                    mark.remove(nums[left]);
-                } else {
-                    mark.put(nums[left], num - 1);
+            while (k < 0) {
+                Integer count = numCount.get(nums[left]);
+                if (count == 1) {
+                    k++;
                 }
-                left++;
+                numCount.put(nums[left++], --count);
             }
             res += right - left + 1;
 
