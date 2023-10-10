@@ -128,12 +128,16 @@
 
 ### 基础排序算法
 
+- 时间复杂度为 O(n<sup>2</sup>) 的排序算法
+
 | 题目链接 | 题解                                                                            | 备注 |
 |------|-------------------------------------------------------------------------------|----|
 | 插入排序 | [InsertSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FInsertSort.java)       |    |
 | 希尔排序 | [ShellSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FShellSort.java)         |    |
 | 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
 | 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
+
+- 时间复杂度为 O(nlogn) 的排序算法
 
 | 题目链接                        | 题解                                                                      | 备注 |
 |-----------------------------|-------------------------------------------------------------------------|----|
