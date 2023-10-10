@@ -153,6 +153,7 @@
 | 题目链接                                                                                  | 题解                                                                 | 备注         |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------|
 | [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)  | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序       |
+| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                         | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |            |
 | [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                              | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：基准数优化 |
 | [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                    | 多路归并，待做    |
 
