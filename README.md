@@ -148,6 +148,7 @@
 | 快速排序：基本实现                   | [QuickSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort.java)   |    |
 | 快速排序：基准数优化                  | [QuickSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort2.java) |    |
 | 快速排序：切换到插入排序                | [QuickSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort3.java) |    |
+| 快速排序：三向切分                   | [QuickSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort4.java) |    |
 
 ### 相关练习
 
