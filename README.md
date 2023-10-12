@@ -152,16 +152,15 @@
 
 ### 相关练习
 
-| 题目链接                                                                                  | 题解                                                                 | 备注        |
-|---------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
-| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)  | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序      |
-| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                         | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |           |
-| [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                       | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
-| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                              | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分 |
-| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)           | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序     |
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                    | 多路归并，待做   |
-
-3. [面试题45. 把数组排成最小的数 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/): 自定义排序
+| 题目链接                                                                                         | 题解                                                                 | 备注        |
+|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
+| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)         | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序      |
+| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |           |
+| [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                              | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
+| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                     | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分 |
+| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                  | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序     |
+| [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序     |
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/)        |                                                                    | 多路归并，待做   |
 
 ## 前缀和
 
