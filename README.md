@@ -154,6 +154,7 @@
 
 | 题目链接                                                                                         | 题解                                                                 | 备注        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
+| [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序      |
 | [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)         | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序      |
 | [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |           |
 | [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                              | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
