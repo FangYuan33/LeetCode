@@ -10,40 +10,20 @@ public class Solution75 {
             return;
         }
 
-        betterBase(nums, left, right);
-
-        int partition = partition(nums, left, right);
-
-        sort(nums, left, partition - 1);
-        sort(nums, partition + 1,  right);
-    }
-
-    private int partition(int[] nums, int left, int right) {
-        int originIndex = left;
         int base = nums[left];
-
-        while (left < right) {
-            while (left < right && nums[right] >= base) {
-                right--;
+        int l = left, mid = left + 1, r = right;
+        while (mid <= r) {
+            if (nums[mid] < base) {
+                swap(nums, l++, mid++);
+            } else if (nums[mid] > base) {
+                swap(nums, mid, r--);
+            } else {
+                mid++;
             }
-            while (left < right && nums[left] <= base) {
-                left++;
-            }
-            swap(nums, left, right);
         }
-        swap(nums, originIndex, left);
 
-        return left;
-    }
-
-    private void betterBase(int[] nums, int left, int right) {
-        int mid = left + right >> 1;
-
-        if ((nums[mid] < nums[right]) ^ (nums[mid] < nums[left])) {
-            swap(nums, left, mid);
-        } else if ((nums[right] < nums[mid]) ^ (nums[right] < nums[left])) {
-            swap(nums, left, right);
-        }
+        sort(nums, left, l - 1);
+        sort(nums, r + 1, right);
     }
 
     private void swap(int[] nums, int left, int right) {
