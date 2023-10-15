@@ -152,17 +152,18 @@
 
 ### 相关练习
 
-| 题目链接                                                                                         | 题解                                                                 | 备注        |
-|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
-| [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序      |
-| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)         | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序      |
-| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |           |
-| [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                              | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
-| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                     | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分 |
-| [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                     |                                                                    | 计数排序      |
-| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                  | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序     |
-| [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序     |
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/)        |                                                                    | 多路归并，待做   |
+| 题目链接                                                                                         | 题解                                                                 | 备注               |
+|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------|
+| [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序             |
+| [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                         | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)   | 可以用选择排序求解，不过效率不高 |
+| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)         | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序             |
+| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |                  |
+| [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                              | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |                  |
+| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                     | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分        |
+| [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                     |                                                                    | 计数排序             |
+| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                  | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序            |
+| [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序            |
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/)        |                                                                    | 多路归并，待做          |
 
 ## 前缀和
 
