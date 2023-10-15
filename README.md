@@ -154,6 +154,7 @@
 
 | 题目链接                                                                                         | 题解                                                                 | 备注               |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------|
+| [1051. 高度检查器 简单](https://leetcode.cn/problems/height-checker/)                               | [Solution1051.java](src%2Fleetcode%2Fsort%2FSolution1051.java)     |                  |
 | [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序             |
 | [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                         | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)   | 可以用选择排序求解，不过效率不高 |
 | [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)         | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序             |
