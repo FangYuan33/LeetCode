@@ -159,6 +159,7 @@
 | [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |           |
 | [324. 摆动排序 II 中等](https://leetcode.cn/problems/missing-number/)                              | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
 | [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                     | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分 |
+| [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                     |                                                                    | 计数排序      |
 | [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                  | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序     |
 | [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序     |
 | [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/)        |                                                                    | 多路归并，待做   |
@@ -537,6 +538,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 ## 堆
 
 堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
+
+| 题目链接                                                                  | 题解 | 备注 |
+|-----------------------------------------------------------------------|----|----|
+| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/) |    |    |
 
 1. [剑指 Offer 40. 最小的k个数 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/): 大顶堆
 2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
