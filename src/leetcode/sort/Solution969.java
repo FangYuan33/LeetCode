@@ -13,18 +13,18 @@ public class Solution969 {
         List<Integer> res = new ArrayList<>();
 
         for (int i = arr.length - 1; i > 0; i--) {
-            int maxIndex = 0;
-            for (int j = maxIndex + 1; j <= i; j++) {
-                if (arr[j] > arr[maxIndex]) {
-                    maxIndex = j;
+            int max = 0;
+            for (int j = max + 1; j <= i; j++) {
+                if (arr[j] > arr[max]) {
+                    max = j;
                 }
             }
-            if (maxIndex == i) {
+            if (max == i) {
                 continue;
             }
 
-            res.add(maxIndex + 1);
-            reverse(arr, maxIndex);
+            res.add(max + 1);
+            reverse(arr, max);
             res.add(i + 1);
             reverse(arr, i);
         }
@@ -32,12 +32,12 @@ public class Solution969 {
         return res;
     }
 
-    private void reverse(int[] nums, int right) {
+    private void reverse(int[] arr, int right) {
         int left = 0;
         while (left < right) {
-            int temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
             left++;
             right--;
         }
