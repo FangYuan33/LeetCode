@@ -14,14 +14,23 @@ public class Solution937 {
     static class Log implements Comparable<Log> {
 
         /**
-         * 0: 字母; 1: 数字
+         * 标识符
+         */
+        String flag;
+
+        /**
+         * 0-字母日志 1-数字日志
          */
         int type;
 
-        String flag;
-
+        /**
+         * 除标识符外的内容
+         */
         String content;
 
+        /**
+         * 原内容
+         */
         String origin;
 
         @Override
@@ -33,10 +42,10 @@ public class Solution937 {
             } else if (this.type == 1 && o.type == 0) {
                 return 1;
             } else {
-                if (content.equals(o.content)) {
-                    return flag.compareTo(o.flag);
+                if (this.content.equals(o.content)) {
+                    return this.flag.compareTo(o.flag);
                 } else {
-                    return content.compareTo(o.content);
+                    return this.content.compareTo(o.content);
                 }
             }
         }
@@ -44,25 +53,26 @@ public class Solution937 {
 
     public String[] reorderLogFiles(String[] logs) {
         ArrayList<Log> list = new ArrayList<>(logs.length);
-        for (String value : logs) {
-            Log log = new Log();
-            String[] s = value.split(" ");
-            log.flag = s[0];
-            log.origin = value;
+        for (String log : logs) {
+            Log element = new Log();
+            element.origin = log;
+            String[] s = log.split(" ");
+            element.flag = s[0];
             if (Character.isDigit(s[1].charAt(0))) {
-                log.type = 1;
+                element.type = 1;
             }
             String content = Arrays.toString(Arrays.copyOfRange(s, 1, s.length));
-            log.content = content.substring(1, content.length() - 1);
+            element.content = content.substring(1, content.length() - 1);
 
-            list.add(log);
+            list.add(element);
         }
         Collections.sort(list);
 
-        for (int i = 0; i < list.size(); i++) {
-            logs[i] = list.get(i).origin;
+        String[] res = new String[list.size()];
+        for (int i = 0; i < res.length; i++) {
+            res[i] = list.get(i).origin;
         }
 
-        return logs;
+        return res;
     }
 }

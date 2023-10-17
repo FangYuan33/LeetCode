@@ -10,11 +10,11 @@ public class Solution75 {
             return;
         }
 
-        int base = nums[left];
         int l = left, mid = left + 1, r = right;
+        int base = nums[l];
         while (mid <= r) {
             if (nums[mid] < base) {
-                swap(nums, l++, mid++);
+                swap(nums, mid++, l++);
             } else if (nums[mid] > base) {
                 swap(nums, mid, r--);
             } else {
