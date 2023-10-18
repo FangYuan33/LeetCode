@@ -124,48 +124,6 @@
 | [719. 找出第 K 小的数对距离 困难](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/)                     | [Solution719.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution719.java)   |                            |
 | [668. 乘法表中第k小的数 困难](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)             | [Solution668.java](src%2Fleetcode%2Fbinarysearch%2Fgreedyalgorithm%2FSolution668.java)   |                            |
 
-## 排序算法
-
-### 基础排序算法
-
-- 时间复杂度为 O(n<sup>2</sup>) 的排序算法
-
-| 题目链接 | 题解                                                                            | 备注 |
-|------|-------------------------------------------------------------------------------|----|
-| 插入排序 | [InsertSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FInsertSort.java)       |    |
-| 希尔排序 | [ShellSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FShellSort.java)         |    |
-| 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
-| 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
-
-- 时间复杂度为 O(nlogn) 的排序算法
-
-| 题目链接                        | 题解                                                                      | 备注 |
-|-----------------------------|-------------------------------------------------------------------------|----|
-| 归并排序：基本实现                   | [MergeSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort.java)   |    |
-| 归并排序：将多次创建小数组的开销转换为只创建一次大数组 | [MergeSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort2.java) |    |
-| 归并排序：当数组有序时，跳过 merge() 方法   | [MergeSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort3.java) |    |
-| 归并排序：对小规模子数组使用插入排序          | [MergeSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort4.java) |    |
-| 快速排序：基本实现                   | [QuickSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort.java)   |    |
-| 快速排序：基准数优化                  | [QuickSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort2.java) |    |
-| 快速排序：切换到插入排序                | [QuickSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort3.java) |    |
-| 快速排序：三向切分                   | [QuickSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort4.java) |    |
-
-### 相关练习
-
-| 题目链接                                                                                              | 题解                                                                 | 备注               |
-|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------|
-| [1051. 高度检查器 简单](https://leetcode.cn/problems/height-checker/)                                    | [Solution1051.java](src%2Fleetcode%2Fsort%2FSolution1051.java)     |                  |
-| [1403. 非递增顺序的最小子序列 简单](https://leetcode.cn/problems/minimum-subsequence-in-non-increasing-order/) | [Solution1403.java](src%2Fleetcode%2Fsort%2FSolution1403.java)     |                  |
-| [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                     | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序             |
-| [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                              | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)   | 可以用选择排序求解，不过效率不高 |
-| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)              | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序             |
-| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                     | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |                  |
-| [324. 摆动排序 II 中等](https://leetcode.cn/problems/wiggle-sort-ii/)                                   | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |                  |
-| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                          | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分        |
-| [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                          |                                                                    | 计数排序             |
-| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                       | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序            |
-| [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)      | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序            |
-
 ## 前缀和
 
 前缀和表示数组的前 n 项和，它是一种数据预处理的方法，是对空间换时间的应用，我们一般会创建 **数组长度 + 1** 大小的数组来记录前缀和，并将 0 索引处的前缀和标记为 0，表示前 0 项和，如下图所示，索引 1 处的前缀和表示原数组中的前 1 项和（nums[0]），所以我们想获取原数组中某索引元素的前缀和的话，需要将索引值加 1 再从前缀和数组中取值。
@@ -537,6 +495,48 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [1438. 绝对差不超过限制的最长连续子数组 中等](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution1438.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution1438.java) | ⭐️          |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                                    | [Solution654.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution654.java)   |             |
 | [2100. 适合打劫银行的日子 中等](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)                                                    | [Solution2100.java](src%2Fleetcode%2Fprefixsum%2FSolution2100.java)         | 单调队列的单调性的应用 |
+
+## 排序算法
+
+### 基础排序算法
+
+- 时间复杂度为 O(n<sup>2</sup>) 的排序算法
+
+| 题目链接 | 题解                                                                            | 备注 |
+|------|-------------------------------------------------------------------------------|----|
+| 插入排序 | [InsertSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FInsertSort.java)       |    |
+| 希尔排序 | [ShellSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FShellSort.java)         |    |
+| 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
+| 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
+
+- 时间复杂度为 O(nlogn) 的排序算法
+
+| 题目链接                        | 题解                                                                      | 备注 |
+|-----------------------------|-------------------------------------------------------------------------|----|
+| 归并排序：基本实现                   | [MergeSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort.java)   |    |
+| 归并排序：将多次创建小数组的开销转换为只创建一次大数组 | [MergeSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort2.java) |    |
+| 归并排序：当数组有序时，跳过 merge() 方法   | [MergeSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort3.java) |    |
+| 归并排序：对小规模子数组使用插入排序          | [MergeSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FMergeSort4.java) |    |
+| 快速排序：基本实现                   | [QuickSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort.java)   |    |
+| 快速排序：基准数优化                  | [QuickSort2.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort2.java) |    |
+| 快速排序：切换到插入排序                | [QuickSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort3.java) |    |
+| 快速排序：三向切分                   | [QuickSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort4.java) |    |
+
+### 相关练习
+
+| 题目链接                                                                                              | 题解                                                                 | 备注               |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------|
+| [1051. 高度检查器 简单](https://leetcode.cn/problems/height-checker/)                                    | [Solution1051.java](src%2Fleetcode%2Fsort%2FSolution1051.java)     |                  |
+| [1403. 非递增顺序的最小子序列 简单](https://leetcode.cn/problems/minimum-subsequence-in-non-increasing-order/) | [Solution1403.java](src%2Fleetcode%2Fsort%2FSolution1403.java)     |                  |
+| [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                     | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | 冒泡排序             |
+| [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                              | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)   | 可以用选择排序求解，不过效率不高 |
+| [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)              | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | 归并排序             |
+| [268. 丢失的数字 简单](https://leetcode.cn/problems/missing-number/)                                     | [Solution268.java](src%2Fleetcode%2Fsort%2FSolution268.java)       |                  |
+| [324. 摆动排序 II 中等](https://leetcode.cn/problems/wiggle-sort-ii/)                                   | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |                  |
+| [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                          | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分        |
+| [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                          |                                                                    | 计数排序             |
+| [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                       | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序            |
+| [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)      | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序            |
 
 ## 堆
 
