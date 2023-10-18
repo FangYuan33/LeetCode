@@ -542,14 +542,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 堆用于解决**Top K问题**、**求中位数**或**中位数变体问题**(99值问题)
 
-| 题目链接                                                                                  | 题解                                                                          | 备注 |
-|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java) |    |
-| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 |                                                                             |    |
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                             |    |
+| 题目链接                                                                                  | 题解                                                                          | 备注  |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----|
+| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java) | 大顶堆 |
+| [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) | [KthLargest.java](src%2Fleetcode%2Fpriorityqueue%2FKthLargest.java)         | 小顶堆 |
+| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 |                                                                             |     |
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                             |     |
 
 2. [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/): 小顶堆
-3. [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/): 小顶堆
 4. [剑指 Offer 41. 数据流中的中位数 困难](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/): 中位数问题用两个堆根本不难
 5. [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)
 
