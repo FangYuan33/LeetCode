@@ -34,7 +34,7 @@ public class KthLargest {
         if (priorityQueue.isEmpty() || priorityQueue.size() < k) {
             priorityQueue.offer(num);
         } else {
-            if (num >= priorityQueue.peek()) {
+            if (num > priorityQueue.peek()) {
                 priorityQueue.poll();
                 priorityQueue.offer(num);
             }
