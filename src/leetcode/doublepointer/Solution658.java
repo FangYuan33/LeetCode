@@ -6,6 +6,7 @@ import java.util.List;
 public class Solution658 {
 
     public static void main(String[] args) {
+        // [-2, -1, 1, 2, 3, 4, 5]
         System.out.println(new Solution658().findClosestElements(new int[]{-2, -1, 1, 2, 3, 4, 5}, 7, 3));
     }
 
@@ -23,23 +24,22 @@ public class Solution658 {
         if (left == arr.length || (left > 0 && check(arr[left - 1], arr[left], x))) {
             left--;
         }
-
         right = left;
         while (right - left + 1 < k) {
             if (left == 0) {
                 break;
-            } else if (left - 1 >= 0 && right + 1 < arr.length && check(arr[left - 1], arr[right + 1], x)) {
+            } else if (right == arr.length - 1) {
                 left--;
-            } else if (left - 1 >= 0 && right + 1 < arr.length && !check(arr[left - 1], arr[right + 1], x)) {
-                right++;
+            } else if (check(arr[left - 1], arr[right + 1], x)) {
+                left--;
             } else {
-                left--;
+                right++;
             }
         }
 
-        List<Integer> res = new ArrayList<>();
-        for (int i = 0; i < k; i++) {
-            res.add(arr[left++]);
+        List<Integer> res = new ArrayList<>(k);
+        for (int i = left; res.size() < k; i++) {
+            res.add(arr[i]);
         }
 
         return res;

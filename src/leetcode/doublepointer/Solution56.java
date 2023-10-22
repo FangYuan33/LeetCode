@@ -14,14 +14,14 @@ public class Solution56 {
 
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(x -> x[0]));
-        List<int[]> res = new ArrayList<>();
+        ArrayList<int[]> res = new ArrayList<>();
 
         int left = 0, right = 0;
         while (right < intervals.length) {
-            int l = intervals[left][0], r = intervals[right][1];
+            int l = intervals[left][0];
+            int r = intervals[left][1];
             while (right + 1 < intervals.length && r >= intervals[right + 1][0]) {
-                r = Math.max(r, intervals[right + 1][1]);
-                right++;
+                r = Math.max(r, intervals[++right][1]);
             }
             res.add(new int[]{l, r});
             left = ++right;

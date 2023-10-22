@@ -11,34 +11,34 @@
 
 ### 数组
 
-| 题目链接                                                                                                                               | 题解                                                                            | 备注 |
-|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-| [26. 删除有序数组中的重复项 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)                                            | [Solution26.java](src%2Fleetcode%2Fdoublepointer%2FSolution26.java)           |    |
-| [27. 移除元素 简单](https://leetcode.cn/problems/remove-element/)                                                                        | [Solution27.java](src%2Fleetcode%2Fdoublepointer%2FSolution27.java)           |    |
-| [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | [SolutionOffer21.java](src%2Fleetcode%2Fdoublepointer%2FSolutionOffer21.java) |    |
-| [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)                                                           | [Interview1001.java](src%2Fleetcode%2Fdoublepointer%2FInterview1001.java)     |    |
-| [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                                           | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)         |    |
-| [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)                                                          | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)           |    |
-| [881. 救生艇 中等](https://leetcode.cn/problems/boats-to-save-people/)                                                                  | [Solution881.java](src%2Fleetcode%2Fdoublepointer%2FSolution881.java)         |    |
-| [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                                    | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)         |    |
-| [658. 找到 K 个最接近的元素 中等](https://leetcode.cn/problems/find-k-closest-elements/)                                                      | [Solution658.java](src%2Fleetcode%2Fdoublepointer%2FSolution658.java)         |    |
-| [825. 适龄的朋友 中等](https://leetcode.cn/problems/friends-of-appropriate-ages/)                                                         | [Solution825.java](src%2Fleetcode%2Fdoublepointer%2FSolution825.java)         |    |
-| [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                                       | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)           |    |
-| [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                                  | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)         |    |
+| 题目链接                                                                                                                  | 题解                                                                          | 备注 |
+|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [26. 删除有序数组中的重复项 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)                               | [Solution26.java](src%2Fleetcode%2Fdoublepointer%2FSolution26.java)         | ✅  |
+| [27. 移除元素 简单](https://leetcode.cn/problems/remove-element/)                                                           | [Solution27.java](src%2Fleetcode%2Fdoublepointer%2FSolution27.java)         | ✅  |
+| [LCR 139. 训练计划 I 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | [SolutionLCR139.java](src%2Fleetcode%2Fdoublepointer%2FSolutionLCR139.java) | ✅  |
+| [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)                                              | [Interview1001.java](src%2Fleetcode%2Fdoublepointer%2FInterview1001.java)   | ✅  |
+| [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                              | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)       | ✅  |
+| [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)                                             | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)         | ✅  |
+| [881. 救生艇 中等](https://leetcode.cn/problems/boats-to-save-people/)                                                     | [Solution881.java](src%2Fleetcode%2Fdoublepointer%2FSolution881.java)       | ✅  |
+| [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                       | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)       | ✅  |
+| [658. 找到 K 个最接近的元素 中等](https://leetcode.cn/problems/find-k-closest-elements/)                                         | [Solution658.java](src%2Fleetcode%2Fdoublepointer%2FSolution658.java)       |    |
+| [825. 适龄的朋友 中等](https://leetcode.cn/problems/friends-of-appropriate-ages/)                                            | [Solution825.java](src%2Fleetcode%2Fdoublepointer%2FSolution825.java)       |    |
+| [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                          | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)         | ✅  |
+| [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                     | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)       |    |
 
 ### 字符串
 
-| 题目链接                                                                                                  | 题解                                                                        | 备注                                       |
-|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------|
-| [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)                                       | [Solution125.java](src%2Fleetcode%2Fdoublepointer%2FSolution125.java)     | Character.isLetterOrDigit() 静态方法判断是字母和数字 |
-| [面试题 17.11. 单词距离 中等](https://leetcode.cn/problems/find-closest-lcci/)                                 | [Interview1711.java](src%2Fleetcode%2Fdoublepointer%2FInterview1711.java) | ✅                                        |
-| [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                     | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)     | ✅                                        |
-| [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                     | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)     | ✅                                        |
-| [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                         | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java)     | ✅                                        |
-| [524. 通过删除字母匹配到字典里最长单词 中等](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [Solution524.java](src%2Fleetcode%2Fdoublepointer%2FSolution524.java)     | ✅                                        |
-| [777. 在LR字符串中交换相邻字符 中等](https://leetcode.cn/problems/swap-adjacent-in-lr-string/)                     | [Solution777.java](src%2Fleetcode%2Fdoublepointer%2FSolution777.java)     |                                          |
-| [838. 推多米诺 中等](https://leetcode.cn/problems/push-dominoes/)                                           | [Solution838.java](src%2Fleetcode%2Fdoublepointer%2FSolution838.java)     | ✅                                        |
-| [面试题 01.05. 一次编辑 中等](https://leetcode.cn/problems/one-away-lcci/)                                     | [Interview0105.java](src%2Fleetcode%2Fdoublepointer%2FInterview0105.java) |                                          |
+| 题目链接                                                                                                  | 题解                                                                        | 备注                                        |
+|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------|
+| [125. 验证回文串 简单](https://leetcode.cn/problems/valid-palindrome/)                                       | [Solution125.java](src%2Fleetcode%2Fdoublepointer%2FSolution125.java)     | ✅Character.isLetterOrDigit() 静态方法判断是字母和数字 |
+| [面试题 17.11. 单词距离 中等](https://leetcode.cn/problems/find-closest-lcci/)                                 | [Interview1711.java](src%2Fleetcode%2Fdoublepointer%2FInterview1711.java) | ✅                                         |
+| [809. 情感丰富的文字 中等](https://leetcode.cn/problems/expressive-words/)                                     | [Solution809.java](src%2Fleetcode%2Fdoublepointer%2FSolution809.java)     | ✅                                         |
+| [443. 压缩字符串 中等](https://leetcode.cn/problems/string-compression/)                                     | [Solution443.java](src%2Fleetcode%2Fdoublepointer%2FSolution443.java)     | ✅                                         |
+| [481. 神奇字符串 中等](https://leetcode.cn/problems/magical-string/)                                         | [Solution481.java](src%2Fleetcode%2Fdoublepointer%2FSolution481.java)     | ✅                                         |
+| [524. 通过删除字母匹配到字典里最长单词 中等](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [Solution524.java](src%2Fleetcode%2Fdoublepointer%2FSolution524.java)     | ✅                                         |
+| [777. 在LR字符串中交换相邻字符 中等](https://leetcode.cn/problems/swap-adjacent-in-lr-string/)                     | [Solution777.java](src%2Fleetcode%2Fdoublepointer%2FSolution777.java)     |                                           |
+| [838. 推多米诺 中等](https://leetcode.cn/problems/push-dominoes/)                                           | [Solution838.java](src%2Fleetcode%2Fdoublepointer%2FSolution838.java)     | ✅                                         |
+| [面试题 01.05. 一次编辑 中等](https://leetcode.cn/problems/one-away-lcci/)                                     | [Interview0105.java](src%2Fleetcode%2Fdoublepointer%2FInterview0105.java) |                                           |
 
 ## 滑动窗口
 

@@ -1,24 +1,27 @@
 package leetcode.doublepointer;
 
 public class Solution125 {
+
+    public static void main(String[] args) {
+        System.out.println(new Solution125().isPalindrome("A man, a plan, a canal: Panama"));
+    }
+
     public boolean isPalindrome(String s) {
         String lowerCase = s.toLowerCase();
 
         int left = 0, right = lowerCase.length() - 1;
         while (left < right) {
-            while (left < lowerCase.length() && !Character.isLetterOrDigit(s.charAt(left))) {
+            while (left < right && !Character.isLetterOrDigit(lowerCase.charAt(left))) {
                 left++;
             }
-            while (right >= 0 && !Character.isLetterOrDigit(s.charAt(right))) {
+            while (left < right && !Character.isLetterOrDigit(lowerCase.charAt(right))) {
                 right--;
             }
-
-            if (left < right && lowerCase.charAt(left) != lowerCase.charAt(right)) {
+            if (lowerCase.charAt(left) != lowerCase.charAt(right)) {
                 return false;
-            } else {
-                left++;
-                right--;
             }
+            left++;
+            right--;
         }
 
         return true;

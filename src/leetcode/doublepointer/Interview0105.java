@@ -3,6 +3,7 @@ package leetcode.doublepointer;
 public class Interview0105 {
 
     public static void main(String[] args) {
+        // false
         System.out.println(new Interview0105().oneEditAway("ab", "bc"));
     }
 
@@ -12,12 +13,12 @@ public class Interview0105 {
             first = second;
             second = temp;
         }
-
         if (first.length() - second.length() > 1) {
             return false;
         }
-        int fIndex = 0, sIndex = 0;
+
         int count = 0;
+        int fIndex = 0, sIndex = 0;
         while (fIndex < first.length() && sIndex < second.length()) {
             if (first.charAt(fIndex) == second.charAt(sIndex)) {
                 fIndex++;

@@ -10,20 +10,20 @@ public class Solution881 {
     }
 
     public int numRescueBoats(int[] people, int limit) {
-        Arrays.sort(people);
-
         int res = 0;
         int left = 0, right = people.length - 1;
+        Arrays.sort(people);
+
         while (left <= right) {
-            int weight = 0;
-            int peopleNum = 0;
-            while (left <= right && weight + people[right] <= limit && peopleNum < 2) {
-                peopleNum++;
-                weight += people[right--];
+            int curPeople = 0;
+            int curWeight = 0;
+            while (curPeople < 2 && left <= right && curWeight + people[right] <= limit) {
+                curWeight += people[right--];
+                curPeople++;
             }
-            while (left <= right && weight + people[left] <= limit && peopleNum < 2) {
-                peopleNum++;
-                weight += people[left++];
+            while (curPeople < 2 && left <= right && curWeight + people[left] <= limit) {
+                curWeight += people[left++];
+                curPeople++;
             }
             res++;
         }

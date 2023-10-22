@@ -9,23 +9,23 @@ public class Solution777 {
 
     public boolean canTransform(String start, String end) {
         int sIndex = 0, eIndex = 0;
-        while (sIndex < start.length() || eIndex < end.length()) {
+        while (sIndex < start.length() && eIndex < end.length()) {
             while (sIndex < start.length() && start.charAt(sIndex) == 'X') {
                 sIndex++;
             }
             while (eIndex < end.length() && end.charAt(eIndex) == 'X') {
                 eIndex++;
             }
-            if (sIndex == start.length() || eIndex == end.length()) {
-                return sIndex == eIndex;
+            if (eIndex == end.length() || sIndex == start.length()) {
+                return eIndex == sIndex;
             }
-            if (start.charAt(sIndex) != end.charAt(eIndex)) {
+            if (end.charAt(eIndex) != start.charAt(sIndex)) {
                 return false;
             }
-            if (start.charAt(sIndex) == 'R' && sIndex > eIndex) {
+            if (end.charAt(eIndex) == 'L' && start.charAt(sIndex) == 'L' && sIndex < eIndex) {
                 return false;
             }
-            if (start.charAt(sIndex) == 'L' && sIndex < eIndex) {
+            if (end.charAt(eIndex) == 'R' && start.charAt(sIndex) == 'R' && sIndex > eIndex) {
                 return false;
             }
             sIndex++;
