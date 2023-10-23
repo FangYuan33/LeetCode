@@ -696,6 +696,10 @@ for 状态1 in 状态1中的所有值
             dp[状态1][状态2][...] = 状态转移方程 = 最值;
 ```
 
+| 题目链接                                                                            | 题解                                                             | 备注 |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
+| [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
+
 1. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 2. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
 3. [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)
