@@ -537,6 +537,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [324. 摆动排序 II 中等](https://leetcode.cn/problems/wiggle-sort-ii/)                                   | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |                  |
 | [75. 颜色分类 中等](https://leetcode.cn/problems/sort-colors/)                                          | [Solution75.java](src%2Fleetcode%2Fsort%2FSolution75.java)         | 快速排序：三向切分        |
 | [1833. 雪糕的最大数量 中等](https://leetcode.cn/problems/maximum-ice-cream-bars/)                          |                                                                    | 计数排序             |
+| [451. 根据字符出现频率排序 中等](https://leetcode.cn/problems/sort-characters-by-frequency/)                  | [Solution451.java](src%2Fleetcode%2Fsort%2FSolution451.java)       | 自定义排序            |
 | [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                       | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | 自定义排序            |
 | [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)      | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | 自定义排序            |
 
