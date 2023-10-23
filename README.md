@@ -673,6 +673,10 @@ inf bfs(Node node, Node target) {
 
 ## 哈希
 
+| 题目链接                                                                   | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [954. 二倍数对数组 中等](https://leetcode.cn/problems/array-of-doubled-pairs/) | [Solution954.java](src%2Fleetcode%2Fpriorityqueue%2FSolution954.java) |    |
+
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
 4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
