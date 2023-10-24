@@ -560,7 +560,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)       | [Solution4.java](src%2Fleetcode%2Fpriorityqueue%2FSolution4.java)             |     |
 | [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       |     |
 
-## 二叉树
+## 树
 
 - 前、中、后序遍历模板
 
@@ -575,11 +575,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
     }
 ```
 
-### 前序遍历
+### 二叉树前序遍历
 
 前序遍历在进入某个节点前执行
 
-1. [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
+| 题目链接                                                                             | 题解                                                                                                                                                                      | 备注 |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
+
 2. [剑指 Offer 34. 二叉树中和为某一值的路径 中等](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
 3. [剑指 Offer 27. 二叉树的镜像 简单](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/)
 4. [剑指 Offer 28. 对称的二叉树 简单](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/)
