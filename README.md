@@ -550,6 +550,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------|
 | 小顶堆实现                                                                                 | [MyPriorityQueue.java](src%2Fleetcode%2Fpriorityqueue%2FMyPriorityQueue.java) |      |
 | [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | 大顶堆  |
+| [1405. 最长快乐字符串 中等](https://leetcode.cn/problems/longest-happy-string/)                | [Solution1405.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1405.java)       | 大顶堆  |
 | [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/)  | [Solution215.java](src%2Fleetcode%2Fpriorityqueue%2FSolution215.java)         | 小顶堆  |
 | [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) | [KthLargest.java](src%2Fleetcode%2Fpriorityqueue%2FKthLargest.java)           | 小顶堆  |
 | [692. 前K个高频单词 中等](https://leetcode.cn/problems/top-k-frequent-words/)                 | [Solution692.java](src%2Fleetcode%2Fpriorityqueue%2FSolution692.java)         | 小顶堆  |
