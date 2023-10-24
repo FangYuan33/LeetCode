@@ -549,6 +549,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                                  | 题解                                                                            | 备注  |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-----|
 | 小顶堆实现                                                                                 | [MyPriorityQueue.java](src%2Fleetcode%2Fpriorityqueue%2FMyPriorityQueue.java) |     |
+| 堆排序                                                                                   | [DeapSort.java](src%2Fleetcode%2Fpriorityqueue%2FDeapSort.java)               |     |
 | [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | 大顶堆 |
 | [1405. 最长快乐字符串 中等](https://leetcode.cn/problems/longest-happy-string/)                | [Solution1405.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1405.java)       | 大顶堆 |
 | [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/)  | [Solution215.java](src%2Fleetcode%2Fpriorityqueue%2FSolution215.java)         | 小顶堆 |
@@ -559,6 +560,12 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | 贪心  |
 | [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)       | [Solution4.java](src%2Fleetcode%2Fpriorityqueue%2FSolution4.java)             |     |
 | [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       |     |
+
+## 多路归并
+
+| 题目链接                                                                                  | 题解 | 备注   |
+|---------------------------------------------------------------------------------------|----|------|
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并 |
 
 ## 树
 
@@ -586,7 +593,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                    | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
 
 2. [剑指 Offer 34. 二叉树中和为某一值的路径 中等](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
-4. [剑指 Offer 28. 对称的二叉树 简单](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/)
 5. [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)
 6. [剑指 Offer 07. 重建二叉树 中等](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/): 前序拿节点值，中序只用来定位根节点索引以此区分右子树
 
@@ -826,12 +832,6 @@ def backtrack(路径, 选择列表):
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
-
-## 多路归并
-
-| 题目链接                                                                                  | 题解 | 备注   |
-|---------------------------------------------------------------------------------------|----|------|
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并 |
 
 ## 位运算
 
