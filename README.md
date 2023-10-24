@@ -558,8 +558,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | 小顶堆  |
 | [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)       | [Solution4.java](src%2Fleetcode%2Fpriorityqueue%2FSolution4.java)             |      |
 | [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       |      |
-| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 |                                                                               |      |
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |                                                                               | 多路归并 |
 
 ## 二叉树
 
@@ -823,6 +821,12 @@ def backtrack(路径, 选择列表):
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
+
+## 多路归并
+
+| 题目链接                                                                                  | 题解 | 备注   |
+|---------------------------------------------------------------------------------------|----|------|
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) |    | 多路归并 |
 
 ## 位运算
 
