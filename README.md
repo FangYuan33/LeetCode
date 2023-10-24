@@ -583,6 +583,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
 | [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
 | [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)                                                                                                 |    |
+| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                    | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
 
 2. [剑指 Offer 34. 二叉树中和为某一值的路径 中等](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
 4. [剑指 Offer 28. 对称的二叉树 简单](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/)
