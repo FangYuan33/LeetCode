@@ -581,15 +581,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 前序遍历在进入某个节点前执行
 
-| 题目链接                                                                                       | 题解                                                                                                                                                                      | 备注 |
-|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
-| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)           | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
-| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                          | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)                                                                                                 |    |
-| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                      | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)                                                                                                 |    |
-| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                              | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
-| [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)) | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
-
-6. [剑指 Offer 07. 重建二叉树 中等](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/): 前序拿节点值，中序只用来定位根节点索引以此区分右子树
+| 题目链接                                                                                               | 题解                                                                                                                                                                      | 备注 |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                   | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
+| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                  | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)                                                                                                 |    |
+| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                              | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)                                                                                                 |    |
+| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                      | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
+| [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))         | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
+| [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)) | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
 
 ### 中序遍历
 

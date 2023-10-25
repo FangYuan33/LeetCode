@@ -1,30 +1,25 @@
-package leetcode.tree;
+package leetcode.tree.preorder;
 
 import leetcode.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class SolutionOffer07 {
-    public static void main(String[] args) {
-        TreeNode treeNode = new SolutionOffer07().buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
-        treeNode.print();
-    }
-
+public class Solution105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        List<Integer> preList = new ArrayList<>();
+        ArrayList<Integer> preList = new ArrayList<>();
         for (int num : preorder) {
             preList.add(num);
         }
-        List<Integer> inList = new ArrayList<>();
+        ArrayList<Integer> inList = new ArrayList<>();
         for (int num : inorder) {
             inList.add(num);
         }
 
+        // 每次都在pre里取值 in只用来定位根节点索引，以此来找右子树
         return doBuildTree(preList, inList);
     }
 
-    // 每次都在pre里取值 in只用来定位根节点索引，以此来找右子树
     private TreeNode doBuildTree(List<Integer> preList, List<Integer> inList) {
         if (preList.isEmpty()) {
             return null;
