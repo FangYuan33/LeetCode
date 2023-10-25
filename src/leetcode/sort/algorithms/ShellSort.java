@@ -14,7 +14,7 @@ public class ShellSort {
         int h = 1;
         int N = nums.length;
         while (h < N / 3) {
-            h = h * 3 + 1;
+            h = 3 * h + 1;
         }
 
         while (h >= 1) {
@@ -22,7 +22,7 @@ public class ShellSort {
                 int base = nums[i];
 
                 int j = i - h;
-                while (j >= 0 && nums[j] > base) {
+                while (j >= 0 && base < nums[j]) {
                     nums[j + h] = nums[j];
                     j -= h;
                 }
