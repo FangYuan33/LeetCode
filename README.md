@@ -595,6 +595,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 中序遍历注意是否需要保存前驱节点指针
 
+| 题目链接                                                                                            | 题解                                                                        | 备注 |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
+| [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/) | [Solution1305.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution1305.java) |    |
+
 1. [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
 2. [剑指 Offer 54. 二叉搜索树的第k大节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 3. [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)
