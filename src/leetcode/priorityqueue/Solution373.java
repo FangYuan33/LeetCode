@@ -1,39 +1,35 @@
 package leetcode.priorityqueue;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Solution373 {
-
-    static class Pair implements Comparable<Pair> {
-
-        List<Integer> nums;
-
-        int sum;
-
-        @Override
-        public int compareTo(Pair o) {
-            return this.sum - o.sum;
-        }
-    }
+    boolean flag = true;
 
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        PriorityQueue<Pair> pairs = new PriorityQueue<>();
-        for (int i = 0; i < nums1.length; i++) {
-            for (int j = 0; j < nums1.length; j++) {
-                Pair pair = new Pair();
-                pair.nums = new ArrayList<>(Arrays.asList(nums1[i], nums1[j]));
-                pair.sum = nums1[i] + nums2[j];
+        if (nums1.length > nums2.length) {
+            flag = false;
+            return kSmallestPairs(nums2, nums1, k);
+        }
 
-                pairs.add(pair);
-            }
+        PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(x -> (nums1[x[0]] + nums2[x[1]])));
+        int min = Math.min(nums1.length, k);
+        for (int i = 0; i < min; i++) {
+            priorityQueue.offer(new int[]{i, 0});
         }
 
         List<List<Integer>> res = new ArrayList<>();
-        while (!pairs.isEmpty() && res.size() < k) {
-            res.add(pairs.remove().nums);
+        while (res.size() < k && !priorityQueue.isEmpty()) {
+            int[] pari = priorityQueue.poll();
+            int f = pari[0], s = pari[1];
+
+            if (flag) {
+                res.add(Arrays.asList(nums1[f], nums2[s]));
+            } else {
+                res.add(Arrays.asList(nums2[s], nums1[f]));
+            }
+            if (s + 1 < nums2.length) {
+                priorityQueue.offer(new int[]{f, s + 1});
+            }
         }
 
         return res;
