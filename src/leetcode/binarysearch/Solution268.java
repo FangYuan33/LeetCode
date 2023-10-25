@@ -1,4 +1,4 @@
-package leetcode.sort;
+package leetcode.binarysearch;
 
 import java.util.Arrays;
 

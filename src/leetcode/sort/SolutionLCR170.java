@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class SolutionLCR170 {
 
     public static void main(String[] args) {
+        // 8
         System.out.println(new SolutionLCR170().reversePairs(new int[]{9, 7, 5, 4, 6}));
     }
 
@@ -30,17 +31,16 @@ public class SolutionLCR170 {
         int[] temp = Arrays.copyOfRange(nums, left, right + 1);
         int leftBegin = 0, leftEnd = mid - left;
         int rightBegin = leftEnd + 1, rightEnd = right - left;
-
         for (int i = left; i <= right; i++) {
             if (leftBegin > leftEnd) {
                 nums[i] = temp[rightBegin++];
-            } else if (rightBegin > rightEnd) {
+            } else if (rightBegin > rightEnd || temp[leftBegin] <= temp[rightBegin]) {
                 nums[i] = temp[leftBegin++];
             } else if (temp[leftBegin] > temp[rightBegin]) {
                 res += leftEnd - leftBegin + 1;
                 nums[i] = temp[rightBegin++];
             } else {
-                nums[i] = temp[leftBegin++];
+                nums[i] = temp[rightBegin++];
             }
         }
     }

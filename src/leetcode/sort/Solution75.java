@@ -1,6 +1,11 @@
 package leetcode.sort;
 
 public class Solution75 {
+
+    public static void main(String[] args) {
+        new Solution75().sortColors(new int[]{2, 0, 2, 1, 1, 0});
+    }
+
     public void sortColors(int[] nums) {
         sort(nums, 0, nums.length - 1);
     }
@@ -10,11 +15,11 @@ public class Solution75 {
             return;
         }
 
+        int base = nums[left];
         int l = left, mid = left + 1, r = right;
-        int base = nums[l];
         while (mid <= r) {
             if (nums[mid] < base) {
-                swap(nums, mid++, l++);
+                swap(nums, l++, mid++);
             } else if (nums[mid] > base) {
                 swap(nums, mid, r--);
             } else {

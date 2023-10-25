@@ -13,8 +13,15 @@ public class MergeSort4 {
         System.out.println(Arrays.toString(origin));
     }
 
+    /**
+     * M 取值在 5 ~ 15 之间大多数情况下都能令人满意
+     */
+    private final int M = 9;
+
     private void sort(int[] nums, int left, int right) {
-        if (left >= right) {
+        if (left + M >= right) {
+            // 插入排序
+            insertSort(nums);
             return;
         }
 
@@ -23,28 +30,38 @@ public class MergeSort4 {
         sort(nums, left, mid);
         sort(nums, mid + 1, right);
         // 合并
-        merge(nums, left, right);
+        merge(nums, left, mid, right);
     }
 
-    private void merge(int[] nums, int left, int right) {
-        int N = right - left + 1;
-        int h = 1;
-        while (h < N / 3) {
-            h = h * 3 + 1;
-        }
+    /**
+     * 插入排序
+     */
+    private void insertSort(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            int base = nums[i];
 
-        while (h >= 1) {
-            for (int i = h + left; i <= right; i++) {
-                int base = nums[i];
-
-                int j = i - h;
-                while (j >= 0 && nums[j] > base) {
-                    nums[j + h] = nums[j];
-                    j -= h;
-                }
-                nums[j + h] = base;
+            int j = i - 1;
+            while (j >= 0 && nums[j] > base) {
+                nums[j + 1] = nums[j--];
             }
-            h /= 3;
+            nums[j + 1] = base;
+        }
+    }
+
+    private void merge(int[] nums, int left, int mid, int right) {
+        // 辅助数组
+        int[] temp = Arrays.copyOfRange(nums, left, right + 1);
+
+        int leftBegin = 0, leftEnd = mid - left;
+        int rightBegin = leftEnd + 1, rightEnd = right - left;
+        for (int i = left; i <= right; i++) {
+            if (leftBegin > leftEnd) {
+                nums[i] = temp[rightBegin++];
+            } else if (rightBegin > rightEnd || temp[leftBegin] < temp[rightBegin]) {
+                nums[i] = temp[leftBegin++];
+            } else {
+                nums[i] = temp[rightBegin++];
+            }
         }
     }
 }

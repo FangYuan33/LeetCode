@@ -25,17 +25,16 @@ public class Solution451 {
 
     public String frequencySort(String s) {
         char[] charArray = s.toCharArray();
-        HashMap<Character, CharNum> charObject = new HashMap<>();
+        HashMap<Character, CharNum> map = new HashMap<>();
         ArrayList<CharNum> list = new ArrayList<>();
 
         for (char c : charArray) {
-            if (charObject.containsKey(c)) {
-                CharNum charNum = charObject.get(c);
-                charNum.num++;
+            if (map.containsKey(c)) {
+                map.get(c).num++;
             } else {
                 CharNum charNum = new CharNum(c);
-                charObject.put(c, charNum);
                 list.add(charNum);
+                map.put(c, charNum);
             }
         }
         Collections.sort(list);
@@ -50,4 +49,5 @@ public class Solution451 {
 
         return res.toString();
     }
+
 }
