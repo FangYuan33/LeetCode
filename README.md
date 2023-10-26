@@ -600,50 +600,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)                               | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java)       |    |
 | [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)                                          | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java)       |    |
 
-### 层序遍历
+### 二叉树层序遍历
 
-层序遍历采用BFS(广度优先搜索)，用它来寻找路径的话，一定是最小的，解题模板如下
-
-```java
-// 计算启动到终点的最短距离
-inf bfs(Node node, Node target) {
-    // bfs算法必要的队列
-    Queue<Node> queue;
-    // 避免走回头路
-    Set<Node> visited;
-    // 走的距离/步数
-    int step = 0;
-    
-    // 起点入队
-    queue.offer(node);
-    visited.add(node);
-    
-    while(queue.isNotEmpty()) {
-        int size = queue.size();
-        // 将当前层中的所有节点向四周扩散
-        for (int i = 0; i < size; i++) {
-            Node cur = queue.poll();
-            // 如果到达终点则直接结束返回最短路径
-            if (cur == target) {
-                return step;    
-            }
-            // 将cur的相邻节点放入队列，二叉树比较简单，判断左右即可，若为图，则需遍历它的邻接表
-            for (Node n : cur.adj()) {
-                if (n not in visited) {
-                    queue.offer(n);
-                    visited.add(n);
-                }    
-            }   
-        }
-        // 距离 + 1
-        step++;
-    }
-    
-}
-```
+| 题目链接                                                                                | 题解                                                                        | 备注 |
+|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
+| [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [Solution102.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution102.java) |    |
 
 1. [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
-2. [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
 3. [剑指 Offer 32 - I. 从上到下打印二叉树 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 4. [剑指 Offer 32 - III. 从上到下打印二叉树 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
 5. [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)

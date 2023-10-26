@@ -16,15 +16,12 @@ public class Solution102 {
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-
         while (!queue.isEmpty()) {
             int size = queue.size();
-            List<Integer> element = new ArrayList<>(size);
-
+            ArrayList<Integer> element = new ArrayList<>();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 element.add(node.val);
-
                 if (node.left != null) {
                     queue.offer(node.left);
                 }
@@ -32,7 +29,6 @@ public class Solution102 {
                     queue.offer(node.right);
                 }
             }
-
             res.add(element);
         }
 
