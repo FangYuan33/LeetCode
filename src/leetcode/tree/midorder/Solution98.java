@@ -12,10 +12,13 @@ public class Solution98 {
         }
 
         boolean left = isValidBST(root.left);
-        if (pre >= root.val) {
+
+        if (pre < root.val) {
+            pre = root.val;
+        } else {
             return false;
         }
-        pre = root.val;
+
         boolean right = isValidBST(root.right);
 
         return left && right;
