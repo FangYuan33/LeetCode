@@ -581,6 +581,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                                        | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)                                                                                                 |    |
 | [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                                | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
 | [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))                   | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                           | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)                                                                                                 |    |
 | [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))           | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
 | [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolutionLCR152.java)                                                                                          |    |
 
@@ -619,12 +620,11 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 递归
 
+| 题目链接                                                               | 题解                                                                       | 备注 |
+|--------------------------------------------------------------------|--------------------------------------------------------------------------|----|
+
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
 2. [114. 二叉树展开为链表 中等](:https//leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
-
-| 题目链接                                                                                        | 题解                                                                       | 备注 |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
-| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                          | [Solution654.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java) |    |
 
 ### 红黑树
 
