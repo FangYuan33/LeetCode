@@ -605,8 +605,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                                | 题解                                                                        | 备注 |
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
 | [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [Solution102.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution102.java) |    |
+| [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)      | [Solution111.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution111.java) |    |
 
-1. [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
 3. [剑指 Offer 32 - I. 从上到下打印二叉树 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 4. [剑指 Offer 32 - III. 从上到下打印二叉树 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
 5. [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)

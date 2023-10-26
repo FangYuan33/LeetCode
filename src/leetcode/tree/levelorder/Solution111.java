@@ -7,22 +7,19 @@ import java.util.Queue;
 
 public class Solution111 {
     public int minDepth(TreeNode root) {
+        int res = 0;
         if (root == null) {
-            return 0;
+            return res;
         }
 
-        // 层序遍历
-        int res = 0;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+        res++;
 
         while (!queue.isEmpty()) {
-            res++;
             int size = queue.size();
-
-            while (size != 0) {
+            for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
-
                 if (node.left == null && node.right == null) {
                     return res;
                 }
@@ -32,9 +29,8 @@ public class Solution111 {
                 if (node.right != null) {
                     queue.offer(node.right);
                 }
-
-                size--;
             }
+            res++;
         }
 
         return res;
