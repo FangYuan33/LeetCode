@@ -608,8 +608,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)                        | [Solution111.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution111.java)       |    |
 | [LCR 151. 彩灯装饰记录 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [SolutionLCR151.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolutionLCR151.java) |    |
 | [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)                          | [Solution199.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution199.java)       |    |
-
-6. [剑指 Offer 37. 序列化二叉树 困难](https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof/)
+| [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
 
 ### 最近公共祖先问题
 
@@ -718,7 +717,6 @@ for (int i = 0; i < n1; i++) {
 | [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                    | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
 
 1. [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)
-
 3. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/): 回文串系列都是反向遍历
 4. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
