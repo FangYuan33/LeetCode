@@ -566,7 +566,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉树前序遍历
 
-前序遍历在进入某个节点前执行
+前序遍历先对树的节点进行处理
 
 | 题目链接                                                                                               | 题解                                                                                                                                                                      | 备注 |
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
@@ -591,14 +591,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉树后序遍历
 
-后序遍历在离开某个节点后执行
+后序遍历在处理完左右子树后，根据左右子树的处理结果再处理当前根节点
 
 | 题目链接                                                                              | 题解                                                                       | 备注 |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
 | [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java) |    |
 | [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)    | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java) |    |
+| [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)               | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java) |    |
 
-3. [剑指 Offer 55 - II. 平衡二叉树 简单](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/)
 4. [剑指 Offer 33. 二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)
 
 ### 层序遍历
