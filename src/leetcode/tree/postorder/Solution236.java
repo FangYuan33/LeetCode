@@ -1,10 +1,10 @@
-package leetcode.tree;
+package leetcode.tree.postorder;
 
 import leetcode.TreeNode;
 
-public class SolutionOffer682 {
+public class Solution236 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || root == p || root == q) {
+        if (root == null || p == root || q == root) {
             return root;
         }
 

@@ -570,8 +570,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
 | [235. 二叉搜索树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Solution235.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution235.java) |    |
 
-2. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
-
 ### 二叉树前序遍历
 
 前序遍历先对树的节点进行处理
@@ -602,11 +600,12 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 后序遍历在处理完左右子树后，根据左右子树的处理结果再处理当前根节点
 
-| 题目链接                                                                                                         | 题解                                                                             | 备注 |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----|
-| [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)                            | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java)       |    |
-| [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)                               | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java)       |    |
-| [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)                                          | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java)       |    |
+| 题目链接                                                                                        | 题解                                                                       | 备注 |
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
+| [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)           | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java) |    |
+| [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)              | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java) |    |
+| [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)                         | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java) |    |
+| [236. 二叉树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [Solution236.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution236.java) |    |
 
 ### 二叉树层序遍历
 
@@ -617,15 +616,15 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [LCR 151. 彩灯装饰记录 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [SolutionLCR151.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolutionLCR151.java) |    |
 | [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)                          | [Solution199.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution199.java)       |    |
 | [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
-   
+
 ### 递归
 
-| 题目链接                                                               | 题解                                                                       | 备注 |
-|--------------------------------------------------------------------|--------------------------------------------------------------------------|----|
-| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/) | [Solution654.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java) |    |
-
 1. [剑指 Offer 26. 树的子结构 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)
-2. [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
+2. [114. 二叉树展开为链表 中等](:https//leetcode.cn/problems/flatten-binary-tree-to-linked-list/): 需要推导一下
+
+| 题目链接                                                                                        | 题解                                                                       | 备注 |
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                          | [Solution654.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution654.java) |    |
 
 ### 红黑树
 
