@@ -564,19 +564,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 树
 
-- 前、中、后序遍历模板
-
-```java
-    void traverse(TreeNode root) {
-        // 前序遍历
-        traverse(root);
-        // 中序遍历
-        traverse(root);
-        // 后续遍历
-        traverse(root);
-    }
-```
-
 ### 二叉树前序遍历
 
 前序遍历在进入某个节点前执行
@@ -590,15 +577,15 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))         | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
 | [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)) | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
 
-### 中序遍历
+### 二叉树中序遍历
 
 中序遍历注意是否需要保存前驱节点指针
 
 | 题目链接                                                                                            | 题解                                                                        | 备注 |
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|----|
+| [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                  | [Solution94.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution94.java)     |    |
 | [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/) | [Solution1305.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution1305.java) |    |
 
-1. [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
 2. [剑指 Offer 54. 二叉搜索树的第k大节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 3. [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)
 4. [剑指 Offer 36. 二叉搜索树与双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
