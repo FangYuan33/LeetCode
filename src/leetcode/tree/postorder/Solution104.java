@@ -2,7 +2,7 @@ package leetcode.tree.postorder;
 
 import leetcode.TreeNode;
 
-public class SolutionOffer55 {
+public class Solution104 {
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;

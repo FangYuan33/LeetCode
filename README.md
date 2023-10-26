@@ -596,8 +596,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                              | 题解                                                                       | 备注 |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
 | [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java) |    |
+| [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)    | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java) |    |
 
-2. [剑指 Offer 55 - I. 二叉树的深度 简单](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/)
 3. [剑指 Offer 55 - II. 平衡二叉树 简单](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/)
 4. [剑指 Offer 33. 二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)
 
