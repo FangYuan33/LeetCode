@@ -581,14 +581,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 中序遍历注意是否需要保存前驱节点指针
 
-| 题目链接                                                                                                  | 题解                                                                            | 备注 |
-|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-| [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                        | [Solution94.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution94.java)         |    |
-| [LCR 174. 寻找二叉搜索树中的目标节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) | [SolutionLCR174.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR174.java) |    |
-| [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)                           | [Solution98.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution98.java)         |    |
-| [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)       | [Solution1305.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution1305.java)     |    |
-
-4. [剑指 Offer 36. 二叉搜索树与双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+| 题目链接                                                                                                            | 题解                                                                            | 备注 |
+|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+| [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                                  | [Solution94.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution94.java)         |    |
+| [LCR 174. 寻找二叉搜索树中的目标节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)           | [SolutionLCR174.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR174.java) |    |
+| [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)                                     | [Solution98.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution98.java)         |    |
+| [LCR 155. 将二叉搜索树转化为排序的双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [SolutionLCR155.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR155.java) |    |
+| [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)                 | [Solution1305.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution1305.java)     |    |
 
 ### 后序遍历
 
