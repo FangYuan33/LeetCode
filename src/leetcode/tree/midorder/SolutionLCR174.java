@@ -5,24 +5,23 @@ import leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolutionOffer54 {
-    List<Integer> list;
+public class SolutionLCR174 {
 
-    public int kthLargest(TreeNode root, int k) {
-        list = new ArrayList<>();
+    List<Integer> res;
+
+    public int findTargetNode(TreeNode root, int cnt) {
+        res = new ArrayList<>();
         midOrder(root);
-
-        return list.get(list.size() - k);
+        return res.get(res.size() - cnt);
     }
 
     private void midOrder(TreeNode root) {
-        // 结束条件
         if (root == null) {
             return;
         }
 
         midOrder(root.left);
-        list.add(root.val);
+        res.add(root.val);
         midOrder(root.right);
     }
 }
