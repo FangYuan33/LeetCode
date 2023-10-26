@@ -564,6 +564,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 树
 
+### 二叉搜索树
+
+| 题目链接                                                                                                 | 题解                                                                 | 备注 |
+|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
+| [235. 二叉搜索树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Solution235.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution235.java) |    |
+
+2. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
+
 ### 二叉树前序遍历
 
 前序遍历先对树的节点进行处理
@@ -609,11 +617,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [LCR 151. 彩灯装饰记录 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [SolutionLCR151.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolutionLCR151.java) |    |
 | [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)                          | [Solution199.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution199.java)       |    |
 | [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
-
-### 最近公共祖先问题
-
-1. [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
-2. [剑指 Offer 68 - II. 二叉树的最近公共祖先先 简单](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
    
 ### 递归
 
