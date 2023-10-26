@@ -568,14 +568,15 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 前序遍历先对树的节点进行处理
 
-| 题目链接                                                                                               | 题解                                                                                                                                                                      | 备注 |
-|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
-| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                   | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
-| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                  | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)                                                                                                 |    |
-| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                              | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)                                                                                                 |    |
-| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                      | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
-| [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))         | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
-| [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)) | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
+| 题目链接                                                                                                         | 题解                                                                                                                                                                      | 备注 |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                             | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java) <br/> [Solution144Iteration.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144Iteration.java) |    |
+| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                            | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)                                                                                                 |    |
+| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                                        | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)                                                                                                 |    |
+| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                                | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
+| [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))                   | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
+| [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))           | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
+| [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolutionLCR152.java)                                                                                          |    |
 
 ### 二叉树中序遍历
 
@@ -593,13 +594,11 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 后序遍历在处理完左右子树后，根据左右子树的处理结果再处理当前根节点
 
-| 题目链接                                                                              | 题解                                                                       | 备注 |
-|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
-| [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java) |    |
-| [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)    | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java) |    |
-| [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)               | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java) |    |
-
-4. [剑指 Offer 33. 二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)
+| 题目链接                                                                                                         | 题解                                                                             | 备注 |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----|
+| [145. 二叉树的后序遍历 简单](https://leetcode.cn/problems/binary-tree-postorder-traversal/)                            | [Solution145.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution145.java)       |    |
+| [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)                               | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java)       |    |
+| [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)                                          | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java)       |    |
 
 ### 层序遍历
 
