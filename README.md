@@ -573,7 +573,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉树前序遍历
 
-前序遍历先对树的节点进行处理
+前序遍历先对树的节点进行处理（先对每个节点进行处理）
 
 | 题目链接                                                                                                         | 题解                                                                                                                                                                      | 备注 |
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|
@@ -600,6 +600,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [LCR 155. 将二叉搜索树转化为排序的双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [SolutionLCR155.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR155.java) |    |
 | [99. 恢复二叉搜索树 中等](https://leetcode.cn/problems/recover-binary-search-tree/)                                      | [Solution99.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution99.java)              |    |
 | [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)                 | [Solution1305.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution1305.java)     |    |
+| [面试题 04.06. 后继者 中等](https://leetcode.cn/problems/successor-lcci/)                                               | [Interview0406.java](src%2Fleetcode%2Ftree%2Fmidorder%2FInterview0406.java)   |    |
 
 ### 二叉树后序遍历
 

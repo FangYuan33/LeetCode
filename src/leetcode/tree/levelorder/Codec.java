@@ -58,7 +58,7 @@ public class Codec {
                 queue.offer(left);
             }
             index++;
-            if (!nodes[index].equals("null")) {
+            if (index < nodes.length && !nodes[index].equals("null")) {
                 TreeNode right = new TreeNode(Integer.parseInt(nodes[index]));
                 node.right = right;
                 queue.offer(right);
