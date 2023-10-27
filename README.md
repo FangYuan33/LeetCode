@@ -584,6 +584,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))                   | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)                                                                                                 |    |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                           | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)                                                                                                 |    |
 | [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                       | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java)                                                                                           |    |
+| [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)                                                                                                 |    |
 | [105. 从前序与中序遍历序列构造二叉树 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))           | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)                                                                                                 |    |
 | [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolutionLCR152.java)                                                                                          |    |
 
@@ -803,5 +804,3 @@ def backtrack(路径, 选择列表):
 | [556. 下一个更大元素 III 中等](https://leetcode.cn/problems/next-greater-element-iii/)                              | [Solution556.java](src%2Fleetcode%2Fsimulate%2FSolution556.java)            |    |
 | [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                   | [Solution219.java](src%2Fleetcode%2Fsimulate%2FSolution219.java)            |    |
 | [611. 有效三角形的个数 中等](https://leetcode.cn/problems/valid-triangle-number/)                                    | [Solution611.java](src%2Fleetcode%2Fdoublepointer%2FSolution611.java)       |    |
-
-2. [面试题61. 扑克牌中的顺子 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
