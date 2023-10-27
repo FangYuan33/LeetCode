@@ -611,6 +611,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [104. 二叉树的最大深度 简单](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)              | [Solution104.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution104.java) |    |
 | [110. 平衡二叉树 简单](https://leetcode.cn/problems/balanced-binary-tree/)                         | [Solution110.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution110.java) |    |
 | [236. 二叉树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [Solution236.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution236.java) |    |
+| [814. 二叉树剪枝 中等](https://leetcode.cn/problems/binary-tree-pruning/)                          | [Solution814.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution814.java) |    |
 
 ### 二叉树层序遍历
 

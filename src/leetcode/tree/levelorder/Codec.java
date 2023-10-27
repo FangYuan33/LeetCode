@@ -2,9 +2,7 @@ package leetcode.tree.levelorder;
 
 import leetcode.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class Codec {
@@ -52,7 +50,7 @@ public class Codec {
         queue.offer(root);
 
         int index = 1;
-        while (!queue.isEmpty()) {
+        while (!queue.isEmpty() && index < nodes.length) {
             TreeNode node = queue.poll();
             if (!nodes[index].equals("null")) {
                 TreeNode left = new TreeNode(Integer.parseInt(nodes[index]));
