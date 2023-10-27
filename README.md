@@ -532,6 +532,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
 | [1051. 高度检查器 简单](https://leetcode.cn/problems/height-checker/)                                    | [Solution1051.java](src%2Fleetcode%2Fsort%2FSolution1051.java)     |           |
 | [1403. 非递增顺序的最小子序列 简单](https://leetcode.cn/problems/minimum-subsequence-in-non-increasing-order/) | [Solution1403.java](src%2Fleetcode%2Fsort%2FSolution1403.java)     |           |
+| [LCR 186. 文物朝代判断 简单](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)               | [SolutionLCR186.java](src%2Fleetcode%2Fsort%2FSolutionLCR186.java) |           |
 | [969. 煎饼排序 中等](https://leetcode.cn/problems/pancake-sorting/)                                     | [Solution969.java](src%2Fleetcode%2Fsort%2FSolution969.java)       | ✅冒泡排序     |
 | [LCR 170. 交易逆序对的总数 困难](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)              | [SolutionLCR170.java](src%2Fleetcode%2Fsort%2FSolutionLCR170.java) | ✅归并排序     |
 | [324. 摆动排序 II 中等](https://leetcode.cn/problems/wiggle-sort-ii/)                                   | [Solution324.java](src%2Fleetcode%2Fsort%2FSolution324.java)       |           |
