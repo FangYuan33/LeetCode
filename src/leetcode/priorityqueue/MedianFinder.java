@@ -24,10 +24,6 @@ public class MedianFinder {
     }
 
     public double findMedian() {
-        if (left.size() == right.size()) {
-            return (left.peek() + right.peek()) / 2.0;
-        } else {
-            return left.peek();
-        }
+        return left.size() == right.size() ? (left.peek() + right.peek()) / 2.0 : left.peek();
     }
 }

@@ -30,24 +30,23 @@ public class Solution692 {
     }
 
     public List<String> topKFrequent(String[] words, int k) {
-        HashMap<String, WordNum> wordObject = new HashMap<>();
+        HashMap<String, WordNum> map = new HashMap<>();
         for (String word : words) {
-            if (wordObject.containsKey(word)) {
-                WordNum wordNum = wordObject.get(word);
-                wordNum.num++;
+            if (map.containsKey(word)) {
+                map.get(word).num++;
             } else {
-                wordObject.put(word, new WordNum(word));
+                map.put(word, new WordNum(word));
             }
         }
 
         PriorityQueue<WordNum> priorityQueue = new PriorityQueue<>();
-        for (WordNum value : wordObject.values()) {
+        for (WordNum value : map.values()) {
             if (priorityQueue.size() < k) {
                 priorityQueue.offer(value);
             } else {
-                if (value.num >= priorityQueue.peek().num) {
-                    priorityQueue.offer(value);
+                if (value.compareTo(priorityQueue.peek()) > 0) {
                     priorityQueue.poll();
+                    priorityQueue.offer(value);
                 }
             }
         }
