@@ -3,7 +3,7 @@ package leetcode.uf;
 /**
  * 加权 quick-union 算法
  *
- * @author wangyilong13
+ * @author FangYuan
  * @since 2023-08-20 16:18:13
  */
 public class WeightedQuickUnionUF {

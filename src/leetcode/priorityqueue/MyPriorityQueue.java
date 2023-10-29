@@ -4,7 +4,7 @@ package leetcode.priorityqueue;
  * 小顶堆
  * 索引 1 处的节点为堆顶元素；某节点的两个子节点分别为 2i 和 2i + 1，父节点为 i / 2
  *
- * @author wangyilong13
+ * @author FangYuan
  * @since 2023-10-18 16:52:26
  */
 public class MyPriorityQueue {
