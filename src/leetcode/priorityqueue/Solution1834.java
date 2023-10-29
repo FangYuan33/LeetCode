@@ -5,56 +5,63 @@ import java.util.*;
 public class Solution1834 {
 
     public static void main(String[] args) {
+        // 0, 2, 3, 1
         System.out.println(Arrays.toString(new Solution1834().getOrder(new int[][]{{1, 2}, {2, 4}, {3, 2}, {4, 1}})));
+        // 4, 3, 2, 0, 1
+//        System.out.println(Arrays.toString(new Solution1834().getOrder(new int[][]{{7, 10}, {7, 12}, {7, 5}, {7, 4}, {7, 2}})));
     }
 
-    static class IndexTask implements Comparable<IndexTask> {
+    static class IndexProcessTime implements Comparable<IndexProcessTime> {
 
         int index;
 
-        int cost;
+        int beginTime;
 
-        int begin;
+        int processTime;
 
-        public IndexTask(int index, int cost, int begin) {
+        public IndexProcessTime(int index, int beginTime, int processTime) {
             this.index = index;
-            this.cost = cost;
-            this.begin = begin;
+            this.beginTime = beginTime;
+            this.processTime = processTime;
         }
 
         @Override
-        public int compareTo(IndexTask o) {
-            return this.begin - o.begin;
+        public int compareTo(IndexProcessTime o) {
+            return this.beginTime - o.beginTime;
         }
     }
 
     public int[] getOrder(int[][] tasks) {
-        IndexTask[] tasksTwo = new IndexTask[tasks.length];
+        ArrayList<IndexProcessTime> list = new ArrayList<>(tasks.length);
         for (int i = 0; i < tasks.length; i++) {
-            tasksTwo[i] = new IndexTask(i, tasks[i][1], tasks[i][0]);
+            list.add(new IndexProcessTime(i, tasks[i][0], tasks[i][1]));
         }
-        Arrays.sort(tasksTwo);
-        PriorityQueue<IndexTask> priorityQueue = new PriorityQueue<>((x, y) -> {
-            if (x.cost == y.cost) {
+        Collections.sort(list);
+        // taskIndex, processTime
+        PriorityQueue<IndexProcessTime> priorityQueue = new PriorityQueue<>((x, y) -> {
+            if (x.processTime == y.processTime) {
                 return x.index - y.index;
             } else {
-                return x.cost - y.cost;
+                return x.processTime - y.processTime;
             }
         });
 
-        int[] res = new int[tasksTwo.length];
-        int beginTime = 1;
         int index = 0;
-        for (int i = 0; index < res.length;) {
-            while (i < tasksTwo.length && beginTime >= tasksTwo[i].begin) {
-                priorityQueue.offer(tasksTwo[i++]);
+        int[] res = new int[list.size()];
+        int beginTime = 0;
+        for (int i = 0; i < list.size() || !priorityQueue.isEmpty(); ) {
+            while (i < list.size() && beginTime >= list.get(i).beginTime) {
+                IndexProcessTime task = list.get(i++);
+                priorityQueue.offer(new IndexProcessTime(task.index, task.beginTime, task.processTime));
             }
-            if (priorityQueue.isEmpty()) {
-                beginTime = tasksTwo[i].begin;
-            } else {
-                IndexTask task = priorityQueue.poll();
+
+            if (!priorityQueue.isEmpty()) {
+                IndexProcessTime task = priorityQueue.poll();
                 res[index++] = task.index;
-                beginTime += task.cost;
+                // 增加处理时间
+                beginTime += task.processTime;
+            } else {
+                beginTime = list.get(i).beginTime;
             }
         }
 

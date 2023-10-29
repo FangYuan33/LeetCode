@@ -24,7 +24,7 @@ public class DeapSort {
         for (int i = n / 2; i > 0; i--) {
             sink(nums, i, n);
         }
-        // 2. 排序
+        // 2. 下沉排序
         while (n > 1) {
             swap(nums, n, 1);
             sink(nums, 1, --n);
