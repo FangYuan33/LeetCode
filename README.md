@@ -631,6 +631,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                                 | 题解                                                                       | 备注 |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
 | [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [Solution114.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution114.java) |    |
+| [437. 路径总和 III 中等](https://leetcode.cn/problems/path-sum-iii/)                       | [Solution437.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution437.java) |    |
 
 ### 红黑树
 
