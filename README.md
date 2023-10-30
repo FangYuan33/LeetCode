@@ -582,7 +582,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                            | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)        |    |
 | [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                                        | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)        |    |
 | [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                                | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)        |    |
-| [113. 路径总和 II 中等]([Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java))                   | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)        |    |
+| [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                 | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)        |    |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                           | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)        |    |
 | [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                       | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java)  |    |
 | [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)        |    |
