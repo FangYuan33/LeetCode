@@ -597,6 +597,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
 | [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                                  | [Solution94.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution94.java)         |    |
 | [LCR 174. 寻找二叉搜索树中的目标节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)           | [SolutionLCR174.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR174.java) |    |
+| [230. 二叉搜索树中第K小的元素 中等](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)                             | [Solution230.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution230.java)       |    |
 | [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)                                     | [Solution98.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution98.java)         |    |
 | [LCR 155. 将二叉搜索树转化为排序的双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [SolutionLCR155.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR155.java) |    |
 | [99. 恢复二叉搜索树 中等](https://leetcode.cn/problems/recover-binary-search-tree/)                                      | [Solution99.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution99.java)              |    |
