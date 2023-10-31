@@ -625,6 +625,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)                        | [Solution111.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution111.java)       |    |
 | [LCR 151. 彩灯装饰记录 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [SolutionLCR151.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolutionLCR151.java) |    |
 | [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)                          | [Solution199.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution199.java)       |    |
+| [623. 在二叉树中增加一行 中等](https://leetcode.cn/problems/add-one-row-to-tree/)                                | [Solution623.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution623.java)       |    |
 | [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
 
 ### 递归
