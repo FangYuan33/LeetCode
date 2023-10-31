@@ -570,6 +570,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----|
 | [235. 二叉搜索树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Solution235.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution235.java) |    |
 | [450. 删除二叉搜索树中的节点 中等](https://leetcode.cn/problems/delete-node-in-a-bst/)                            | [Solution450.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution450.java) |    |
+| [669. 修剪二叉搜索树 中等](https://leetcode.cn/problems/trim-a-binary-search-tree/)                           | [Solution669.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution669.java) |    |
 
 ### 二叉树前序遍历
 
