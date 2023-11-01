@@ -513,7 +513,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 选择排序 | [SelectionSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FSelectionSort.java) |    |
 | 冒泡排序 | [BubbleSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBubbleSort.java)       |    |
 
-- 时间复杂度为 O(nlogn) 的排序算法
+- [时间复杂度为 O(nlogn) 的排序算法](https://juejin.cn/post/7295188371952500763)
 
 | 题目链接                        | 题解                                                                      | 备注 |
 |-----------------------------|-------------------------------------------------------------------------|----|
@@ -543,6 +543,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)      | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | ✅自定义排序    |
 
 ## 堆
+
+- 相关学习：[一文搞懂优先队列及相关算法](https://juejin.cn/post/7295594732949028902)
 
 | 题目链接                                                                                  | 题解                                                                            | 备注   |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------|
@@ -630,6 +632,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [623. 在二叉树中增加一行 中等](https://leetcode.cn/problems/add-one-row-to-tree/)                                | [Solution623.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution623.java)       |    |
 | [655. 输出二叉树 中等](https://leetcode.cn/problems/print-binary-tree/)                                      | [Solution655.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution655.java)       |    |
 | [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
+| [987. 二叉树的垂序遍历 困难](https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/)           | [Solution987.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution987.java)       |    |
 
 ### 递归
 
@@ -640,7 +643,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [652. 寻找重复的子树 中等](https://leetcode.cn/problems/find-duplicate-subtrees/)                    | [Solution652.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution652.java) |    |
 | [687. 最长同值路径 中等](https://leetcode.cn/problems/longest-univalue-path/)                       | [Solution687.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution687.java) |    |
 | [124. 二叉树中的最大路径和 困难](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)            | [Solution124.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution124.java) |    |
-| [987. 二叉树的垂序遍历 困难](https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/) | [Solution987.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution987.java) |    |
 
 ### 红黑树
 
