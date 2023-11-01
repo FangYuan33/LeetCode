@@ -638,6 +638,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [437. 路径总和 III 中等](https://leetcode.cn/problems/path-sum-iii/)                       | [Solution437.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution437.java) |    |
 | [652. 寻找重复的子树 中等](https://leetcode.cn/problems/find-duplicate-subtrees/)             | [Solution652.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution652.java) |    |
 | [687. 最长同值路径 中等](https://leetcode.cn/problems/longest-univalue-path/)                | [Solution687.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution687.java) |    |
+| [124. 二叉树中的最大路径和 困难](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)     | [Solution124.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution124.java) |    |
 
 ### 红黑树
 
