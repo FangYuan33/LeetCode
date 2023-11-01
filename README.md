@@ -574,6 +574,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [450. 删除二叉搜索树中的节点 中等](https://leetcode.cn/problems/delete-node-in-a-bst/)                            | [Solution450.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution450.java)   |    |
 | [669. 修剪二叉搜索树 中等](https://leetcode.cn/problems/trim-a-binary-search-tree/)                           | [Solution669.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution669.java)   |    |
 | [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)      | [Solution1305.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution1305.java) |    |
+| [449. 序列化和反序列化二叉搜索树 中等](https://leetcode.cn/problems/serialize-and-deserialize-bst/)                 | [Codec.java](src%2Fleetcode%2Ftree%2Fbst%2FCodec.java)               |    |
 
 ### 二叉树前序遍历
 
