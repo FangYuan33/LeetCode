@@ -1,4 +1,4 @@
-package leetcode.tree.midorder;
+package leetcode.tree.recursion;
 
 import leetcode.TreeNode;
 
