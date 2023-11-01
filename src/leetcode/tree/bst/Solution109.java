@@ -1,4 +1,4 @@
-package leetcode.tree.preorder;
+package leetcode.tree.bst;
 
 import leetcode.ListNode;
 import leetcode.TreeNode;
