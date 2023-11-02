@@ -1,4 +1,4 @@
-package leetcode.tree.midorder;
+package leetcode.tree.bst;
 
 import leetcode.TreeNode;
 
@@ -15,13 +15,14 @@ public class Solution230 {
     }
 
     private void midOrder(TreeNode node) {
-        if (node == null || k <= 0) {
+        if (node == null || k == 0) {
             return;
         }
 
         midOrder(node.left);
-        if (--k == 0) {
-            this.res = node.val;
+        k--;
+        if (k == 0) {
+            res = node.val;
             return;
         }
         midOrder(node.right);

@@ -1,18 +1,17 @@
-package leetcode.tree.midorder;
+package leetcode.tree.bst;
 
 import leetcode.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolutionLCR174 {
+public class Solution94 {
 
     List<Integer> res;
-
-    public int findTargetNode(TreeNode root, int cnt) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         res = new ArrayList<>();
         midOrder(root);
-        return res.get(res.size() - cnt);
+        return res;
     }
 
     private void midOrder(TreeNode root) {
