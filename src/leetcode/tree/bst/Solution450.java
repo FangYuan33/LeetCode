@@ -18,18 +18,19 @@ public class Solution450 {
             return root;
         }
 
-        if (root.left == null) {
-            return root.right;
-        }
         if (root.right == null) {
             return root.left;
         }
-        TreeNode left = root.left;
-        while (left.right != null) {
-            left = left.right;
+        if (root.left == null) {
+            return root.right;
         }
-        left.right = root.right;
 
-        return root.left;
+        TreeNode rightNode = root.right;
+        while (rightNode.left != null) {
+            rightNode = rightNode.left;
+        }
+        rightNode.left = root.left;
+
+        return root.right;
     }
 }
