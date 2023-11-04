@@ -1,5 +1,8 @@
 package leetcode.tree.bst;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 实现二叉搜索树
  *
@@ -12,12 +15,15 @@ public class BinarySearchTree {
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
 
-        binarySearchTree.putNode(1, 1);
+        binarySearchTree.putNode(8, 8);
+        binarySearchTree.putNode(4, 4);
+        binarySearchTree.putNode(12, 12);
+        binarySearchTree.putNode(10, 10);
+        binarySearchTree.putNode(13, 13);
         binarySearchTree.putNode(2, 2);
-        binarySearchTree.putNode(3, 3);
+        binarySearchTree.putNode(6, 6);
 
-//        binarySearchTree.deleteMin();
-        binarySearchTree.delete(2);
+        System.out.println(binarySearchTree.keys(3, 10));
     }
 
     static class Node {
@@ -233,5 +239,33 @@ public class BinarySearchTree {
         min.left = node.left;
 
         return node;
+    }
+
+    /**
+     * 范围查找
+     *
+     * @param left  区间下界
+     * @param right 区间上界
+     */
+    public List<Integer> keys(int left, int right) {
+        ArrayList<Integer> res = new ArrayList<>();
+        keys(root, left, right, res);
+        return res;
+    }
+
+    private void keys(Node node, int left, int right, ArrayList<Integer> res) {
+        if (node == null) {
+            return;
+        }
+
+        if (node.val > left) {
+            keys(node.left, left, right, res);
+        }
+        if (node.val >= left && node.val <= right) {
+            res.add(node.val);
+        }
+        if (node.val < right) {
+            keys(node.right, left, right, res);
+        }
     }
 }
