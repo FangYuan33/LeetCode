@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class BinarySearchTree {
 
-
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
 

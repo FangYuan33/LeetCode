@@ -1,4 +1,4 @@
-package leetcode.tree.midorder;
+package leetcode.tree.bst;
 
 import leetcode.TreeNode;
 import leetcode.tree.levelorder.Codec;

@@ -1,4 +1,4 @@
-package leetcode.tree.midorder;
+package leetcode.tree.bst;
 
 import leetcode.TreeNode;
 
@@ -16,21 +16,19 @@ public class Solution99 {
         two.val = temp;
     }
 
-    private void midOrder(TreeNode root) {
-        if (root == null) {
+    private void midOrder(TreeNode node) {
+        if (node == null) {
             return;
         }
 
-        midOrder(root.left);
-
-        if (pre != null && pre.val > root.val) {
+        midOrder(node.left);
+        if (pre != null && pre.val > node.val) {
             if (one == null) {
                 one = pre;
             }
-            two = root;
+            two = node;
         }
-        pre = root;
-
-        midOrder(root.right);
+        pre = node;
+        midOrder(node.right);
     }
 }

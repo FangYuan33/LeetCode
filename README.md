@@ -568,16 +568,20 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉搜索树和二叉树的中序遍历
 
-| 题目链接                                                                                                  | 题解                                                                           | 备注 |
-|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
-| 二叉搜索树                                                                                                 | [BinarySearchTree.java](src%2Fleetcode%2Ftree%2Fbst%2FBinarySearchTree.java) |    |
-| [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                        | [Solution94.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution94.java)             | ✅  |
-| [LCR 174. 寻找二叉搜索树中的目标节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) | [SolutionLCR174.java](src%2Fleetcode%2Ftree%2Fbst%2FSolutionLCR174.java)     | ✅  |
-| [230. 二叉搜索树中第K小的元素 中等](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)                   | [Solution230.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution230.java)      | ✅  |
-| [235. 二叉搜索树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)  | [Solution235.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution235.java)           | ✅  |
-| [450. 删除二叉搜索树中的节点 中等](https://leetcode.cn/problems/delete-node-in-a-bst/)                             | [Solution450.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution450.java)           |    |
-| [669. 修剪二叉搜索树 中等](https://leetcode.cn/problems/trim-a-binary-search-tree/)                            | [Solution669.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution669.java)           |    |
-| [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)       | [Solution1305.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution1305.java)         |    |
+| 题目链接                                                                                                            | 题解                                                                           | 备注 |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
+| 二叉搜索树                                                                                                           | [BinarySearchTree.java](src%2Fleetcode%2Ftree%2Fbst%2FBinarySearchTree.java) |    |
+| [94. 二叉树的中序遍历 简单](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                                  | [Solution94.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution94.java)             | ✅  |
+| [LCR 174. 寻找二叉搜索树中的目标节点 简单](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)           | [SolutionLCR174.java](src%2Fleetcode%2Ftree%2Fbst%2FSolutionLCR174.java)     | ✅  |
+| [1305. 两棵二叉搜索树中的所有元素 中等](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)                 | [Solution1305.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution1305.java)         | ✅  |
+| [230. 二叉搜索树中第K小的元素 中等](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)                             | [Solution230.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution230.java)      | ✅  |
+| [235. 二叉搜索树的最近公共祖先 中等](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)            | [Solution235.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution235.java)           | ✅  |
+| [450. 删除二叉搜索树中的节点 中等](https://leetcode.cn/problems/delete-node-in-a-bst/)                                       | [Solution450.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution450.java)           |    |
+| [669. 修剪二叉搜索树 中等](https://leetcode.cn/problems/trim-a-binary-search-tree/)                                      | [Solution669.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution669.java)           |    |
+| [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)                                     | [Solution98.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution98.java)             |    |
+| [LCR 155. 将二叉搜索树转化为排序的双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [SolutionLCR155.java](src%2Fleetcode%2Ftree%2Fbst%2FSolutionLCR155.java)     |    |
+| [99. 恢复二叉搜索树 中等](https://leetcode.cn/problems/recover-binary-search-tree/)                                      | [Solution99.java](src%2Fleetcode%2Ftree%2Fbst%2FSolution99.java)             |    |
+| [面试题 04.06. 后继者 中等](https://leetcode.cn/problems/successor-lcci/)                                               | [Interview0406.java](src%2Fleetcode%2Ftree%2Fbst%2FInterview0406.java)       |    |
 
 ### 二叉树前序遍历
 
@@ -598,17 +602,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                      | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)        |    |
 | [105. 从前序与中序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)        |    |
 | [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)       | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolutionLCR152.java) |    |
-
-### 二叉树中序遍历
-
-中序遍历注意是否需要保存前驱节点指针
-
-| 题目链接                                                                                                            | 题解                                                                            | 备注 |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-| [98. 验证二叉搜索树 中等](https://leetcode.cn/problems/validate-binary-search-tree/)                                     | [Solution98.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution98.java)         |    |
-| [LCR 155. 将二叉搜索树转化为排序的双向链表 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [SolutionLCR155.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolutionLCR155.java) |    |
-| [99. 恢复二叉搜索树 中等](https://leetcode.cn/problems/recover-binary-search-tree/)                                      | [Solution99.java](src%2Fleetcode%2Ftree%2Fmidorder%2FSolution99.java)         |    |
-| [面试题 04.06. 后继者 中等](https://leetcode.cn/problems/successor-lcci/)                                               | [Interview0406.java](src%2Fleetcode%2Ftree%2Fmidorder%2FInterview0406.java)   |    |
 
 ### 二叉树后序遍历
 
