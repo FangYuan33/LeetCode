@@ -11,25 +11,22 @@ public class Solution113 {
     List<List<Integer>> res = new ArrayList<>();
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        preOrder(root, targetSum, new LinkedList<>());
+        preOrder(root, new LinkedList<>(), targetSum);
         return res;
     }
 
-    private void preOrder(TreeNode root, int targetSum, LinkedList<Integer> element) {
-        if (root == null) {
+    private void preOrder(TreeNode node, LinkedList<Integer> element, int sum) {
+        if (node == null) {
             return;
         }
 
-        targetSum -= root.val;
-        element.addLast(root.val);
-        if (root.left == null && root.right == null) {
-            if (targetSum == 0) {
-                res.add((List<Integer>) element.clone());
-            }
+        sum -= node.val;
+        element.addLast(node.val);
+        if (sum == 0 && node.left == null && node.right == null) {
+            res.add((List<Integer>) element.clone());
         }
-
-        preOrder(root.left, targetSum, element);
-        preOrder(root.right, targetSum, element);
+        preOrder(node.left, element, sum);
+        preOrder(node.right, element, sum);
 
         element.removeLast();
     }

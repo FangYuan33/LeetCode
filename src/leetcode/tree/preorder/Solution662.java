@@ -17,29 +17,32 @@ public class Solution662 {
         node1.left = node3;
         node2.right = node4;
 
+        // 6
         System.out.println(new Solution662().widthOfBinaryTree(node));
     }
 
-    int res = 0;
+    int res;
 
     HashMap<Integer, Integer> depthNo;
 
     public int widthOfBinaryTree(TreeNode root) {
+        res = 0;
         depthNo = new HashMap<>();
         preOrder(root, 0, 1);
         return res;
     }
 
-    private void preOrder(TreeNode root, int depth, int no) {
-        if (root == null) {
+    private void preOrder(TreeNode node, int depth, int no) {
+        if (node == null) {
             return;
         }
 
         if (!depthNo.containsKey(depth)) {
             depthNo.put(depth, no);
         }
-        res = Math.max(res, no - depthNo.get(depth) + 1);
-        preOrder(root.left, depth + 1, no << 1);
-        preOrder(root.right, depth + 1, no << 1 | 1);
+        res = Math.max(no - depthNo.get(depth) + 1, res);
+        preOrder(node.left, depth + 1, no << 2);
+        preOrder(node.right, depth + 1, no << 2 | 1);
     }
+
 }

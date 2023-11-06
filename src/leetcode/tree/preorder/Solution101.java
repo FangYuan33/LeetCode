@@ -18,6 +18,8 @@ public class Solution101 {
         node.right = nod4;
         nod2.left = nod5;
         nod2.right = nod6;
+
+        //
         System.out.println(new Solution101().isSymmetric(root));
     }
 
@@ -26,17 +28,23 @@ public class Solution101 {
             return true;
         }
 
-        return isMirror(root.left, root.right);
+        return doIsSymmetric(root.left, root.right);
     }
 
-    private boolean isMirror(TreeNode left, TreeNode right) {
+    private boolean doIsSymmetric(TreeNode left, TreeNode right) {
         if (left == null && right == null) {
             return true;
         }
-        if (left == null || right == null || left.val != right.val) {
+        if (left == null || right == null) {
+            return false;
+        }
+        if (left.val != right.val) {
             return false;
         }
 
-        return isMirror(left.left, right.right) && isMirror(left.right, right.left);
+        boolean flag1 = doIsSymmetric(left.left, right.right);
+        boolean flag2 = doIsSymmetric(left.right, right.left);
+
+        return flag1 && flag2;
     }
 }

@@ -25,28 +25,27 @@ public class Codec {
         return builder.toString();
     }
 
-    private void preOrder(TreeNode root, StringBuilder stringBuilder) {
-        if (root == null) {
+    private void preOrder(TreeNode node, StringBuilder builder) {
+        if (node == null) {
             return;
         }
 
-        stringBuilder.append(root.val).append(",");
-        preOrder(root.left, stringBuilder);
-        preOrder(root.right, stringBuilder);
+        builder.append(node.val).append(",");
+        preOrder(node.left, builder);
+        preOrder(node.right, builder);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if ("".equals(data)) {
+        if (data == null || "".equals(data)) {
             return null;
         }
 
         String[] nodes = data.split(",");
-
-        return doDeserialize(nodes, 0, nodes.length - 1);
+        return preOrder(nodes, 0, nodes.length - 1);
     }
 
-    private TreeNode doDeserialize(String[] nodes, int left, int right) {
+    private TreeNode preOrder(String[] nodes, int left, int right) {
         if (left > right) {
             return null;
         }
@@ -62,8 +61,8 @@ public class Codec {
                 l = mid + 1;
             }
         }
-        node.left = doDeserialize(nodes, left + 1, l - 1);
-        node.right = doDeserialize(nodes, l, right);
+        node.left = preOrder(nodes, left + 1, l - 1);
+        node.right = preOrder(nodes, l, right);
 
         return node;
     }

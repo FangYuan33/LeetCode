@@ -1,4 +1,4 @@
-package leetcode.tree.postorder;
+package leetcode.tree.preorder;
 
 public class SolutionLCR152 {
     public boolean verifyTreeOrder(int[] postorder) {
@@ -10,17 +10,16 @@ public class SolutionLCR152 {
             return true;
         }
 
-        int right = left + 1;
-        while (postOrder[right] < postOrder[root]) {
+        int right = left;
+        while (right < postOrder.length && postOrder[right] < postOrder[root]) {
             right++;
         }
         int tempRight = right;
-        while (postOrder[tempRight] > postOrder[root]) {
+        while (tempRight < postOrder.length && postOrder[tempRight] > postOrder[root]) {
             tempRight++;
         }
 
         return tempRight == root
-                && doVerifyTreeOrder(postOrder, left, right - 1)
-                && doVerifyTreeOrder(postOrder, right, root - 1);
+                && doVerifyTreeOrder(postOrder, left, right - 1) && doVerifyTreeOrder(postOrder, right, root - 1);
     }
 }
