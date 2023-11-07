@@ -585,21 +585,22 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉树前序遍历
 
-| 题目链接                                                                                                               | 题解                                                                            | 备注 |
-|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
-| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                                   | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java)       | ✅  |
-| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                                  | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)       | ✅  |
-| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                                              | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)       | ✅  |
-| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                                      | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)       | ✅  |
-| [108. 将有序数组转换为二叉搜索树 简单](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)                  | [Solution108.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution108.java)       | ✅  |
-| [109. 有序链表转换二叉搜索树 中等](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/)                     | [Solution109.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution109.java)       | ✅  |
-| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                 | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)       | ✅  |
-| [449. 序列化和反序列化二叉搜索树 中等](https://leetcode.cn/problems/serialize-and-deserialize-bst/)                               | [Codec.java](src%2Fleetcode%2Ftree%2Fpreorder%2FCodec.java)                   |    |
-| [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                       | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)       |    |
-| [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)                                          | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java) |    |
-| [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                      | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)       |    |
-| [105. 从前序与中序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)       |    |
-| [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)       | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR152.java) |    |
+| 题目链接                                                                                                                | 题解                                                                            | 备注 |
+|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
+| [144. 二叉树的前序遍历 简单](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                                    | [Solution144.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution144.java)       | ✅  |
+| [226. 翻转二叉树 简单](https://leetcode.cn/problems/invert-binary-tree/)                                                   | [Solution226.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution226.java)       | ✅  |
+| [617. 合并二叉树 简单](https://leetcode.cn/problems/merge-two-binary-trees/)                                               | [Solution617.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution617.java)       | ✅  |
+| [101. 对称二叉树 简单](https://leetcode.cn/problems/symmetric-tree/)                                                       | [Solution101.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution101.java)       | ✅  |
+| [108. 将有序数组转换为二叉搜索树 简单](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)                   | [Solution108.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution108.java)       | ✅  |
+| [109. 有序链表转换二叉搜索树 中等](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/)                      | [Solution109.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution109.java)       | ✅  |
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                  | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)       | ✅  |
+| [449. 序列化和反序列化二叉搜索树 中等](https://leetcode.cn/problems/serialize-and-deserialize-bst/)                                | [Codec.java](src%2Fleetcode%2Ftree%2Fpreorder%2FCodec.java)                   |    |
+| [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                        | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)       |    |
+| [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)                                           | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java) |    |
+| [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                       | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)       |    |
+| [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)        | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR152.java) |    |
+| [105. 从前序与中序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)  | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)       |    |
+| [106. 从中序与后序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Solution106.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution106.java)       |    |
 
 ### 二叉树后序遍历
 
