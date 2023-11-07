@@ -19,7 +19,6 @@ public class SolutionLCR152 {
             tempRight++;
         }
 
-        return tempRight == root
-                && doVerifyTreeOrder(postOrder, left, right - 1) && doVerifyTreeOrder(postOrder, right, root - 1);
+        return tempRight == root && doVerifyTreeOrder(postOrder, left, right - 1) && doVerifyTreeOrder(postOrder, right, root - 1);
     }
 }
