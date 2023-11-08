@@ -594,6 +594,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [108. 将有序数组转换为二叉搜索树 简单](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)                   | [Solution108.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution108.java)       | ✅  |
 | [109. 有序链表转换二叉搜索树 中等](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/)                      | [Solution109.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution109.java)       | ✅  |
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                  | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)       | ✅  |
+| [129. 求根节点到叶节点数字之和 中等](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)                                      | [Solution129.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution129.java)       | ✅  |
 | [449. 序列化和反序列化二叉搜索树 中等](https://leetcode.cn/problems/serialize-and-deserialize-bst/)                                | [Codec.java](src%2Fleetcode%2Ftree%2Fpreorder%2FCodec.java)                   |    |
 | [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                        | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)       |    |
 | [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)                                           | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java) |    |
