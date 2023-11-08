@@ -16,29 +16,32 @@ public class Solution814 {
             return null;
         }
 
-        postOrder(root);
-        if (root.left == null && root.right == null && root.val == 0) {
+        doPruneTree(root);
+        if (root.val == 0 && root.left == null && root.right == null) {
             return null;
         }
-
         return root;
     }
 
-    private boolean postOrder(TreeNode root) {
-        if (root == null) {
-            return false;
+    private int doPruneTree(TreeNode node) {
+        if (node == null) {
+            return 0;
         }
 
-        boolean left = postOrder(root.left);
-        boolean right = postOrder(root.right);
+        int left = doPruneTree(node.left);
+        int right = doPruneTree(node.right);
 
-        if (!left) {
-            root.left = null;
+        if (left == 0) {
+            node.left = null;
         }
-        if (!right) {
-            root.right = null;
+        if (right == 0) {
+            node.right = null;
         }
 
-        return root.val == 1 || left || right;
+        if (node.val == 1 || left == 1 || right == 1) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }

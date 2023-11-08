@@ -19,7 +19,7 @@ public class Solution110 {
 
         int left = depth(node.left);
         int right = depth(node.right);
-        if ((left == -1 || right == -1) || Math.abs(left - right) > 1) {
+        if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
             return -1;
         }
 
