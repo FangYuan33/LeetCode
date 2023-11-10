@@ -6,64 +6,63 @@ import java.util.*;
 
 public class Solution987 {
 
-    static class TreeNodeIndex {
-
-        TreeNode node;
+    static class TreeNodeIndex implements Comparable<TreeNodeIndex> {
 
         int x;
 
         int y;
 
-        public TreeNodeIndex(TreeNode node, int x, int y) {
-            this.node = node;
+        TreeNode node;
+
+        public TreeNodeIndex(int x, int y, TreeNode node) {
             this.x = x;
             this.y = y;
+            this.node = node;
+        }
+
+        @Override
+        public int compareTo(TreeNodeIndex o) {
+            if (this.y == o.y) {
+                if (this.x == o.x) {
+                    return this.node.val - o.node.val;
+                } else {
+                    return this.x - o.x;
+                }
+            } else {
+                return this.y - o.y;
+            }
         }
     }
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (root == null) {
-            return res;
-        }
-
-        TreeNodeIndex newRoot = new TreeNodeIndex(root, 0, 0);
-        PriorityQueue<TreeNodeIndex> priorityQueue = new PriorityQueue<>((e1, e2) -> {
-            if (e1.y != e2.y) {
-                return e1.y - e2.y;
-            } else {
-                if (e1.x != e2.x) {
-                    return e1.x - e2.x;
-                } else {
-                    return e1.node.val - e2.node.val;
-                }
-            }
-        });
-        priorityQueue.offer(newRoot);
-
+        TreeNodeIndex rootNode = new TreeNodeIndex(0, 0, root);
         Queue<TreeNodeIndex> queue = new LinkedList<>();
-        queue.offer(newRoot);
+        queue.offer(rootNode);
+        PriorityQueue<TreeNodeIndex> priorityQueue = new PriorityQueue<>();
+        priorityQueue.offer(rootNode);
+
         while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNodeIndex node = queue.poll();
                 if (node.node.left != null) {
-                    TreeNodeIndex nodeIndex = new TreeNodeIndex(node.node.left, node.x + 1, node.y - 1);
-                    queue.offer(nodeIndex);
-                    priorityQueue.offer(nodeIndex);
+                    TreeNodeIndex left = new TreeNodeIndex(node.x + 1, node.y - 1, node.node.left);
+                    priorityQueue.offer(left);
+                    queue.offer(left);
                 }
                 if (node.node.right != null) {
-                    TreeNodeIndex nodeIndex = new TreeNodeIndex(node.node.right, node.x + 1, node.y + 1);
-                    queue.offer(nodeIndex);
-                    priorityQueue.offer(nodeIndex);
+                    TreeNodeIndex right = new TreeNodeIndex(node.x + 1, node.y + 1, node.node.right);
+                    priorityQueue.offer(right);
+                    queue.offer(right);
                 }
             }
         }
 
+        List<List<Integer>> res = new LinkedList<>();
         while (!priorityQueue.isEmpty()) {
-            ArrayList<Integer> element = new ArrayList<>();
-            int y = priorityQueue.peek().y;
-            while (!priorityQueue.isEmpty() && priorityQueue.peek().y == y) {
+            TreeNodeIndex peek = priorityQueue.peek();
+            LinkedList<Integer> element = new LinkedList<>();
+            while (!priorityQueue.isEmpty() && priorityQueue.peek().y == peek.y) {
                 element.add(priorityQueue.poll().node.val);
             }
             res.add(element);

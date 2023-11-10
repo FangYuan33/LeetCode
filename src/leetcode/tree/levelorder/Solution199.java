@@ -5,26 +5,27 @@ import leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Solution199 {
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+        List<Integer> res = new LinkedList<>();
         if (root == null) {
             return res;
         }
 
-        LinkedList<TreeNode> linkedList = new LinkedList<>();
-        linkedList.offer(root);
-        while (!linkedList.isEmpty()) {
-            int size = linkedList.size();
-            res.add(linkedList.getLast().val);
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            res.add(queue.peekLast().val);
+            int size = queue.size();
             for (int i = 0; i < size; i++) {
-                TreeNode node = linkedList.removeFirst();
+                TreeNode node = queue.poll();
                 if (node.left != null) {
-                    linkedList.addLast(node.left);
+                    queue.offer(node.left);
                 }
                 if (node.right != null) {
-                    linkedList.addLast(node.right);
+                    queue.offer(node.right);
                 }
             }
         }

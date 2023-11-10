@@ -9,7 +9,7 @@ import java.util.Queue;
 
 public class Solution102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
+        List<List<Integer>> res = new LinkedList<>();
         if (root == null) {
             return res;
         }
@@ -18,7 +18,7 @@ public class Solution102 {
         queue.offer(root);
         while (!queue.isEmpty()) {
             int size = queue.size();
-            ArrayList<Integer> element = new ArrayList<>();
+            List<Integer> element = new LinkedList<>();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 element.add(node.val);

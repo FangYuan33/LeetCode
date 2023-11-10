@@ -7,30 +7,26 @@ import java.util.Queue;
 
 public class Codec {
 
-    public static void main(String[] args) {
-        Codec codec = new Codec();
-        codec.deserialize(codec.serialize(codec.deserialize("1,|2,3,|null,null,4,5|6,7,|")));
-    }
-
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if (root == null) {
             return "";
         }
-        StringBuilder res = new StringBuilder();
 
+        StringBuilder res = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
-                if (node != null) {
+
+                if (node == null) {
+                    res.append("null").append(",");
+                } else {
                     res.append(node.val).append(",");
                     queue.offer(node.left);
                     queue.offer(node.right);
-                } else {
-                    res.append("null,");
                 }
             }
         }
@@ -48,22 +44,28 @@ public class Codec {
         TreeNode root = new TreeNode(Integer.parseInt(nodes[0]));
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-
         int index = 1;
-        while (!queue.isEmpty() && index < nodes.length) {
-            TreeNode node = queue.poll();
-            if (!nodes[index].equals("null")) {
-                TreeNode left = new TreeNode(Integer.parseInt(nodes[index]));
-                node.left = left;
-                queue.offer(left);
+        while (index < nodes.length) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                if ("null".equals(nodes[index])) {
+                    node.left = null;
+                } else {
+                    TreeNode left = new TreeNode(Integer.parseInt(nodes[index]));
+                    node.left = left;
+                    queue.offer(left);
+                }
+                index++;
+                if ("null".equals(nodes[index])) {
+                    node.right = null;
+                } else {
+                    TreeNode right = new TreeNode(Integer.parseInt(nodes[index]));
+                    node.right = right;
+                    queue.offer(right);
+                }
+                index++;
             }
-            index++;
-            if (index < nodes.length && !nodes[index].equals("null")) {
-                TreeNode right = new TreeNode(Integer.parseInt(nodes[index]));
-                node.right = right;
-                queue.offer(right);
-            }
-            index++;
         }
 
         return root;

@@ -14,9 +14,8 @@ public class Solution111 {
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        res++;
-
         while (!queue.isEmpty()) {
+            res++;
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
@@ -30,7 +29,6 @@ public class Solution111 {
                     queue.offer(node.right);
                 }
             }
-            res++;
         }
 
         return res;

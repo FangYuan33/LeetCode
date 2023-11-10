@@ -8,32 +8,34 @@ import java.util.Queue;
 public class Solution623 {
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
         if (depth == 1) {
-            TreeNode res = new TreeNode(val);
-            res.left = root;
-            return res;
+            TreeNode node = new TreeNode(val);
+            node.left = root;
+            return node;
         }
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+        int curDepth = 2;
         while (!queue.isEmpty()) {
-            if (depth == 1) {
+            if (curDepth == depth) {
                 while (!queue.isEmpty()) {
                     TreeNode node = queue.poll();
+                    TreeNode left = new TreeNode(val);
+                    left.left = node.left;
+                    node.left = left;
 
-                    TreeNode add1 = new TreeNode(val);
-                    add1.left = node.left;
-                    TreeNode add2 = new TreeNode(val);
-                    add2.right = node.right;
-
-                    node.left = add1;
-                    node.right = add2;
+                    TreeNode right = new TreeNode(val);
+                    right.right = node.right;
+                    node.right = right;
                 }
                 break;
             }
-            depth--;
+            curDepth++;
+
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
+
                 if (node.left != null) {
                     queue.offer(node.left);
                 }
