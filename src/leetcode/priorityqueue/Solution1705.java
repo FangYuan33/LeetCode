@@ -15,25 +15,19 @@ public class Solution1705 {
     }
 
     public int eatenApples(int[] apples, int[] days) {
-        // applesNum, endDay
         PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(x -> x[1]));
-
-        int day = 0;
         int res = 0;
+        int day = 0;
         while (day < apples.length || !priorityQueue.isEmpty()) {
             if (day < apples.length && apples[day] > 0) {
                 priorityQueue.offer(new int[]{apples[day], day + days[day]});
             }
-
-            // 过期的都扔掉
             while (!priorityQueue.isEmpty() && day >= priorityQueue.peek()[1]) {
                 priorityQueue.poll();
             }
             if (!priorityQueue.isEmpty()) {
-                int[] apple = priorityQueue.peek();
-                apple[0]--;
                 res++;
-                if (apple[0] == 0) {
+                if (--priorityQueue.peek()[0] <= 0) {
                     priorityQueue.poll();
                 }
             }

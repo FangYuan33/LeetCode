@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 public class Solution1405 {
 
     public static void main(String[] args) {
+        // ccbc
         System.out.println(new Solution1405().longestDiverseString(0, 1, 3));
     }
 
@@ -26,37 +27,36 @@ public class Solution1405 {
     }
 
     public String longestDiverseString(int a, int b, int c) {
-        PriorityQueue<CharNum> charNums = new PriorityQueue<>();
+        PriorityQueue<CharNum> priorityQueue = new PriorityQueue<>();
         if (a != 0) {
-            charNums.offer(new CharNum('a', a));
+            priorityQueue.offer(new CharNum('a', a));
         }
         if (b != 0) {
-            charNums.offer(new CharNum('b', b));
+            priorityQueue.offer(new CharNum('b', b));
         }
         if (c != 0) {
-            charNums.offer(new CharNum('c', c));
+            priorityQueue.offer(new CharNum('c', c));
         }
 
         StringBuilder res = new StringBuilder();
-        while (!charNums.isEmpty()) {
-            CharNum one = charNums.poll();
+        while (!priorityQueue.isEmpty()) {
+            CharNum cur = priorityQueue.poll();
             int length = res.length();
-
-            if (length >= 2 && res.charAt(length - 1) == one.c && res.charAt(length - 2) == one.c) {
-                CharNum two = charNums.poll();
+            if (length >= 2 && res.charAt(length - 1) == cur.c && res.charAt(length - 2) == cur.c) {
+                CharNum two = priorityQueue.poll();
                 if (two != null) {
                     res.append(two.c);
                     if (--two.num > 0) {
-                        charNums.offer(two);
+                        priorityQueue.offer(two);
                     }
-                    charNums.offer(one);
+                    priorityQueue.offer(cur);
                 } else {
                     break;
                 }
             } else {
-                res.append(one.c);
-                if (--one.num > 0) {
-                    charNums.offer(one);
+                res.append(cur.c);
+                if (--cur.num > 0) {
+                    priorityQueue.offer(cur);
                 }
             }
         }

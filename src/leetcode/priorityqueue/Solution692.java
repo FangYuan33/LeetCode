@@ -14,46 +14,35 @@ public class Solution692 {
 
         int num;
 
-        public WordNum(String word) {
+        public WordNum(String word, int num) {
             this.word = word;
-            this.num = 1;
+            this.num = num;
         }
 
         @Override
         public int compareTo(WordNum o) {
-            if (this.num != o.num) {
-                return this.num - o.num;
+            if (this.num == o.num) {
+                return this.word.compareTo(o.word);
             } else {
-                return o.word.compareTo(this.word);
+                return o.num - this.num;
             }
         }
     }
 
     public List<String> topKFrequent(String[] words, int k) {
-        HashMap<String, WordNum> map = new HashMap<>();
+        HashMap<String, Integer> wordNum = new HashMap<>();
         for (String word : words) {
-            if (map.containsKey(word)) {
-                map.get(word).num++;
-            } else {
-                map.put(word, new WordNum(word));
-            }
+            wordNum.put(word, wordNum.getOrDefault(word, 0) + 1);
         }
 
         PriorityQueue<WordNum> priorityQueue = new PriorityQueue<>();
-        for (WordNum value : map.values()) {
-            if (priorityQueue.size() < k) {
-                priorityQueue.offer(value);
-            } else {
-                if (value.compareTo(priorityQueue.peek()) > 0) {
-                    priorityQueue.poll();
-                    priorityQueue.offer(value);
-                }
-            }
+        for (Map.Entry<String, Integer> entry : wordNum.entrySet()) {
+            priorityQueue.offer(new WordNum(entry.getKey(), entry.getValue()));
         }
 
-        LinkedList<String> res = new LinkedList<>();
-        while (!priorityQueue.isEmpty()) {
-            res.addFirst(priorityQueue.poll().word);
+        List<String> res = new LinkedList<>();
+        for (int i = 0; i < k && !priorityQueue.isEmpty(); i++) {
+            res.add(priorityQueue.poll().word);
         }
 
         return res;

@@ -551,7 +551,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 小顶堆实现                                                                                 | [MyPriorityQueue.java](src%2Fleetcode%2Fpriorityqueue%2FMyPriorityQueue.java) |      |
 | 多路归并                                                                                  | [Multiway.java](src%2Fleetcode%2Fpriorityqueue%2FMultiway.java)               |      |
 | 堆排序                                                                                   | [DeapSort.java](src%2Fleetcode%2Fpriorityqueue%2FDeapSort.java)               |      |
-| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | 大顶堆  |
+| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | ✅大顶堆 |
 | [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                  | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)              | ✅大顶堆 |
 | [1405. 最长快乐字符串 中等](https://leetcode.cn/problems/longest-happy-string/)                | [Solution1405.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1405.java)       | 大顶堆  |
 | [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/)  | [Solution215.java](src%2Fleetcode%2Fpriorityqueue%2FSolution215.java)         | ✅小顶堆 |
