@@ -28,7 +28,7 @@ public class Solution75 {
         }
 
         sort(nums, left, l - 1);
-        sort(nums, r + 1, right);
+        sort(nums, mid, right);
     }
 
     private void swap(int[] nums, int left, int right) {
