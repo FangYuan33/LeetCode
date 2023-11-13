@@ -7,7 +7,6 @@ public class Solution669 {
         if (root == null) {
             return null;
         }
-
         if (root.val < low) {
             return trimBST(root.right, low, high);
         }

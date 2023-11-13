@@ -6,29 +6,32 @@ public class Solution99 {
 
     TreeNode one = null, two = null;
 
-    TreeNode pre;
+    TreeNode pre = null;
 
     public void recoverTree(TreeNode root) {
-        midOrder(root);
+        if (root == null) {
+            return;
+        }
 
+        markNode(root);
         int temp = one.val;
         one.val = two.val;
         two.val = temp;
     }
 
-    private void midOrder(TreeNode node) {
+    private void markNode(TreeNode node) {
         if (node == null) {
             return;
         }
 
-        midOrder(node.left);
-        if (pre != null && pre.val > node.val) {
+        markNode(node.left);
+        if (pre != null && pre.val >= node.val) {
             if (one == null) {
                 one = pre;
             }
             two = node;
         }
         pre = node;
-        midOrder(node.right);
+        markNode(node.right);
     }
 }

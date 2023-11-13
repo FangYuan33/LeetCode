@@ -12,13 +12,12 @@ public class Interview0406 {
     TreeNode pre = null;
 
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
-        if (root == null) {
+        if (root == null || p == null) {
             return null;
         }
 
         TreeNode left = inorderSuccessor(root.left, p);
         if (pre != null && pre.val == p.val) {
-            pre = root;
             return root;
         }
         pre = root;

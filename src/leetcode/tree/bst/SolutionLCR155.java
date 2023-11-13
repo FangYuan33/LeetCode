@@ -13,22 +13,21 @@ public class SolutionLCR155 {
 
         Node head = new Node();
         pre = head;
-        midOrder(root);
+        doTreeToDoublyList(root);
         head.right.left = pre;
         pre.right = head.right;
-
         return head.right;
     }
 
-    private void midOrder(Node node) {
+    private void doTreeToDoublyList(Node node) {
         if (node == null) {
             return;
         }
 
-        midOrder(node.left);
+        doTreeToDoublyList(node.left);
         pre.right = node;
         node.left = pre;
         pre = node;
-        midOrder(node.right);
+        doTreeToDoublyList(node.right);
     }
 }

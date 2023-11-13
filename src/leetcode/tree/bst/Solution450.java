@@ -17,19 +17,17 @@ public class Solution450 {
             root.left = deleteNode(root.left, key);
             return root;
         }
-
-        if (root.right == null) {
-            return root.left;
-        }
         if (root.left == null) {
             return root.right;
         }
-
-        TreeNode rightNode = root.right;
-        while (rightNode.left != null) {
-            rightNode = rightNode.left;
+        if (root.right == null) {
+            return root.left;
         }
-        rightNode.left = root.left;
+        TreeNode right = root.right;
+        while (right.left != null) {
+            right = right.left;
+        }
+        right.left = root.left;
 
         return root.right;
     }
