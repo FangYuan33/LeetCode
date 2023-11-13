@@ -28,6 +28,6 @@ public class LRUCacheLinkedHashMap extends LinkedHashMap<Integer, Integer> {
 
     @Override
     protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-        return super.size() > capacity;
+        return super.size() > this.capacity;
     }
 }

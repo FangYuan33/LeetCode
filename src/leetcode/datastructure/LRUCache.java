@@ -8,80 +8,78 @@ public class LRUCache {
 
         int key;
 
-        int val;
-
-        Node next;
+        int value;
 
         Node pre;
 
-        public Node(int key, int val) {
+        Node next;
+
+        public Node(int key, int value) {
             this.key = key;
-            this.val = val;
+            this.value = value;
         }
     }
 
-    HashMap<Integer, Node> keyNode;
-
-    int capacity;
+    HashMap<Integer, Node> map;
 
     Node sentinel;
 
+    int capacity;
+
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        keyNode = new HashMap<>();
-
         sentinel = new Node(-1, -1);
         sentinel.next = sentinel;
         sentinel.pre = sentinel;
+        this.map = new HashMap<>(capacity);
     }
 
     public int get(int key) {
-        if (keyNode.containsKey(key)) {
-            Node node = keyNode.get(key);
-            // 移动到头节点
-            removeToHead(node);
+        if (map.containsKey(key)) {
+            Node node = map.get(key);
+            cutOriginalLink(node);
+            insertToHead(node);
 
-            return node.val;
-        } else {
-            return -1;
+            return node.value;
         }
+
+        return -1;
     }
 
     public void put(int key, int value) {
-        if (keyNode.containsKey(key)) {
-            Node node = keyNode.get(key);
-            node.val = value;
-
-            removeToHead(node);
+        Node node;
+        if (map.containsKey(key)) {
+            node = map.get(key);
+            node.value = value;
+            cutOriginalLink(node);
         } else {
-            if (keyNode.size() == capacity) {
+            node = new Node(key, value);
+            if (map.size() == capacity) {
                 Node tail = sentinel.pre;
-                keyNode.remove(tail.key);
-
-                tail.pre.next = sentinel;
-                tail.next.pre = tail.pre;
+                // 去掉尾巴
+                map.remove(tail.key);
+                cutOriginalLink(tail);
             }
-
-            Node node = new Node(key, value);
-            // 加入头节点
-            insertToHead(node);
-            keyNode.put(key, node);
+            map.put(key, node);
         }
-    }
-
-    private void removeToHead(Node node) {
-        // 在原位置移除
-        node.pre.next = node.next;
-        node.next.pre = node.pre;
-
-        // 放到头节点
         insertToHead(node);
     }
 
+    /**
+     * 断开原来的链接
+     */
+    private void cutOriginalLink(Node node) {
+        node.pre.next = node.next;
+        node.next.pre = node.pre;
+    }
+
+    /**
+     * 插入到头
+     */
     private void insertToHead(Node node) {
-        sentinel.next.pre = node;
         node.next = sentinel.next;
-        sentinel.next = node;
+        sentinel.next.pre = node;
         node.pre = sentinel;
+        sentinel.next = node;
     }
 }
