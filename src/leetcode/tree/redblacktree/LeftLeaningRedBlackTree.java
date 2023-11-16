@@ -34,6 +34,46 @@ public class LeftLeaningRedBlackTree {
     private Node root;
 
     /**
+     * 插入节点
+     */
+    public void put(Integer key, Integer value) {
+        root = put(root, key, value);
+        // 根节点永远都是黑色
+        root.color = BLACK;
+    }
+
+    /**
+     * 插入节点的执行逻辑
+     */
+    private Node put(Node node, Integer key, Integer value) {
+        if (node == null) {
+            return new Node(key, value, RED);
+        }
+
+        if (key > node.key) {
+            node.right = put(node.right, key, value);
+        } else if (key < node.key) {
+            node.left = put(node.left, key, value);
+        } else {
+            node.value = value;
+        }
+        // 将3-节点的红链接右引用左旋
+        if (isRed(node.right) && !isRed(node.left)) {
+            node = rotateLeft(node);
+        }
+        // 将4-节点两条连续的红链接左引用左旋
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
+        // 进行颜色转换并将红链接在树中向上传递
+        if (isRed(node.left) && isRed(node.right)) {
+            flipColor(node);
+        }
+
+        return node;
+    }
+
+    /**
      * 左旋
      */
     private Node rotateLeft(Node node) {
