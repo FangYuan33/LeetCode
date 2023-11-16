@@ -462,12 +462,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 先进先出队列（简称队列）是一种基于先进先出（FIFO）策略的集合类型，它相比于栈多了能够在队首操作的方法，所以使用栈能解决的问题队列也能解决，不过使用队列解决的问题会突出 **需要操作两端数据** 的特点。
 
-| 题目链接                                                                                              | 题解                                                                    | 备注 |
-|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-| [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java) |    |
-| [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)       |    |
-| [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)     |    |
-| [933. 最近的请求次数 简单](https://leetcode.cn/problems/number-of-recent-calls/)                           | [RecentCounter.java](src%2Fleetcode%2Fqueue%2FRecentCounter.java)     |    |
+| 题目链接                                                                                              | 题解                                                                          | 备注 |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [622. 设计循环队列 中等](https://leetcode.cn/problems/design-circular-queue/)                             | [MyCircularQueue.java](src%2Fleetcode%2Fqueue%2FMyCircularQueue.java)       |    |
+| [1047. 删除字符串中的所有相邻重复项 简单](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Solution1047.java](src%2Fleetcode%2Fqueue%2FSolution1047.java)             |    |
+| [LCR 041. 数据流中的移动平均值 简单](https://leetcode.cn/problems/qIsx9U/)                                    | [MovingAverage.java](src%2Fleetcode%2Fqueue%2FMovingAverage.java)           |    |
+| [933. 最近的请求次数 简单](https://leetcode.cn/problems/number-of-recent-calls/)                           | [RecentCounter.java](src%2Fleetcode%2Fqueue%2FRecentCounter.java)           |    |
+| [649. Dota2 参议院 中等](https://leetcode.cn/problems/dota2-senate/)                                   | [Solution649.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution649.java) |    |
 
 ### 单调队列
 
@@ -639,9 +640,9 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 红黑树
 
-| 题目链接                                                                       | 题解                                                                          | 备注       |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------|
-| [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java) | 认识和使用红黑树 |
+| 题目链接                                                                       | 题解                                                                          | 备注         |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------|
+| [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java) | 滑动窗口 + 红黑树 |
 
 ## 哈希
 
