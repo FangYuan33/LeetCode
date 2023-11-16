@@ -1,9 +1,7 @@
-package leetcode.tree.redblacktree;
+package leetcode.queue;
 
-import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.TreeSet;
 
 public class Solution649 {
 
