@@ -533,6 +533,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |------|-----------------------------------------------------------------------------|----|
 | 桶排序  | [BucketSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBucketSort.java)     |    |
 | 计数排序 | [CountingSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FCountingSort.java) |    |
+| 基数排序 | [RadixSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FRadixSort.java)       |    |
 
 ### 相关练习
 
