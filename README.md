@@ -529,9 +529,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 - 时间复杂度为 O(n) 的排序算法
 
-| 题目链接 | 题解                                                                      | 备注 |
-|------|-------------------------------------------------------------------------|----|
-| 桶排序  | [BucketSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBucketSort.java) |    |
+| 题目链接 | 题解                                                                          | 备注 |
+|------|-----------------------------------------------------------------------------|----|
+| 桶排序  | [BucketSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FBucketSort.java)     |    |
+| 计数排序 | [CountingSort.java](src%2Fleetcode%2Fsort%2Falgorithms%2FCountingSort.java) |    |
 
 ### 相关练习
 
