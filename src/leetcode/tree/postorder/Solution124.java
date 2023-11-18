@@ -24,19 +24,19 @@ public class Solution124 {
             return 0;
         }
 
-        int cur = node.val, ans = node.val;
         int left = doMaxPathSum(node.left);
         int right = doMaxPathSum(node.right);
+        int cur = node.val, max = node.val;
         if (left > 0) {
-            cur += left ;
-            ans += left;
+            cur += left;
+            max += left;
         }
         if (right > 0) {
-            ans = Math.max(ans, node.val + right);
             cur += right;
+            max = Math.max(max, node.val + right);
         }
         res = Math.max(res, cur);
 
-        return ans;
+        return max;
     }
 }

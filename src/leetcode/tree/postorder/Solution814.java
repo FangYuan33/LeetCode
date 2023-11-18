@@ -16,10 +16,11 @@ public class Solution814 {
             return null;
         }
 
-        doPruneTree(root);
-        if (root.val == 0 && root.left == null && root.right == null) {
+        int res = doPruneTree(root);
+        if (res == 0) {
             return null;
         }
+
         return root;
     }
 
@@ -38,10 +39,6 @@ public class Solution814 {
             node.right = null;
         }
 
-        if (node.val == 1 || left == 1 || right == 1) {
-            return 1;
-        } else {
-            return 0;
-        }
+        return node.val + left + right;
     }
 }

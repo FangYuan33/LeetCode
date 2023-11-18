@@ -17,20 +17,19 @@ public class Solution687 {
             return 0;
         }
 
-        int cur = 0;
-        int ans = 0;
         int left = doLongestUnivaluePath(node.left);
         int right = doLongestUnivaluePath(node.right);
+        int cur = 0, max = 0;
         if (node.left != null && node.left.val == node.val) {
-            ans = left + 1;
+            max = left + 1;
             cur = left + 1;
         }
         if (node.right != null && node.right.val == node.val) {
             cur += right + 1;
-            ans = Math.max(ans, right + 1);
+            max = Math.max(max, right + 1);
         }
         res = Math.max(res, cur);
 
-        return ans;
+        return max;
     }
 }
