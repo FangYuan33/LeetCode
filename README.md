@@ -605,12 +605,12 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                  | [Solution654.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution654.java)       | ✅  |
 | [129. 求根节点到叶节点数字之和 中等](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)                                      | [Solution129.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution129.java)       | ✅  |
 | [449. 序列化和反序列化二叉搜索树 中等](https://leetcode.cn/problems/serialize-and-deserialize-bst/)                                | [Codec.java](src%2Fleetcode%2Ftree%2Fpreorder%2FCodec.java)                   |    |
-| [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                        | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)       |    |
-| [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)                                           | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java) |    |
-| [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                       | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)       |    |
-| [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)        | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR152.java) |    |
-| [105. 从前序与中序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)  | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)       |    |
-| [106. 从中序与后序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Solution106.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution106.java)       |    |
+| [113. 路径总和 II 中等](https://leetcode.cn/problems/path-sum-ii/)                                                        | [Solution113.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution113.java)       | ✅  |
+| [LCR 143. 子结构判断 中等](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/)                                           | [SolutionLCR143.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR143.java) | ✅  |
+| [662. 二叉树最大宽度 中等](https://leetcode.cn/problems/maximum-width-of-binary-tree/)                                       | [Solution662.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution662.java)       | ✅  |
+| [LCR 152. 验证二叉搜索树的后序遍历序列 中等](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)        | [SolutionLCR152.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolutionLCR152.java) | ✅  |
+| [105. 从前序与中序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)  | [Solution105.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution105.java)       | ✅  |
+| [106. 从中序与后序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Solution106.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution106.java)       | ✅  |
 
 ### 二叉树后序遍历
 
