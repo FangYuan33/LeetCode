@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.*;
+
 /**
  * 供本地题解使用
  *
