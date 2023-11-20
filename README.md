@@ -570,12 +570,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       | ✅     |
 | [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) | [Solution373.java](src%2Fleetcode%2Fpriorityqueue%2FSolution373.java)         | ✅多路归并 |
 | [1705. 吃苹果的最大数目 中等](https://leetcode.cn/problems/maximum-number-of-eaten-apples/)     | [Solution1705.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1705.java)       | ✅贪心   |
-| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | 贪心    |
+| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | ✅贪心   |
 | [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | 贪心    |
 
 ## 树
 
 ### 二叉搜索树和二叉树的中序遍历
+
+- 相关学习：[树专题 —— 二叉搜索树和中序遍历](https://juejin.cn/post/7297608084306411532)
 
 | 题目链接                                                                                                            | 题解                                                                           | 备注 |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
@@ -593,6 +595,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [面试题 04.06. 后继者 中等](https://leetcode.cn/problems/successor-lcci/)                                               | [Interview0406.java](src%2Fleetcode%2Ftree%2Fbst%2FInterview0406.java)       |    |
 
 ### 二叉树前序遍历
+
+- 相关学习：[树专题 —— 二叉树前序遍历](https://juejin.cn/post/7300782146602811433)
 
 | 题目链接                                                                                                                | 题解                                                                            | 备注 |
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----|
@@ -613,6 +617,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [106. 从中序与后序遍历序列构造二叉树 中等](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Solution106.java](src%2Fleetcode%2Ftree%2Fpreorder%2FSolution106.java)       | ✅  |
 
 ### 二叉树后序遍历
+
+- 相关学习：[树专题 —— 二叉树后序遍历](https://juejin.cn/post/7302991240457371685)
 
 | 题目链接                                                                                        | 题解                                                                       | 备注 |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
