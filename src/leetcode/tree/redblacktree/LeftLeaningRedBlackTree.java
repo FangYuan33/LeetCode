@@ -67,7 +67,7 @@ public class LeftLeaningRedBlackTree {
         }
         // 进行颜色转换并将红链接在树中向上传递
         if (isRed(node.left) && isRed(node.right)) {
-            flipColor(node);
+            flipColors(node);
         }
 
         return node;
@@ -104,10 +104,10 @@ public class LeftLeaningRedBlackTree {
     /**
      * 颜色转换
      */
-    private void flipColor(Node node) {
-        node.color = RED;
-        node.left.color = BLACK;
-        node.right.color = BLACK;
+    private void flipColors(Node node) {
+        node.color = !node.color;
+        node.left.color = !node.left.color;
+        node.right.color = !node.right.color;
     }
 
     /**
