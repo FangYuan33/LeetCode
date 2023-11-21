@@ -74,6 +74,66 @@ public class LeftLeaningRedBlackTree {
     }
 
     /**
+     * 删除最小节点
+     */
+    public void deleteMin() {
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = deleteMin(root);
+        // 根节点永远都是黑色
+        if (root != null) {
+            root.color = BLACK;
+        }
+    }
+
+    /**
+     * 删除最小节点
+     */
+    private Node deleteMin(Node node) {
+        if (node.left == null) {
+            return null;
+        }
+
+        if (!isRed(node.left) && !isRed(node.left.left)) {
+            node = moveRedLeft(node);
+        }
+        node.left = deleteMin(node.left);
+
+        return balance(node);
+    }
+
+    /**
+     * 从右向左借键
+     */
+    private Node moveRedLeft(Node node) {
+        flipColors(node);
+        if (isRed(node.right.left)) {
+            node.right = rotateRight(node.right);
+            node = rotateLeft(node);
+        }
+
+        return node;
+    }
+
+    /**
+     * 从下到上再平衡
+     */
+    private Node balance(Node node) {
+        if (isRed(node.right)) {
+            node = rotateLeft(node);
+        }
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            flipColors(node);
+        }
+
+        return node;
+    }
+
+    /**
      * 左旋
      */
     private Node rotateLeft(Node node) {
