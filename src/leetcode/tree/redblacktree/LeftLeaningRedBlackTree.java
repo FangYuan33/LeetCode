@@ -95,6 +95,7 @@ public class LeftLeaningRedBlackTree {
             return null;
         }
 
+        // 判断当前节点和左子节点是不是3-节点，不是的话执行借键逻辑
         if (!isRed(node.left) && !isRed(node.left.left)) {
             node = moveRedLeft(node);
         }
@@ -108,11 +109,57 @@ public class LeftLeaningRedBlackTree {
      */
     private Node moveRedLeft(Node node) {
         flipColors(node);
+        // 兄弟节点为3-节点的情况
         if (isRed(node.right.left)) {
             node.right = rotateRight(node.right);
             node = rotateLeft(node);
         }
 
+        return node;
+    }
+
+    /**
+     * 删除最大节点
+     */
+    public void deleteMax() {
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = deleteMax(root);
+        // 根节点永远都是黑色
+        if (root != null) {
+            root.color = BLACK;
+        }
+    }
+
+    /**
+     * 删除最大节点
+     */
+    private Node deleteMax(Node node) {
+        if (isRed(node.left)) {
+            node = rotateRight(node);
+        }
+        if (node.right == null) {
+            return null;
+        }
+
+        // 当前节点的右引用不是红链接且右节点不是3-节点
+        if (!isRed(node.right) && !isRed(node.right.left)) {
+            node = moveRedRight(node);
+        }
+        node.right = deleteMin(node.right);
+
+        return balance(node);
+    }
+
+    /**
+     * 从左向右借键
+     */
+    private Node moveRedRight(Node node) {
+        flipColors(node);
+        if (isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
         return node;
     }
 
