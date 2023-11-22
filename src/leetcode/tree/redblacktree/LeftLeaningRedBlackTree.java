@@ -147,7 +147,7 @@ public class LeftLeaningRedBlackTree {
         if (!isRed(node.right) && !isRed(node.right.left)) {
             node = moveRedRight(node);
         }
-        node.right = deleteMin(node.right);
+        node.right = deleteMax(node.right);
 
         return balance(node);
     }
@@ -161,6 +161,64 @@ public class LeftLeaningRedBlackTree {
             node = rotateRight(node);
         }
         return node;
+    }
+
+    /**
+     * 删除节点
+     */
+    public void delete(Integer key) {
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = delete(root, key);
+        if (root != null) {
+            root.color = BLACK;
+        }
+    }
+
+    /**
+     * 删除节点
+     */
+    private Node delete(Node node, Integer key) {
+        if (key < node.key) {
+            if (!isRed(node.left) && !isRed(node.left.left)) {
+                node = moveRedLeft(node);
+            }
+            node.left = delete(node.left, key);
+        } else {
+            if (isRed(node.left)) {
+                node = rotateRight(node);
+            }
+            if (key.equals(node.key) && node.right == null) {
+                return null;
+            }
+            if (!isRed(node.right) && !isRed(node.right.left)) {
+                node = moveRedRight(node);
+            }
+
+            if (key.equals(node.key)) {
+                // 找到右子树中最小的节点替换当前节点的键和值
+                Node min = min(node.right);
+                node.key = min.key;
+                node.value = min.value;
+                // 再将该右子树最小的节点移除
+                deleteMin(node.right);
+            } else {
+                node.right = delete(node.right, key);
+            }
+        }
+
+        return balance(node);
+    }
+
+    /**
+     * 获取最小节点
+     */
+    private Node min(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return min(node.left);
     }
 
     /**
