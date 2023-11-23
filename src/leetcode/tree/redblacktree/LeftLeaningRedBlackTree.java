@@ -181,6 +181,7 @@ public class LeftLeaningRedBlackTree {
      */
     private Node delete(Node node, Integer key) {
         if (key < node.key) {
+            // 要删除的节点在左子树，保证当前节点为红色
             if (!isRed(node.left) && !isRed(node.left.left)) {
                 node = moveRedLeft(node);
             }
@@ -189,9 +190,11 @@ public class LeftLeaningRedBlackTree {
             if (isRed(node.left)) {
                 node = rotateRight(node);
             }
+            // node.right == null 可知上面右旋没有发生，右子树为 null，左节点不是红色节点，能证明左子树必然为null（满足黑色平衡）
             if (key.equals(node.key) && node.right == null) {
                 return null;
             }
+            // 要删除的节点在右子树
             if (!isRed(node.right) && !isRed(node.right.left)) {
                 node = moveRedRight(node);
             }
@@ -242,28 +245,28 @@ public class LeftLeaningRedBlackTree {
      * 左旋
      */
     private Node rotateLeft(Node node) {
-        Node newNode = node.right;
-        node.right = newNode.left;
-        newNode.left = node;
+        Node newRoot = node.right;
+        node.right = newRoot.left;
+        newRoot.left = node;
 
-        newNode.color = node.color;
+        newRoot.color = node.color;
         node.color = RED;
 
-        return newNode;
+        return newRoot;
     }
 
     /**
      * 右旋
      */
     private Node rotateRight(Node node) {
-        Node newNode = node.left;
-        node.left = newNode.right;
-        newNode.right = node;
+        Node newRoot = node.left;
+        node.left = newRoot.right;
+        newRoot.right = node;
 
-        newNode.color = node.color;
+        newRoot.color = node.color;
         node.color = RED;
 
-        return newNode;
+        return newRoot;
     }
 
     /**
