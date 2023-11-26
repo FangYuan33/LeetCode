@@ -9,14 +9,15 @@ public class Solution42 {
     }
 
     public int trap(int[] height) {
-        Stack<Integer> stack = new Stack<>();
         int res = 0;
+        Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < height.length; i++) {
-            while (!stack.isEmpty() && height[stack.peek()] < height[i]) {
+            while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
                 int floor = height[stack.pop()];
                 if (!stack.isEmpty()) {
-                    int h = Math.min(height[stack.peek()], height[i]);
-                    res += (h - floor) * (i - stack.peek() - 1);
+                    Integer w = i - stack.peek() - 1;
+                    Integer h = Math.min(height[stack.peek()], height[i]) - floor;
+                    res += w * h;
                 }
             }
             stack.push(i);
