@@ -1,11 +1,11 @@
-package leetcode.nsum;
+package leetcode.doublepointer;
 
 import java.util.Arrays;
 
 public class Solution16 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution16().threeSumClosest(new int[]{4,0,5,-5,3,3,0,-4,-5}, -2));
+        System.out.println(new Solution16().threeSumClosest(new int[]{4, 0, 5, -5, 3, 3, 0, -4, -5}, -2));
     }
 
     public int threeSumClosest(int[] nums, int target) {
@@ -16,7 +16,6 @@ public class Solution16 {
 
         // 先排序
         Arrays.sort(nums);
-
         for (int i = 0; i < nums.length; i++) {
             if (nums.length - i < 3) {
                 break;
@@ -27,9 +26,7 @@ public class Solution16 {
             }
 
             // 双指针
-            int left = i + 1;
-            int right = nums.length - 1;
-
+            int left = i + 1, right = nums.length - 1;
             while (left < right) {
                 int sum = nums[i] + nums[left] + nums[right];
                 if (Math.abs(sum - target) < Math.abs(res - target)) {

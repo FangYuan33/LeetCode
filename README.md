@@ -1,12 +1,3 @@
-## n 数之和
-
-| 题目链接                                                          | 题解                                                                                                                                              | 备注                      |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fnsum%2FSolution1.java)                                                                                        |                         |
-| [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)             | [Solution15.java](src%2Fleetcode%2Fnsum%2FSolution15.java); <br/>[Solution15TwoPointer.java](src%2Fleetcode%2Fnsum%2FSolution15TwoPointer.java) | 优先看双指针解法，第一种解法时间复杂度相对较大 |
-| [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/) | [Solution16.java](src%2Fleetcode%2Fnsum%2FSolution16.java)                                                                                      |                         |
-| [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)             | [Solution18.java](src%2Fleetcode%2Fnsum%2FSolution18.java)                                                                                      |                         |
-
 ## 双指针
 
 - 相关学习：[关于双指针算法问题的思考](https://juejin.cn/post/7292631628652183602)
@@ -27,6 +18,9 @@
 | [825. 适龄的朋友 中等](https://leetcode.cn/problems/friends-of-appropriate-ages/)                                            | [Solution825.java](src%2Fleetcode%2Fdoublepointer%2FSolution825.java)       |    |
 | [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                          | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)         | ✅  |
 | [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                     | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)       |    |
+| [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)                                                                     | [Solution15.java](src%2Fleetcode%2Fdoublepointer%2FSolution15.java)         |    |
+| [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/)                                                         | [Solution16.java](src%2Fleetcode%2Fdoublepointer%2FSolution16.java)         |    |
+| [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)                                                                     | [Solution18.java](src%2Fleetcode%2Fdoublepointer%2FSolution18.java)         |    |
 
 ### 字符串
 
@@ -661,11 +655,11 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [2034. 股票价格波动 中等](https://leetcode.cn/problems/stock-price-fluctuation/)   | [StockPrice.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FStockPrice.java)                           |            |
 | [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java)                         | 滑动窗口 + 红黑树 |
 
-## 哈希
+## 散列表
 
-| 题目链接                                                                   | 题解                                                                    | 备注 |
-|------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-| [954. 二倍数对数组 中等](https://leetcode.cn/problems/array-of-doubled-pairs/) | [Solution954.java](src%2Fleetcode%2Fpriorityqueue%2FSolution954.java) |    |
+| 题目链接                                                          | 题解                                                          | 备注 |
+|---------------------------------------------------------------|-------------------------------------------------------------|----|
+| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java) |    |
 
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系

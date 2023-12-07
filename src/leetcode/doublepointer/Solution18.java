@@ -1,4 +1,4 @@
-package leetcode.nsum;
+package leetcode.doublepointer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ public class Solution18 {
 
     public static void main(String[] args) {
 //        new Solution18().fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
-        new Solution18().fourSum(new int[]{1000000000, 1000000000, 1000000000, 1000000000}, -294967296);
+        System.out.println(new Solution18().fourSum(new int[]{1000000000, 1000000000, 1000000000, 1000000000}, -294967296));
 //        new Solution18().fourSum(new int[]{-3, -2, -1, 0, 0, 1, 2, 3}, 0);
 //        new Solution18().fourSum(new int[] {2,2,2,2,2}, 8);
     }
