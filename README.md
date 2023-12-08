@@ -657,9 +657,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 散列表
 
-| 题目链接                                                          | 题解                                                          | 备注 |
-|---------------------------------------------------------------|-------------------------------------------------------------|----|
-| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)           | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java) |    |
+| 题目链接                                                                                    | 题解                                                                  | 备注 |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                     | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |    |
+| [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/) | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |    |
 
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
