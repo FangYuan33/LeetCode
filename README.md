@@ -657,12 +657,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 散列表
 
-| 题目链接                                                                                    | 题解                                                                  | 备注 |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
-| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                     | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |    |
-| [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/) | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |    |
-| [388. 文件的最长绝对路径 中等](https://leetcode.cn/problems/longest-absolute-file-path/)           | [Solution388.java](src%2Fleetcode%2Fhashmap%2FSolution388.java)     |    |
-| [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                  | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |    |
+| 题目链接                                                                                                | 题解                                                                  | 备注 |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                 | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |    |
+| [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |    |
+| [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)             | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |    |
+| [388. 文件的最长绝对路径 中等](https://leetcode.cn/problems/longest-absolute-file-path/)                       | [Solution388.java](src%2Fleetcode%2Fhashmap%2FSolution388.java)     |    |
+| [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                              | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |    |
 
 2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
