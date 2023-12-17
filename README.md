@@ -659,6 +659,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 | 题目链接                                                                                                | 题解                                                                  | 备注 |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|----|
+| [169. 多数元素 简单](https://leetcode.cn/problems/majority-element/)                                      | [Solution169.java](src%2Fleetcode%2Fhashmap%2FSolution169.java)     |    |
 | [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                 | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |    |
 | [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |    |
 | [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)             | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |    |
@@ -666,7 +667,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [2013. 检测正方形 中等](https://leetcode.cn/problems/detect-squares/)                                      | [DetectSquares.java](src%2Fleetcode%2Fhashmap%2FDetectSquares.java) |    |
 | [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                              | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |    |
 
-2. [剑指 Offer 39. 数组中出现次数超过一半的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 3. [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/): 自建简单hash函数，使得该位置的数和索引成关联关系
 4. [剑指 Offer 03. 数组中重复的数字 简单](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/): 同样可以采用上述思路写
 5. [剑指 Offer 35. 复杂链表的复制 中等](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
