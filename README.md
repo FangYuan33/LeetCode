@@ -667,6 +667,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                                                | 题解                                                                  | 备注         |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------|
 | [169. 多数元素 简单](https://leetcode.cn/problems/majority-element/)                                      | [Solution169.java](src%2Fleetcode%2Fhashmap%2FSolution169.java)     |            |
+| [229. 多数元素 II 中等](https://leetcode.cn/problems/majority-element-ii/)                                | [Solution229.java](src%2Fleetcode%2Fhashmap%2FSolution229.java)     |            |
 | [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                 | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |            |
 | [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |            |
 | [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)             | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |            |
