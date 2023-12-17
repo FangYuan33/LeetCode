@@ -673,6 +673,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |            |
 | [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)             | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |            |
 | [388. 文件的最长绝对路径 中等](https://leetcode.cn/problems/longest-absolute-file-path/)                       | [Solution388.java](src%2Fleetcode%2Fhashmap%2FSolution388.java)     |            |
+| [447. 回旋镖的数量 中等](https://leetcode.cn/problems/number-of-boomerangs/)                                | [Solution447.java](src%2Fleetcode%2Fhashmap%2FSolution447.java)     |            |
 | [2013. 检测正方形 中等](https://leetcode.cn/problems/detect-squares/)                                      | [DetectSquares.java](src%2Fleetcode%2Fhashmap%2FDetectSquares.java) |            |
 | [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/)                             | [Solution41.java](src%2Fleetcode%2Fhashmap%2FSolution41.java)       | 自建简单hash函数 |
 | [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                              | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |            |
