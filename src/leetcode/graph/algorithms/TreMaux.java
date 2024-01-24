@@ -1,4 +1,4 @@
-package leetcode.graph;
+package leetcode.graph.algorithms;
 
 import java.util.LinkedList;
 
