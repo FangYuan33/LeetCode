@@ -691,6 +691,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 无向图    | [Graph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FGraph.java)                         |    |
 | 深度优先搜索 | [DepthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDepthFirstPaths.java)     |    |
 | 广度优先搜索 | [BreadthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FBreadthFirstPaths.java) |    |
+| 有向图    | [Digraph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDigraph.java)                     |    |
 
 ### 相关题目
 
