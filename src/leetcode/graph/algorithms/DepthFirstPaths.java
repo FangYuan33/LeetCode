@@ -3,7 +3,7 @@ package leetcode.graph.algorithms;
 import java.util.Stack;
 
 /**
- * 该图算法通过记录某节点的父节点来获取从起始点到该点的路径
+ * 深度优先搜索算法
  *
  * @author FangYuan
  * @since 2024-01-24 21:25:58
