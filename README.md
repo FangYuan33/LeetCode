@@ -682,6 +682,16 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 图
 
+### 基础知识
+
+| 题目链接   | 题解                                                                                     | 备注 |
+|--------|----------------------------------------------------------------------------------------|----|
+| 无向图    | [Graph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FGraph.java)                         |    |
+| 深度优先搜索 | [DepthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDepthFirstPaths.java)     |    |
+| 广度优先搜索 | [BreadthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FBreadthFirstPaths.java) |    |
+
+### 相关题目
+
 | 题目链接                                                                                         | 题解 | 备注 |
 |----------------------------------------------------------------------------------------------|----|----|
 | [863. 二叉树中所有距离为 K 的结点 中等](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) |    |    |
