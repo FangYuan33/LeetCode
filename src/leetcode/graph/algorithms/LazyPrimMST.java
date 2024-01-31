@@ -16,8 +16,10 @@ public class LazyPrimMST {
 
     private boolean[] marked;
 
+    // 记录最小生成树的边
     private Queue<Edge> mst;
 
+    // 小顶堆记录所有的边
     private PriorityQueue<Edge> pq;
 
     public LazyPrimMST(EdgeWeightedGraph digraph) {
