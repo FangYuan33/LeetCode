@@ -1,16 +1,17 @@
-package leetcode.graph.algorithms;
+package leetcode.graph.algorithms.basic;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * 图的邻接表表示法
+ * 有向图
  *
  * @author FangYuan
- * @since 2024-01-24 20:42:01
+ * @since 2024-01-28 19:38:18
  */
-public class Graph {
+public class Digraph {
 
     private int V;
 
@@ -21,7 +22,22 @@ public class Graph {
      */
     private LinkedList<Integer>[] adj;
 
-    public Graph(String path) {
+    public Digraph(int V) {
+        this.V = V;
+        this.E = 0;
+        adj = new LinkedList[V];
+        Arrays.fill(adj, new LinkedList<>());
+    }
+
+    public int V() {
+        return this.V;
+    }
+
+    public int E() {
+        return this.E;
+    }
+
+    public Digraph(String path) {
         try (BufferedReader in = new BufferedReader(new FileReader(path))) {
             V = Integer.parseInt(in.readLine());
             E = Integer.parseInt(in.readLine());
@@ -40,19 +56,22 @@ public class Graph {
 
     public void addEdge(int v, int w) {
         adj[v].add(w);
-        adj[w].add(v);
         E++;
-    }
-
-    public int V() {
-        return V;
-    }
-
-    public int E() {
-        return E;
     }
 
     public LinkedList<Integer> adj(int v) {
         return adj[v];
+    }
+
+    public Digraph reverse() {
+        Digraph digraph = new Digraph(V);
+
+        for (int i = 0; i < digraph.V; i++) {
+            for (Integer w : digraph.adj[i]) {
+                digraph.addEdge(i, w);
+            }
+        }
+
+        return digraph;
     }
 }

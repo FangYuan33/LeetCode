@@ -1,5 +1,7 @@
 package leetcode.graph.algorithms;
 
+import leetcode.graph.algorithms.basic.Graph;
+
 /**
  * 如果两个顶点能够通过边互相访问到，那么这两个顶点是联通的
  * 该类通过比较某顶点的联通分量ID值来判断两个顶点是否联通

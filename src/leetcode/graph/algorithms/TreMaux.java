@@ -1,5 +1,7 @@
 package leetcode.graph.algorithms;
 
+import leetcode.graph.algorithms.basic.Graph;
+
 import java.util.LinkedList;
 
 /**

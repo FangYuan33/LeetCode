@@ -1,5 +1,7 @@
 package leetcode.graph.algorithms;
 
+import leetcode.graph.algorithms.basic.Digraph;
+
 import java.util.List;
 
 /**
