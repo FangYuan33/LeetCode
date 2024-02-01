@@ -686,12 +686,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 深度优先搜索是先寻找离起点更远的顶点，只有在碰到死胡同时才访问近处的顶点；广度优先搜索则会先覆盖起点附近的顶点，只有在临近的所有顶点都被访问了之后才能前进。
 
-| 题目链接   | 题解                                                                                     | 备注 |
-|--------|----------------------------------------------------------------------------------------|----|
-| 无向图    | [Graph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FGraph.java)                         |    |
-| 深度优先搜索 | [DepthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDepthFirstPaths.java)     |    |
-| 广度优先搜索 | [BreadthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FBreadthFirstPaths.java) |    |
-| 有向图    | [Digraph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDigraph.java)                     |    |
+| 题目链接          | 题解                                                                                     | 备注 |
+|---------------|----------------------------------------------------------------------------------------|----|
+| 无向图           | [Graph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FGraph.java)                         |    |
+| 深度优先搜索        | [DepthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDepthFirstPaths.java)     |    |
+| 广度优先搜索        | [BreadthFirstPaths.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FBreadthFirstPaths.java) |    |
+| Prim算法查找最小生成树 | [PrimMST.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FPrimMST.java)                     |    |
+| 有向图           | [Digraph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDigraph.java)                     |    |
 
 ### 相关题目
 
