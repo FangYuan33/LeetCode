@@ -522,7 +522,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 快速排序：切换到插入排序                | [QuickSort3.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort3.java) |    |
 | 快速排序：三向切分                   | [QuickSort4.java](src%2Fleetcode%2Fsort%2Falgorithms%2FQuickSort4.java) |    |
 
-- 时间复杂度为 O(n) 的排序算法
+- [时间复杂度为 O(n) 的排序算法](https://juejin.cn/spost/7331070709114847242)
 
 | 题目链接 | 题解                                                                          | 备注 |
 |------|-----------------------------------------------------------------------------|----|

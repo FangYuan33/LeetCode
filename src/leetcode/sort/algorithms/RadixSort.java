@@ -13,7 +13,7 @@ import java.util.Queue;
 public class RadixSort {
 
     public static void main(String[] args) {
-        new RadixSort().sort(new int[]{9, 2, 3, 15, 17, 11, 25, 22, 33});
+        new RadixSort().sort(new int[]{3, 100, 11, 4, 33});
     }
 
     private void sort(int[] nums) {
