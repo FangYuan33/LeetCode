@@ -2,7 +2,6 @@ package leetcode.graph.algorithms.basic;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
@@ -26,7 +25,9 @@ public class Digraph {
         this.V = V;
         this.E = 0;
         adj = new LinkedList[V];
-        Arrays.fill(adj, new LinkedList<>());
+        for (int i = 0; i < adj.length; i++) {
+            adj[i] = new LinkedList<>();
+        }
     }
 
     public int V() {
@@ -42,7 +43,9 @@ public class Digraph {
             V = Integer.parseInt(in.readLine());
             E = Integer.parseInt(in.readLine());
             adj = new LinkedList[V];
-            Arrays.fill(adj, new LinkedList<>());
+            for (int i = 0; i < adj.length; i++) {
+                adj[i] = new LinkedList<>();
+            }
 
             String line;
             while ((line = in.readLine()) != null) {

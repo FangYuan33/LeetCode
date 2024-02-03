@@ -1,6 +1,5 @@
 package leetcode.graph.algorithms.basic;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
@@ -21,7 +20,9 @@ public class EdgeWeightedGraph {
         this.V = v;
         this.E = 0;
         adj = new LinkedList[v];
-        Arrays.fill(adj, new LinkedList<>());
+        for (int i = 0; i < adj.length; i++) {
+            adj[i] = new LinkedList<>();
+        }
     }
 
     public void addEdge(Edge e) {

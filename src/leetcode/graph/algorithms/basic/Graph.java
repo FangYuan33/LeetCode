@@ -1,7 +1,6 @@
 package leetcode.graph.algorithms.basic;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
@@ -26,7 +25,9 @@ public class Graph {
             V = Integer.parseInt(in.readLine());
             E = Integer.parseInt(in.readLine());
             adj = new LinkedList[V];
-            Arrays.fill(adj, new LinkedList<>());
+            for (int i = 0; i < adj.length; i++) {
+                adj[i] = new LinkedList<>();
+            }
 
             String line;
             while ((line = in.readLine()) != null) {
