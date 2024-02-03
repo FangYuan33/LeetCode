@@ -1,12 +1,14 @@
 package leetcode.graph.algorithms.basic;
 
+import java.util.Objects;
+
 /**
  * 有向边
  *
  * @author FangYuan
  * @since 2024-02-03 15:17:14
  */
-public class DirectedEdge {
+public class DirectedEdge implements Comparable<DirectedEdge> {
 
     private final int v;
 
@@ -30,5 +32,23 @@ public class DirectedEdge {
 
     public int to() {
         return w;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DirectedEdge that = (DirectedEdge) o;
+        return v == that.v && w == that.w && Double.compare(that.weight, weight) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(v, w, weight);
+    }
+
+    @Override
+    public int compareTo(DirectedEdge o) {
+        return Double.compare(this.weight, o.weight);
     }
 }
