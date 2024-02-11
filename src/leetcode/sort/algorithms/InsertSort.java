@@ -10,7 +10,7 @@ public class InsertSort {
         System.out.println(Arrays.toString(origin));
     }
 
-    private void sort(int[] nums) {
+    public void sort(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
             int base = nums[i];
 

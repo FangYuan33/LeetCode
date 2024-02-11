@@ -18,7 +18,7 @@ public class QuickSort3 {
     public void sort(int[] nums, int left, int right) {
         // 小数组采用插入排序
         if (left + M >= right) {
-            insertSort(nums);
+            insertSort(nums, left, right);
             return;
         }
 
@@ -30,8 +30,8 @@ public class QuickSort3 {
     /**
      * 插入排序
      */
-    private void insertSort(int[] nums) {
-        for (int i = 1; i < nums.length; i++) {
+    private void insertSort(int[] nums, int left, int right) {
+        for (int i = left; i <= right; i++) {
             int base = nums[i];
 
             int j = i - 1;
