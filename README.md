@@ -345,8 +345,8 @@
 | [432. 全 O(1) 的数据结构 困难](https://leetcode.cn/problems/all-oone-data-structure/)     | [AllOne.java](src%2Fleetcode%2Fdatastructure%2FAllOne.java)                                                                                                     |                                                                            |
 | [707. 设计链表 中等](https://leetcode.cn/problems/design-linked-list/)                  | [MyLinkedList.java](src%2Fleetcode%2Fdatastructure%2FMyLinkedList.java)                                                                                         |                                                                            |
 | [641. 设计循环双端队列 中等](https://leetcode.cn/problems/design-circular-deque/)           | [MyCircularDeque.java](src%2Fleetcode%2Fdatastructure%2FMyCircularDeque.java)                                                                                   |                                                                            |
+| [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) | [Trie.java](src%2Fleetcode%2Fdatastructure%2FTrie.java)                                                                                                         |                                                                            |
 | [1206. 设计跳表 困难](https://leetcode.cn/problems/design-skiplist/)                    |                                                                                                                                                                 |                                                                            |
-| [208. 实现 Trie (前缀树) 中等](https://leetcode.cn/problems/implement-trie-prefix-tree/) |                                                                                                                                                                 |                                                                            |
 
 ## 栈
 
