@@ -652,7 +652,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 题目链接                                                                       | 题解                                                                                                  | 备注                                                             |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | 左倾红黑树                                                                      | [LeftLeaningRedBlackTree.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FLeftLeaningRedBlackTree.java) | [树专题 —— 深入理解左倾红黑树](https://juejin.cn/post/7308434321763876874) |
-| 经典红黑树                                                                      |                                                                                                     | [树专题 —— 深入理解经典红黑树](https://juejin.cn/post/7313102241606238223) |
+| 经典红黑树                                                                      | /                                                                                                   | [树专题 —— 深入理解经典红黑树](https://juejin.cn/post/7313102241606238223) |
 | [2034. 股票价格波动 中等](https://leetcode.cn/problems/stock-price-fluctuation/)   | [StockPrice.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FStockPrice.java)                           |                                                                |
 | [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java)                         | 滑动窗口 + 红黑树                                                     |
 
