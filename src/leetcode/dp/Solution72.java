@@ -11,7 +11,8 @@ public class Solution72 {
             dp[j][0] = j;
         }
 
-        // 相等的话取对角线，不等取上左斜最小值 + 1
+        // 相等的话取对角线（对角线表示已经相等的字符串）
+        // 不等取上取上方、左方（替换、删除）对角线（添加）的最小值 + 1
         for (int i = 1; i <= word1.length(); i++) {
             for (int j = 1; j <= word2.length(); j++) {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
