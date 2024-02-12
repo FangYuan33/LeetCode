@@ -723,6 +723,7 @@ for 状态1 in 状态1中的所有值
 
 | 题目链接                                                                            | 题解                                                             | 备注 |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
+| [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                     | [Solution70.java](src%2Fleetcode%2Fdp%2FSolution70.java)       |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
 1. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
