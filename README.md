@@ -743,9 +743,10 @@ for 状态1 in 状态1中的所有值
 
 ### 最小路径和
 
-| 题目链接                                                           | 题解                                                       | 备注 |
-|----------------------------------------------------------------|----------------------------------------------------------|----|
-| [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/) | [Solution64.java](src%2Fleetcode%2Fdp%2FSolution64.java) |    |
+| 题目链接                                                                  | 题解                                                         | 备注 |
+|-----------------------------------------------------------------------|------------------------------------------------------------|----|
+| [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)        | [Solution64.java](src%2Fleetcode%2Fdp%2FSolution64.java)   |    |
+| [LCR 166. 珠宝的最高价值 中等](https://leetcode.cn/problems/minimum-path-sum/) | https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/ |    |
 
 ### 子序列问题
 
