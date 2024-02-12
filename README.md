@@ -711,7 +711,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 2. 考虑如何利用这些 base case 求解父问题（也是网上常说归纳状态转移方程）
 3. 考虑如何定义dp来记录这些解，一般情况下一维dp数组就足够，像路径问题和子序列问题考虑使用二维dp数组
 
-注意求解两字符串相比较的问题时（如编辑距离和公共子序列问题），一般定义二维dp数组，如下图所示，dp数组定义的长度和宽度分别为两字符串长度加一，黄色的方格为初始化 base case，记蓝色方格为待求解方格，其对角线方向的红色方格表示的是相等字符串的值。可以通过红色、绿色和紫色方格对蓝色方格进行求解：
+注意求解两字符串相比较的问题时（如编辑距离问题），一般定义二维dp数组，如下图所示，dp数组定义的长度和宽度分别为两字符串长度加一，黄色的方格为初始化 base case，记蓝色方格为待求解方格，其对角线方向的红色方格表示的是相等字符串的值。可以通过红色、绿色和紫色方格对蓝色方格进行求解：
 - 红色 -> 蓝色：表示已经相等的字符串经操作后再相等的结果值
 - 绿色 -> 蓝色：表示字符串text1转换成字符串text2的结果值
 - 紫色 -> 蓝色：表示字符串text2转换成字符串text1的结果值
@@ -755,7 +755,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                                                  | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/)                                | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 | [1218. 最长定差子序列 中等](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/)           | [Solution1218.java](src%2Fleetcode%2Fdp%2FSolution1218.java)   |    |
-| [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [Solution1312.java](src%2Fleetcode%2Fdp%2FSolution1312.java)   |    |
 
 ### 最小路径和问题
 
@@ -769,7 +768,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 涉及子序列，一般情况下时间复杂度为 $O(n^2)$，那么就跑不了双层的for循环
 
-- 针对数组的最长递增子序列问题，一维数组：
+- 针对数组的最长递增子序列问题：
 
 ```java
 int n = array.length;
@@ -800,13 +799,14 @@ for (int i = 0; i < n1; i++) {
 }
 ```
 
-| 题目链接                                                                                                 | 题解                                                               | 备注 |
-|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
-| [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)                         | [Solution1143.java](src%2Fleetcode%2Fdp%2FSolution1143.java)     |    |
-| [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/)                     | [Solution516.java](src%2Fleetcode%2Fdp%2FSolution516.java)       |    |
-| [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)                      | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java)       |    |
-| [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)         | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java)       |    |
-| [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                            | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
+| 题目链接                                                                                                           | 题解                                                               | 备注 |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
+| [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)                                   | [Solution1143.java](src%2Fleetcode%2Fdp%2FSolution1143.java)     |    |
+| [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/)                               | [Solution516.java](src%2Fleetcode%2Fdp%2FSolution516.java)       |    |
+| [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [Solution1312.java](src%2Fleetcode%2Fdp%2FSolution1312.java)     |    |
+| [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)                                | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java)       |    |
+| [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)                   | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java)       |    |
+| [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                                      | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
 
 ### 回溯法求解
 
