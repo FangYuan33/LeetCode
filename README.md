@@ -384,13 +384,13 @@ Stack<Integer> stack = new Stack<>();
 for (int i = 0; i < nums.length; i++) {
     while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
         int index = stack.pop();
-        
+
         // 关于 index 的特殊处理
         process();
     }
     // 索引入栈
     stack.push(i);
-    
+
     // 处理逻辑
     process1();
 }
@@ -398,7 +398,7 @@ for (int i = 0; i < nums.length; i++) {
 
 这个模板其实很好记，根据想找小值还是找大值来确定模板中的 while 条件，如果找小值则使用小于号，则 `nums[i] < nums[stack.peek()]`，如果找大值则使用大于号，则 `nums[i] > nums[stack.peek()]`，再根据题意判断是否需要给大于小于号添加上等号，这一点考虑是在有重复值出现的情况下。
 
-说了这么多，其实只需要考虑想找的是最近的小值还是大值，写对应的模板解题即可，即使你没明白为什么单调栈能找元素最近的大/小值（<s>应该自己 Debug 学习一下</s>）也没关系，只要使用了单调栈它就有这个性质，其他的全是虚妄...... 
+说了这么多，其实只需要考虑想找的是最近的小值还是大值，写对应的模板解题即可，即使你没明白为什么单调栈能找元素最近的大/小值（<s>应该自己 Debug 学习一下</s>）也没关系，只要使用了单调栈它就有这个性质，其他的全是虚妄......
 
 | 题目链接                                                                                                | 题解                                                                          | 备注          |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|
@@ -482,7 +482,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
             process();
         }
         deque.addLast(i);
-        
+
         // 必要处理逻辑
         process1();
     }
@@ -703,30 +703,40 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 动态规划
 
-动态规划一般都用来求**最值**，它的问题核心是**穷举**，如果使用回溯解决问题时，要考虑使用备忘录对其进行优化。解题时需要考虑以下几点
+动态规划（dynamic programming）常用于 **解决最优问题**，它与分治法相似，都是通过组合子问题的解来求解原问题（programming 在这指的是一种表格法，而非计算机编程）。分治法是将问题分为互不相交的子问题，递归的求解子问题，再将它们的解组合起来，求出原问题的解。相反地，动态规划应用于子问题重叠的情况，即不同的子问题具有公共子问题，如果采用分治法的话，会反复地求解公共子问题，而动态规划算法对每个子问题只求解一次，将解保存在表格中（也就是常用的dp数组），避免了重复计算。
 
-1. 这个问题的 base case 是什么？
-2. 它的子问题是什么？再想想它的状态呢？
-3. 它的状态转移方程是怎样的？
-4. 如何定义dp来表现状态或采用回溯法时如何用方法来表示它的状态？
+当发现题目需要采用动态规划求解时，一般需要考虑如下问题：
 
-### 斐波那契数列
-
-| 题目链接                                                                                      | 题解                                                               | 备注 |
-|-------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
-| [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                               | [Solution70.java](src%2Fleetcode%2Fdp%2FSolution70.java)         |    |
-| [LCR 165. 解密数字 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | [SolutionLCR165.java](src%2Fleetcode%2Fdp%2FSolutionLCR165.java) |    |
-
-### 最值问题
+1. 这个问题的 base case 是什么？base case 是一些简单的，能直接列出来的子问题的解，求解其他父问题时，需要依赖这些 base case
+2. 考虑如何利用这些 base case 求解父问题（也是网上常说归纳状态转移方程）
+3. 考虑如何定义dp来记录这些解，一般情况下一维dp数组就足够，像路径问题和子序列问题需要考虑使用二维dp数组
 
 ```java
-// 解题模板
-dp[0][0][...] = base case;
-for 状态1 in 状态1中的所有值
-    for 状态2 in 状态2中的所有值
-        for ...
-            dp[状态1][状态2][...] = 状态转移方程 = 最值;
+    public int fibonacci(int n) {
+        // 定义 dp数组和 base case
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        // 考虑如何利用 base case 求解父问题，如下是斐波那契数列的求解过程
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        return dp[n];
+    }
 ```
+
+### 斐波那契数列问题
+
+-  F(0) = 1, F(1) = 1. F(n) = F(n - 1) + F(n - 2); (n >= 2)
+
+| 题目链接                                                                                      | 题解                                                                           | 备注 |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
+| [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                               | [Solution70.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution70.java)         |    |
+| [LCR 165. 解密数字 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | [SolutionLCR165.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolutionLCR165.java) |    |
+
+### 最值问题
 
 | 题目链接                                                                            | 题解                                                             | 备注 |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
@@ -738,7 +748,7 @@ for 状态1 in 状态1中的所有值
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                   | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-### 最小路径和
+### 最小路径和问题
 
 | 题目链接                                                                  | 题解                                                               | 备注 |
 |-----------------------------------------------------------------------|------------------------------------------------------------------|----|
@@ -771,9 +781,9 @@ int[][] dp = new int[n1][n2];
 for (int i = 0; i < n1; i++) {
     for (int j = 0; j < n2; j++) {
         if (n1[i] == n2[j]) {
-            dp[i][j] = 
+            dp[i][j] =
         } else {
-            dp[i][j] = 
+            dp[i][j] =
         }    
     }    
 }
@@ -790,15 +800,7 @@ for (int i = 0; i < n1; i++) {
 3. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/): 回文串系列都是反向遍历
 4. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
-### 其他问题
-
-| 题目链接                                                                                          | 题解                                                         | 备注 |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
-| [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
-
-1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
-
-## 回溯
+### 回溯法求解
 
 回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
 而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决**全排列、八皇后、正则表达式匹配和某些做选择的动态规划**问题，它的解题模板如下
@@ -809,8 +811,8 @@ def backtrack(路径, 选择列表):
     if 满足结束条件
         result.add(路径)
         return
-    
-    for 选择 in 选择列表: 
+
+    for 选择 in 选择列表:
         // 做选择
         路径.add(选择)
         backtrack(路径, 选择列表)
@@ -826,16 +828,16 @@ def backtrack(路径, 选择列表):
 6. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 7. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
 8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
-9. 
+9.
 10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头
 
-## 递归
+### 其他问题
 
-递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
+| 题目链接                                                                                          | 题解                                                         | 备注 |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
+| [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
 
-1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
-2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
-3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
 ## 贪心算法
 
@@ -848,6 +850,14 @@ def backtrack(路径, 选择列表):
 3. [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
+
+## 递归
+
+递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
+
+1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
+2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
 ## 位运算
 

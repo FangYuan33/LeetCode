@@ -1,7 +1,7 @@
-package leetcode.dp;
+package leetcode.dp.fibonacci;
 
 public class Solution70 {
-    public int climbStairs(int n) {
+    public int fibonacci(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;
         dp[1] = 1;

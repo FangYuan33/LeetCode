@@ -1,4 +1,4 @@
-package leetcode.dp;
+package leetcode.dp.fibonacci;
 
 public class SolutionLCR165 {
     public int crackNumber(int ciphertext) {
