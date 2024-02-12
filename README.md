@@ -726,10 +726,10 @@ for 状态1 in 状态1中的所有值
 | [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                     | [Solution70.java](src%2Fleetcode%2Fdp%2FSolution70.java)       |    |
 | [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                       | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
 | [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                      | [Solution198.java](src%2Fleetcode%2Fdp%2FSolution198.java)     |    |
+| [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-6. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
 7. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
 8. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
