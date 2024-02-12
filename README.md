@@ -727,7 +727,6 @@ for 状态1 in 状态1中的所有值
 | [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                       | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-3. [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)
 4. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 5. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 6. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
@@ -736,6 +735,12 @@ for 状态1 in 状态1中的所有值
 9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 10. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
 11. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
+
+### 最小路径和
+
+| 题目链接                                                           | 题解                                                       | 备注 |
+|----------------------------------------------------------------|----------------------------------------------------------|----|
+| [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/) | [Solution64.java](src%2Fleetcode%2Fdp%2FSolution64.java) |    |
 
 ### 子序列问题
 
