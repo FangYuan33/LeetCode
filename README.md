@@ -745,15 +745,16 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 最值问题
 
-| 题目链接                                                                            | 题解                                                             | 备注 |
-|---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
-| [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                       | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
-| [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)                     | [Solution343.java](src%2Fleetcode%2Fdp%2FSolution343.java)     |    |
-| [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                      | [Solution198.java](src%2Fleetcode%2Fdp%2FSolution198.java)     |    |
-| [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
-| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
-| [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                   | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
-| [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
+| 题目链接                                                                                                           | 题解                                                             | 备注 |
+|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|----|
+| [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                                                      | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
+| [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)                                                    | [Solution343.java](src%2Fleetcode%2Fdp%2FSolution343.java)     |    |
+| [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                                                     | [Solution198.java](src%2Fleetcode%2Fdp%2FSolution198.java)     |    |
+| [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                                               | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
+| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                                                | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
+| [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                                                  | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
+| [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/)                                | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
+| [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [Solution1312.java](src%2Fleetcode%2Fdp%2FSolution1312.java)   |    |
 
 ### 最小路径和问题
 
@@ -806,8 +807,6 @@ for (int i = 0; i < n1; i++) {
 | [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)         | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java)       |    |
 | [1218. 最长定差子序列 中等](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) |                                                                  |    |
 | [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                            | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
-
-4. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
 ### 回溯法求解
 

@@ -2,16 +2,16 @@ package leetcode.dp;
 
 public class Solution1312 {
     public int minInsertions(String s) {
-        // 回文串，对角线，反向遍历
         int[][] dp = new int[s.length()][s.length()];
-        // base case 对角线为0 无需操作
 
-        // 相等的话取子串值，无需操作；不等取子串小值 + 1
-        for (int i = s.length() - 2; i >= 0; i--) {
-            for (int j = i + 1; j < s.length(); j++) {
+        // 不断的从子串计算转换成回文串的开销
+        for (int subLength = 2; subLength <= s.length(); subLength++) {
+            for (int i = 0, j = subLength - 1; j < s.length(); i++, j++) {
                 if (s.charAt(i) == s.charAt(j)) {
+                    // i和j分别为子串最两边的两个元素，dp[i + 1][j - 1] 表示它们的子回文串
                     dp[i][j] = dp[i + 1][j - 1];
                 } else {
+                    // dp[i][j - 1] 和 dp[i + 1][j] 分别表示两个子串转换成回文串的开销
                     dp[i][j] = Math.min(dp[i][j - 1], dp[i + 1][j]) + 1;
                 }
             }
