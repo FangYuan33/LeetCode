@@ -735,9 +735,9 @@ for 状态1 in 状态1中的所有值
 | [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                      | [Solution198.java](src%2Fleetcode%2Fdp%2FSolution198.java)     |    |
 | [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
+| [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                   | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 10. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
 11. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
 
