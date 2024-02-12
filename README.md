@@ -725,9 +725,9 @@ for 状态1 in 状态1中的所有值
 |---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
 | [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                     | [Solution70.java](src%2Fleetcode%2Fdp%2FSolution70.java)       |    |
 | [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                       | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
+| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-4. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 5. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
 6. [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)
 7. [剑指 Offer 14- I. 剪绳子 中等](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
