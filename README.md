@@ -724,10 +724,9 @@ for 状态1 in 状态1中的所有值
 | 题目链接                                                                            | 题解                                                             | 备注 |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------|----|
 | [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                     | [Solution70.java](src%2Fleetcode%2Fdp%2FSolution70.java)       |    |
+| [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                       | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-1. [剑指 Offer 10- II. 青蛙跳台阶问题 简单](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
-2. [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)
 3. [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)
 4. [剑指 Offer 42. 连续子数组的最大和 简单](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 5. [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)
