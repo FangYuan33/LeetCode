@@ -710,6 +710,12 @@ for (int i = nums.length - 1; i >= 0; i--) {
 3. 它的状态转移方程是怎样的？
 4. 如何定义dp来表现状态或采用回溯法时如何用方法来表示它的状态？
 
+### 斐波那契数列
+
+| 题目链接                                                                                      | 题解                                                               | 备注 |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
+| [LCR 165. 解密数字 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | [SolutionLCR165.java](src%2Fleetcode%2Fdp%2FSolutionLCR165.java) |    |
+
 ### 最值问题
 
 ```java
@@ -731,7 +737,6 @@ for 状态1 in 状态1中的所有值
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 
-8. [剑指 Offer 46. 把数字翻译成字符串 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 9. [剑指 Offer 47. 礼物的最大价值 中等](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 10. [剑指 Offer 49. 丑数 中等](https://leetcode.cn/problems/chou-shu-lcof/)
 11. [72. 编辑距离 困难](https://leetcode.cn/problems/edit-distance/)
