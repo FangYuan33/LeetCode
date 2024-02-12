@@ -737,14 +737,14 @@ for 状态1 in 状态1中的所有值
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                   | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
-| [72. 编辑距离 中等](https://leetcode.cn/problems/edit-distance/)                      | [Solution72.java](src%2Fleetcode%2Fdp%2FSolution72.java)       |    |
 
 ### 最小路径和
 
-| 题目链接                                                                  | 题解                                                         | 备注 |
-|-----------------------------------------------------------------------|------------------------------------------------------------|----|
-| [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)        | [Solution64.java](src%2Fleetcode%2Fdp%2FSolution64.java)   |    |
-| [LCR 166. 珠宝的最高价值 中等](https://leetcode.cn/problems/minimum-path-sum/) | https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/ |    |
+| 题目链接                                                                  | 题解                                                               | 备注 |
+|-----------------------------------------------------------------------|------------------------------------------------------------------|----|
+| [64. 最小路径和 中等](https://leetcode.cn/problems/minimum-path-sum/)        | [Solution64.java](src%2Fleetcode%2Fdp%2FSolution64.java)         |    |
+| [LCR 166. 珠宝的最高价值 中等](https://leetcode.cn/problems/minimum-path-sum/) | [SolutionLCR166.java](src%2Fleetcode%2Fdp%2FSolutionLCR166.java) |    |
+| [72. 编辑距离 中等](https://leetcode.cn/problems/edit-distance/)            | [Solution72.java](src%2Fleetcode%2Fdp%2FSolution72.java)         |    |
 
 ### 子序列问题
 
