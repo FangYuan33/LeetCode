@@ -736,8 +736,8 @@ for 状态1 in 状态1中的所有值
 | [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                 | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                   | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
-| [72. 编辑距离 中等](https://leetcode.cn/problems/edit-distance/)                      | [Solution72.java](src%2Fleetcode%2Fdp%2FSolution72.java)       |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
+| [72. 编辑距离 中等](https://leetcode.cn/problems/edit-distance/)                      | [Solution72.java](src%2Fleetcode%2Fdp%2FSolution72.java)       |    |
 
 ### 最小路径和
 
