@@ -801,12 +801,12 @@ for (int i = 0; i < n1; i++) {
 | 题目链接                                                                                                 | 题解                                                               | 备注 |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
 | [1143. 最长公共子序列 中等](https://leetcode.cn/problems/longest-common-subsequence/)                         | [Solution1143.java](src%2Fleetcode%2Fdp%2FSolution1143.java)     |    |
+| [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/)                     | [Solution516.java](src%2Fleetcode%2Fdp%2FSolution516.java)       |    |
 | [300. 最长递增子序列 中等](https://leetcode.cn/problems/longest-increasing-subsequence/)                      | [Solution300.java](src%2Fleetcode%2Fdp%2FSolution300.java)       |    |
 | [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)         | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java)       |    |
 | [1218. 最长定差子序列 中等](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) |                                                                  |    |
 | [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                            | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
 
-3. [516. 最长回文子序列 中等](https://leetcode.cn/problems/longest-palindromic-subsequence/): 回文串系列都是反向遍历
 4. [1312. 让字符串成为回文串的最少插入次数 困难](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
 ### 回溯法求解
