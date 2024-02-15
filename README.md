@@ -808,6 +808,13 @@ for (int i = 0; i < n1; i++) {
 | [673. 最长递增子序列的个数 中等](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)                   | [Solution637.java](src%2Fleetcode%2Fdp%2FSolution637.java)       |    |
 | [354. 俄罗斯套娃信封问题 困难](https://leetcode.cn/problems/russian-doll-envelopes/)                                      | [Solution354.java](src%2Fleetcode%2Fsimulate%2FSolution354.java) |    |
 
+### 其他问题
+
+| 题目链接                                                                                          | 题解                                                               | 备注 |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
+| [LCR 185. 统计结果概率 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)               | [SolutionLCR185.java](src%2Fleetcode%2Fdp%2FSolutionLCR185.java) |    |
+| [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java)       |    |
+
 ### 回溯法求解
 
 回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题，它的解题模板如下：
@@ -838,14 +845,6 @@ def backtrack(路径, 选择列表):
 | [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
 | [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
-
-### 其他问题
-
-| 题目链接                                                                                          | 题解                                                         | 备注 |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------|----|
-| [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java) |    |
-
-1. [剑指 Offer 60. n个骰子的点数 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)
 
 ## 贪心算法
 
