@@ -907,10 +907,10 @@ for (int i = 0; i < n1; i++) {
 | [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)         | [Solution121.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution121.java) |      |
 | [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)   | [Solution122.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution122.java) |      |
 | [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [Solution123.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution123.java) |      |
+| [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)                                     | [Solution55.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution55.java)   |      |
 | [334. 递增的三元子序列 中等](https://leetcode.cn/problems/increasing-triplet-subsequence/)           | [Solution334.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution334.java) | todo |
 
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
-5. [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)
 
 ## 递归
 
