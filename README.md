@@ -827,11 +827,11 @@ def backtrack(路径, 选择列表):
         路径.remove(选择)
 ```
 
-| 题目链接                                                     | 题解                                                                   | 备注 |
-|----------------------------------------------------------|----------------------------------------------------------------------|----|
-| [46. 全排列 中等](https://leetcode.cn/problems/permutations/) | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java) |    |
+| 题目链接                                                                                | 题解                                                                           | 备注 |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
+| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |    |
+| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |    |
 
-2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)
 4. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
 5. [78. 子集 中等](https://leetcode.cn/problems/subsets/)
