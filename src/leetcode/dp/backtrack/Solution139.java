@@ -30,7 +30,6 @@ public class Solution139 {
 
         boolean ans = false;
         for (int i = 0; i < wordDict.size(); i++) {
-            // 学习了新的字符串API
             if (s.startsWith(wordDict.get(i))) {
                 boolean res = backtrack(s.substring(wordDict.get(i).length()), wordDict);
                 if (res) {
