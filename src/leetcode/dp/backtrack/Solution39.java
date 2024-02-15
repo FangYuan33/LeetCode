@@ -10,7 +10,6 @@ public class Solution39 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         res = new ArrayList<>();
         backtrack(candidates, new LinkedList<Integer>(), 0, target);
-
         return res;
     }
 
@@ -19,17 +18,14 @@ public class Solution39 {
             if (target == 0) {
                 res.add((List) element.clone());
             }
-
             return;
         }
 
         for (int i = begin; i < candidates.length; i++) {
             target -= candidates[i];
             element.add(candidates[i]);
-
             // 注意这里的 i 的选择
             backtrack(candidates, element, i, target);
-
             // 回溯完成后移除
             target += candidates[i];
             element.removeLast();
