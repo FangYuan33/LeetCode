@@ -9,27 +9,29 @@ public class Solution46 {
 
     public List<List<Integer>> permute(int[] nums) {
         res = new ArrayList<>();
-        backtrack(new LinkedList<>(), nums);
+        backtrack(new LinkedList<>(), new boolean[nums.length],nums);
         return res;
     }
 
-    private void backtrack(LinkedList<Integer> element, int[] nums) {
+    private void backtrack(LinkedList<Integer> element, boolean[] visited,int[] nums) {
         // 某排列和数组长度一致时结束
         if (element.size() == nums.length) {
             res.add((List) element.clone());
             return;
         }
 
-        for (int num : nums) {
-            if (element.contains(num)) {
+        for (int i = 0; i < nums.length; i++) {
+            if (visited[i]) {
                 continue;
             }
 
-            element.addLast(num);
+            visited[i] = true;
+            element.addLast(nums[i]);
             // 回溯
-            backtrack(element, nums);
+            backtrack(element, visited, nums);
             // 移除添加的结果
             element.removeLast();
+            visited[i] = false;
         }
     }
 
