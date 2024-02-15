@@ -1,7 +1,7 @@
 package leetcode.dp.backtrack;
 
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class Solution139 {
@@ -13,33 +13,31 @@ public class Solution139 {
                         "bdb", "ddbdd", "cadaa", "ddbc", "babb")));
     }
 
-    // 备忘录优化
-    HashMap<String, Boolean> memo = new HashMap<>();
+    boolean res;
+
+    private HashSet<String> memo;
 
     public boolean wordBreak(String s, List<String> wordDict) {
-        return backtrack(s, wordDict);
+        res = false;
+        memo = new HashSet<>();
+        backtrack(s, wordDict);
+        return res;
     }
 
-    private boolean backtrack(String s, List<String> wordDict) {
+    private void backtrack(String s, List<String> wordDict) {
         if (s.length() == 0) {
-            return true;
-        }
-        if (memo.containsKey(s)) {
-            return memo.get(s);
+            res = true;
+            return;
         }
 
-        boolean ans = false;
-        for (int i = 0; i < wordDict.size(); i++) {
-            if (s.startsWith(wordDict.get(i))) {
-                boolean res = backtrack(s.substring(wordDict.get(i).length()), wordDict);
-                if (res) {
-                    ans = true;
-                    break;
-                }
+        for (String word : wordDict) {
+            if (res || memo.contains(s)) {
+                break;
+            }
+            if (s.startsWith(word)) {
+                backtrack(s.substring(word.length()), wordDict);
             }
         }
-        memo.put(s, ans);
-
-        return ans;
+        memo.add(s);
     }
 }
