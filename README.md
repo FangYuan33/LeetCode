@@ -915,8 +915,11 @@ for (int i = 0; i < n1; i++) {
 
 递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
 
-1. [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)
-2. [剑指 Offer 12. 矩阵中的路径 中等](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+| 题目链接                                                                | 题解                                                                      | 备注 |
+|---------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)     | [Solution200.java](src%2Fleetcode%2Frecursion%2FSolution200.java)       |    |
+| [LCR 129. 字母迷宫 中等](https://leetcode.cn/problems/number-of-islands/) | [SolutionLCR129.java](src%2Fleetcode%2Frecursion%2FSolutionLCR129.java) |    |
+
 3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
 ## 位运算
