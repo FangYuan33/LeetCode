@@ -902,13 +902,13 @@ for (int i = 0; i < n1; i++) {
 
 贪心算法可以通过局部最优解来构造全局最优解，也就是说，在构造局部最优解时只需关注当前问题，而不必考虑子问题的解。这也是贪心算法与动态规划不同的地方，动态规划需要在每个步骤中都要进行一次选择，通常以一种自底向上的方式求解（先求子问题，再求较大的子问题），而贪心算法通常是自顶向下的，进行一次又一次选择，将给定问题变得更小，它可能依赖之前做出的选择，但不依赖任何将来的选择或是子问题的解。
 
-| 题目链接                                                                                       | 题解                                                                      | 备注   |
-|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------|
-| [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)         | [Solution121.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution121.java) |      |
-| [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)   | [Solution122.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution122.java) |      |
-| [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [Solution123.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution123.java) |      |
-| [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)                                     | [Solution55.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution55.java)   |      |
-| [334. 递增的三元子序列 中等](https://leetcode.cn/problems/increasing-triplet-subsequence/)           | [Solution334.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution334.java) | todo |
+| 题目链接                                                                                       | 题解                                                                      | 备注 |
+|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [121. 买卖股票的最佳时机 简单](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)         | [Solution121.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution121.java) |    |
+| [122. 买卖股票的最佳时机 II 中等](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)   | [Solution122.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution122.java) |    |
+| [123. 买卖股票的最佳时机 III 困难](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [Solution123.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution123.java) |    |
+| [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)                                     | [Solution55.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution55.java)   |    |
+| [334. 递增的三元子序列 中等](https://leetcode.cn/problems/increasing-triplet-subsequence/)           | [Solution334.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution334.java) |    |
 
 4. [135. 分发糖果 困难](https://leetcode.cn/problems/candy/): 向左向右分别分一次的想法如果能想到就太简单了
 
