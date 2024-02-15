@@ -834,8 +834,8 @@ def backtrack(路径, 选择列表):
 | [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |    |
 | [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |    |
 | [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️ |
+| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                   | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)         | ⭐️ |
 
-6. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 7. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
 8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
 10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头

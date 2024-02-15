@@ -8,13 +8,11 @@ public class Solution22 {
 
     public List<String> generateParenthesis(int n) {
         res = new ArrayList<>();
-
-        backtrack(new StringBuilder(), n, n);
-
+        backtrack(n, n, new StringBuilder());
         return res;
     }
 
-    private void backtrack(StringBuilder element, int left, int right) {
+    private void backtrack(int left, int right, StringBuilder element) {
         // 结束条件
         if (left == 0 && right == 0) {
             res.add(element.toString());
@@ -25,9 +23,7 @@ public class Solution22 {
         if (left > 0) {
             left--;
             element.append("(");
-
-            backtrack(element, left, right);
-
+            backtrack(left, right, element);
             left++;
             element.deleteCharAt(element.length() - 1);
         }
@@ -35,9 +31,7 @@ public class Solution22 {
         if (right > 0 && left < right) {
             right--;
             element.append(")");
-
-            backtrack(element, left, right);
-
+            backtrack(left, right, element);
             right++;
             element.deleteCharAt(element.length() - 1);
         }
