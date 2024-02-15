@@ -817,21 +817,73 @@ for (int i = 0; i < n1; i++) {
 
 ### 回溯法求解
 
-回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题，它的解题模板如下：
+回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题。
 
-```xml
-result = [];
-def backtrack(路径, 选择列表):
-    if 满足结束条件
-        result.add(路径)
-        return
+以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
 
-    for 选择 in 选择列表:
-        // 做选择
-        路径.add(选择)
-        backtrack(路径, 选择列表)
-        // 撤销选择
-        路径.remove(选择)
+```java
+    List<List<Integer>> res;
+
+    public List<List<Integer>> permute(int[] nums) {
+        res = new ArrayList<>();
+        backtrack(nums, new boolean[nums.length], new LinkedList<>());
+        return res;
+    }
+
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
+        // 某排列和数组长度一致时结束
+        if (element.size() == nums.length) {
+            res.add((List) element.clone());
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (visited[i]) {
+                continue;
+            }
+
+            visited[i] = true;
+            element.addLast(nums[i]);
+            // 回溯
+            backtrack(nums, visited, element);
+            // 移除添加的结果
+            element.removeLast();
+            visited[i] = false;
+        }
+    }
+```
+
+回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
+
+```java
+    // 定义全局变量记录结果值
+    List<List<Integer>> res;
+
+    /**
+     * 回溯法解题模板
+     *
+     * @param nums 选择列表：每个题解的取值范围
+     * @param visited 备忘录，用来标记是否访问过，避免重复遍历求解
+     * @param element 题解对象
+     */
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
+        if (满足题意条件) {
+            res.add((List<Integer>) element.clone());
+            return;
+        }
+
+        // 在选择列表，即取值范围内取值构造答案
+        for (int i = 0; i < nums.length; i++) {
+            // 进行选择
+            element.add(nums[i]);
+            visited[i] = true;
+            // 回溯
+            backtrack(nums, visited, element);
+            // 移除选择
+            element.removeLast();
+            visited[i] = false;
+        }
+    }
 ```
 
 | 题目链接                                                                                | 题解                                                                           | 备注                                |

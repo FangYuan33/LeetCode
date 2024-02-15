@@ -9,11 +9,11 @@ public class Solution46 {
 
     public List<List<Integer>> permute(int[] nums) {
         res = new ArrayList<>();
-        backtrack(new LinkedList<>(), new boolean[nums.length],nums);
+        backtrack(nums, new boolean[nums.length], new LinkedList<>());
         return res;
     }
 
-    private void backtrack(LinkedList<Integer> element, boolean[] visited,int[] nums) {
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
         // 某排列和数组长度一致时结束
         if (element.size() == nums.length) {
             res.add((List) element.clone());
@@ -28,7 +28,7 @@ public class Solution46 {
             visited[i] = true;
             element.addLast(nums[i]);
             // 回溯
-            backtrack(element, visited, nums);
+            backtrack(nums, visited, element);
             // 移除添加的结果
             element.removeLast();
             visited[i] = false;
