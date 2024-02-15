@@ -837,8 +837,7 @@ def backtrack(路径, 选择列表):
 | [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                   | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)         | ⭐️                                |
 | [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
-
-8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
+| [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
 
 ### 其他问题
 

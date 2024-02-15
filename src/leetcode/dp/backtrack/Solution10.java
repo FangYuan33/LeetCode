@@ -6,16 +6,17 @@ public class Solution10 {
     }
 
     private boolean backtrack(String s, int sIndex, String p, int pIndex) {
+        boolean valid = true;
         // 结束条件: 正则表达式匹配完
         if (pIndex == p.length()) {
             // 字符串也匹配完则为成功
             if (sIndex == s.length()) {
-                return true;
+                return valid;
             }
         }
 
         // *的判断 * 要求前边得有个字符才行，所以得加1，此时的正则索引是*的前一个索引
-        if (pIndex < (p.length() - 1) && p.charAt(pIndex + 1) == '*') {
+        if (pIndex + 1 < p.length() && p.charAt(pIndex + 1) == '*') {
             // 发生匹配情况
             if (sIndex < s.length() && (s.charAt(sIndex) == p.charAt(pIndex) || p.charAt(pIndex) == '.')) {
                 // 继续向下判断字符串是否匹配，正则索引不改变
@@ -33,7 +34,7 @@ public class Solution10 {
         }
 
         // 字符不等的话返回false
-        return false;
+        return !valid;
     }
 
     public static void main(String[] args) {
