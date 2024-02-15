@@ -1,4 +1,4 @@
-package leetcode.backtrack;
+package leetcode.dp.backtrack;
 
 public class Solution10 {
     public boolean isMatch(String s, String p) {

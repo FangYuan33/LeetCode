@@ -810,8 +810,7 @@ for (int i = 0; i < n1; i++) {
 
 ### 回溯法求解
 
-回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，
-而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决**全排列、八皇后、正则表达式匹配和某些做选择的动态规划**问题，它的解题模板如下
+回溯相当于穷举搜索，但是回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题，它的解题模板如下：
 
 ```xml
 result = [];
@@ -828,7 +827,10 @@ def backtrack(路径, 选择列表):
         路径.remove(选择)
 ```
 
-1. [46. 全排列 中等](https://leetcode.cn/problems/permutations/)
+| 题目链接                                                     | 题解                                                                   | 备注 |
+|----------------------------------------------------------|----------------------------------------------------------------------|----|
+| [46. 全排列 中等](https://leetcode.cn/problems/permutations/) | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java) |    |
+
 2. [剑指 Offer 38. 字符串的排列 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/)
 3. [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)
 4. [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)
@@ -836,7 +838,6 @@ def backtrack(路径, 选择列表):
 6. [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)
 7. [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)
 8. [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)
-9.
 10. [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/): 字符串API `startsWith(s)` 判断字符串是否以某字符串开头
 
 ### 其他问题
