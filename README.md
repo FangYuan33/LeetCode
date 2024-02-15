@@ -915,12 +915,11 @@ for (int i = 0; i < n1; i++) {
 
 递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
 
-| 题目链接                                                                | 题解                                                                      | 备注 |
-|---------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-| [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)     | [Solution200.java](src%2Fleetcode%2Frecursion%2FSolution200.java)       |    |
-| [LCR 129. 字母迷宫 中等](https://leetcode.cn/problems/number-of-islands/) | [SolutionLCR129.java](src%2Fleetcode%2Frecursion%2FSolutionLCR129.java) |    |
-
-3. [面试题13. 机器人的运动范围 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+| 题目链接                                                                                 | 题解                                                                      | 备注 |
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)                      | [Solution200.java](src%2Fleetcode%2Frecursion%2FSolution200.java)       |    |
+| [LCR 129. 字母迷宫 中等](https://leetcode.cn/problems/number-of-islands/)                  | [SolutionLCR129.java](src%2Fleetcode%2Frecursion%2FSolutionLCR129.java) |    |
+| [LCR 130. 衣橱整理 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | [SolutionLCR130.java](src%2Fleetcode%2Frecursion%2FSolutionLCR130.java) |    |
 
 ## 位运算
 
