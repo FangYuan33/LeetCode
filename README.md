@@ -287,12 +287,12 @@
     }
 ```
 
-| 题目链接                                                                           | 题解                                                                         | 备注       |
-|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------|
-| [剑指 Offer 24. 反转链表 简单](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [SolutionOffer24.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer24.java) |          |
-| [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/)           | [Solution234.java](src%2Fleetcode%2Flinkedlist%2FSolution234.java)         | 快慢指针分开链表 |
-| [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)         | [Solution92.java](src%2Fleetcode%2Flinkedlist%2FSolution92.java)           |          |
-| [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/)     | [Solution25.java](src%2Fleetcode%2Flinkedlist%2FSolution25.java)           |          |
+| 题目链接                                                                       | 题解                                                                 | 备注       |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------|----------|
+| [206. 反转链表 简单](https://leetcode.cn/problems/reverse-linked-list/)          | [Solution206.java](src%2Fleetcode%2Flinkedlist%2FSolution206.java) |          |
+| [234. 回文链表 简单](https://leetcode.cn/problems/palindrome-linked-list/)       | [Solution234.java](src%2Fleetcode%2Flinkedlist%2FSolution234.java) | 快慢指针分开链表 |
+| [92. 反转链表 II 中等](https://leetcode.cn/problems/reverse-linked-list-ii/)     | [Solution92.java](src%2Fleetcode%2Flinkedlist%2FSolution92.java)   |          |
+| [25. K 个一组翻转链表 困难](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [Solution25.java](src%2Fleetcode%2Flinkedlist%2FSolution25.java)   |          |
 
 ### 递归
 
