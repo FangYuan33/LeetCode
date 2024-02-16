@@ -335,6 +335,7 @@
 | [面试题 02.05. 链表求和 中等](https://leetcode.cn/problems/sum-lists-lcci/)      | [Solution0205.java](src%2Fleetcode%2Flinkedlist%2FSolution0205.java)             |    |
 | [445. 两数相加 II 中等](https://leetcode.cn/problems/add-two-numbers-ii/)     | [Solution445.java](src%2Fleetcode%2Flinkedlist%2FSolution445.java)               |    |
 | [817. 链表组件 中等](https://leetcode.cn/problems/linked-list-components/)    | [Solution817.java](src%2Fleetcode%2Flinkedlist%2FSolution817.java)               |    |
+| [86. 分隔链表 中等](https://leetcode.cn/problems/partition-list/)             | [Solution86.java](src%2Fleetcode%2Flinkedlist%2FSolution86.java)                 |    |
 
 ## 数据结构
 
