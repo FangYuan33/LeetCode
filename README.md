@@ -305,6 +305,7 @@
 | [23. 合并K个升序链表 困难](https://leetcode.cn/problems/merge-k-sorted-lists/)                                | [Solution23.java](src%2Fleetcode%2Flinkedlist%2FSolution23.java)           | 分治的思想(想想归并排序)               |
 | [148. 排序链表 中等](https://leetcode.cn/problems/sort-list/)                                              | [Solution148.java](src%2Fleetcode%2Flinkedlist%2FSolution148.java)         | 也是分治的思想，但是它的难度是中等，其实和上一题差不多 |
 | [430. 扁平化多级双向链表 中等](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)           | [Solution430.java](src%2Fleetcode%2Flinkedlist%2FSolution430.java)         |                             |
+| [138. 随机链表的复制 中等](https://leetcode.cn/problems/copy-list-with-random-pointer/)                       | [Solution138.java](src%2Fleetcode%2Flinkedlist%2FSolution138.java)         |                             |
 
 ### 双指针、快慢指针
 
