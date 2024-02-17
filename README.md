@@ -324,6 +324,7 @@
 | [82. 删除排序链表中的重复元素 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | [Solution82.java](src%2Fleetcode%2Flinkedlist%2FSolution82.java)           |    |
 | [19. 删除链表的倒数第 N 个结点 中等](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)       | [Solution19.java](src%2Fleetcode%2Flinkedlist%2FSolution19.java)           |    |
 | [725. 分隔链表 中等](https://leetcode.cn/problems/split-linked-list-in-parts/)                      | [Solution725.java](src%2Fleetcode%2Flinkedlist%2FSolution725.java)         |    |
+| [237. 删除链表中的节点 中等](https://leetcode.cn/problems/delete-node-in-a-linked-list/)                | [Solution237.java](src%2Fleetcode%2Flinkedlist%2FSolution237.java)         |    |
 
 ### 推导
 
