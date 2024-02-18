@@ -250,12 +250,12 @@
 
 | 题目链接                                                                                                                    | 题解                                                              | 备注              |
 |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------|
+| [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)                                                    | [Solution14.java](src%2Fleetcode%2Fstr%2FSolution14.java)       |                 |
 | [1455. 检查单词是否为句中其他单词的前缀 简单](https://leetcode.cn/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [Solution1455.java](src%2Fleetcode%2Fstr%2FSolution1455.java)   | startsWith() 方法 |
 | [187. 重复的DNA序列 中等](https://leetcode.cn/problems/repeated-dna-sequences/)                                                | [Solution187.java](src%2Fleetcode%2Fstr%2FSolution187.java)     |                 |
 | [面试题 10.02. 变位词组 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                 | [Interview1002.java](src%2Fleetcode%2Fstr%2FInterview1002.java) |                 |
 | [394. 字符串解码 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                      | [Solution394.java](src%2Fleetcode%2Fstr%2FSolution394.java)     |                 |
 
-1. [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)
 2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
 
 ### 字符转数字

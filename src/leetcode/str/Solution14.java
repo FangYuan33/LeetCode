@@ -1,38 +1,22 @@
 package leetcode.str;
 
-import java.util.Arrays;
-
 public class Solution14 {
     public String longestCommonPrefix(String[] strs) {
-        if (strs.length == 0) {
-            return "";
-        }
+        String res = strs[0];
 
-        StringBuilder res = new StringBuilder();
-
-        // 排序找到最小长度的字符串
-        Arrays.sort(strs, (x, y) -> x.length() - y.length());
-        String min = strs[0];
-
-        for (int i = 0; i < min.length(); i++) {
-            char c = min.charAt(i);
-
-            int j = 1;
-            while (j < strs.length) {
-                if (strs[j].charAt(i) == c) {
-                    j++;
+        for (int i = 1; i < strs.length; i++) {
+            char[] charArray = strs[i].toCharArray();
+            int index = 0;
+            while (index < charArray.length && index < res.length()) {
+                if (res.charAt(index) == charArray[index]) {
+                    index++;
                 } else {
                     break;
                 }
             }
-
-            if (j == strs.length) {
-                res.append(c);
-            } else {
-                break;
-            }
+            res = strs[i].substring(0, index);
         }
 
-        return res.toString();
+        return res;
     }
 }
