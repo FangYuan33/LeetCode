@@ -255,8 +255,7 @@
 | [187. 重复的DNA序列 中等](https://leetcode.cn/problems/repeated-dna-sequences/)                                                | [Solution187.java](src%2Fleetcode%2Fstr%2FSolution187.java)     |                 |
 | [面试题 10.02. 变位词组 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                 | [Interview1002.java](src%2Fleetcode%2Fstr%2FInterview1002.java) |                 |
 | [394. 字符串解码 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                      | [Solution394.java](src%2Fleetcode%2Fstr%2FSolution394.java)     |                 |
-
-2. [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)
+| [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)                                            | [Solution151.java](src%2Fleetcode%2Fstr%2FSolution151.java)     |                 |
 
 ### 字符转数字
 
