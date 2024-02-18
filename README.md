@@ -246,23 +246,18 @@
 
 ## 字符串
 
-### 字符串操作
-
-| 题目链接                                                                                                                    | 题解                                                              | 备注              |
-|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------|
-| [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)                                                    | [Solution14.java](src%2Fleetcode%2Fstr%2FSolution14.java)       |                 |
-| [1455. 检查单词是否为句中其他单词的前缀 简单](https://leetcode.cn/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [Solution1455.java](src%2Fleetcode%2Fstr%2FSolution1455.java)   | startsWith() 方法 |
-| [187. 重复的DNA序列 中等](https://leetcode.cn/problems/repeated-dna-sequences/)                                                | [Solution187.java](src%2Fleetcode%2Fstr%2FSolution187.java)     |                 |
-| [面试题 10.02. 变位词组 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                 | [Interview1002.java](src%2Fleetcode%2Fstr%2FInterview1002.java) |                 |
-| [394. 字符串解码 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                      | [Solution394.java](src%2Fleetcode%2Fstr%2FSolution394.java)     |                 |
-| [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)                                            | [Solution151.java](src%2Fleetcode%2Fstr%2FSolution151.java)     |                 |
-
-### 字符转数字
+| 题目链接                                                                                                                    | 题解                                                              | 备注                                 |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|------------------------------------|
+| [14. 最长公共前缀 简单](https://leetcode.cn/problems/longest-common-prefix/)                                                    | [Solution14.java](src%2Fleetcode%2Fstr%2FSolution14.java)       |                                    |
+| [1455. 检查单词是否为句中其他单词的前缀 简单](https://leetcode.cn/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [Solution1455.java](src%2Fleetcode%2Fstr%2FSolution1455.java)   | startsWith() 方法                    |
+| [187. 重复的DNA序列 中等](https://leetcode.cn/problems/repeated-dna-sequences/)                                                | [Solution187.java](src%2Fleetcode%2Fstr%2FSolution187.java)     |                                    |
+| [面试题 10.02. 变位词组 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                 | [Interview1002.java](src%2Fleetcode%2Fstr%2FInterview1002.java) |                                    |
+| [394. 字符串解码 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                      | [Solution394.java](src%2Fleetcode%2Fstr%2FSolution394.java)     |                                    |
+| [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)                                            | [Solution151.java](src%2Fleetcode%2Fstr%2FSolution151.java)     |                                    |
+| [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)                                                  | [Solution165.java](src%2Fleetcode%2Fstr%2FSolution165.java)     | `Integer.parseInt()` 字符串转整数自动忽略前导0 |
 
 - `s.charAt(i) - '0'` = 数字
-- `Integer.parseInt()` 字符串转整数自动忽略前导0
 
-1. [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/):
 2. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
 3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
 
