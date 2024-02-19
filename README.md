@@ -255,10 +255,8 @@
 | [394. 字符串解码 中等](https://leetcode.cn/problems/group-anagrams-lcci/)                                                      | [Solution394.java](src%2Fleetcode%2Fstr%2FSolution394.java)     |                                    |
 | [151. 反转字符串中的单词 中等](https://leetcode.cn/problems/reverse-words-in-a-string/)                                            | [Solution151.java](src%2Fleetcode%2Fstr%2FSolution151.java)     |                                    |
 | [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)                                                  | [Solution165.java](src%2Fleetcode%2Fstr%2FSolution165.java)     | `Integer.parseInt()` 字符串转整数自动忽略前导0 |
+| [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)                                            | [Solution8.java](src%2Fleetcode%2Fstr%2FSolution8.java)         | ⭐️数字边界问题处理                         |
 
-- `s.charAt(i) - '0'` = 数字
-
-2. [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)
 3. [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)
 
 ## 链表
