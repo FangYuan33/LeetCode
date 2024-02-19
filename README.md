@@ -18,6 +18,7 @@
 | [825. 适龄的朋友 中等](https://leetcode.cn/problems/friends-of-appropriate-ages/)                                            | [Solution825.java](src%2Fleetcode%2Fdoublepointer%2FSolution825.java)       |    |
 | [56. 合并区间 中等](https://leetcode.cn/problems/merge-intervals/)                                                          | [Solution56.java](src%2Fleetcode%2Fdoublepointer%2FSolution56.java)         | ✅  |
 | [413. 等差数列划分 中等](https://leetcode.cn/problems/arithmetic-slices/)                                                     | [Solution413.java](src%2Fleetcode%2Fslidingwindow%2FSolution413.java)       |    |
+| [167. 两数之和 II - 输入有序数组 中等](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)                            | [Solution167.java](src%2Fleetcode%2Fdoublepointer%2FSolution167.java)       |    |
 | [15. 三数之和 中等](https://leetcode.cn/problems/3sum/)                                                                     | [Solution15.java](src%2Fleetcode%2Fdoublepointer%2FSolution15.java)         |    |
 | [16. 最接近的三数之和 中等](https://leetcode.cn/problems/3sum-closest/)                                                         | [Solution16.java](src%2Fleetcode%2Fdoublepointer%2FSolution16.java)         |    |
 | [18. 四数之和 中等](https://leetcode.cn/problems/4sum/)                                                                     | [Solution18.java](src%2Fleetcode%2Fdoublepointer%2FSolution18.java)         |    |
