@@ -302,12 +302,13 @@
 
 ### 双指针、快慢指针
 
-| 题目链接                                                                                                     | 题解                                                                         | 备注 |
-|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|
-| [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | [SolutionOffer22.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer22.java) |    |
-| [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)                                          | [Solution141.java](src%2Fleetcode%2Flinkedlist%2FSolution141.java)         |    |
-| [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)                                    | [Solution142.java](src%2Fleetcode%2Flinkedlist%2FSolution142.java)         |    |
-| [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)                           | [Solution160.java](src%2Fleetcode%2Flinkedlist%2FSolution160.java)         |    |
+| 题目链接                                                                                                     | 题解                                                                         | 备注                                                                                          |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| [剑指 Offer 22. 链表中倒数第k个节点 简单](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | [SolutionOffer22.java](src%2Fleetcode%2Flinkedlist%2FSolutionOffer22.java) |                                                                                             |
+| [141. 环形链表 简单](https://leetcode.cn/problems/linked-list-cycle/)                                          | [Solution141.java](src%2Fleetcode%2Flinkedlist%2FSolution141.java)         |                                                                                             |
+| [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)                                    | [Solution142.java](src%2Fleetcode%2Flinkedlist%2FSolution142.java)         |                                                                                             |
+| [287. 寻找重复数 中等](https://leetcode.cn/problems/find-the-duplicate-number/)                                 | [Solution287.java](src%2Fleetcode%2Flinkedlist%2FSolution287.java)         | ⭐️ 1. 如果提示 n + 1 个数，且数字范围在 `[1, n]` 内，那么可以使索引和该位置的值一致，来协助解题<br/> 2. 该题由于不能修改数组，所以转换成了环形链表求解 |
+| [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)                           | [Solution160.java](src%2Fleetcode%2Flinkedlist%2FSolution160.java)         |                                                                                             |
 
 ### 前驱节点在删除链表节点中的应用
 
