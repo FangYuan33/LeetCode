@@ -7,6 +7,7 @@
 | 题目链接                                                                                                                  | 题解                                                                          | 备注 |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
 | [26. 删除有序数组中的重复项 简单](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)                               | [Solution26.java](src%2Fleetcode%2Fdoublepointer%2FSolution26.java)         | ✅  |
+| [392. 判断子序列 简单](https://leetcode.cn/problems/is-subsequence/)                                                         | [Solution392.java](src%2Fleetcode%2Fdoublepointer%2FSolution392.java)       | ✅  |
 | [27. 移除元素 简单](https://leetcode.cn/problems/remove-element/)                                                           | [Solution27.java](src%2Fleetcode%2Fdoublepointer%2FSolution27.java)         | ✅  |
 | [LCR 139. 训练计划 I 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | [SolutionLCR139.java](src%2Fleetcode%2Fdoublepointer%2FSolutionLCR139.java) | ✅  |
 | [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)                                              | [Interview1001.java](src%2Fleetcode%2Fdoublepointer%2FInterview1001.java)   | ✅  |
