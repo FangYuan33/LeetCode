@@ -259,6 +259,7 @@
 | [165. 比较版本号 中等](https://leetcode.cn/problems/compare-version-numbers/)                                                  | [Solution165.java](src%2Fleetcode%2Fstr%2FSolution165.java)     | `Integer.parseInt()` 字符串转整数自动忽略前导0 |
 | [8. 字符串转换整数 (atoi) 中等](https://leetcode.cn/problems/string-to-integer-atoi/)                                            | [Solution8.java](src%2Fleetcode%2Fstr%2FSolution8.java)         | ⭐️数字边界问题处理                         |
 | [43. 字符串相乘 中等](https://leetcode.cn/problems/multiply-strings/)                                                          | [Solution43.java](src%2Fleetcode%2Fstr%2FSolution43.java)       |                                    |
+| [6. Z 字形变换 中等](https://leetcode.cn/problems/zigzag-conversion/)                                                         | [Solution6.java](src%2Fleetcode%2Fstr%2FSolution6.java)         |                                    |
 
 ## 链表
 
