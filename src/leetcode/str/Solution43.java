@@ -1,10 +1,9 @@
 package leetcode.str;
 
-import java.util.Stack;
-
 public class Solution43 {
 
     public static void main(String[] args) {
+        // 56088
         System.out.println(new Solution43().multiply("123", "456"));
     }
 
@@ -18,20 +17,20 @@ public class Solution43 {
                 int x = num1.charAt(i) - '0';
                 int y = num2.charAt(j) - '0';
 
-                int cur = x * y + res[res.length - 1 - n];
-                res[res.length - 1 - n] = cur % 10;
-                res[res.length - 2 - n] += cur / 10;
+                int cur = x * y + res[n];
+                res[n] = cur % 10;
+                res[n + 1] += cur / 10;
 
                 n++;
             }
         }
 
         StringBuilder builder = new StringBuilder();
-        for (int num : res) {
-            if (builder.length() == 0 && num == 0) {
+        for (int i = res.length - 1; i >= 0; i--) {
+            if (builder.length() == 0 && res[i] == 0) {
                 continue;
             }
-            builder.append(num);
+            builder.append(res[i]);
         }
 
         return builder.length() == 0 ? "0" : builder.toString();
