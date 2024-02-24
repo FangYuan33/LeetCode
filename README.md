@@ -628,11 +628,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 二叉树层序遍历
 
+- 相关学习：[树专题 —— 二叉树层序遍历](https://juejin.cn/post/7305606652198551579)
+
 | 题目链接                                                                                                  | 题解                                                                              | 备注 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|----|
 | [102. 二叉树的层序遍历 中等](https://leetcode.cn/problems/binary-tree-level-order-traversal/)                   | [Solution102.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution102.java)       | ✅  |
 | [111. 二叉树的最小深度 简单](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)                        | [Solution111.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution111.java)       | ✅  |
 | [LCR 151. 彩灯装饰记录 III 中等](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [SolutionLCR151.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolutionLCR151.java) | ✅  |
+| [103. 二叉树的锯齿形层序遍历 中等](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)         | [Solution103.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution103.java)       | ✅  |
 | [199. 二叉树的右视图 中等](https://leetcode.cn/problems/binary-tree-right-side-view/)                          | [Solution199.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution199.java)       | ✅  |
 | [623. 在二叉树中增加一行 中等](https://leetcode.cn/problems/add-one-row-to-tree/)                                | [Solution623.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution623.java)       | ✅  |
 | [655. 输出二叉树 中等](https://leetcode.cn/problems/print-binary-tree/)                                      | [Solution655.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution655.java)       | ✅  |
