@@ -698,7 +698,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 有向图              | [Digraph.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDigraph.java)                     |    |
 | Dijkstra算法查找最短路径 | [Dijkstra.java](src%2Fleetcode%2Fgraph%2Falgorithms%2FDijkstra.java)                   |    |
 
-### 相关题目
+### 有向图
+
+| 题目链接                                                         | 题解                                                            | 备注     |
+|--------------------------------------------------------------|---------------------------------------------------------------|--------|
+| [207. 课程表 中等](https://leetcode.cn/problems/course-schedule/) | [Solution207.java](src%2Fleetcode%2Fgraph%2FSolution207.java) | 判断是否有环 |
+
+### 其他
 
 | 题目链接                                                                                         | 题解 | 备注 |
 |----------------------------------------------------------------------------------------------|----|----|
