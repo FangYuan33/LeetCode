@@ -10,14 +10,7 @@ public class Solution207 {
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         Digraph digraph = new Digraph(numCourses, prerequisites);
-
-        for (int i = 0; i < numCourses; i++) {
-            if (digraph.hasCycle(i)) {
-                return false;
-            }
-        }
-
-        return true;
+        return !digraph.isHasCycle();
     }
 
     static class Digraph {
@@ -26,11 +19,17 @@ public class Solution207 {
 
         private LinkedList<Integer>[] adj;
 
-        private int[] marked;
+        private boolean[] marked;
+
+        private boolean[] onStack;
+
+        private boolean hasCycle;
 
         public Digraph(int v, int[][] prerequisites) {
+            hasCycle = false;
             this.V = v;
-            marked = new int[V];
+            marked = new boolean[V];
+            onStack = new boolean[V];
             adj = new LinkedList[V];
             for (int i = 0; i < adj.length; i++) {
                 adj[i] = new LinkedList<>();
@@ -39,29 +38,32 @@ public class Solution207 {
             for (int[] prerequisite : prerequisites) {
                 adj[prerequisite[1]].add(prerequisite[0]);
             }
+
+            for (int i = 0; i < V; i++) {
+                dfs(i);
+            }
         }
 
-        public boolean hasCycle(int index) {
-            return dfs(adj, index);
-        }
-
-        private boolean dfs(LinkedList<Integer>[] adj, int index) {
-            if (marked[index] == 1) {
-                return true;
-            }
-            if (marked[index] == -1) {
-                return false;
+        private void dfs(int v) {
+            if (hasCycle) {
+                return;
             }
 
-            marked[index] = 1;
-            for (Integer v : adj[index]) {
-                if (dfs(adj, v)) {
-                    return true;
+            marked[v] = true;
+            onStack[v] = true;
+            for (Integer w : adj[v]) {
+                if (!marked[w]) {
+                    dfs(w);
+                } else if (onStack[w]) {
+                    hasCycle = true;
+                    return;
                 }
             }
-            marked[index] = -1;
+            onStack[v] = false;
+        }
 
-            return false;
+        public boolean isHasCycle() {
+            return hasCycle;
         }
     }
 }
