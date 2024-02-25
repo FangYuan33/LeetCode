@@ -710,6 +710,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |------------------------------------------------------------------------------|---------------------------------------------------------------|----|
 | [210. 课程表 II 中等](https://leetcode.cn/problems/course-schedule-ii/)           | [Solution210.java](src%2Fleetcode%2Fgraph%2FSolution210.java) |    |
 | [802. 找到最终的安全状态 中等](https://leetcode.cn/problems/find-eventual-safe-states/) | [Solution802.java](src%2Fleetcode%2Fgraph%2FSolution802.java) |    |
+| [851. 喧闹和富有 中等](https://leetcode.cn/problems/loud-and-rich/)                 | [Solution851.java](src%2Fleetcode%2Fgraph%2FSolution851.java) |    |
 
 ### 其他
 
