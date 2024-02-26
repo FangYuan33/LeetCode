@@ -977,6 +977,7 @@ for (int i = 0; i < n1; i++) {
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------|
 | [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                  | [Solution78.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution78.java)         |                                   |
 | [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |                                   |
+| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         |                                   |
 | [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |                                   |
 | [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |                                   |
 | [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
