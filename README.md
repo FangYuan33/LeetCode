@@ -675,6 +675,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [169. 多数元素 简单](https://leetcode.cn/problems/majority-element/)                                      | [Solution169.java](src%2Fleetcode%2Fhashmap%2FSolution169.java)     |            |
 | [229. 多数元素 II 中等](https://leetcode.cn/problems/majority-element-ii/)                                | [Solution229.java](src%2Fleetcode%2Fhashmap%2FSolution229.java)     |            |
 | [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                 | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |            |
+| [242. 有效的字母异位词 简单](https://leetcode.cn/problems/valid-anagram)                                      | [Solution242.java](src%2Fleetcode%2Fhashmap%2FSolution242.java)     |            |
 | [811. 子域名访问计数 中等](https://leetcode.cn/problems/subdomain-visit-count/)                              | [Solution811.java](src%2Fleetcode%2Fhashmap%2FSolution811.java)     |            |
 | [299. 猜数字游戏 中等](https://leetcode.cn/problems/bulls-and-cows/)                                       | [Solution299.java](src%2Fleetcode%2Fhashmap%2FSolution299.java)     |            |
 | [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |            |
