@@ -1007,6 +1007,7 @@ for (int i = 0; i < n1; i++) {
 | [55. 跳跃游戏 中等](https://leetcode.cn/problems/jump-game/)                                     | [Solution55.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution55.java)   |             |
 | [334. 递增的三元子序列 中等](https://leetcode.cn/problems/increasing-triplet-subsequence/)           | [Solution334.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution334.java) |             |
 | [135. 分发糖果 困难](https://leetcode.cn/problems/candy/)                                        | [Solution135.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution135.java) |             |
+| [768. 最多能完成排序的块 II 困难](https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/)         | [Solution768.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution768.java) |             |
 
 ## 递归
 
