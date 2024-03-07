@@ -1021,14 +1021,15 @@ for (int i = 0; i < n1; i++) {
 
 ## 位运算
 
-| 题目链接                                                                                  | 题解                                                                | 备注 |
-|---------------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
-| [LCR 133. 位 1 的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) | [SolutionLCR133.java](src%2Fleetcode%2Fbit%2FSolutionLCR133.java) |    |
-| [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)                              | [Solution50.java](src%2Fleetcode%2Fbit%2FSolution50.java)         |    |
-| [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)                 | [Solution137.java](src%2Fleetcode%2Fbit%2FSolution137.java)       |    |
-| [260. 只出现一次的数字 III 中等](https://leetcode.cn/problems/single-number-iii/)               | [Solution260.java](src%2Fleetcode%2Fbit%2FSolution260.java)       |    |
-| [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |    |
-| [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |    |
+| 题目链接                                                                                  | 题解                                                                | 备注                      |
+|---------------------------------------------------------------------------------------|-------------------------------------------------------------------|-------------------------|
+| [LCR 133. 位 1 的个数 简单](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) | [SolutionLCR133.java](src%2Fleetcode%2Fbit%2FSolutionLCR133.java) |                         |
+| [231. 2 的幂 简单](https://leetcode.cn/problems/power-of-two/)                            | [Solution231.java](src%2Fleetcode%2Fbit%2FSolution231.java)       | 2的幂有 (n & (n - 1)) == 0 |
+| [50. Pow(x, n) 中等](https://leetcode.cn/problems/powx-n/)                              | [Solution50.java](src%2Fleetcode%2Fbit%2FSolution50.java)         |                         |
+| [137. 只出现一次的数字 II 中等](https://leetcode.cn/problems/single-number-ii/)                 | [Solution137.java](src%2Fleetcode%2Fbit%2FSolution137.java)       |                         |
+| [260. 只出现一次的数字 III 中等](https://leetcode.cn/problems/single-number-iii/)               | [Solution260.java](src%2Fleetcode%2Fbit%2FSolution260.java)       |                         |
+| [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |                         |
+| [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |                         |
 
 ## 模拟
 
