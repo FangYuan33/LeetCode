@@ -1032,6 +1032,12 @@ for (int i = 0; i < n1; i++) {
 | [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |                         |
 | [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |                         |
 
+## 数学
+
+| 题目链接                                                   | 题解                                                         | 备注 |
+|--------------------------------------------------------|------------------------------------------------------------|----|
+| [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/) | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java) |    |
+
 ## 模拟
 
 | 题目链接                                                                                                       | 题解                                                                          | 备注 |
