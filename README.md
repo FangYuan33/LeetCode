@@ -315,6 +315,7 @@
 | [142. 环形链表 II 中等](https://leetcode.cn/problems/linked-list-cycle-ii/)                                    | [Solution142.java](src%2Fleetcode%2Flinkedlist%2FSolution142.java)         |                                                                                             |
 | [287. 寻找重复数 中等](https://leetcode.cn/problems/find-the-duplicate-number/)                                 | [Solution287.java](src%2Fleetcode%2Flinkedlist%2FSolution287.java)         | ⭐️ 1. 如果提示 n + 1 个数，且数字范围在 `[1, n]` 内，那么可以使索引和该位置的值一致，来协助解题<br/> 2. 该题由于不能修改数组，所以转换成了环形链表求解 |
 | [160. 相交链表 简单](https://leetcode.cn/problems/intersection-of-two-linked-lists/)                           | [Solution160.java](src%2Fleetcode%2Flinkedlist%2FSolution160.java)         |                                                                                             |
+| [1823. 找出游戏的获胜者 中等](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)                  | [Solution1823.java](src%2Fleetcode%2Flinkedlist%2FSolution1823.java)       |                                                                                             |
 
 ### 前驱节点在删除链表节点中的应用
 
@@ -1032,12 +1033,6 @@ for (int i = 0; i < n1; i++) {
 | [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |                         |
 | [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |                         |
 
-## 数学
-
-| 题目链接                                                   | 题解                                                         | 备注 |
-|--------------------------------------------------------|------------------------------------------------------------|----|
-| [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/) | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java) |    |
-
 ## 模拟
 
 | 题目链接                                                                                                       | 题解                                                                          | 备注 |
@@ -1058,3 +1053,4 @@ for (int i = 0; i < n1; i++) {
 | [54. 螺旋矩阵 中等](https://leetcode.cn/problems/spiral-matrix/)                                                 | [Solution54.java](src%2Fleetcode%2Fsimulate%2FSolution54.java)              |    |
 | [59. 螺旋矩阵 II 中等](https://leetcode.cn/problems/spiral-matrix-ii/)                                           | [Solution59.java](src%2Fleetcode%2Fsimulate%2FSolution59.java)              |    |
 | [48. 旋转图像 中等](https://leetcode.cn/problems/rotate-image/)                                                  | [Solution48.java](src%2Fleetcode%2Fsimulate%2FSolution48.java)              |    |
+| [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                     | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
