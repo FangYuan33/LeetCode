@@ -13,6 +13,7 @@
 | [27. 移除元素 简单](https://leetcode.cn/problems/remove-element/)                                                           | [Solution27.java](src%2Fleetcode%2Fdoublepointer%2FSolution27.java)         | ✅  |
 | [LCR 139. 训练计划 I 简单](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | [SolutionLCR139.java](src%2Fleetcode%2Fdoublepointer%2FSolutionLCR139.java) | ✅  |
 | [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)                                              | [Interview1001.java](src%2Fleetcode%2Fdoublepointer%2FInterview1001.java)   | ✅  |
+| [88. 合并两个有序数组 简单](https://leetcode.cn/problems/merge-sorted-array/)                                                   | [Solution88.java](src%2Fleetcode%2Fdoublepointer%2FSolution88.java)         | ✅  |
 | [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                              | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)       | ✅  |
 | [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)                                             | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)         | ✅  |
 | [881. 救生艇 中等](https://leetcode.cn/problems/boats-to-save-people/)                                                     | [Solution881.java](src%2Fleetcode%2Fdoublepointer%2FSolution881.java)       | ✅  |
