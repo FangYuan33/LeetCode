@@ -15,6 +15,7 @@
 | [面试题 10.01. 合并排序的数组 简单](https://leetcode.cn/problems/sorted-merge-lcci/)                                              | [Interview1001.java](src%2Fleetcode%2Fdoublepointer%2FInterview1001.java)   | ✅  |
 | [88. 合并两个有序数组 简单](https://leetcode.cn/problems/merge-sorted-array/)                                                   | [Solution88.java](src%2Fleetcode%2Fdoublepointer%2FSolution88.java)         | ✅  |
 | [581. 最短无序连续子数组 中等](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)                              | [Solution581.java](src%2Fleetcode%2Fdoublepointer%2FSolution581.java)       | ✅  |
+| [80. 删除有序数组中的重复项 II 中等](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/)                         | [Solution80.java](src%2Fleetcode%2Fdoublepointer%2FSolution80.java)         | ✅  |
 | [11. 盛最多水的容器 中等](https://leetcode.cn/problems/container-with-most-water/)                                             | [Solution11.java](src%2Fleetcode%2Fdoublepointer%2FSolution11.java)         | ✅  |
 | [881. 救生艇 中等](https://leetcode.cn/problems/boats-to-save-people/)                                                     | [Solution881.java](src%2Fleetcode%2Fdoublepointer%2FSolution881.java)       | ✅  |
 | [870. 优势洗牌 中等](https://leetcode.cn/problems/advantage-shuffle/)                                                       | [Solution870.java](src%2Fleetcode%2Fdoublepointer%2FSolution870.java)       | ✅  |
