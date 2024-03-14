@@ -1056,4 +1056,5 @@ for (int i = 0; i < n1; i++) {
 | [54. 螺旋矩阵 中等](https://leetcode.cn/problems/spiral-matrix/)                                                 | [Solution54.java](src%2Fleetcode%2Fsimulate%2FSolution54.java)              |    |
 | [59. 螺旋矩阵 II 中等](https://leetcode.cn/problems/spiral-matrix-ii/)                                           | [Solution59.java](src%2Fleetcode%2Fsimulate%2FSolution59.java)              |    |
 | [48. 旋转图像 中等](https://leetcode.cn/problems/rotate-image/)                                                  | [Solution48.java](src%2Fleetcode%2Fsimulate%2FSolution48.java)              |    |
+| [189. 轮转数组 中等](https://leetcode.cn/problems/rotate-array/)                                                 | [Solution189.java](src%2Fleetcode%2Fsimulate%2FSolution189.java)            |    |
 | [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                     | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
