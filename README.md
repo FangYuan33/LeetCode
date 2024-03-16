@@ -1058,3 +1058,4 @@ for (int i = 0; i < n1; i++) {
 | [48. 旋转图像 中等](https://leetcode.cn/problems/rotate-image/)                                                  | [Solution48.java](src%2Fleetcode%2Fsimulate%2FSolution48.java)              |    |
 | [189. 轮转数组 中等](https://leetcode.cn/problems/rotate-array/)                                                 | [Solution189.java](src%2Fleetcode%2Fsimulate%2FSolution189.java)            |    |
 | [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                     | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
+| [400. 第 N 位数字 中等](https://leetcode.cn/problems/nth-digit/)                                                 | [Solution400.java](src%2Fleetcode%2Fsimulate%2FSolution400.java)            |    |
