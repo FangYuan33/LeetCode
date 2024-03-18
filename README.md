@@ -572,7 +572,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) | [Solution373.java](src%2Fleetcode%2Fpriorityqueue%2FSolution373.java)         | ✅多路归并 |
 | [1705. 吃苹果的最大数目 中等](https://leetcode.cn/problems/maximum-number-of-eaten-apples/)     | [Solution1705.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1705.java)       | ✅贪心   |
 | [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | ✅贪心   |
-| [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | 贪心    |
+| [45. 跳跃游戏 II 中等](https://leetcode.cn/problems/jump-game-ii/)                          | [Solution45.java](src%2Fleetcode%2Fpriorityqueue%2FSolution45.java)           | ✅贪心   |
+| [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | ✅贪心   |
 
 ## 树
 
