@@ -155,6 +155,7 @@
 | [497. 非重叠矩形中的随机点 中等](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/)                       | [Solution497.java](src%2Fleetcode%2Fprefixsum%2FSolution497.java)   |    |
 | [528. 按权重随机选择 中等](https://leetcode.cn/problems/random-pick-with-weight/)                                             | [Solution528.java](src%2Fleetcode%2Fprefixsum%2FSolution528.java)   |    |
 | [238. 除自身以外数组的乘积 中等](https://leetcode.cn/problems/product-of-array-except-self/)                                     | [Solution238.java](src%2Fleetcode%2Fprefixsum%2FSolution238.java)   |    |
+| [274. H 指数 中等](https://leetcode.cn/problems/h-index/)                                                                | [Solution274.java](src%2Fleetcode%2Fprefixsum%2FSolution274.java)   |    |
 
 #### 前缀和减法计算任意区间和
 
