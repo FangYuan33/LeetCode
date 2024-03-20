@@ -1061,3 +1061,4 @@ for (int i = 0; i < n1; i++) {
 | [189. 轮转数组 中等](https://leetcode.cn/problems/rotate-array/)                                                 | [Solution189.java](src%2Fleetcode%2Fsimulate%2FSolution189.java)            |    |
 | [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                     | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
 | [400. 第 N 位数字 中等](https://leetcode.cn/problems/nth-digit/)                                                 | [Solution400.java](src%2Fleetcode%2Fsimulate%2FSolution400.java)            |    |
+| [12. 整数转罗马数字 中等](https://leetcode.cn/problems/integer-to-roman/)                                           | [Solution12.java](src%2Fleetcode%2Fsimulate%2FSolution12.java)              |    |
