@@ -6,6 +6,14 @@ public class Solution134 {
         for (int i = 0; i < gas.length; i++) {
             gas[i] -= cost[i];
         }
+        // 最终总油量必须大于等于0才能走完全程
+        int sum = 0;
+        for (int i : gas) {
+            sum += i;
+        }
+        if (sum < 0) {
+            return -1;
+        }
 
         // 2 倍长度数组，某点开始能够走最长的点为唯一的起点，双指针法求解
         int[] nums = new int[gas.length * 2];
@@ -26,22 +34,15 @@ public class Solution134 {
                         begin = left;
                     }
                 }
+                if (right - left == gas.length) {
+                    return left;
+                }
             } else {
                 right++;
             }
             left = right;
         }
 
-        // 最终总油量必须大于等于0才能走完全程
-        int sum = 0;
-        for (int i : gas) {
-            sum += i;
-        }
-
-        if (sum >= 0) {
-            return begin;
-        } else {
-            return -1;
-        }
+        return begin;
     }
 }
