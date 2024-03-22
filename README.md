@@ -694,6 +694,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [447. 回旋镖的数量 中等](https://leetcode.cn/problems/number-of-boomerangs/)                                | [Solution447.java](src%2Fleetcode%2Fhashmap%2FSolution447.java)     |            |
 | [2013. 检测正方形 中等](https://leetcode.cn/problems/detect-squares/)                                      | [DetectSquares.java](src%2Fleetcode%2Fhashmap%2FDetectSquares.java) |            |
 | [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/)                             | [Solution41.java](src%2Fleetcode%2Fhashmap%2FSolution41.java)       | 自建简单hash函数 |
+| [49. 字母异位词分组 中等](https://leetcode.cn/problems/group-anagrams/)                                      | [Solution49.java](src%2Fleetcode%2Fhashmap%2FSolution49.java)       |            |
 | [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                              | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |            |
 
 ## 图
