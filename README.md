@@ -380,6 +380,8 @@
 
 ### 单调栈
 
+- 相关学习：[单调栈和单调队列可以很简单](https://blog.csdn.net/qq_46225886/article/details/133266360)
+
 单调栈本质上是 **维护数组中的元素为单调序列**，数组中的元素 **要么** 符合单调性顺利进栈，**要么** 不符合单调性而将栈中其他元素“挤走”再进栈，使得栈中序列始终满足单调性。
 
 理解这一点很重要，我们以单调递增栈为例，如果出现了比栈顶元素 **小** 的值，即不符合当前栈中序列单增特性的值，那么它会使所有比它大的值出栈，而 **该值便是接下来要连续出栈元素右侧最近的小值**，比该值大的值出栈完毕后，该值进栈，使得栈中的序列仍然满足单调递增。
@@ -416,6 +418,7 @@ for (int i = 0; i < nums.length; i++) {
 | [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                           | [Solution496.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution496.java)   |             |
 | [503. 下一个更大元素 II 中等](https://leetcode.cn/problems/next-greater-element-ii/)                         | [Solution503.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution503.java)   | 循环数组使用 % 运算 |
 | [42. 接雨水 困难](https://leetcode.cn/problems/trapping-rain-water/)                                     | [Solution42.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution42.java)     | ⭐️          |
+| [1673. 找出最具竞争力的子序列 中等](https://leetcode.cn/problems/find-the-most-competitive-subsequence/)         | [Solution1673.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FSolution1673.java) | 子序列问题       |
 
 #### 计算当前值作为区间最大/最小值时的最大区间范围
 
