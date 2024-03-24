@@ -1045,25 +1045,26 @@ for (int i = 0; i < n1; i++) {
 
 ## 模拟
 
-| 题目链接                                                                                                       | 题解                                                                          | 备注 |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [796. 旋转字符串 简单](https://leetcode.cn/problems/rotate-string)                                                | [Solution796.java](src%2Fleetcode%2Fsimulate%2FSolution796.java)            |    |
-| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)          |    |
-| [415. 字符串相加 简单](https://leetcode.cn/problems/add-strings)                                                  | [Solution415.java](src%2Fleetcode%2Fsimulate%2FSolution415.java)            |    |
-| [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                           | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)            |    |
-| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java)       |    |
-| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                           | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)              |    |
-| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/)                      | [NumMatrix.java](src%2Fleetcode%2Fsimulate%2FNumMatrix.java)                |    |
-| [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                          | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |    |
-| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                   | [Solution560.java](src%2Fleetcode%2Fsimulate%2FSolution560.java)            |    |
-| [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                                  | [Solution496.java](src%2Fleetcode%2Fsimulate%2FSolution496.java)            |    |
-| [556. 下一个更大元素 III 中等](https://leetcode.cn/problems/next-greater-element-iii/)                              | [Solution556.java](src%2Fleetcode%2Fsimulate%2FSolution556.java)            |    |
-| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                   | [Solution219.java](src%2Fleetcode%2Fsimulate%2FSolution219.java)            |    |
-| [611. 有效三角形的个数 中等](https://leetcode.cn/problems/valid-triangle-number/)                                    | [Solution611.java](src%2Fleetcode%2Fdoublepointer%2FSolution611.java)       |    |
-| [54. 螺旋矩阵 中等](https://leetcode.cn/problems/spiral-matrix/)                                                 | [Solution54.java](src%2Fleetcode%2Fsimulate%2FSolution54.java)              |    |
-| [59. 螺旋矩阵 II 中等](https://leetcode.cn/problems/spiral-matrix-ii/)                                           | [Solution59.java](src%2Fleetcode%2Fsimulate%2FSolution59.java)              |    |
-| [48. 旋转图像 中等](https://leetcode.cn/problems/rotate-image/)                                                  | [Solution48.java](src%2Fleetcode%2Fsimulate%2FSolution48.java)              |    |
-| [189. 轮转数组 中等](https://leetcode.cn/problems/rotate-array/)                                                 | [Solution189.java](src%2Fleetcode%2Fsimulate%2FSolution189.java)            |    |
-| [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                     | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
-| [400. 第 N 位数字 中等](https://leetcode.cn/problems/nth-digit/)                                                 | [Solution400.java](src%2Fleetcode%2Fsimulate%2FSolution400.java)            |    |
-| [12. 整数转罗马数字 中等](https://leetcode.cn/problems/integer-to-roman/)                                           | [Solution12.java](src%2Fleetcode%2Fsimulate%2FSolution12.java)              |    |
+| 题目链接                                                                                                              | 题解                                                                          | 备注 |
+|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [796. 旋转字符串 简单](https://leetcode.cn/problems/rotate-string)                                                       | [Solution796.java](src%2Fleetcode%2Fsimulate%2FSolution796.java)            |    |
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)        | [Solution1893.java](src%2Fleetcode%2Fsimulate%2FSolution1893.java)          |    |
+| [415. 字符串相加 简单](https://leetcode.cn/problems/add-strings)                                                         | [Solution415.java](src%2Fleetcode%2Fsimulate%2FSolution415.java)            |    |
+| [406. 根据身高重建队列 中等](https://leetcode.cn/problems/queue-reconstruction-by-height/)                                  | [Solution406.java](src%2Fleetcode%2Fsimulate%2FSolution406.java)            |    |
+| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                        | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java)       |    |
+| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)                                                  | [MyCalendar.java](src%2Fleetcode%2Fsimulate%2FMyCalendar.java)              |    |
+| [304. 二维区域和检索 - 矩阵不可变 中等](https://leetcode.cn/problems/range-sum-query-2d-immutable/)                             | [NumMatrix.java](src%2Fleetcode%2Fsimulate%2FNumMatrix.java)                |    |
+| [901. 股票价格跨度 中等](https://leetcode.cn/problems/online-stock-span/)                                                 | [StockSpanner.java](src%2Fleetcode%2Fstack%2Fmonotonic%2FStockSpanner.java) |    |
+| [560. 和为 K 的子数组 中等](https://leetcode.cn/problems/subarray-sum-equals-k/)                                          | [Solution560.java](src%2Fleetcode%2Fsimulate%2FSolution560.java)            |    |
+| [496. 下一个更大元素 I 简单](https://leetcode.cn/problems/next-greater-element-i/)                                         | [Solution496.java](src%2Fleetcode%2Fsimulate%2FSolution496.java)            |    |
+| [556. 下一个更大元素 III 中等](https://leetcode.cn/problems/next-greater-element-iii/)                                     | [Solution556.java](src%2Fleetcode%2Fsimulate%2FSolution556.java)            |    |
+| [219. 存在重复元素 II 简单](https://leetcode.cn/problems/contains-duplicate-ii/)                                          | [Solution219.java](src%2Fleetcode%2Fsimulate%2FSolution219.java)            |    |
+| [611. 有效三角形的个数 中等](https://leetcode.cn/problems/valid-triangle-number/)                                           | [Solution611.java](src%2Fleetcode%2Fdoublepointer%2FSolution611.java)       |    |
+| [54. 螺旋矩阵 中等](https://leetcode.cn/problems/spiral-matrix/)                                                        | [Solution54.java](src%2Fleetcode%2Fsimulate%2FSolution54.java)              |    |
+| [59. 螺旋矩阵 II 中等](https://leetcode.cn/problems/spiral-matrix-ii/)                                                  | [Solution59.java](src%2Fleetcode%2Fsimulate%2FSolution59.java)              |    |
+| [48. 旋转图像 中等](https://leetcode.cn/problems/rotate-image/)                                                         | [Solution48.java](src%2Fleetcode%2Fsimulate%2FSolution48.java)              |    |
+| [189. 轮转数组 中等](https://leetcode.cn/problems/rotate-array/)                                                        | [Solution189.java](src%2Fleetcode%2Fsimulate%2FSolution189.java)            |    |
+| [89. 格雷编码 中等](https://leetcode.cn/problems/gray-code/)                                                            | [Solution89.java](src%2Fleetcode%2Fmath%2FSolution89.java)                  |    |
+| [400. 第 N 位数字 中等](https://leetcode.cn/problems/nth-digit/)                                                        | [Solution400.java](src%2Fleetcode%2Fsimulate%2FSolution400.java)            |    |
+| [12. 整数转罗马数字 中等](https://leetcode.cn/problems/integer-to-roman/)                                                  | [Solution12.java](src%2Fleetcode%2Fsimulate%2FSolution12.java)              |    |
+| [2934. 最大化数组末位元素的最少操作次数 中等](https://leetcode.cn/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [Solution2934.java](src%2Fleetcode%2Fsimulate%2FSolution2934.java)          |    |
