@@ -1,7 +1,5 @@
 package leetcode.binarysearch.greedyalgorithm;
 
-import sun.nio.cs.ext.MacHebrew;
-
 import java.util.Arrays;
 
 public class Solution2226 {
