@@ -654,13 +654,14 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [987. 二叉树的垂序遍历 困难](https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/)           | [Solution987.java](src%2Fleetcode%2Ftree%2Flevelorder%2FSolution987.java)       |    |
 | [297. 二叉树的序列化与反序列化 困难](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)           | [Codec.java](src%2Fleetcode%2Ftree%2Flevelorder%2FCodec.java)                   |    |
 
-### 递归
+### dfs
 
-| 题目链接                                                                                        | 题解                                                                       | 备注 |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
-| [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/)        | [Solution114.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution114.java) |    |
-| [437. 路径总和 III 中等](https://leetcode.cn/problems/path-sum-iii/)                              | [Solution437.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution437.java) |    |
-| [652. 寻找重复的子树 中等](https://leetcode.cn/problems/find-duplicate-subtrees/)                    | [Solution652.java](src%2Fleetcode%2Ftree%2Frecursion%2FSolution652.java) |    |
+| 题目链接                                                                                                                      | 题解                                                                   | 备注 |
+|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|----|
+| [114. 二叉树展开为链表 中等](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/)                                      | [Solution114.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution114.java)   |    |
+| [437. 路径总和 III 中等](https://leetcode.cn/problems/path-sum-iii/)                                                            | [Solution437.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution437.java)   |    |
+| [652. 寻找重复的子树 中等](https://leetcode.cn/problems/find-duplicate-subtrees/)                                                  | [Solution652.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution652.java)   |    |
+| [2096. 从二叉树一个节点到另一个节点每一步的方向 中等](https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) | [Solution2096.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution2096.java) |    |
 
 ### 红黑树
 
