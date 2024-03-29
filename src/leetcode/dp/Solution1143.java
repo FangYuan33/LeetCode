@@ -1,6 +1,13 @@
 package leetcode.dp;
 
 public class Solution1143 {
+
+    /**
+     * 最长子序列问题：
+     * 如果两个字符串的最后一个字符相等，那么最长子序列就是去掉最后一个字符的两个字符串的最长子序列加一
+     * 如果两个字符串的最后一个字符不相等，那么最长子序列就是去掉 text1 的最后一个字符和 text2 的最长子序列，
+     * 去掉 text2 的最后一个字符和 text1 的最长子序列的最大值
+     */
     public int longestCommonSubsequence(String text1, String text2) {
         // base case 值为 0，表示字符串无子序列
         int[][] dp = new int[text1.length() + 1][text2.length() + 1];
