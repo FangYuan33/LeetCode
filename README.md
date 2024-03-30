@@ -1046,6 +1046,7 @@ for (int i = 0; i < n1; i++) {
 | [260. 只出现一次的数字 III 中等](https://leetcode.cn/problems/single-number-iii/)               | [Solution260.java](src%2Fleetcode%2Fbit%2FSolution260.java)       |                         |
 | [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |                         |
 | [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |                         |
+| [1073. 负二进制数相加 中等](https://leetcode.cn/problems/adding-two-negabinary-numbers/)       | [Solution1073.java](src%2Fleetcode%2Fbit%2FSolution1073.java)     |                         |
 
 ## 模拟
 
