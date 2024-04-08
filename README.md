@@ -1075,3 +1075,4 @@ for (int i = 0; i < n1; i++) {
 | [12. 整数转罗马数字 中等](https://leetcode.cn/problems/integer-to-roman/)                                                  | [Solution12.java](src%2Fleetcode%2Fsimulate%2FSolution12.java)              |    |
 | [2934. 最大化数组末位元素的最少操作次数 中等](https://leetcode.cn/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | [Solution2934.java](src%2Fleetcode%2Fsimulate%2FSolution2934.java)          |    |
 | [2672. 有相同颜色的相邻元素数目 中等](https://leetcode.cn/problems/number-of-adjacent-elements-with-the-same-color/)            | [Solution2672.java](src%2Fleetcode%2Fsimulate%2FSolution2672.java)          |    |
+| [3025. 人员站位的方案数 I 中等](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/)                    | [Solution3025.java](src%2Fleetcode%2Fsimulate%2FSolution3025.java)          |    |
