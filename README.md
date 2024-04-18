@@ -638,6 +638,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [687. 最长同值路径 中等](https://leetcode.cn/problems/longest-univalue-path/)                          | [Solution687.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution687.java)   |    |
 | [124. 二叉树中的最大路径和 困难](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)               | [Solution124.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution124.java)   | ✅  |
 | [1080. 根到叶路径上的不足节点 中等](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/) | [Solution1080.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution1080.java) |    |
+| [979. 在二叉树中分配硬币 中等](https://leetcode.cn/problems/distribute-coins-in-binary-tree/)             | [Solution979.java](src%2Fleetcode%2Ftree%2Fpostorder%2FSolution979.java)   |    |
 
 ### 二叉树层序遍历
 
