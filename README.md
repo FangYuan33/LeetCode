@@ -806,9 +806,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 无向图
 
-| 题目链接                                                                                         | 题解 | 备注 |
-|----------------------------------------------------------------------------------------------|----|----|
-| [863. 二叉树中所有距离为 K 的结点 中等](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) |    |    |
+| 题目链接                                                                                                      | 题解                                                              | 备注 |
+|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|----|
+| [863. 二叉树中所有距离为 K 的结点 中等](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)              |                                                                 |    |
+| [1519. 子树中标签相同的节点数 中等](https://leetcode.cn/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | [Solution1519.java](src%2Fleetcode%2Fgraph%2FSolution1519.java) |    |
 
 ## 动态规划
 
