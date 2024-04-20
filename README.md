@@ -665,6 +665,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [437. 路径总和 III 中等](https://leetcode.cn/problems/path-sum-iii/)                                                            | [Solution437.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution437.java)   |    |
 | [652. 寻找重复的子树 中等](https://leetcode.cn/problems/find-duplicate-subtrees/)                                                  | [Solution652.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution652.java)   |    |
 | [2096. 从二叉树一个节点到另一个节点每一步的方向 中等](https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) | [Solution2096.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution2096.java) |    |
+| [863. 二叉树中所有距离为 K 的结点 中等](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)                              | [Solution863.java](src%2Fleetcode%2Ftree%2Fdfs%2FSolution863.java)   |    |
 
 ### 红黑树
 
@@ -808,7 +809,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 | 题目链接                                                                                                      | 题解                                                              | 备注 |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|----|
-| [863. 二叉树中所有距离为 K 的结点 中等](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)              |                                                                 |    |
 | [1519. 子树中标签相同的节点数 中等](https://leetcode.cn/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | [Solution1519.java](src%2Fleetcode%2Fgraph%2FSolution1519.java) |    |
 
 ## 动态规划
