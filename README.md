@@ -811,6 +811,91 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|----|
 | [1519. 子树中标签相同的节点数 中等](https://leetcode.cn/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | [Solution1519.java](src%2Fleetcode%2Fgraph%2FSolution1519.java) |    |
 
+## 回溯法求解
+
+回溯相当于穷举搜索，它会尝试各种可能的情况直到找到一个满足约束条件的解，如果某一步没有找到可行解，则“回溯”到前一步，尝试其他可能，因此回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想象成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题。注意使用回溯法需要注意题目中是否要求返回所有路径（组合），如果不需要的话，可以考虑使用动态规划或其他方法（题目377）。
+
+以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
+
+```java
+    List<List<Integer>> res;
+
+    public List<List<Integer>> permute(int[] nums) {
+        res = new ArrayList<>();
+        backtrack(nums, new boolean[nums.length], new LinkedList<>());
+        return res;
+    }
+
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
+        // 某排列和数组长度一致时结束
+        if (element.size() == nums.length) {
+            res.add((List) element.clone());
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (visited[i]) {
+                continue;
+            }
+
+            visited[i] = true;
+            element.addLast(nums[i]);
+            // 回溯
+            backtrack(nums, visited, element);
+            // 移除添加的结果
+            element.removeLast();
+            visited[i] = false;
+        }
+    }
+```
+
+回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
+
+```java
+    // 定义全局变量记录结果值
+    List<List<Integer>> res;
+
+    /**
+     * 回溯法解题模板
+     *
+     * @param nums 选择列表：每个题解的取值范围
+     * @param visited 备忘录，用来标记是否访问过，避免重复遍历求解
+     * @param element 题解对象
+     */
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
+        if (满足题意条件) {
+            res.add((List<Integer>) element.clone());
+            return;
+        }
+
+        // 在选择列表，即取值范围内取值构造答案
+        for (int i = 0; i < nums.length; i++) {
+            // 进行选择
+            element.add(nums[i]);
+            visited[i] = true;
+            // 回溯
+            backtrack(nums, visited, element);
+            // 移除选择
+            element.removeLast();
+            visited[i] = false;
+        }
+    }
+```
+
+| 题目链接                                                                                | 题解                                                                           | 备注                                |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------|
+| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                  | [Solution78.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution78.java)         |                                   |
+| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |                                   |
+| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         | ⭐️                                |
+| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |                                   |
+| [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |                                   |
+| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
+| [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                            | [Solution79.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution79.java)         |                                   |
+| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                   | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)         | ⭐️                                |
+| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
+| [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
+| [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
+
 ## 动态规划
 
 动态规划（dynamic programming）常用于 **解决最优问题**，它与分治法相似，都是通过组合子问题的解来求解原问题（programming 在这指的是一种表格法，而非计算机编程）。分治法是将问题分为互不相交的子问题，递归的求解子问题，再将它们的解组合起来，求出原问题的解。相反地，动态规划应用于子问题重叠的情况，即不同的子问题具有公共子问题，如果采用分治法的话，会反复地求解公共子问题，而动态规划算法对每个子问题只求解一次，并将解保存在表格中（也就是常用的dp数组），以便下次需要同样的子问题求解时，避免重复计算。
@@ -916,90 +1001,6 @@ for (int i = 0; i < n1; i++) {
 | [LCR 185. 统计结果概率 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)               | [SolutionLCR185.java](src%2Fleetcode%2Fdp%2FSolutionLCR185.java) |    |
 | [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java)       |    |
 
-## 回溯法求解
-
-回溯相当于穷举搜索，它会尝试各种可能的情况直到找到一个满足约束条件的解，如果某一步没有找到可行解，则“回溯”到前一步，尝试其他可能，因此回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想象成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题。注意使用回溯法需要注意题目中是否要求返回所有路径（组合），如果不需要的话，可以考虑使用动态规划或其他方法（题目377）。
-
-以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
-
-```java
-    List<List<Integer>> res;
-
-    public List<List<Integer>> permute(int[] nums) {
-        res = new ArrayList<>();
-        backtrack(nums, new boolean[nums.length], new LinkedList<>());
-        return res;
-    }
-
-    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
-        // 某排列和数组长度一致时结束
-        if (element.size() == nums.length) {
-            res.add((List) element.clone());
-            return;
-        }
-
-        for (int i = 0; i < nums.length; i++) {
-            if (visited[i]) {
-                continue;
-            }
-
-            visited[i] = true;
-            element.addLast(nums[i]);
-            // 回溯
-            backtrack(nums, visited, element);
-            // 移除添加的结果
-            element.removeLast();
-            visited[i] = false;
-        }
-    }
-```
-
-回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
-
-```java
-    // 定义全局变量记录结果值
-    List<List<Integer>> res;
-
-    /**
-     * 回溯法解题模板
-     *
-     * @param nums 选择列表：每个题解的取值范围
-     * @param visited 备忘录，用来标记是否访问过，避免重复遍历求解
-     * @param element 题解对象
-     */
-    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
-        if (满足题意条件) {
-            res.add((List<Integer>) element.clone());
-            return;
-        }
-
-        // 在选择列表，即取值范围内取值构造答案
-        for (int i = 0; i < nums.length; i++) {
-            // 进行选择
-            element.add(nums[i]);
-            visited[i] = true;
-            // 回溯
-            backtrack(nums, visited, element);
-            // 移除选择
-            element.removeLast();
-            visited[i] = false;
-        }
-    }
-```
-
-| 题目链接                                                                                | 题解                                                                           | 备注                                |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------|
-| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                  | [Solution78.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution78.java)         |                                   |
-| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |                                   |
-| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         | ⭐️                                |
-| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |                                   |
-| [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |                                   |
-| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
-| [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                            | [Solution79.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution79.java)         |                                   |
-| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                   | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)         | ⭐️                                |
-| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
-| [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
-| [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
 
 ## 贪心算法
 
