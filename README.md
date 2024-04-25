@@ -941,10 +941,11 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 #### 子数组和
 
-| 题目链接                                                                                       | 题解                                                                       | 备注 |
-|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
-| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                            | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)                 |    |
-| [2606. 找到最大开销的子字符串 中等](https://leetcode.cn/problems/find-the-substring-with-maximum-cost/) | [Solution2606.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2606.java) |    |
+| 题目链接                                                                                          | 题解                                                                       | 备注 |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----|
+| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                               | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)                 |    |
+| [2606. 找到最大开销的子字符串 中等](https://leetcode.cn/problems/find-the-substring-with-maximum-cost/)    | [Solution2606.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2606.java) |    |
+| [1749. 任意子数组和的绝对值的最大值 中等](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/) | [Solution1749.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution1749.java) |    |
 
 ### 最值问题
 
