@@ -934,13 +934,18 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [2466. 统计构造好字符串的方案数 中等](https://leetcode.cn/problems/count-ways-to-build-good-strings/)   | [Solution2466.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2466.java)     |    |
 | [2266. 统计打字方案数 中等](https://leetcode.cn/problems/count-number-of-texts/)                   | [Solution2266.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2266.java)     |    |
 
+#### 子数组和
+
+| 题目链接                                                            | 题解                                                       | 备注 |
+|-----------------------------------------------------------------|----------------------------------------------------------|----|
+| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/) | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java) |    |
+
 ### 最值问题
 
 | 题目链接                                                                                                           | 题解                                                             | 备注 |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|----|
 | [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                                                      | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
 | [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)                                                    | [Solution343.java](src%2Fleetcode%2Fdp%2FSolution343.java)     |    |
-| [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                                                | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                                                  | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
 | [面试题 17.09. 第 k 个数 中等](https://leetcode.cn/problems/get-kth-magic-number-lcci/)                                | [Interview1709.java](src%2Fleetcode%2Fdp%2FInterview1709.java) |    |
 | [1218. 最长定差子序列 中等](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/)           | [Solution1218.java](src%2Fleetcode%2Fdp%2FSolution1218.java)   |    |
