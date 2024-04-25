@@ -926,6 +926,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [509. 斐波那契数 简单](https://leetcode.cn/problems/fibonacci-number/)                           | [Solution509.java](src%2Fleetcode%2Fdp%2FSolution509.java)                   |    |
 | [70. 爬楼梯 简单](https://leetcode.cn/problems/climbing-stairs/)                               | [Solution70.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution70.java)         |    |
 | [746. 使用最小花费爬楼梯 简单](https://leetcode.cn/problems/min-cost-climbing-stairs/)               | [Solution746.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution746.java)       |    |
+| [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                                | [Solution198.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution198.java)       |    |
 | [LCR 165. 解密数字 中等](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | [SolutionLCR165.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolutionLCR165.java) |    |
 | [2466. 统计构造好字符串的方案数 中等](https://leetcode.cn/problems/count-ways-to-build-good-strings/)   | [Solution2466.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2466.java)     |    |
 | [2266. 统计打字方案数 中等](https://leetcode.cn/problems/count-number-of-texts/)                   | [Solution2266.java](src%2Fleetcode%2Fdp%2Ffibonacci%2FSolution2266.java)     |    |
@@ -936,7 +937,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|----|
 | [322. 零钱兑换 中等](https://leetcode.cn/problems/coin-change/)                                                      | [Solution322.java](src%2Fleetcode%2Fdp%2FSolution322.java)     |    |
 | [343. 整数拆分 中等](https://leetcode.cn/problems/integer-break/)                                                    | [Solution343.java](src%2Fleetcode%2Fdp%2FSolution343.java)     |    |
-| [198. 打家劫舍 中等](https://leetcode.cn/problems/house-robber/)                                                     | [Solution198.java](src%2Fleetcode%2Fdp%2FSolution198.java)     |    |
 | [213. 打家劫舍 II 中等](https://leetcode.cn/problems/house-robber-ii/)                                               | [Solution213.java](src%2Fleetcode%2Fdp%2FSolution213.java)     |    |
 | [53. 最大子数组和 中等](https://leetcode.cn/problems/maximum-subarray/)                                                | [Solution53.java](src%2Fleetcode%2Fdp%2FSolution53.java)       |    |
 | [264. 丑数 II 中等](https://leetcode.cn/problems/ugly-number-ii/)                                                  | [Solution264.java](src%2Fleetcode%2Fdp%2FSolution264.java)     |    |
