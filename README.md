@@ -825,9 +825,10 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 
 
-| 题目链接                                                    | 题解                                                                   | 备注 |
-|---------------------------------------------------------|----------------------------------------------------------------------|----|
-| [77. 组合 中等](https://leetcode.cn/problems/combinations/) | [Solution77.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution77.java) |    |
+| 题目链接                                                                  | 题解                                                                     | 备注 |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------|----|
+| [77. 组合 中等](https://leetcode.cn/problems/combinations/)               | [Solution77.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution77.java)   |    |
+| [216. 组合总和 III 中等](https://leetcode.cn/problems/combination-sum-iii/) | [Solution216.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution216.java) |    |
 
 以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
 
