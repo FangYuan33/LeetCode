@@ -821,6 +821,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                      | [Solution78.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution78.java)   |    |
 | [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution17.java)   |    |
 | [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution131.java) |    |
+| [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution784.java) |    |
 
 以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
 
