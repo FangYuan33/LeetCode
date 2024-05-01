@@ -15,20 +15,19 @@ public class Solution77 {
         return res;
     }
 
-    // 当前问题：在路径中加入第 i 个元素
-    // 每一步的操作：加入当前元素或不加入当前元素
-    // 子问题：在路径中加入第 i + 1 个元素
-    // 剪枝优化（边界条件）：剩余的元素全加上也不足够构造出k的组合；达到k个元素时
+    // 1. 当前问题：在路径中添加第 i 个元素
+    // 2. 每一步的操作：加入当前元素或不加入当前元素
+    // 3. 子问题：在路径中添加第 i + 1 个元素
+    // 4. 剪枝优化：路径中的元素为 k 个时；路径中的元素加上可选择列表中的剩余的元素不足 k 个时
     private void backtrack(int n, int step, LinkedList<Integer> path) {
+        // 剪枝优化
         if (path.size() == k) {
             res.add((List<Integer>) path.clone());
             return;
         }
-        // 剪枝优化
         if (n - step + path.size() < k) {
             return;
         }
-
 
         // 加
         path.add(n - step);
