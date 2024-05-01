@@ -821,7 +821,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution17.java)   |    |
 | [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution131.java) |    |
 
-回溯相当于穷举搜索，它会尝试各种可能的情况直到找到一个满足约束条件的解，如果某一步没有找到可行解，则“回溯”到前一步，尝试其他可能，因此回溯算法的复杂度非常高，只能用来解决小规模的数据问题。回溯问题可以想象成 **"决策树"** ，在树的每个节点从 **"选择列表"** 里做出不同的决策，而当走过的 **"路径"** 满足结束条件时即为答案之一。回溯算法用于解决 **全排列、八皇后、正则表达式匹配和某些做选择的动态规划** 问题。注意使用回溯法需要注意题目中是否要求返回所有路径（组合），如果不需要的话，可以考虑使用动态规划或其他方法（题目377）。
 
 以 [46. 全排列 中等](https://leetcode.cn/problems/permutations/) 为例，它的题解如下：
 
