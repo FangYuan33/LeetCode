@@ -1,22 +1,33 @@
 package leetcode.dp.backtrack;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Solution46 {
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3};
+        System.out.println(new Solution46().permute(nums));
+    }
+
     List<List<Integer>> res;
 
+    boolean[] visited;
+
     public List<List<Integer>> permute(int[] nums) {
-        res = new ArrayList<>();
-        backtrack(nums, new boolean[nums.length], new LinkedList<>());
+        res = new LinkedList<>();
+        visited = new boolean[nums.length];
+        backtrack(nums, visited, new LinkedList<>());
         return res;
     }
 
-    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
-        // 某排列和数组长度一致时结束
-        if (element.size() == nums.length) {
-            res.add((List) element.clone());
+    // 1. 当前问题：向路径中添加第 i 个元素
+    // 2. 每一步的操作：根据元素的添加情况选择添加元素
+    // 3. 子问题：向路径中添加第 i + 1 个元素
+    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> path) {
+        // 结束条件
+        if (path.size() == nums.length) {
+            res.add((List<Integer>) path.clone());
             return;
         }
 
@@ -24,19 +35,12 @@ public class Solution46 {
             if (visited[i]) {
                 continue;
             }
-
+            path.add(nums[i]);
             visited[i] = true;
-            element.addLast(nums[i]);
-            // 回溯
-            backtrack(nums, visited, element);
-            // 移除添加的结果
-            element.removeLast();
+            backtrack(nums, visited, path);
+            // 恢复现场
+            path.removeLast();
             visited[i] = false;
         }
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
-        System.out.println(new Solution46().permute(nums));
     }
 }
