@@ -833,11 +833,11 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 排列型回溯
 
-| 题目链接                                                     | 题解                                                                   | 备注 |
-|----------------------------------------------------------|----------------------------------------------------------------------|----|
-| [46. 全排列 中等](https://leetcode.cn/problems/permutations/) | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java) |    |
-| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         | ⭐️                                |
-
+| 题目链接                                                                                | 题解                                                                           | 备注 |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
+| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |    |
+| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         | ⭐️ |
+| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |    |
 
 回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
 
@@ -872,7 +872,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
     }
 ```
 
-| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |                                   |
 | [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |                                   |
 | [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
 | [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                            | [Solution79.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution79.java)         |                                   |
