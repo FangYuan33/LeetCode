@@ -815,31 +815,33 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 子集型回溯
 
-| 题目链接                                                                                    | 题解                                                                     | 备注 |
-|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------|----|
-| [257. 二叉树的所有路径 简单](https://leetcode.cn/problems/binary-tree-paths/)                     | [Solution257.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution257.java) |    |
-| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                      | [Solution78.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution78.java)   |    |
-| [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution17.java)   |    |
-| [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution131.java) |    |
-| [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution784.java) |    |
-| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)   | ⭐️ |
+| 题目链接                                                                                    | 题解                                                                | 备注 |
+|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
+| [257. 二叉树的所有路径 简单](https://leetcode.cn/problems/binary-tree-paths/)                     | [Solution257.java](src%2Fleetcode%2Fbacktrack%2FSolution257.java) |    |
+| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                      | [Solution78.java](src%2Fleetcode%2Fbacktrack%2FSolution78.java)   |    |
+| [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fbacktrack%2FSolution17.java)   |    |
+| [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fbacktrack%2FSolution131.java) |    |
+| [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fbacktrack%2FSolution784.java) |    |
+| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fbacktrack%2FSolution22.java)   | ⭐️ |
 
 ### 
 
-| 题目链接                                                                  | 题解                                                                     | 备注 |
-|-----------------------------------------------------------------------|------------------------------------------------------------------------|----|
-| [77. 组合 中等](https://leetcode.cn/problems/combinations/)               | [Solution77.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution77.java)   |    |
-| [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)          | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)   |    |
-| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)    | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)   | ⭐️ |
-| [216. 组合总和 III 中等](https://leetcode.cn/problems/combination-sum-iii/) | [Solution216.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution216.java) |    |
+| 题目链接                                                                  | 题解                                                                | 备注 |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|----|
+| [77. 组合 中等](https://leetcode.cn/problems/combinations/)               | [Solution77.java](src%2Fleetcode%2Fbacktrack%2FSolution77.java)   |    |
+| [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)          | [Solution39.java](src%2Fleetcode%2Fbacktrack%2FSolution39.java)   |    |
+| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)    | [Solution40.java](src%2Fleetcode%2Fbacktrack%2FSolution40.java)   | ⭐️ |
+| [216. 组合总和 III 中等](https://leetcode.cn/problems/combination-sum-iii/) | [Solution216.java](src%2Fleetcode%2Fbacktrack%2FSolution216.java) |    |
 
 ### 排列型回溯
 
-| 题目链接                                                                                | 题解                                                                           | 备注 |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----|
-| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution46.java)         |    |
-| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution47.java)         | ⭐️ |
-| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolutionLCR157.java) |    |
+| 题目链接                                                                                | 题解                                                                      | 备注 |
+|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fbacktrack%2FSolution46.java)         |    |
+| [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fbacktrack%2FSolution47.java)         | ⭐️ |
+| [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fbacktrack%2FSolutionLCR157.java) |    |
+| [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fbacktrack%2FInterview0812.java)   |    |
+| [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fbacktrack%2FSolution10.java)         |    |
 
 回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
 
@@ -873,10 +875,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
         }
     }
 ```
-
-| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
-| [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
-| [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
 
 ## 动态规划
 
@@ -981,6 +979,9 @@ for (int i = 0; i < n1; i++) {
     }    
 }
 ```
+
+| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
+
 
 | 题目链接                                                                                                           | 题解                                                               | 备注 |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|
