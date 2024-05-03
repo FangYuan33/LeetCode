@@ -811,7 +811,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|----|
 | [1519. 子树中标签相同的节点数 中等](https://leetcode.cn/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | [Solution1519.java](src%2Fleetcode%2Fgraph%2FSolution1519.java) |    |
 
-## 回溯法
+## 回溯算法
 
 ### 子集型回溯
 
@@ -824,7 +824,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fbacktrack%2FSolution784.java) |    |
 | [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fbacktrack%2FSolution22.java)   | ⭐️ |
 
-### 
+### 组合型回溯
 
 | 题目链接                                                                  | 题解                                                                | 备注 |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------|----|
@@ -835,46 +835,13 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 排列型回溯
 
-| 题目链接                                                                                | 题解                                                                      | 备注 |
+| 题目链接                 ·                                                              | 题解                                                                      | 备注 |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
 | [46. 全排列 中等](https://leetcode.cn/problems/permutations/)                            | [Solution46.java](src%2Fleetcode%2Fbacktrack%2FSolution46.java)         |    |
 | [47. 全排列 II 中等](https://leetcode.cn/problems/permutations-ii/)                      | [Solution47.java](src%2Fleetcode%2Fbacktrack%2FSolution47.java)         | ⭐️ |
 | [LCR 157. 套餐内商品的排列顺序 中等](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/) | [SolutionLCR157.java](src%2Fleetcode%2Fbacktrack%2FSolutionLCR157.java) |    |
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fbacktrack%2FInterview0812.java)   |    |
 | [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fbacktrack%2FSolution10.java)         |    |
-
-回溯法解决动态规划问题大多像上题一样，有如下所示的解题模板：
-
-```java
-    // 定义全局变量记录结果值
-    List<List<Integer>> res;
-
-    /**
-     * 回溯法解题模板
-     *
-     * @param nums 选择列表：每个题解的取值范围
-     * @param visited 备忘录，用来标记是否访问过，避免重复遍历求解
-     * @param element 题解对象
-     */
-    private void backtrack(int[] nums, boolean[] visited, LinkedList<Integer> element) {
-        if (满足题意条件) {
-            res.add((List<Integer>) element.clone());
-            return;
-        }
-
-        // 在选择列表，即取值范围内取值构造答案
-        for (int i = 0; i < nums.length; i++) {
-            // 进行选择
-            element.add(nums[i]);
-            visited[i] = true;
-            // 回溯
-            backtrack(nums, visited, element);
-            // 移除选择
-            element.removeLast();
-            visited[i] = false;
-        }
-    }
-```
 
 ## 动态规划
 
