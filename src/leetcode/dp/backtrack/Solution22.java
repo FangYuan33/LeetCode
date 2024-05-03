@@ -1,39 +1,41 @@
 package leetcode.dp.backtrack;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Solution22 {
+
     List<String> res;
 
     public List<String> generateParenthesis(int n) {
-        res = new ArrayList<>();
-        backtrack(n, n, new StringBuilder());
+        res = new LinkedList<>();
+        backtrack(3, 3, new StringBuilder());
         return res;
     }
 
-    private void backtrack(int left, int right, StringBuilder element) {
-        // 结束条件
+    // 1. 当前问题：拼接第 i 个括号
+    // 2. 每一步的操作：根据条件判断拼接左、右括号
+    // 3. 子问题：拼接第 i + 1 个括号
+    private void backtrack(int left, int right, StringBuilder path) {
+        if (left < 0 || right < 0) {
+            return;
+        }
         if (left == 0 && right == 0) {
-            res.add(element.toString());
+            res.add(path.toString());
             return;
         }
 
-        // 做选择，先狂加左括号
         if (left > 0) {
-            left--;
-            element.append("(");
-            backtrack(left, right, element);
-            left++;
-            element.deleteCharAt(element.length() - 1);
+            path.append("(");
+            backtrack(left - 1, right, path);
+            // 恢复现场
+            path.deleteCharAt(path.length() - 1);
         }
-        // 再加右括号，注意需要右值大于左值才能加
-        if (right > 0 && left < right) {
-            right--;
-            element.append(")");
-            backtrack(left, right, element);
-            right++;
-            element.deleteCharAt(element.length() - 1);
+        if (right > left) {
+            path.append(")");
+            backtrack(left, right - 1, path);
+            // 恢复现场
+            path.deleteCharAt(path.length() - 1);
         }
     }
 }

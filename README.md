@@ -822,6 +822,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution17.java)   |    |
 | [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution131.java) |    |
 | [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution784.java) |    |
+| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)   | ⭐️ |
 
 ### 
 
@@ -905,7 +906,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)                        | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)         |                                   |
 | [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
 | [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                            | [Solution79.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution79.java)         |                                   |
-| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                   | [Solution22.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution22.java)         | ⭐️                                |
 | [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
 | [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution10.java)         |                                   |
