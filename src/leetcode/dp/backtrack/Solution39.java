@@ -1,34 +1,43 @@
 package leetcode.dp.backtrack;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Solution39 {
+
     List<List<Integer>> res;
 
+    int target;
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        res = new ArrayList<>();
-        backtrack(candidates, new LinkedList<Integer>(), 0, target);
+        res = new LinkedList<>();
+        this.target = target;
+        backtrack(candidates, 0, new LinkedList<>(), 0);
         return res;
     }
 
-    private void backtrack(int[] candidates, LinkedList<Integer> element, int begin, int target) {
-        if (target <= 0) {
-            if (target == 0) {
-                res.add((List) element.clone());
-            }
+    /**
+     * 1. 当前问题：向路径中添加第 i 个元素
+     * 2. 每一步的操作：直接添加元素
+     * 3. 子问题：向路径中添加第 i + 1 个元素
+     * 4. 剪枝优化：sum > target
+     */
+    private void backtrack(int[] candidates, int index, LinkedList<Integer> path, int sum) {
+        if (sum > target) {
+            return;
+        }
+        if (sum == target) {
+            res.add((List<Integer>) path.clone());
             return;
         }
 
-        for (int i = begin; i < candidates.length; i++) {
-            target -= candidates[i];
-            element.add(candidates[i]);
-            // 注意这里的 i 的选择
-            backtrack(candidates, element, i, target);
-            // 回溯完成后移除
-            target += candidates[i];
-            element.removeLast();
+        for (int i = index; i < candidates.length; i++) {
+            path.add(candidates[i]);
+            sum += candidates[i];
+            backtrack(candidates, i, path, sum);
+            // 恢复现场
+            path.removeLast();
+            sum -= candidates[i];
         }
     }
 }
