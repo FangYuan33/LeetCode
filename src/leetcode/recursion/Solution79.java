@@ -1,4 +1,4 @@
-package leetcode.dp.backtrack;
+package leetcode.recursion;
 
 public class Solution79 {
     public boolean exist(char[][] board, String word) {
