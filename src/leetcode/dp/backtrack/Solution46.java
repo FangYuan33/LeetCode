@@ -12,12 +12,9 @@ public class Solution46 {
 
     List<List<Integer>> res;
 
-    boolean[] visited;
-
     public List<List<Integer>> permute(int[] nums) {
         res = new LinkedList<>();
-        visited = new boolean[nums.length];
-        backtrack(nums, visited, new LinkedList<>());
+        backtrack(nums, new boolean[nums.length], new LinkedList<>());
         return res;
     }
 
