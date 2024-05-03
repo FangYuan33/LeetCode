@@ -830,6 +830,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 |-----------------------------------------------------------------------|------------------------------------------------------------------------|----|
 | [77. 组合 中等](https://leetcode.cn/problems/combinations/)               | [Solution77.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution77.java)   |    |
 | [39. 组合总和 中等](https://leetcode.cn/problems/combination-sum/)          | [Solution39.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution39.java)   |    |
+| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)    | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)   | ⭐️ |
 | [216. 组合总和 III 中等](https://leetcode.cn/problems/combination-sum-iii/) | [Solution216.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution216.java) |    |
 
 ### 排列型回溯
@@ -873,7 +874,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
     }
 ```
 
-| [40. 组合总和 II 中等](https://leetcode.cn/problems/combination-sum-ii/)                  | [Solution40.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution40.java)         | ⭐️                                |
 | [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                            | [Solution79.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution79.java)         |                                   |
 | [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FInterview0812.java)   |                                   |
