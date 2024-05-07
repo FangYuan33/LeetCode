@@ -813,6 +813,8 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ## 回溯算法
 
+- 相关学习：[深入理解回溯算法](https://blog.csdn.net/qq_46225886/article/details/138366983)
+
 ### 子集型回溯
 
 | 题目链接                                                                                    | 题解                                                                | 备注 |
