@@ -845,7 +845,7 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [面试题 08.12. 八皇后 困难](https://leetcode.cn/problems/eight-queens-lcci/)                | [Interview0812.java](src%2Fleetcode%2Fbacktrack%2FInterview0812.java)   |    |
 | [10. 正则表达式匹配 困难](https://leetcode.cn/problems/regular-expression-matching/)         | [Solution10.java](src%2Fleetcode%2Fbacktrack%2FSolution10.java)         |    |
 
-## 动态规划
+## 动态规划（待完善）
 
 动态规划（dynamic programming）常用于 **解决最优问题**，它与分治法相似，都是通过组合子问题的解来求解原问题（programming 在这指的是一种表格法，而非计算机编程）。分治法是将问题分为互不相交的子问题，递归的求解子问题，再将它们的解组合起来，求出原问题的解。相反地，动态规划应用于子问题重叠的情况，即不同的子问题具有公共子问题，如果采用分治法的话，会反复地求解公共子问题，而动态规划算法对每个子问题只求解一次，并将解保存在表格中（也就是常用的dp数组），以便下次需要同样的子问题求解时，避免重复计算。
 
