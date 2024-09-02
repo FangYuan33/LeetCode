@@ -1,4 +1,5 @@
-**刷前必读**：[学算法要读《算法导论》吗？](https://blog.csdn.net/qq_46225886/article/details/136286109)
+
+[算法学习心得](https://juejin.cn/post/7339042929883381795)
 
 ## 双指针
 
@@ -193,66 +194,6 @@
 | [661. 图片平滑器 简单](https://leetcode.cn/problems/image-smoother/)                         | [Solution661.java](src%2Fleetcode%2Fprefixsum%2Fmatrix%2FSolution661.java) |    |
 
 ## 差分
-
-## 树状数组
-
-相关学习：[深入理解树状数组](https://juejin.cn/post/7271862751957909523)
-
-树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RMQ 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
-
-- 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
-
-| 题目链接                                                                           | 题解                                                                          | 备注 |
-|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
-| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
-| [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) | ⭐️ |
-| [2179. 统计数组中好三元组数目 困难](https://leetcode.cn/problems/count-number-of-teams/)    | [Solution2179.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution2179.java) |    |
-| [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/) | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
-| [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             | [Solution327.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution327.java)   |    |
-
-## 线段树
-
-相关学习：[深入理解线段树](https://juejin.cn/post/7274847103729516584)
-
-线段树可以解决区间和、区间最大值或区间最小值的问题（RMQ 问题），不过线段树的代码量相对来说较大而且比较复杂，所以线段树是在前缀和、差分和树状数组解决方法之后不得已才会考虑的方案。
-一般使用线段树的题目都具备 **区间修改和区间查询** 的特点，如果大家在这里是按照顺序刷的话，应该对 RMQ 问题有一个比较充分的了解了，在这里做一下相关题型解法的归纳：
-
-- 数组不变，区间查询：前缀和、树状数组和线段树
-- 数组单点修改，区间查询：树状数组和线段树
-- 数组区间修改，单点查询：差分和线段树
-- 数组区间修改，区间查询：线段树
-
-注意每种题型涉及的解法都是越靠前越优先考虑。
-
-### 单点修改和区间查询
-
-- 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
-
-| 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |    |
-| [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |    |
-| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |    |
-
-### 区间修改
-
-- 线段树模板：[SegmentTree2.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree2.java)
-
-| 题目链接                                                                                                       | 题解                                                                    | 备注 |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
-| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |    |
-| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
-
-### 动态开点
-
-- 线段树模版：[SegmentTree3.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree3.java)
-
-| 题目链接                                                                 | 题解                                                                          | 备注                             |
-|----------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------|
-| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)           |                                |
-| [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java)     | ⭐️                             |
-| [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) | [MyCalendarThree.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarThree.java) |                                |
-| [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       | [RangeModule.java](src%2Fleetcode%2Fsegmenttree%2FRangeModule.java)         | ✅️ 理解 add 是作为区间变化量还是区间内单个值的变化量 |
 
 ## 字符串
 
@@ -508,6 +449,29 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                                                    | [Solution654.java](src%2Fleetcode%2Fqueue%2Fmonotonic%2FSolution654.java)   |             |
 | [2100. 适合打劫银行的日子 中等](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)                                                    | [Solution2100.java](src%2Fleetcode%2Fprefixsum%2FSolution2100.java)         | 单调队列的单调性的应用 |
 
+## 堆
+
+- 相关学习：[一文搞懂优先队列及相关算法](https://juejin.cn/post/7295594732949028902)
+
+| 题目链接                                                                                  | 题解                                                                            | 备注    |
+|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------|
+| 小顶堆实现                                                                                 | [MyPriorityQueue.java](src%2Fleetcode%2Fpriorityqueue%2FMyPriorityQueue.java) |       |
+| 多路归并                                                                                  | [Multiway.java](src%2Fleetcode%2Fpriorityqueue%2FMultiway.java)               |       |
+| 堆排序                                                                                   | [DeapSort.java](src%2Fleetcode%2Fpriorityqueue%2FDeapSort.java)               |       |
+| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | ✅大顶堆  |
+| [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                  | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)              | ✅大顶堆  |
+| [1405. 最长快乐字符串 中等](https://leetcode.cn/problems/longest-happy-string/)                | [Solution1405.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1405.java)       | ✅大顶堆  |
+| [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/)  | [Solution215.java](src%2Fleetcode%2Fpriorityqueue%2FSolution215.java)         | ✅小顶堆  |
+| [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) | [KthLargest.java](src%2Fleetcode%2Fpriorityqueue%2FKthLargest.java)           | ✅小顶堆  |
+| [692. 前K个高频单词 中等](https://leetcode.cn/problems/top-k-frequent-words/)                 | [Solution692.java](src%2Fleetcode%2Fpriorityqueue%2FSolution692.java)         | ✅小顶堆  |
+| [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)       | [Solution4.java](src%2Fleetcode%2Fpriorityqueue%2FSolution4.java)             | ✅     |
+| [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       | ✅     |
+| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) | [Solution373.java](src%2Fleetcode%2Fpriorityqueue%2FSolution373.java)         | ✅多路归并 |
+| [1705. 吃苹果的最大数目 中等](https://leetcode.cn/problems/maximum-number-of-eaten-apples/)     | [Solution1705.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1705.java)       | ✅贪心   |
+| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | ✅贪心   |
+| [45. 跳跃游戏 II 中等](https://leetcode.cn/problems/jump-game-ii/)                          | [Solution45.java](src%2Fleetcode%2Fpriorityqueue%2FSolution45.java)           | ✅贪心   |
+| [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | ✅贪心   |
+
 ## 排序算法
 
 ### 基础排序算法
@@ -558,28 +522,35 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | [937. 重新排列日志文件 中等](https://leetcode.cn/problems/reorder-data-in-log-files/)                       | [Solution937.java](src%2Fleetcode%2Fsort%2FSolution937.java)       | ✅自定义排序    |
 | [LCR 164. 破解闯关密码 中等](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)      | [SolutionLCR164.java](src%2Fleetcode%2Fsort%2FSolutionLCR164.java) | ✅自定义排序    |
 
-## 堆
+## 散列表
 
-- 相关学习：[一文搞懂优先队列及相关算法](https://juejin.cn/post/7295594732949028902)
+实现散列表分为两步：
 
-| 题目链接                                                                                  | 题解                                                                            | 备注    |
-|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------|
-| 小顶堆实现                                                                                 | [MyPriorityQueue.java](src%2Fleetcode%2Fpriorityqueue%2FMyPriorityQueue.java) |       |
-| 多路归并                                                                                  | [Multiway.java](src%2Fleetcode%2Fpriorityqueue%2FMultiway.java)               |       |
-| 堆排序                                                                                   | [DeapSort.java](src%2Fleetcode%2Fpriorityqueue%2FDeapSort.java)               |       |
-| [LCR 159. 库存管理 III 简单](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/)        | [SolutionLCR159.java](src%2Fleetcode%2Fpriorityqueue%2FSolutionLCR159.java)   | ✅大顶堆  |
-| [面试题 17.14. 最小K个数 中等](https://leetcode.cn/problems/smallest-k-lcci/)                  | [Interview1714.java](src%2Fleetcode%2Fsort%2FInterview1714.java)              | ✅大顶堆  |
-| [1405. 最长快乐字符串 中等](https://leetcode.cn/problems/longest-happy-string/)                | [Solution1405.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1405.java)       | ✅大顶堆  |
-| [215. 数组中的第K个最大元素 中等](https://leetcode.cn/problems/kth-largest-element-in-an-array/)  | [Solution215.java](src%2Fleetcode%2Fpriorityqueue%2FSolution215.java)         | ✅小顶堆  |
-| [703. 数据流中的第 K 大元素 简单](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) | [KthLargest.java](src%2Fleetcode%2Fpriorityqueue%2FKthLargest.java)           | ✅小顶堆  |
-| [692. 前K个高频单词 中等](https://leetcode.cn/problems/top-k-frequent-words/)                 | [Solution692.java](src%2Fleetcode%2Fpriorityqueue%2FSolution692.java)         | ✅小顶堆  |
-| [4. 寻找两个正序数组的中位数 困难](https://leetcode.cn/problems/median-of-two-sorted-arrays/)       | [Solution4.java](src%2Fleetcode%2Fpriorityqueue%2FSolution4.java)             | ✅     |
-| [295. 数据流的中位数 困难](https://leetcode.cn/problems/find-median-from-data-stream/)         | [MedianFinder.java](src%2Fleetcode%2Fpriorityqueue%2FMedianFinder.java)       | ✅     |
-| [373. 查找和最小的 K 对数字 中等](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) | [Solution373.java](src%2Fleetcode%2Fpriorityqueue%2FSolution373.java)         | ✅多路归并 |
-| [1705. 吃苹果的最大数目 中等](https://leetcode.cn/problems/maximum-number-of-eaten-apples/)     | [Solution1705.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1705.java)       | ✅贪心   |
-| [1834. 单线程 CPU 中等](https://leetcode.cn/problems/single-threaded-cpu/)                 | [Solution1834.java](src%2Fleetcode%2Fpriorityqueue%2FSolution1834.java)       | ✅贪心   |
-| [45. 跳跃游戏 II 中等](https://leetcode.cn/problems/jump-game-ii/)                          | [Solution45.java](src%2Fleetcode%2Fpriorityqueue%2FSolution45.java)           | ✅贪心   |
-| [871. 最低加油次数 困难](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)     | [Solution871.java](src%2Fleetcode%2Fpriorityqueue%2FSolution871.java)         | ✅贪心   |
+1. 用散列函数将被查找的键转化为数组的一个索引，理想情况下，不同的键都能转化为不同的索引值
+2. 处理碰撞冲突，有两种常见的处理方法，分别为拉链法和线性探测法。前者的方法是将发生碰撞的元素保存在链表中；后者的思想是与其将内存用作链表，不如将它们保存在散列表的空元素中
+
+散列表数据结构使用了适度的空间和时间，并在这两个极端之间找到了平衡
+
+| 题目链接                                                                                                                    | 题解                                                                  | 备注                           |
+|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------|
+| [169. 多数元素 简单](https://leetcode.cn/problems/majority-element/)                                                          | [Solution169.java](src%2Fleetcode%2Fhashmap%2FSolution169.java)     |                              |
+| [229. 多数元素 II 中等](https://leetcode.cn/problems/majority-element-ii/)                                                    | [Solution229.java](src%2Fleetcode%2Fhashmap%2FSolution229.java)     |                              |
+| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                                     | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |                              |
+| [205. 同构字符串 简单](https://leetcode.cn/problems/isomorphic-strings/)                                                       | [Solution205.java](src%2Fleetcode%2Fhashmap%2FSolution205.java)     |                              |
+| [387. 字符串中的第一个唯一字符 简单](https://leetcode.cn/problems/first-unique-character-in-a-string/)                                | [Solution387.java](src%2Fleetcode%2Fhashmap%2FSolution387.java)     |                              |
+| [242. 有效的字母异位词 简单](https://leetcode.cn/problems/valid-anagram)                                                          | [Solution242.java](src%2Fleetcode%2Fhashmap%2FSolution242.java)     |                              |
+| [409. 最长回文串 简单](https://leetcode.cn/problems/longest-palindrome/)                                                       | [Solution409.java](src%2Fleetcode%2Fhashmap%2FSolution409.java)     |                              |
+| [811. 子域名访问计数 中等](https://leetcode.cn/problems/subdomain-visit-count/)                                                  | [Solution811.java](src%2Fleetcode%2Fhashmap%2FSolution811.java)     |                              |
+| [299. 猜数字游戏 中等](https://leetcode.cn/problems/bulls-and-cows/)                                                           | [Solution299.java](src%2Fleetcode%2Fhashmap%2FSolution299.java)     |                              |
+| [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)                     | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |                              |
+| [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)                                 | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |                              |
+| [388. 文件的最长绝对路径 中等](https://leetcode.cn/problems/longest-absolute-file-path/)                                           | [Solution388.java](src%2Fleetcode%2Fhashmap%2FSolution388.java)     |                              |
+| [447. 回旋镖的数量 中等](https://leetcode.cn/problems/number-of-boomerangs/)                                                    | [Solution447.java](src%2Fleetcode%2Fhashmap%2FSolution447.java)     |                              |
+| [2013. 检测正方形 中等](https://leetcode.cn/problems/detect-squares/)                                                          | [DetectSquares.java](src%2Fleetcode%2Fhashmap%2FDetectSquares.java) |                              |
+| [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/)                                                 | [Solution41.java](src%2Fleetcode%2Fhashmap%2FSolution41.java)       | 自建简单hash函数                   |
+| [49. 字母异位词分组 中等](https://leetcode.cn/problems/group-anagrams/)                                                          | [Solution49.java](src%2Fleetcode%2Fhashmap%2FSolution49.java)       |                              |
+| [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                                                  | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |                              |
+| [2962. 统计最大元素出现至少 K 次的子数组 中等](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [Solution2962.java](src%2Fleetcode%2Fhashmap%2FSolution2962.java)   | **固定右端点的子数组数量为以该右端点结尾的数组长度** |
 
 ## 树
 
@@ -675,36 +646,6 @@ for (int i = nums.length - 1; i >= 0; i--) {
 | 经典红黑树                                                                      | /                                                                                                   | [树专题 —— 深入理解经典红黑树](https://juejin.cn/post/7313102241606238223) |
 | [2034. 股票价格波动 中等](https://leetcode.cn/problems/stock-price-fluctuation/)   | [StockPrice.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FStockPrice.java)                           |                                                                |
 | [220. 存在重复元素 III 困难](https://leetcode.cn/problems/contains-duplicate-iii/) | [Solution220.java](src%2Fleetcode%2Ftree%2Fredblacktree%2FSolution220.java)                         | 滑动窗口 + 红黑树                                                     |
-
-## 散列表
-
-实现散列表分为两步：
-
-1. 用散列函数将被查找的键转化为数组的一个索引，理想情况下，不同的键都能转化为不同的索引值
-2. 处理碰撞冲突，有两种常见的处理方法，分别为拉链法和线性探测法。前者的方法是将发生碰撞的元素保存在链表中；后者的思想是与其将内存用作链表，不如将它们保存在散列表的空元素中
-
-散列表数据结构使用了适度的空间和时间，并在这两个极端之间找到了平衡
-
-| 题目链接                                                                                                                    | 题解                                                                  | 备注                           |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------|
-| [169. 多数元素 简单](https://leetcode.cn/problems/majority-element/)                                                          | [Solution169.java](src%2Fleetcode%2Fhashmap%2FSolution169.java)     |                              |
-| [229. 多数元素 II 中等](https://leetcode.cn/problems/majority-element-ii/)                                                    | [Solution229.java](src%2Fleetcode%2Fhashmap%2FSolution229.java)     |                              |
-| [1. 两数之和 简单](https://leetcode.cn/problems/two-sum/)                                                                     | [Solution1.java](src%2Fleetcode%2Fhashmap%2FSolution1.java)         |                              |
-| [205. 同构字符串 简单](https://leetcode.cn/problems/isomorphic-strings/)                                                       | [Solution205.java](src%2Fleetcode%2Fhashmap%2FSolution205.java)     |                              |
-| [387. 字符串中的第一个唯一字符 简单](https://leetcode.cn/problems/first-unique-character-in-a-string/)                                | [Solution387.java](src%2Fleetcode%2Fhashmap%2FSolution387.java)     |                              |
-| [242. 有效的字母异位词 简单](https://leetcode.cn/problems/valid-anagram)                                                          | [Solution242.java](src%2Fleetcode%2Fhashmap%2FSolution242.java)     |                              |
-| [409. 最长回文串 简单](https://leetcode.cn/problems/longest-palindrome/)                                                       | [Solution409.java](src%2Fleetcode%2Fhashmap%2FSolution409.java)     |                              |
-| [811. 子域名访问计数 中等](https://leetcode.cn/problems/subdomain-visit-count/)                                                  | [Solution811.java](src%2Fleetcode%2Fhashmap%2FSolution811.java)     |                              |
-| [299. 猜数字游戏 中等](https://leetcode.cn/problems/bulls-and-cows/)                                                           | [Solution299.java](src%2Fleetcode%2Fhashmap%2FSolution299.java)     |                              |
-| [1282. 用户分组 中等](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)                     | [Solution1282.java](src%2Fleetcode%2Fhashmap%2FSolution1282.java)   |                              |
-| [380. O(1) 时间插入、删除和获取随机元素 中等](https://leetcode.cn/problems/insert-delete-getrandom-o1/)                                 | [RandomizedSet.java](src%2Fleetcode%2Fhashmap%2FRandomizedSet.java) |                              |
-| [388. 文件的最长绝对路径 中等](https://leetcode.cn/problems/longest-absolute-file-path/)                                           | [Solution388.java](src%2Fleetcode%2Fhashmap%2FSolution388.java)     |                              |
-| [447. 回旋镖的数量 中等](https://leetcode.cn/problems/number-of-boomerangs/)                                                    | [Solution447.java](src%2Fleetcode%2Fhashmap%2FSolution447.java)     |                              |
-| [2013. 检测正方形 中等](https://leetcode.cn/problems/detect-squares/)                                                          | [DetectSquares.java](src%2Fleetcode%2Fhashmap%2FDetectSquares.java) |                              |
-| [41. 缺失的第一个正数 困难](https://leetcode.cn/problems/first-missing-positive/)                                                 | [Solution41.java](src%2Fleetcode%2Fhashmap%2FSolution41.java)       | 自建简单hash函数                   |
-| [49. 字母异位词分组 中等](https://leetcode.cn/problems/group-anagrams/)                                                          | [Solution49.java](src%2Fleetcode%2Fhashmap%2FSolution49.java)       |                              |
-| [895. 最大频率栈 困难](https://leetcode.cn/problems/maximum-frequency-stack/)                                                  | [FreqStack.java](src%2Fleetcode%2Fhashmap%2FFreqStack.java)         |                              |
-| [2962. 统计最大元素出现至少 K 次的子数组 中等](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [Solution2962.java](src%2Fleetcode%2Fhashmap%2FSolution2962.java)   | **固定右端点的子数组数量为以该右端点结尾的数组长度** |
 
 ## 图
 
@@ -969,6 +910,16 @@ for (int i = 0; i < n1; i++) {
 | [LCR 185. 统计结果概率 中等](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/)               | [SolutionLCR185.java](src%2Fleetcode%2Fdp%2FSolutionLCR185.java) |    |
 | [467. 环绕字符串中唯一的子字符串 中等](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [Solution467.java](src%2Fleetcode%2Fdp%2FSolution467.java)       |    |
 
+## 递归
+
+递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
+
+| 题目链接                                                                                 | 题解                                                                      | 备注 |
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
+| [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)                      | [Solution200.java](src%2Fleetcode%2Frecursion%2FSolution200.java)       |    |
+| [LCR 129. 字母迷宫 中等](https://leetcode.cn/problems/number-of-islands/)                  | [SolutionLCR129.java](src%2Fleetcode%2Frecursion%2FSolutionLCR129.java) |    |
+| [LCR 130. 衣橱整理 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | [SolutionLCR130.java](src%2Fleetcode%2Frecursion%2FSolutionLCR130.java) |    |
+| [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                             | [Solution79.java](src%2Fleetcode%2Frecursion%2FSolution79.java)         |    |
 
 ## 贪心算法
 
@@ -986,17 +937,6 @@ for (int i = 0; i < n1; i++) {
 | [768. 最多能完成排序的块 II 困难](https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/)                  | [Solution768.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution768.java)   |             |
 | [1953. 你可以工作的最大周数 中等](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/) | [Solution1953.java](src%2Fleetcode%2Fgreedyalgorithm%2FSolution1953.java) |             |
 
-## 递归
-
-递归矩阵问题注意单元格重复访问的问题，一般用 `visited[][]` 来标记是否访问过
-
-| 题目链接                                                                                 | 题解                                                                      | 备注 |
-|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----|
-| [200. 岛屿数量 中等](https://leetcode.cn/problems/number-of-islands/)                      | [Solution200.java](src%2Fleetcode%2Frecursion%2FSolution200.java)       |    |
-| [LCR 129. 字母迷宫 中等](https://leetcode.cn/problems/number-of-islands/)                  | [SolutionLCR129.java](src%2Fleetcode%2Frecursion%2FSolutionLCR129.java) |    |
-| [LCR 130. 衣橱整理 中等](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | [SolutionLCR130.java](src%2Fleetcode%2Frecursion%2FSolutionLCR130.java) |    |
-| [79. 单词搜索 中等](https://leetcode.cn/problems/word-search/)                             | [Solution79.java](src%2Fleetcode%2Frecursion%2FSolution79.java)         |    |
-
 ## 位运算
 
 | 题目链接                                                                                  | 题解                                                                | 备注                      |
@@ -1010,6 +950,66 @@ for (int i = 0; i < n1; i++) {
 | [318. 最大单词长度乘积 中等](https://leetcode.cn/problems/maximum-product-of-word-lengths/)     | [Solution318.java](src%2Fleetcode%2Fbit%2FSolution318.java)       |                         |
 | [371. 两整数之和 中等](https://leetcode.cn/problems/sum-of-two-integers/)                    | [Solution371.java](src%2Fleetcode%2Fbit%2FSolution371.java)       |                         |
 | [1073. 负二进制数相加 中等](https://leetcode.cn/problems/adding-two-negabinary-numbers/)       | [Solution1073.java](src%2Fleetcode%2Fbit%2FSolution1073.java)     |                         |
+
+## 树状数组
+
+相关学习：[深入理解树状数组](https://juejin.cn/post/7271862751957909523)
+
+树状数组是一种简单的数据结构，它支持单点修改和区间查询操作，一般的 RMQ 问题优先选择树状数组求解，而不是线段树，后者相对来说代码量大，也比较复杂
+
+- 树状数组解题模板：[BinaryIndexedTree.java](src%2Fleetcode%2Fbinaryindexedtree%2FBinaryIndexedTree.java)
+
+| 题目链接                                                                           | 题解                                                                          | 备注 |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----|
+| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/) | [NumArray.java](src%2Fleetcode%2Fbinaryindexedtree%2FNumArray.java)         |    |
+| [1395. 统计作战单位数 中等](https://leetcode.cn/problems/count-number-of-teams/)        | [Solution1395.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution1395.java) | ⭐️ |
+| [2179. 统计数组中好三元组数目 困难](https://leetcode.cn/problems/count-number-of-teams/)    | [Solution2179.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution2179.java) |    |
+| [775. 全局倒置与局部倒置 中等](https://leetcode.cn/problems/global-and-local-inversions/) | [Solution775.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution775.java)   |    |
+| [327. 区间和的个数 困难](https://leetcode.cn/problems/count-of-range-sum/)             | [Solution327.java](src%2Fleetcode%2Fbinaryindexedtree%2FSolution327.java)   |    |
+
+## 线段树
+
+相关学习：[深入理解线段树](https://juejin.cn/post/7274847103729516584)
+
+线段树可以解决区间和、区间最大值或区间最小值的问题（RMQ 问题），不过线段树的代码量相对来说较大而且比较复杂，所以线段树是在前缀和、差分和树状数组解决方法之后不得已才会考虑的方案。
+一般使用线段树的题目都具备 **区间修改和区间查询** 的特点，如果大家在这里是按照顺序刷的话，应该对 RMQ 问题有一个比较充分的了解了，在这里做一下相关题型解法的归纳：
+
+- 数组不变，区间查询：前缀和、树状数组和线段树
+- 数组单点修改，区间查询：树状数组和线段树
+- 数组区间修改，单点查询：差分和线段树
+- 数组区间修改，区间查询：线段树
+
+注意每种题型涉及的解法都是越靠前越优先考虑。
+
+### 单点修改和区间查询
+
+- 线段树模板：[SegmentTree.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree.java)
+
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [307. 区域和检索 - 数组可修改 中等](https://leetcode.cn/problems/range-sum-query-mutable/)                             | [NumArray.java](src%2Fleetcode%2Fsegmenttree%2FNumArray.java)         |    |
+| [239. 滑动窗口最大值 困难](https://leetcode.cn/problems/sliding-window-maximum/)                                    | [Solution239.java](src%2Fleetcode%2Fsegmenttree%2FSolution239.java)   |    |
+| [654. 最大二叉树 中等](https://leetcode.cn/problems/maximum-binary-tree/)                                         | [Solution654.java](src%2Fleetcode%2Fsegmenttree%2FSolution654.java)   |    |
+
+### 区间修改
+
+- 线段树模板：[SegmentTree2.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree2.java)
+
+| 题目链接                                                                                                       | 题解                                                                    | 备注 |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|----|
+| [1893. 检查是否区域内所有整数都被覆盖 简单](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) | [Solution1893.java](src%2Fleetcode%2Fsegmenttree%2FSolution1893.java) |    |
+| [1109. 航班预订统计 中等](https://leetcode.cn/problems/corporate-flight-bookings/)                                 | [Solution1109.java](src%2Fleetcode%2Fsegmenttree%2FSolution1109.java) |    |
+
+### 动态开点
+
+- 线段树模版：[SegmentTree3.java](src%2Fleetcode%2Fsegmenttree%2FSegmentTree3.java)
+
+| 题目链接                                                                 | 题解                                                                          | 备注                             |
+|----------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------|
+| [729. 我的日程安排表 I 中等](https://leetcode.cn/problems/my-calendar-i/)     | [MyCalendar.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendar.java)           |                                |
+| [731. 我的日程安排表 II 中等](https://leetcode.cn/problems/my-calendar-ii/)   | [MyCalendarTwo.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarTwo.java)     | ⭐️                             |
+| [732. 我的日程安排表 III 困难](https://leetcode.cn/problems/my-calendar-iii/) | [MyCalendarThree.java](src%2Fleetcode%2Fsegmenttree%2FMyCalendarThree.java) |                                |
+| [715. Range 模块 困难](https://leetcode.cn/problems/range-module/)       | [RangeModule.java](src%2Fleetcode%2Fsegmenttree%2FRangeModule.java)         | ✅️ 理解 add 是作为区间变化量还是区间内单个值的变化量 |
 
 ## 模拟
 
