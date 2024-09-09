@@ -763,14 +763,15 @@ for (int i = nums.length - 1; i >= 0; i--) {
 
 ### 子集型回溯
 
-| 题目链接                                                                                    | 题解                                                                | 备注 |
-|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------|----|
-| [257. 二叉树的所有路径 简单](https://leetcode.cn/problems/binary-tree-paths/)                     | [Solution257.java](src%2Fleetcode%2Fbacktrack%2FSolution257.java) |    |
-| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                      | [Solution78.java](src%2Fleetcode%2Fbacktrack%2FSolution78.java)   |    |
-| [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fbacktrack%2FSolution17.java)   |    |
-| [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fbacktrack%2FSolution131.java) |    |
-| [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fbacktrack%2FSolution784.java) |    |
-| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fbacktrack%2FSolution22.java)   | ⭐️ |
+| 题目链接                                                                                    | 题解                                                                | 备注                                |
+|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------|
+| [257. 二叉树的所有路径 简单](https://leetcode.cn/problems/binary-tree-paths/)                     | [Solution257.java](src%2Fleetcode%2Fbacktrack%2FSolution257.java) |                                   |
+| [78. 子集 中等](https://leetcode.cn/problems/subsets/)                                      | [Solution78.java](src%2Fleetcode%2Fbacktrack%2FSolution78.java)   |                                   |
+| [17. 电话号码的字母组合 中等](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [Solution17.java](src%2Fleetcode%2Fbacktrack%2FSolution17.java)   |                                   |
+| [131. 分割回文串 中等](https://leetcode.cn/problems/palindrome-partitioning/)                  | [Solution131.java](src%2Fleetcode%2Fbacktrack%2FSolution131.java) |                                   |
+| [784. 字母大小写全排列 中等](https://leetcode.cn/problems/letter-case-permutation/)               | [Solution784.java](src%2Fleetcode%2Fbacktrack%2FSolution784.java) |                                   |
+| [22. 括号生成 中等](https://leetcode.cn/problems/generate-parentheses/)                       | [Solution22.java](src%2Fleetcode%2Fbacktrack%2FSolution22.java)   | ⭐️                                |
+| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                                | [Solution139.java](src%2Fleetcode%2Fbacktrack%2FSolution139.java) | 字符串API `word.startsWith(s);` 和备忘录 |
 
 ### 组合型回溯
 
@@ -894,9 +895,6 @@ for (int i = 0; i < n1; i++) {
     }    
 }
 ```
-
-| [139. 单词拆分 中等](https://leetcode.cn/problems/word-break/)                            | [Solution139.java](src%2Fleetcode%2Fdp%2Fbacktrack%2FSolution139.java)       | 字符串API `word.startsWith(s);` 和备忘录 |
-
 
 | 题目链接                                                                                                           | 题解                                                               | 备注 |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|----|

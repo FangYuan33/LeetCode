@@ -1,4 +1,4 @@
-package leetcode.dp;
+package leetcode.backtrack;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,7 +24,7 @@ public class Solution139 {
     }
 
     // 当前问题：拼接单词
-    // 每一步的操作：如果当前路径是以某个单词开头的话则拼接上
+    // 每一步的操作：如果当前路径是以某个单词开头的话则去掉
     // 子问题：在路径中去掉拼接上的单词，继续拼接单词
     // 剪枝优化：res == true;
     private void backtrack(List<String> wordDict, String path) {
