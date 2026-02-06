@@ -7,102 +7,137 @@ import java.util.Random;
  */
 public class Skiplist {
 
-    /**
-     * The main method creates a Skiplist object, adds elements to it, and searches for an element.
-     *
-     * @param args The command-line arguments.
-     */
-    public static void main(String[] args) {
-        Skiplist skiplist = new Skiplist();
+    private static final int MAX_LEVEL = 16;   // 最大层数
+    private static final double P = 0.5;        // 晋升概率
 
-        skiplist.add(1);
-        skiplist.add(2);
-        skiplist.add(3);
+    private final SkiplistNode head;   // 头节点
+    private int level;            // 当前最高层数
+    private final Random random;
 
-        System.out.println(skiplist.search(1));
+    public Skiplist() {
+        this.head = new SkiplistNode(-1, MAX_LEVEL);  // 哨兵节点
+        this.level = 1;
+        this.random = new Random();
     }
 
-    int level = 10;
-
     /**
-     * Node class represents a node in the skip list.
+     * 搜索目标值是否存在
+     * @param target 目标值
+     * @return 是否存在
      */
-    class Node {
-        int val;
-        Node[] ne = new Node[level];
+    public boolean search(int target) {
+        SkiplistNode current = head;
 
-        /**
-         * Constructs a new Node with the given value.
-         *
-         * @param _val The value to be stored in the node.
-         */
-        Node(int _val) {
-            val = _val;
-        }
-    }
-
-    Random random = new Random();
-    Node he = new Node(-1);
-
-    /**
-     * Helper method to find nodes in the skip list.
-     *
-     * @param t  The target value to search for.
-     * @param ns An array of nodes to store the found nodes at each level.
-     */
-    void find(int t, Node[] ns) {
-        Node cur = he;
+        // 从最高层开始查找
         for (int i = level - 1; i >= 0; i--) {
-            while (cur.ne[i] != null && cur.ne[i].val < t)
-                cur = cur.ne[i];
-            ns[i] = cur;
+            // 在当前层向右移动，找到 < target 的最后一个节点
+            while (current.next[i] != null && current.next[i].val < target) {
+                current = current.next[i];
+            }
+        }
+
+        // 移动到底层的下一个节点
+        current = current.next[0];
+
+        // 检查是否找到目标值
+        return current != null && current.val == target;
+    }
+
+    public void add(int num) {
+        SkiplistNode[] update = new SkiplistNode[MAX_LEVEL];
+        SkiplistNode current = head;
+
+        // 1. 找到每层的插入位置（记录前驱节点）
+        for (int i = level - 1; i >= 0; i--) {
+            // 注意：这里是 < 而不是 <=，允许重复值
+            while (current.next[i] != null && current.next[i].val < num) {
+                current = current.next[i];
+            }
+            update[i] = current;
+        }
+
+        // 2. 随机生成新节点的层数
+        int newLevel = randomLevel();
+
+        // 3. 如果新层数超过当前层数，更新 head 的引用
+        if (newLevel > level) {
+            for (int i = level; i < newLevel; i++) {
+                update[i] = head;
+            }
+            level = newLevel;
+        }
+
+        // 4. 创建新节点
+        SkiplistNode newNode = new SkiplistNode(num, newLevel);
+
+        // 5. 插入新节点到每一层
+        for (int i = 0; i < newLevel; i++) {
+            newNode.next[i] = update[i].next[i];
+            update[i].next[i] = newNode;
         }
     }
 
     /**
-     * Searches for a value in the skip list.
-     *
-     * @param t The value to search for.
-     * @return True if the value is found, false otherwise.
+     * 删除一个指定值（如果存在多个，只删除一个）
+     * @param num 要删除的值
+     * @return 是否删除成功
      */
-    public boolean search(int t) {
-        Node[] ns = new Node[level];
-        find(t, ns);
-        return ns[0].ne[0] != null && ns[0].ne[0].val == t;
-    }
+    public boolean erase(int num) {
+        SkiplistNode[] update = new SkiplistNode[MAX_LEVEL];
+        SkiplistNode current = head;
 
-    /**
-     * Inserts a value into the skip list.
-     *
-     * @param t The value to be inserted.
-     */
-    public void add(int t) {
-        Node[] ns = new Node[level];
-        find(t, ns);
-        Node node = new Node(t);
+        // 1. 找到要删除的节点及其每层的前驱节点
+        for (int i = level - 1; i >= 0; i--) {
+            while (current.next[i] != null && current.next[i].val < num) {
+                current = current.next[i];
+            }
+            update[i] = current;
+        }
+
+        // 2. 获取目标节点
+        current = current.next[0];
+
+        // 3. 检查是否找到
+        if (current == null || current.val != num) {
+            return false;  // 未找到
+        }
+
+        // 4. 删除节点（从每一层中移除）
         for (int i = 0; i < level; i++) {
-            // Saves the pointer to the next node at each level for the current node
-            node.ne[i] = ns[i].ne[i];
-            ns[i].ne[i] = node;
-            if (random.nextInt(2) == 0)
-                break;
+            if (update[i].next[i] != current) {
+                break;  // 当前层没有该节点
+            }
+            update[i].next[i] = current.next[i];
         }
+
+        // 5. 更新跳表的最大层数（删除空层）
+        while (level > 1 && head.next[level - 1] == null) {
+            level--;
+        }
+
+        return true;
     }
 
     /**
-     * Removes a value from the skip list.
-     *
-     * @param t The value to be removed.
-     * @return True if the value is removed, false if the value is not found.
+     * 随机生成节点层数
+     * 通过 50% 概率决定是否增加层数
      */
-    public boolean erase(int t) {
-        Node[] ns = new Node[level];
-        find(t, ns);
-        Node node = ns[0].ne[0];
-        if (node == null || node.val != t)
-            return false;
-        for (int i = 0; i < level && ns[i].ne[i] == node; i++)
-            ns[i].ne[i] = ns[i].ne[i].ne[i];
-        return true;
+    private int randomLevel() {
+        int lvl = 1;
+        // 每次有 50% 概率晋升到更高层
+        while (lvl < MAX_LEVEL && random.nextDouble() < P) {
+            lvl++;
+        }
+        return lvl;
+    }
+
+    private static class SkiplistNode {
+        int val;                    // 存储的值
+        SkiplistNode[] next;     // 每层的下一个节点
+
+        public SkiplistNode(int val, int level) {
+            this.val = val;
+            this.next = new SkiplistNode[level];
+        }
     }
 }
