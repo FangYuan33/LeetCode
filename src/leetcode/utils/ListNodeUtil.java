@@ -4,7 +4,6 @@ import leetcode.ListNode;
 
 public class ListNodeUtil {
 
-    // eg: [1,2,2,1]
     public static ListNode generate(int[] listNodes) {
         if (listNodes == null || listNodes.length == 0) {
             return null;
