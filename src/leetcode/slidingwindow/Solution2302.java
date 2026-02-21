@@ -1,7 +1,5 @@
 package leetcode.slidingwindow;
 
-import leetcode.Solution;
-
 public class Solution2302 {
     public static void main(String[] args) {
         System.out.println(new Solution2302().countSubarrays(new int[]{9, 5, 3, 8, 4, 7, 2, 7, 4, 5, 4, 9, 1, 4, 8, 10, 8, 10, 4, 7}, 4));

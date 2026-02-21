@@ -1,6 +1,5 @@
 package leetcode.simulate;
 
-import leetcode.Solution;
 import leetcode.utils.Matrix;
 
 import java.util.Arrays;

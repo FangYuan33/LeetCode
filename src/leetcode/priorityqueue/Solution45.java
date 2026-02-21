@@ -1,7 +1,5 @@
 package leetcode.priorityqueue;
 
-import leetcode.Solution;
-
 import java.util.PriorityQueue;
 
 public class Solution45 {

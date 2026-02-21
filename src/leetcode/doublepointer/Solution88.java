@@ -1,7 +1,5 @@
 package leetcode.doublepointer;
 
-import leetcode.Solution;
-
 public class Solution88 {
 
     public static void main(String[] args) {
