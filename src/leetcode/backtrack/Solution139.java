@@ -1,6 +1,7 @@
 package leetcode.backtrack;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class Solution139 {
@@ -14,11 +15,11 @@ public class Solution139 {
 
     boolean res;
 
-    String s;
+    HashSet<String> memo;
 
     public boolean wordBreak(String s, List<String> wordDict) {
         res = false;
-        this.s = s;
+        memo = new HashSet<>();
         backtrack(wordDict, s);
         return res;
     }
@@ -28,7 +29,7 @@ public class Solution139 {
     // 子问题：在路径中去掉拼接上的单词，继续拼接单词
     // 剪枝优化：res == true;
     private void backtrack(List<String> wordDict, String path) {
-        if (res) {
+        if (res || memo.contains(path)) {
             return;
         }
         if (path.isEmpty()) {
@@ -37,10 +38,10 @@ public class Solution139 {
         }
 
         for (String word : wordDict) {
-
             if (path.startsWith(word)) {
                 backtrack(wordDict, path.substring(word.length()));
             }
         }
+        memo.add(path);
     }
 }
